@@ -1,0 +1,51 @@
+
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding: 7px 12px 8px 8px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/*hiển thị màu bg của btn drop khi trỏ chuột vào*/
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #f5f5f5;
+    color: black;
+}
+
+.dropdown {
+    /*position: relative;*/
+    display: inline-block;
+}
+
+/*hiển thị phần div chứa các itemDrop*/
+.dropdown-content {
+    margin-top: 8px;
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 400px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 7px;
+}
+
+/*các thẻ a trong phần div chứa itemDrop*/
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+}
+/*hiển thị màu background khi trỏ chuột vào itemDrop*/
+.dropdown a:hover {
+    background-color: #ddd;
+    text-decoration: none;
+}
+
+.show {display: block;}
