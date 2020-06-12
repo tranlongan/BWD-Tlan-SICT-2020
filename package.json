@@ -1,0 +1,27 @@
+{
+  "name": "bwd-sict-tlan-2020",
+  "version": "0.1.0",
+  "description": "BWD-SICT-2020",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tranlongan/BWD-Tlan-SICT-2020.git"
+  },
+  "keywords": [
+    "BWD-SICT-2020"
+  ],
+  "author": "tlan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tranlongan/BWD-Tlan-SICT-2020/issues"
+  },
+  "homepage": "https://github.com/tranlongan/BWD-Tlan-SICT-2020#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}
