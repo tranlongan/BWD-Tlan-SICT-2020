@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c0de636-d54c-44a4-b34e-b3ce868a9240" name="Default Changelist" comment="update">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +59,7 @@
       <option name="presentableId" value="Default" />
       <updated>1591940848865</updated>
       <workItem from="1591940852476" duration="195000" />
-      <workItem from="1591941095819" duration="1102000" />
+      <workItem from="1591941095819" duration="1449000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1591942114052</created>
@@ -75,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591942191113</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update">
+      <created>1591942218376</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1591942218376</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,10 +106,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1591942193035">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1591942241495">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1591942193035" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1591942241495" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1591941816321">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
