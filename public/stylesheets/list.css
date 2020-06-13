@@ -4,7 +4,7 @@
 
 .list-group li img:hover{
     transform: scale(1);
-    box-shadow: -6px 6px 6px #6f42c1;
+    box-shadow: -7px 7px 7px #6f42c1;
 }
 
 .list-group li{
@@ -20,6 +20,10 @@
 .danhMuc li{
     max-width: inherit;
     width: 100%
+}
+
+div .col-lg-6{
+    padding: 5px 5px 5px 0;
 }
 
 

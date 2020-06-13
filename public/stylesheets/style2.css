@@ -1,4 +1,8 @@
 
+body{
+    font-family: Abel, Arial, Verdana, sans-serif;
+}
+
 .nav .nav-link{
     color: black;
 }
@@ -7,34 +11,19 @@
     color: #e83e8c;
 }
 
-.btnIcon{
-    border: 0px solid #fefefe;
-    background-color: #fefefe;
-    height: 10px;
-    padding-left: 0;
-    margin-left: -7px;
-}
-
 .bx1 td{
     padding: 0;
 }
 
-.pIcon{
-    position: absolute;
-    left: 162px;
-    top: 9px;
-}
-
 .divSearch{
     padding-left: 100px;
-    padding-top: 8px;
 }
 
 .setTfSearch{
     max-width: inherit;
     width: 55%;
     padding: 3px;
-    border: 1.1px solid #818182;
+    border: 1px solid #818182;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     outline: none;
@@ -42,25 +31,21 @@
 
 .setButton{
     max-width: inherit;
-    border: 1.35px solid #fefefe;
+    border: 1px solid #fefefe;
     margin-left: -5px;
     outline: none;
     padding: 3px;
     width: 15%;
 }
 
-.aT:hover, .aT:focus{
-    color: black;
+.btnDk, .btnDn{
+    border: 0;
+    padding: 4px;
+    border-radius: 4px;
+    font-weight: bolder;
 }
 
-.aP{
-    color: black;
-}
 
-.aP:hover, .aP:focus{
-    color: #e83e8c;
-    text-decoration: none;
-}
 
 .divImg{
     margin-bottom: 5px;
@@ -70,41 +55,6 @@ a img{
     max-width: inherit;
     width: 100%;
     height: 200px;
-}
-
-/*phần phổ biến*/
-div a.linkP2 h6{
-    padding-top: 5px;
-    color: black;
-    max-height: inherit;
-    height: 40px;
-}
-
-div a.linkP2:hover h6{
-    color: #e83e8c;
-}
-
-/*phần danh mục*/
-div a.linkP2 h5{
-    color: black;
-    font-size: 15px;
-}
-
-div a.linkP2:hover h5{
-    color: #e83e8c;
-}
-
-.a5,.a5:hover{
-    color: #e83e8c;
-}
-
-div a.linkP2{
-    color: #818182;
-    text-decoration: none;
-}
-
-div a.linkP2:hover{
-    color: #e83e8c;
 }
 
 .fontSize_btnCtn{
@@ -147,21 +97,20 @@ div a.linkP2:hover{
     background-color: #6f42c1;
 }
 
-.iconGif{
-    width: 25px;
-    height: 25px;
-    margin-top: -1px;
-    position: absolute;
-    transition: 1s;
+.list-group-item{
+    position: relative;
 }
 
-.iconGif:hover{
-    width: 40px;
-    height: 28px;
-    content: url("../src/picture/picture icon gif/506491bb384d29a5-animate-bulb-by-cabaroc-dribbble.gif");
-    /*transform: translate(5px, -5px);*/
-    transform: scale(1);
-    box-shadow: -4px 4px 4px #6f42c1;
+.infWatchTV{
+    position: absolute;
+    left: 315px;
+    top: 10px;
+    overflow: hidden;
+}
+
+.imgW{
+    width: 296.5px;
+    height: 200px;
 }
 
 

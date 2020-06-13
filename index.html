@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+    </style>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--     stylesheets-->
     <link rel="stylesheet" href="./public/stylesheets/style2.css">
     <!--    slide stylesheets-->
     <link rel="stylesheet" href="./public/stylesheets/slide.css">
+    <!--    set icon-->
+    <link rel="stylesheet" href="./public/stylesheets/icon.css">
+    <!--    set a_link-->
+    <link rel="stylesheet" href="./public/stylesheets/a_link.css">
     <!--    dropdown-->
     <link rel="stylesheet" href="./public/stylesheets/cssOfDropdown.css">
-    <!--    hiệu ứng-->
+    <!--    list-->
     <link rel="stylesheet" href="./public/stylesheets/list.css">
     <!--import owl.carousel-->
     <link rel="stylesheet" href="./public/owlcarousel/assets/owl.carousel.min.css">
@@ -29,6 +35,7 @@
     <!--    phần navBar-->
     <nav class="navbar-light fixed-top" style="background-color: #ffffff ">
         <div class="row" style="padding: 6px">
+            <!--            col 4-->
             <div class="col-lg-4">
                 <ul class="nav">
                     <li class="nav-item">
@@ -37,7 +44,10 @@
                         </a>
                     </li>
                     <li class="nav-item" style="margin-left: 12px"><a class="nav-link" href="">Diễn đàn D.I.Y</a></li>
+                    <li class="nav-item"><a href=""><img class="iconTV" src="public/images/tv.png"/></a> </li>
                     <li class="nav-item btn" style="padding-top: 0; padding-bottom: 0;padding-right: 0">
+
+<!--                        btn dropdown-->
                         <div class="dropdown">
                             <button onclick="myFunction()" class="dropbtn">
                                 Khám phá các ý tưởng
@@ -104,12 +114,13 @@
                                         </tr>
                                     </table>
                                 </div>
-
                             </div>
                         </div>
+<!--                        end btn dropdown-->
                     </li>
                 </ul>
             </div>
+
             <!--        col-6-->
             <div class="col-lg-6">
                 <div class="divSearch">
@@ -119,7 +130,13 @@
                     </button>
                 </div>
             </div>
-
+            <!--            col 2-->
+            <div class="col-lg-2">
+                <div style="padding-top: 5px">
+                    <button class="btnDk btn-secondary" type="submit">Đăng ký</button>
+                    <button class="btnDn btn-info" type="submit">Đăng nhập</button>
+                </div>
+            </div>
 
             <!--        kết thúc phần khởi đầu-->
         </div>
@@ -835,6 +852,166 @@
                 <hr style="width: 100%"/>
             </div>
 
+<!--            phần watch TV-->
+            <div>
+                <!--           phần label-->
+                <div>
+                    <h5>Xem video hướng dẫn</h5>
+                </div>
+                <!--                list 1-->
+                <ul class="list-group list-group-horizontal watchTV">
+                    <!--                col 1-->
+                    <li class="list-group-item">
+                        <div class="col-lg-6">
+                            <a href="">
+                                <img src="public/images/picture%20of%20content%203/diy-resin-tumbler.jpg" />
+                            </a>
+                        </div>
+
+                        <div class="infWatchTV">
+                            <div style="height: 135px">
+                                <div style="padding-bottom: 20px">
+                                    <a href="" class="linkP2">
+                                        <h6> Tìm hiểu cách tạo một thiết kế đại dương êm dịu trên một chiếc cốc bằng nhựa</h6>
+                                    </a>
+                                </div>
+
+                                <div class="fontSize_View">
+                                    <a href="" class="linkP2">
+                                        Bạn có mơ về đại dương? Bạn muốn cảm nhận cát trong ngón chân và nước trên da?
+                                        Tôi có thể mang ...
+                                    </a>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div>
+                                <a href="">
+                                    <img src="public/images/account.png" class="iconAccount"/>
+                                    People 1
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--                col 2 -->
+                    <li class="list-group-item" style="margin-left: 30px">
+                        <div class="col-lg-6">
+                            <a href="">
+                                <img src="public/images/picture%20of%20content%203/simple-wood-box.jpg" />
+                            </a>
+                        </div>
+
+                        <div class="infWatchTV">
+                            <div style="height: 135px">
+                                <div>
+                                    <a href="" class="linkP2">
+                                        <h6>Hộp gỗ đơn giản</h6>
+                                    </a>
+                                </div>
+                                <div class="fontSize_View ">
+                                    <a href="" class="linkP2">
+                                        <div>
+                                            Hộp gỗ đơn giản này là một công trình dễ dàng và có thể phục vụ như một món đồ mộc mạc
+                                            tuyệt đẹp ở mọi nơi trong ...
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div>
+                                <a href="">
+                                    <img src="public/images/account.png" class="iconAccount"/>
+                                    People 2
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <!--                list 2-->
+                <ul class="list-group list-group-horizontal watchTV">
+                    <!--                col 1-->
+                    <li class="list-group-item">
+                        <div class="col-lg-6">
+                            <a href="">
+                                <img src="public/images/picture%20of%20content%203/n.jpg" />
+                            </a>
+                        </div>
+
+                        <div class="infWatchTV">
+                            <div style="height: 135px">
+                                <div style="padding-bottom: 20px">
+                                    <a href="" class="linkP2">
+                                        <h6>Làm đẹp chiếc gối của bạn bằng những nét vẽ </h6>
+                                    </a>
+                                </div>
+                                <div class="fontSize_View ">
+                                    <a href="" class="linkP2">
+                                        <div>
+                                            Có rất nhiều cách để biến chiếc gối của bạn thành những tác phẩm nghệ thuật
+                                            tuyệt đẹp, bạn có muố biết...
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div>
+                                <a href="">
+                                    <img src="public/images/account.png" class="iconAccount"/>
+                                    People 3
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--                col 2 -->
+                    <li class="list-group-item" style="margin-left: 30px">
+                        <div class="col-lg-6">
+                            <a href="">
+                                <img src="public/images/picture%20of%20content%203/104182266_311404879854548_275254133652055942_n.jpg" />
+                            </a>
+                        </div>
+
+                        <div class="infWatchTV">
+                            <div style="height: 135px">
+                                <div>
+                                    <a href="" class="linkP2">
+                                        <h6>Hộp gỗ đơn giản</h6>
+                                    </a>
+                                </div>
+                                <div class="fontSize_View">
+                                    <a href="" class="linkP2">
+                                        <div>
+                                            Hộp gỗ đơn giản này là một công trình dễ dàng và có thể phục vụ như một món đồ mộc mạc
+                                            tuyệt đẹp ở mọi nơi trong ...
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div>
+                                <a href="">
+                                    <img src="public/images/account.png" class="iconAccount"/>
+                                    People 4
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--            end watchTV-->
+
+            <!--                    mục xem thêm-->
+            <div style="margin-bottom: 10px; margin-top: 10px">
+                <div>
+                    <hr style="float: left; width: 42%;"/>
+                    <button class="btn-light" style="margin-left: 10px; border: 0; color: #6f42c1; outline: none">
+                        Tìm hiểu thêm <i class="material-icons" style="font-size: 12px">expand_more</i>
+                    </button>
+                    <hr style="float: right; width: 46%;">
+                </div>
+                <!--                kết thúc mục xem thêm-->
+            </div>
 
             <!--        kết thúc col 10-->
         </div>
@@ -847,7 +1024,7 @@
 
 <script src="./node_modules/jquery/dist/jquery.min.js"></script>
 <script src="./node_modules/popper.js/dist/popper.min.js"></script>
-<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="./public/owlcarousel/owl.carousel.min.js"></script>
 <!--import icon-->
 <script src="https://kit.fontawesome.com/2fe833f814.js" crossorigin="anonymous"></script>

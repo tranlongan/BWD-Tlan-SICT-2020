@@ -1,0 +1,46 @@
+.a5,.a5:hover{
+    color: #e83e8c;
+}
+
+.aT:hover, .aT:focus{
+    color: black;
+}
+
+.aP{
+    color: black;
+}
+
+.aP:hover, .aP:focus{
+    color: #e83e8c;
+    text-decoration: none;
+}
+
+div a.linkP2 h6{
+    padding-top: 5px;
+    color: black;
+    max-height: inherit;
+    height: 40px;
+}
+
+div a.linkP2:hover h6{
+    color: #e83e8c;
+}
+
+/*phần danh mục*/
+div a.linkP2 h5{
+    color: black;
+    font-size: 15px;
+}
+
+div a.linkP2:hover h5{
+    color: #e83e8c;
+}
+
+div a.linkP2{
+    color: #818182;
+    text-decoration: none;
+}
+
+div a.linkP2:hover{
+    color: #e83e8c;
+}
