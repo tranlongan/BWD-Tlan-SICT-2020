@@ -43,7 +43,7 @@ input[type=radio] {
     left:42%;
     width: 18px;
     height: 12px;
-    margin: 0 15px 0 0;
+    margin: 0 5px 0 0;
     opacity: 0.4;
     transform: translateX(-83px);
     cursor: pointer;
@@ -69,7 +69,7 @@ input[type=radio]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 400ms ease;
+    transition: transform 100ms ease;
     overflow: hidden;
 }
 

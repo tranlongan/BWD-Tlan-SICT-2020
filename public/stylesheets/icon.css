@@ -23,7 +23,9 @@
 .pIcon{
     position: absolute;
     left: 162px;
-    top: 9px;
+    top: 11px;
+    width: 20px;
+    height: 20px;
 }
 
 .btnIcon{
@@ -37,4 +39,8 @@
 .iconAccount{
     height: 24px;
     width: 24px;
+}
+
+img.iconHdn{
+    display: none;
 }

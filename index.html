@@ -8,6 +8,8 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--    reponsive-->
+    <link rel="stylesheet" href="public/stylesheets/reponsive.css">
     <!--     stylesheets-->
     <link rel="stylesheet" href="./public/stylesheets/style2.css">
     <!--    slide stylesheets-->
@@ -35,25 +37,26 @@
     <!--    phần navBar-->
     <nav class="navbar-light fixed-top" style="background-color: #ffffff ">
         <div class="row" style="padding: 6px">
-            <!--            col 4-->
-            <div class="col-lg-4">
+            <!--            col 12-->
+            <div class="col-lg-12">
                 <ul class="nav">
                     <li class="nav-item">
                         <a class="nav-link" href="" style="padding-left: 5px">
                             <img class="iconGif" src="./public/images/picture%20icon%20gif/tải%20xuống.png"/>
                         </a>
                     </li>
-                    <li class="nav-item" style="margin-left: 12px"><a class="nav-link" href="">Diễn đàn D.I.Y</a></li>
-                    <li class="nav-item"><a href=""><img class="iconTV" src="public/images/tv.png"/></a> </li>
+                    <li class="nav-item" style="margin-left: 12px">
+                        <a class="nav-link" href="">
+                            <img class="iconHdn" src="public/images/forum.png"/>
+                            <div class="ds">Diễn đàn D.I.Y</div>
+                        </a>
+                    </li>
+                    <li class="nav-item"><a href=""><img class="iconTV" src="public/images/tv.png"/></a></li>
                     <li class="nav-item btn" style="padding-top: 0; padding-bottom: 0;padding-right: 0">
-
 <!--                        btn dropdown-->
                         <div class="dropdown">
                             <button onclick="myFunction()" class="dropbtn">
                                 Khám phá các ý tưởng
-                                <div class="pIcon">
-                                    <i class="material-icons">more_vert</i>
-                                </div>
                             </button>
                             <div id="myDropdown" class="dropdown-content">
                                 <div>
@@ -118,35 +121,30 @@
                         </div>
 <!--                        end btn dropdown-->
                     </li>
+
+                    <div class="divSearch">
+                        <input type="search" class="setTfSearch" placeholder="Search DIY ideas here">
+                        <button type="submit" class="btn-primary setButton" style="outline: none">
+                            <i class="material-icons" style="font-size: small;">search</i>
+                        </button>
+                    </div>
+
+                    <div class="dkdn" style="padding-top: 5px">
+                        <button class="btnDk btn-secondary" type="submit">Đăng ký</button>
+                        <button class="btnDn btn-info" type="submit">Đăng nhập</button>
+                    </div>
                 </ul>
-            </div>
 
-            <!--        col-6-->
-            <div class="col-lg-6">
-                <div class="divSearch">
-                    <input type="search" class="setTfSearch" placeholder="Search DIY ideas here">
-                    <button type="submit" class="btn-primary setButton" style="outline: none">
-                        <i class="material-icons" style="font-size: small;">search</i>
-                    </button>
-                </div>
             </div>
-            <!--            col 2-->
-            <div class="col-lg-2">
-                <div style="padding-top: 5px">
-                    <button class="btnDk btn-secondary" type="submit">Đăng ký</button>
-                    <button class="btnDn btn-info" type="submit">Đăng nhập</button>
-                </div>
-            </div>
-
             <!--        kết thúc phần khởi đầu-->
         </div>
         <!--        kết thúc Scrollspy-->
     </nav>
 
     <!--    phần thân-->
-    <div class="row" style="margin-top: 55px;">
+    <div class="row rp1" style="margin-top: 55px;">
         <!--        phần của col 2-->
-        <div class="col-lg-2" style="background-color: #c2c2c2">
+        <div class="col-lg-2 col2" style="background-color: #c2c2c2;overflow: auto">
             <div class="card" style="margin-top: 50px">
                 <div class="card-body">
                     <h4>Hãy tham gia cộng đồng</h4>
@@ -155,6 +153,9 @@
                     <button class="btn_light">Tham gia ngay</button>
                 </div>
             </div>
+            <div>
+
+            </div>
         </div>
         <!--        phần của col 10-->
         <div class="col-lg-10" style="background-color: #f5f5f5;height: auto">
@@ -162,6 +163,7 @@
             <!--           phần slide-->
             <div class="row">
                 <section id="slider">
+
                     <input type="radio" name="slider" id="s1" checked>
                     <input type="radio" name="slider" id="s2">
                     <input type="radio" name="slider" id="s3">
@@ -510,7 +512,7 @@
                 <h5>Những ý tưởng D.I.Y chúng tôi nghĩ bạn sẽ thích</h5>
             </div>
             <!--            phần phổ biến-->
-            <ul class="list-group list-group-horizontal">
+            <ul class="list-group list-group-horizontal rp1_1">
                 <!--                col 1-->
                 <li class="list-group-item">
                     <div class="divImg">
@@ -538,7 +540,7 @@
                 </li>
 
                 <!--                col 2-->
-                <li class="list-group-item lx">
+                <li class="list-group-item lx ">
                     <div class="divImg">
                         <a href="">
                             <img src="public/images/picture%20of%20content%201/cnt5.jpg">
@@ -619,13 +621,13 @@
             </ul>
 
             <!--                    mục xem thêm-->
-            <div style="margin-bottom: 10px; margin-top: 10px">
+            <div class="rp1_2" style="margin-bottom: 10px; margin-top: 10px">
                 <div>
                     <hr style="float: left; width: 42%;"/>
                     <button class="btn-light" style="margin-left: 10px; border: 0; color: #6f42c1; outline: none">
-                        Tìm hiểu thêm <i class="material-icons" style="font-size: 12px">expand_more</i>
+                        Hiển thị thêm <i class="material-icons" style="font-size: 12px">expand_more</i>
                     </button>
-                    <hr style="float: right; width: 46%;">
+                    <hr class="hr1" style="float: right; width: 46%;">
                 </div>
                 <!--                kết thúc mục xem thêm-->
             </div>
@@ -853,7 +855,7 @@
             </div>
 
 <!--            phần watch TV-->
-            <div>
+            <div class="wTV">
                 <!--           phần label-->
                 <div>
                     <h5>Xem video hướng dẫn</h5>
@@ -869,8 +871,8 @@
                         </div>
 
                         <div class="infWatchTV">
-                            <div style="height: 135px">
-                                <div style="padding-bottom: 20px">
+                            <div class="divRp">
+                                <div class="divRp_1">
                                     <a href="" class="linkP2">
                                         <h6> Tìm hiểu cách tạo một thiết kế đại dương êm dịu trên một chiếc cốc bằng nhựa</h6>
                                     </a>
@@ -902,8 +904,8 @@
                         </div>
 
                         <div class="infWatchTV">
-                            <div style="height: 135px">
-                                <div>
+                            <div class="divRp">
+                                <div class="divRp_1">
                                     <a href="" class="linkP2">
                                         <h6>Hộp gỗ đơn giản</h6>
                                     </a>
@@ -939,8 +941,8 @@
                         </div>
 
                         <div class="infWatchTV">
-                            <div style="height: 135px">
-                                <div style="padding-bottom: 20px">
+                            <div class="divRp">
+                                <div class="divRp_1">
                                     <a href="" class="linkP2">
                                         <h6>Làm đẹp chiếc gối của bạn bằng những nét vẽ </h6>
                                     </a>
@@ -973,8 +975,8 @@
                         </div>
 
                         <div class="infWatchTV">
-                            <div style="height: 135px">
-                                <div>
+                            <div class="divRp">
+                                <div class="divRp_1">
                                     <a href="" class="linkP2">
                                         <h6>Hộp gỗ đơn giản</h6>
                                     </a>
@@ -1002,13 +1004,13 @@
             <!--            end watchTV-->
 
             <!--                    mục xem thêm-->
-            <div style="margin-bottom: 10px; margin-top: 10px">
+            <div class="rp1_2" style="margin-bottom: 10px; margin-top: 10px">
                 <div>
                     <hr style="float: left; width: 42%;"/>
                     <button class="btn-light" style="margin-left: 10px; border: 0; color: #6f42c1; outline: none">
                         Tìm hiểu thêm <i class="material-icons" style="font-size: 12px">expand_more</i>
                     </button>
-                    <hr style="float: right; width: 46%;">
+                    <hr class="hr1" style="float: right; width: 46%;">
                 </div>
                 <!--                kết thúc mục xem thêm-->
             </div>

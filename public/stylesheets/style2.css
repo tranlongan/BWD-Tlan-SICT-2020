@@ -1,6 +1,7 @@
 
 body{
     font-family: Abel, Arial, Verdana, sans-serif;
+    font-size: 5vw;
 }
 
 .nav .nav-link{
@@ -16,12 +17,12 @@ body{
 }
 
 .divSearch{
-    padding-left: 100px;
+    padding: 7px 0 0 40px;
+    width: 700px;
 }
 
 .setTfSearch{
-    max-width: inherit;
-    width: 55%;
+    width: 500px;
     padding: 3px;
     border: 1px solid #818182;
     border-top-left-radius: 5px;
@@ -30,7 +31,6 @@ body{
 }
 
 .setButton{
-    max-width: inherit;
     border: 1px solid #fefefe;
     margin-left: -5px;
     outline: none;
@@ -44,8 +44,6 @@ body{
     border-radius: 4px;
     font-weight: bolder;
 }
-
-
 
 .divImg{
     margin-bottom: 5px;
@@ -112,6 +110,24 @@ a img{
     width: 296.5px;
     height: 200px;
 }
+
+.col2{
+    position: relative;
+    overflow: auto ;
+}
+
+div.divRp{
+    height: 115px;
+}
+
+.divRp_1{
+    padding-bottom: 25px;
+}
+
+.dkdn{
+    padding: 7px 0 0 100px;
+}
+
 
 
 
