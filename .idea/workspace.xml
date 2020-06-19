@@ -19,41 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c0de636-d54c-44a4-b34e-b3ce868a9240" name="Default Changelist" comment="14062020">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/expand.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/follow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/history.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/oval.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/picture of danhmuc/custom-etched-glassware.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/picture of danhmuc/hostess-approved-lazy-susan.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/picture of danhmuc/icon/tv (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/picture of danhmuc/one-hour-staircase-makeover.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/picture of danhmuc/painted-kitchen-cabinets.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/picture of danhmuc/picture carousel/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/picture of danhmuc/picture carousel/10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/picture of danhmuc/picture carousel/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/picture of danhmuc/picture carousel/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/picture of danhmuc/picture carousel/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/picture of danhmuc/picture carousel/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/picture of danhmuc/picture carousel/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/picture of danhmuc/picture carousel/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/picture of danhmuc/picture carousel/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/picture of danhmuc/top-hero-whitewall-large.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/sticky-note.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/stylesheets/stylesheet_DanhMuc/icon_x.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/stylesheets/stylesheet_DanhMuc/responsive_DanhMuc.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/stylesheets/stylesheet_DanhMuc/style_x.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/stylesheets/stylesheet_DanhMuc/x_slide.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/danh_muc_.html" afterDir="false" />
+    <list default="true" id="4c0de636-d54c-44a4-b34e-b3ce868a9240" name="Default Changelist" comment="19062020">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/btnDropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/btnDropdown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/owlcarousel/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/owlcarousel/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/icon.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/icon.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/stylesheets/reponsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/reponsive.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/slide.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/slide.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/style2.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style2.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +104,7 @@
       <workItem from="1592448632409" duration="7236000" />
       <workItem from="1592467432358" duration="3561000" />
       <workItem from="1592474193767" duration="5744000" />
-      <workItem from="1592527286607" duration="5641000" />
+      <workItem from="1592527286607" duration="6725000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1591942114052</created>
@@ -179,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592141084438</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="19062020">
+      <created>1592533916916</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1592533916916</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,7 +178,8 @@
     <MESSAGE value="update" />
     <MESSAGE value="13062020" />
     <MESSAGE value="14062020" />
-    <option name="LAST_COMMIT_MESSAGE" value="14062020" />
+    <MESSAGE value="19062020" />
+    <option name="LAST_COMMIT_MESSAGE" value="19062020" />
   </component>
   <component name="WindowStateProjectService">
     <state x="654" y="246" key="#File_Watchers" timestamp="1592036829029">
@@ -237,10 +214,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="618" y="326" key="VCS.ChangelistChooser/0.0.1536.824@0.0.1536.824" timestamp="1592020143859" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1592141098405">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1592533928885">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1592141098405" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1592533928885" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1592392906670">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
