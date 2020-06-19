@@ -1,0 +1,96 @@
+.x_div_divImgbg{
+    position: relative;
+}
+
+.x_ps_cnt{
+    position: absolute;
+    left: 15%;
+    top: 22%;
+}
+
+.x_img_Bg{
+    max-width: inherit;
+    width: 100%;
+}
+
+.x_p1{
+    padding: 10px;
+}
+
+.x_rp1_1 li{
+    border: 0;
+    width: 500px;
+}
+
+
+
+div a.x_linkP2 h6{
+    padding-top: 5px;
+    color: black;
+    max-height: inherit;
+    height: 40px;
+}
+
+div a.x_linkP2:hover h6{
+    color: #e83e8c;
+}
+
+div a.x_linkP2{
+    color: #818182;
+    text-decoration: none;
+}
+
+div a.x_linkP2:hover{
+    color: #e83e8c;
+}
+
+.list-group li img{
+    transition: 1s;
+}
+
+.list-group li img:hover{
+    transform: scale(1);
+    box-shadow: -7px 7px 7px #6f42c1;
+}
+
+.list-group li{
+    background-color: #ecfffd;
+}
+
+.adFlow{
+    width: 25px;
+    height: 25px;
+    border-radius: 18px;
+}
+
+a .x_account{
+    position: relative;
+    transition: 300ms;
+}
+
+div.x_account{
+    margin-bottom: 15px ;
+}
+
+a div.x_account:hover{
+    background-color: #48a999;
+    padding: 2px;
+    color: #6f42c1;
+    font-size: 18px;
+}
+
+div.x_lbAccount{
+    position: absolute;
+    top:3.5px;
+    left: 45px;
+}
+
+div.x_lbAccount1{
+    position: absolute;
+    top:3.5px;
+    left: 200px;
+    background-color: white;
+}
+
+
+

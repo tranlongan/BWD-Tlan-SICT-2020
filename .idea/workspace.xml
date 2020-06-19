@@ -19,14 +19,39 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c0de636-d54c-44a4-b34e-b3ce868a9240" name="Default Changelist" comment="13062020">
-      <change afterPath="$PROJECT_DIR$/public/images/forum.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icon responsive/baseline_more_vert_black_18dp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icon responsive/forum.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/stylesheets/reponsive.css" afterDir="false" />
+    <list default="true" id="4c0de636-d54c-44a4-b34e-b3ce868a9240" name="Default Changelist" comment="14062020">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/expand.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/follow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/history.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/oval.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/picture of danhmuc/custom-etched-glassware.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/picture of danhmuc/hostess-approved-lazy-susan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/picture of danhmuc/icon/tv (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/picture of danhmuc/one-hour-staircase-makeover.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/picture of danhmuc/painted-kitchen-cabinets.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/picture of danhmuc/picture carousel/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/picture of danhmuc/picture carousel/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/picture of danhmuc/picture carousel/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/picture of danhmuc/picture carousel/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/picture of danhmuc/picture carousel/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/picture of danhmuc/picture carousel/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/picture of danhmuc/picture carousel/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/picture of danhmuc/picture carousel/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/picture of danhmuc/picture carousel/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/picture of danhmuc/top-hero-whitewall-large.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/sticky-note.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/stylesheets/stylesheet_DanhMuc/icon_x.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/stylesheets/stylesheet_DanhMuc/responsive_DanhMuc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/stylesheets/stylesheet_DanhMuc/style_x.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/stylesheets/stylesheet_DanhMuc/x_slide.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/danh_muc_.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/btnDropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/btnDropdown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/owlcarousel/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/owlcarousel/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/stylesheets/icon.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/icon.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/reponsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/reponsive.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/stylesheets/slide.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/slide.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/stylesheets/style2.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style2.css" afterDir="false" />
     </list>
@@ -44,6 +69,7 @@
         <option value="JavaScript File" />
         <option value="Sass File" />
         <option value="SCSS File" />
+        <option value="HTML File" />
         <option value="CSS File" />
       </list>
     </option>
@@ -61,11 +87,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/Web/BWD" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../New folder" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
@@ -94,7 +121,21 @@
       <workItem from="1592048455936" duration="5514000" />
       <workItem from="1592057166649" duration="9413000" />
       <workItem from="1592103852378" duration="24230000" />
-      <workItem from="1592132014852" duration="1016000" />
+      <workItem from="1592132014852" duration="1391000" />
+      <workItem from="1592182739247" duration="6291000" />
+      <workItem from="1592190152292" duration="1323000" />
+      <workItem from="1592198255265" duration="2040000" />
+      <workItem from="1592206902014" duration="3601000" />
+      <workItem from="1592224378770" duration="12094000" />
+      <workItem from="1592275218319" duration="7405000" />
+      <workItem from="1592297073394" duration="25261000" />
+      <workItem from="1592359909664" duration="13169000" />
+      <workItem from="1592377856474" duration="5731000" />
+      <workItem from="1592384545551" duration="18251000" />
+      <workItem from="1592448632409" duration="7236000" />
+      <workItem from="1592467432358" duration="3561000" />
+      <workItem from="1592474193767" duration="5744000" />
+      <workItem from="1592527286607" duration="5641000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1591942114052</created>
@@ -131,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592057241959</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="14062020">
+      <created>1592141084438</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1592141084438</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,13 +201,18 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="update" />
     <MESSAGE value="13062020" />
-    <option name="LAST_COMMIT_MESSAGE" value="13062020" />
+    <MESSAGE value="14062020" />
+    <option name="LAST_COMMIT_MESSAGE" value="14062020" />
   </component>
   <component name="WindowStateProjectService">
     <state x="654" y="246" key="#File_Watchers" timestamp="1592036829029">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="654" y="246" key="#File_Watchers/0.0.1536.824@0.0.1536.824" timestamp="1592036829029" />
+    <state x="395" y="91" key="#Inspections" timestamp="1592371862221">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="395" y="91" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1592371862221" />
     <state x="654" y="275" key="#Notifications" timestamp="1592036720363">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -172,21 +225,29 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="438" y="191" key="EditFileWatcherDialog/0.0.1536.824@0.0.1536.824" timestamp="1592036827645" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1592036755953">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1592527647429">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1592036755953" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1592527647429" />
+    <state x="588" y="135" key="NewPhpClassDialog" timestamp="1592183967115">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="588" y="135" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1592183967115" />
     <state x="618" y="326" key="VCS.ChangelistChooser" timestamp="1592020143859">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="618" y="326" key="VCS.ChangelistChooser/0.0.1536.824@0.0.1536.824" timestamp="1592020143859" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1592057267247">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1592141098405">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1592057267247" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1592120308905">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1592141098405" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1592392906670">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1592120308905" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1592392906670" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1592364161021">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1592364161021" />
   </component>
 </project>

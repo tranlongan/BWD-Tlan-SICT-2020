@@ -79,6 +79,28 @@ a img{
     color: #e83e8c;
 }
 
+.rp1_2{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+hr.hr0{
+    float: left;
+    width: 42%;
+}
+
+hr.hr1{
+    float: right;
+    width: 46%;
+}
+
+.rp1_2 div .btn-light{
+    margin: 3px 0 0 10px;
+    border: 0;
+    color: #6f42c1;
+    outline: none;
+}
+
 .card-body .btn_light{
     padding: 4px;
     color: white;
@@ -99,22 +121,23 @@ a img{
     position: relative;
 }
 
-.infWatchTV{
-    position: absolute;
-    left: 315px;
-    top: 10px;
-    overflow: hidden;
-}
+
 
 .imgW{
     width: 296.5px;
     height: 200px;
 }
 
-.col2{
+.col-lg-2.col2{
     position: relative;
-    overflow: auto ;
+    overflow-x: hidden ;
+    overflow-y: auto;
+
 }
+
+/*.col-lg-2.col2_1{*/
+/*    max-width: 45px;*/
+/*}*/
 
 div.divRp{
     height: 115px;
@@ -127,6 +150,98 @@ div.divRp{
 .dkdn{
     padding: 7px 0 0 100px;
 }
+
+.lbCol2{
+    position: absolute;
+    left: 55px;
+    font-size: 17px;
+}
+
+.rlCol2{
+    position: relative;
+}
+
+.col2 div.rlCol2 a{
+    color: #6f42c1;
+}
+
+.col2 div.rlCol2 a{
+
+}
+
+.col2 div.rlCol2:hover{
+    background-color: #eeeeee;
+}
+
+.col2 div.rlCol2 a:hover{
+    color: #e83e8c;
+}
+
+div.rl1{
+    padding: 8px 0 8px 0;
+}
+
+div.rl1 .lbCol2{
+    top:10px;
+}
+
+div.rl2{
+    padding: 8px 0 8px 0;
+}
+
+div.rl2 .lbCol2{
+    top: 9px;
+}
+
+div.rl3{
+    padding: 8px 0 8px 0;
+}
+
+div.rl3 .lbCol2{
+    top: 7px;
+}
+
+.fl_Col2{
+    position: relative;
+    padding: 8px 0 8px 0;
+}
+
+
+.col2 .fl_Col2:hover{
+    background-color:#eeeeee ;
+}
+
+.lb_Fl_Col2{
+    position: absolute;
+    top:9px;
+    left: 55px;
+}
+
+.icon_PostNew{
+    position: absolute;
+    top:8px;
+    left: 190px;
+}
+
+ .col2 div.fl_Col2 a{
+    color: #6f42c1;
+}
+
+.col2 div.fl_Col2 a:hover{
+    color: #e83e8c;
+    text-decoration: none;
+}
+
+.labelMore{
+    position: absolute;
+    top:8px;
+    left: 20px;
+}
+
+a div.labelMore:hover{
+    color: #6f42c1;
+}
+
 
 
 

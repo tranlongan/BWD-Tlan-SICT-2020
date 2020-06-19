@@ -8,7 +8,6 @@
     font-family: 'Helvetica Neue', sans-serif;
     perspective: 1400px;
     transform-style: preserve-3d;
-
 }
 
 /*các thẻ a trong slide*/
@@ -69,7 +68,7 @@ input[type=radio]:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 100ms ease;
+    transition: transform 200ms ease;
     overflow: hidden;
 }
 
