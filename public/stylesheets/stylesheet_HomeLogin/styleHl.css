@@ -1,0 +1,26 @@
+.tbDrp1 tr td{
+   padding: 18px 0 0 20px;
+}
+.lb_LogOut{
+    position: absolute;
+    top: 145px;
+    left:45px;
+}
+.lb_Setting{
+    position: absolute;
+    top: 97px;
+    left:45px;
+}
+
+.ps_IconBell{
+    position: absolute;
+    top: 155px;
+    left: 120px;
+}
+
+.ps_lb_notification{
+    position: absolute;
+    text-align: center;
+    top: 320px;
+    left: 94px;
+}

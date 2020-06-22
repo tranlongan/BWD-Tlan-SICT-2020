@@ -19,10 +19,28 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c0de636-d54c-44a4-b34e-b3ce868a9240" name="Default Changelist" comment="19062020">
+    <list default="true" id="4c0de636-d54c-44a4-b34e-b3ce868a9240" name="Default Changelist" comment="19062020_1">
+      <change afterPath="$PROJECT_DIR$/public/images/open-menu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/picture home login/bell.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/picture home login/blog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/picture home login/gear.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/picture home login/notification.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/picture home login/out.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/picture home login/settings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/picture home login/tenor.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/btnDropdown_1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/btnDropdown_2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/stylesheets/stylesheet_HomeLogin/dropDown.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/stylesheets/stylesheet_HomeLogin/iconHomeLogin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/stylesheets/stylesheet_HomeLogin/responsive_HomeLogin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/stylesheets/stylesheet_HomeLogin/styleHl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Home_Login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/btnDropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/btnDropdown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/icon.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/icon.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/stylesheets/reponsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/reponsive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/style2.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style2.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,10 +53,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="Sass File" />
         <option value="SCSS File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
         <option value="CSS File" />
       </list>
     </option>
@@ -61,12 +79,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../New folder" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\NORMAL\Desktop\BWD\src" />
       <recent name="C:\Users\NORMAL\Desktop\BWD" />
     </key>
   </component>
@@ -104,7 +123,11 @@
       <workItem from="1592448632409" duration="7236000" />
       <workItem from="1592467432358" duration="3561000" />
       <workItem from="1592474193767" duration="5744000" />
-      <workItem from="1592527286607" duration="6725000" />
+      <workItem from="1592527286607" duration="7816000" />
+      <workItem from="1592537361179" duration="880000" />
+      <workItem from="1592622245511" duration="8000" />
+      <workItem from="1592743112612" duration="11194000" />
+      <workItem from="1592812888432" duration="19058000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1591942114052</created>
@@ -155,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592533916916</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="19062020_1">
+      <created>1592535008278</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1592535008278</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,7 +209,8 @@
     <MESSAGE value="13062020" />
     <MESSAGE value="14062020" />
     <MESSAGE value="19062020" />
-    <option name="LAST_COMMIT_MESSAGE" value="19062020" />
+    <MESSAGE value="19062020_1" />
+    <option name="LAST_COMMIT_MESSAGE" value="19062020_1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="654" y="246" key="#File_Watchers" timestamp="1592036829029">
@@ -194,6 +225,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="654" y="275" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1592036720363" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592818355894">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1592818355894" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1592020104101">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -214,17 +249,17 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="618" y="326" key="VCS.ChangelistChooser/0.0.1536.824@0.0.1536.824" timestamp="1592020143859" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1592533928885">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1592535015420">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1592533928885" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1592535015420" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1592392906670">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1592392906670" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1592364161021">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1592831795803">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1592364161021" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1592831795803" />
   </component>
 </project>

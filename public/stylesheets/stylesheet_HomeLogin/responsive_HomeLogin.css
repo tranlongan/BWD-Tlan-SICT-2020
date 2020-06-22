@@ -1,6 +1,21 @@
 @media screen and (width: 320px){
 
+    .dropdown .dropdown-content h4{
+       font-size: 12px;
+    }
 
+    .dropdown .dropdown-content{
+        left: -80px;
+    }
+
+    td.bx1 a{
+        font-size: 9px;
+    }
+
+    td.bx1{
+        width: 20px;
+        padding: 0;
+    }
     .rp1 div.clp_hide{
         display: block;
         width: 100%;
@@ -56,11 +71,16 @@
         padding-left: 20px;
         padding-top: 6px;
     }
-    button.btnDk.btn-secondary, button.btnDn.btn-info {
-        font-size: 4px;
-        width: 30px;
-        height: 35px;
-    }
+   .iconLogin{
+       width: 18px;
+       height: 18px;
+   }
+
+   button.dropbtn_a{
+       height: 18px;
+       width: 18px;
+       border-radius: 10px;
+   }
     .list-group li.col_rp{
         display: none;
     }
@@ -104,6 +124,23 @@
 }
 
 @media screen and (width: 375px){
+    .dropdown .dropdown-content h4{
+        font-size: 12px;
+    }
+
+    .dropdown .dropdown-content{
+        left: -80px;
+    }
+
+    td.bx1 a{
+        font-size: 9px;
+    }
+
+    td.bx1{
+        width: 20px;
+        padding: 0;
+    }
+
     .rp1 div.clp_hide{
         display: block;
         width: 100%;
@@ -155,13 +192,18 @@
         width: 40px;
     }
     div.dkdn{
-        padding-left: 20px;
-        padding-top: 6px;
+        padding-left: 10px;
+        padding-top: 8px;
     }
-    button.btnDk.btn-secondary, button.btnDn.btn-info {
-        font-size: 4px;
-        width: 30px;
-        height: 35px;
+    .iconLogin{
+        width: 24px;
+        height: 24px;
+    }
+
+    button.dropbtn_a{
+        height: 18px;
+        width: 18px;
+        border-radius: 10px;
     }
 
     .list-group li.col_rp{
@@ -207,6 +249,23 @@
 }
 
 @media screen and (width: 414px){
+
+    .dropdown .dropdown-content h4{
+        font-size: 12px;
+    }
+
+    .dropdown .dropdown-content{
+        left: -80px;
+    }
+
+    td.bx1 a{
+        font-size: 9px;
+    }
+
+    td.bx1{
+        width: 20px;
+        padding: 0;
+    }
 
     .rp1 div.clp_hide{
         display: block;
@@ -261,11 +320,7 @@
         padding-left: 20px;
         padding-top: 6px;
     }
-    button.btnDk.btn-secondary, button.btnDn.btn-info {
-        font-size: 6px;
-        width: 50px;
-        height: 35px;
-    }
+
     .list-group li.col_rp{
         display: none;
     }
@@ -329,7 +384,7 @@
     }
 
     .col2{
-       display: none;
+        display: none;
     }
 
     .col10{
@@ -367,15 +422,15 @@
         width: 50px;
     }
     div.dkdn{
-        padding-left: 10px;
+        padding-left: 40px;
         padding-top: 6px;
         width: 180px;
     }
-    button.btnDk.btn-secondary, button.btnDn.btn-info {
-        font-size: 10px;
-        width: 70px;
-        height: 35px;
+
+    .dropdown{
+        padding-left: 10px;
     }
+
     .list-group li.col_rp{
         display: none;
     }
@@ -460,15 +515,15 @@
         width: 50px;
     }
     div.dkdn{
-        padding-left: 10px;
+        padding-left: 40px;
         padding-top: 6px;
         width: 200px;
     }
-    button.btnDk.btn-secondary, button.btnDn.btn-info {
-        font-size: 15px;
-        width: 90px;
-        height: 35px;
+
+    .dropdown{
+        padding-left: 20px;
     }
+
     .list-group li.col_rp{
         display: none;
     }
@@ -541,12 +596,7 @@
     div.dkdn{
         padding-left: 60px;
         padding-top: 6px;
-        width: 310px;
-    }
-    button.btnDk.btn-secondary, button.btnDn.btn-info {
-        font-size: 13px;
-        width: 110px;
-        height: 35px;
+        width: 260px;
     }
 }
 
@@ -577,12 +627,7 @@
     div.dkdn{
         padding-left: 60px;
         padding-top: 6px;
-        width: 310px;
-    }
-    button.btnDk.btn-secondary, button.btnDn.btn-info {
-        font-size: 13px;
-        width: 110px;
-        height: 35px;
+        width: 280px;
     }
 
     .list-group li.col_rp_col4, .list-group li.col_rp{
@@ -619,7 +664,7 @@
         width: 80px;
     }
     div.dkdn{
-        padding-left: 60px;
+        padding-left: 100px;
         padding-top: 6px;
         width: 310px;
     }
@@ -641,7 +686,7 @@
     }
 
     div.sl_rps #slider label{
-        left: 180px;
+        left: 190px;
         top: 0;
     }
 
@@ -651,26 +696,25 @@
     }
     /*phần navbar*/
     input.setTfSearch {
-        width: 500px ;
+        width: 550px ;
     }
     div.divSearch {
         padding: 7px 0 0 30px;
-        width: 600px;
+        width: 660px;
     }
     button.btn-primary.setButton {
         width: 70px;
     }
+
     div.dkdn{
-        padding-left: 75px;
-        width: 340px;
+        padding-left: 100px;
+        padding-top: 6px;
+        width: 290px;
     }
 
-    button.btnDk.btn-secondary, button.btnDn.btn-info {
-        font-size: 16px;
-        width: 130px;
-        height: 35px;
+    .dropdown{
+        padding-left: 20px;
     }
-
     /*phần xem thêm*/
     hr.hr0{
         max-width: 45%;
@@ -680,7 +724,7 @@
     }
 }
 
-@media screen and (min-width: 1550px){
+@media screen and (min-width: 1500px){
     /*Phần slide*/
     div.sl_rps #slider{
         perspective: 1150px;
@@ -688,12 +732,34 @@
     }
 
     div.sl_rps #slider label{
-        left: 190px;
+        left: 208px;
         top: 0;
     }
 
     div.infWatchTV{
         left: 330px;
+    }
+
+    /*phần navbar*/
+    input.setTfSearch {
+        width: 550px ;
+    }
+    div.divSearch {
+        padding: 7px 0 0 30px;
+        width: 660px;
+    }
+    button.btn-primary.setButton {
+        width: 70px;
+    }
+
+    div.dkdn{
+        padding-left: 200px;
+        padding-top: 6px;
+        width: 360px;
+    }
+
+    .dropdown{
+        padding-left: 20px;
     }
 
 }

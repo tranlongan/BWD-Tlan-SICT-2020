@@ -8,25 +8,28 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/stylesheets/stylesheet_HomeLogin/iconHomeLogin.css">
     <!--    reponsive-->
-    <link rel="stylesheet" href="public/stylesheets/reponsive.css">
+    <link rel="stylesheet" href="../public/stylesheets/stylesheet_HomeLogin/responsive_HomeLogin.css">
     <!--     stylesheets-->
-    <link rel="stylesheet" href="./public/stylesheets/style2.css">
+    <link rel="stylesheet" href="../public/stylesheets/style2.css">
+    <link rel="stylesheet" href="../public/stylesheets/stylesheet_HomeLogin/styleHl.css">
     <!--    slide stylesheets-->
-    <link rel="stylesheet" href="./public/stylesheets/slide.css">
+    <link rel="stylesheet" href="../public/stylesheets/slide.css">
     <!--    set icon-->
-    <link rel="stylesheet" href="./public/stylesheets/icon.css">
+    <link rel="stylesheet" href="../public/stylesheets/icon.css">
     <!--    set a_link-->
-    <link rel="stylesheet" href="./public/stylesheets/a_link.css">
+    <link rel="stylesheet" href="../public/stylesheets/a_link.css">
     <!--    dropdown-->
-    <link rel="stylesheet" href="./public/stylesheets/cssOfDropdown.css">
+    <link rel="stylesheet" href="../public/stylesheets/cssOfDropdown.css">
+    <link rel="stylesheet" href="../public/stylesheets/stylesheet_HomeLogin/dropDown.css">
     <!--    list-->
-    <link rel="stylesheet" href="./public/stylesheets/list.css">
+    <link rel="stylesheet" href="../public/stylesheets/list.css">
     <!--import owl.carousel-->
-    <link rel="stylesheet" href="./public/owlcarousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="./public/owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="..public/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../public/owlcarousel/assets/owl.theme.default.min.css">
     <title>Title</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 </head>
@@ -42,17 +45,17 @@
                 <ul class="nav">
                     <li class="nav-item">
                         <a class="nav-link" href="" style="padding-left: 5px">
-                            <img class="iconGif" src="./public/images/picture%20icon%20gif/tải%20xuống.png"/>
+                            <img class="iconGif" src="../public/images/picture%20icon%20gif/tải%20xuống.png"/>
                         </a>
                     </li>
                     <li class="nav-item" style="margin-left: 12px">
                         <a class="nav-link" href="">
-                            <img class="iconHdn" src="public/images/forum.png"/>
+                            <img class="iconHdn" src="../public/images/forum.png"/>
                             <div class="ds">Diễn đàn D.I.Y</div>
                         </a>
                     </li>
                     <li class="nav-item"><a href="src/danh_muc_.html"><img class="iconTV"
-                                                                           src="public/images/tv.png"/></a></li>
+                                                                           src="../public/images/tv.png"/></a></li>
                     <li class="nav-item btn" style="padding-top: 0; padding-bottom: 0;padding-right: 0">
                         <!--                        btn dropdown-->
                         <div class="dropdown">
@@ -131,11 +134,101 @@
                     </div>
 
                     <div class="dkdn">
-                        <button class="btnDk btn-secondary" type="submit">Đăng ký</button>
-                        <button class="btnDn btn-info" type="submit">Đăng nhập</button>
+                        <a href="">
+                            <img style="border: 0" class="iconLogin"
+                                 src="../public/images/picture%20home%20login/blog.png">
+                        </a>
+
+                        <!--                        dropdown notification -->
+                        <div class="dropdown">
+                            <button class="dropbtn_a">
+                                <img onclick="myFunction2()" class="iconLogin dropbtn2"
+                                     src="../public/images/picture%20home%20login/notification.png">
+                            </button>
+                            <div id="myDropdown2" class="dropdown-content2">
+                                <div>
+                                    <table class="table table-borderless">
+                                        <tr>
+                                            <td>
+                                                Thông báo
+                                            </td>
+                                            <td style="width: 10%">
+                                                <a href="" style="padding: 0">
+                                                    <img class="iconGear"
+                                                         src="../public/images/picture%20home%20login/gear.png">
+                                                </a>
+                                            </td>
+
+                                        </tr>
+                                    </table>
+                                </div>
+                                <hr style="padding: 0; margin: 0"/>
+                                <div>
+                                    <div class="ps_IconBell">
+                                        <img class="iconBell" src="../public/images/picture%20home%20login/bell.png">
+                                    </div>
+                                    <div class="ps_lb_notification">
+                                        <b>Thông báo của bạn ở đây</b>
+                                        <br/>
+                                        Bạn không có thông báo nào
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--                        drop down account-->
+                        <div class="dropdown">
+                            <button class="dropbtn_a">
+                                <img onclick="myFunction1()" class="iconLogin dropbtn1"
+                                     src="../public/images/picture%20home%20login/tenor.gif">
+                            </button>
+                            <div id="myDropdown1" class="dropdown-content1">
+                                <div>
+                                    <table class="table table-borderless tbDrp1">
+                                        <tr>
+                                            <td style="width: 25%">
+                                                <img class="iconLogin_1"
+                                                     src="../public/images/picture%20home%20login/tenor.gif">
+                                            </td>
+                                            <td>
+                                                Norman
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <hr style="padding: 0; margin: 0"/>
+                                <a href="" class="aaa">
+                                    <div class="ps_iconUser">
+                                        <div>
+                                            <img class="iconLogOut"
+                                                 src="../public/images/picture%20home%20login/settings.png">
+                                        </div>
+                                        <div class="lb_Setting">
+                                            Quản lý tài khoản
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="aaa">
+                                    <div class="ps_iconUser">
+                                        <div>
+                                            <img class="iconLogOut"
+                                                 src="../public/images/picture%20home%20login/out.png">
+                                        </div>
+                                        <div class="lb_LogOut">
+                                            Đăng xuất
+                                        </div>
+                                    </div>
+                                </a>
+                                <hr style="padding: 0; margin: 0"/>
+                                <a href="">
+                                    <div>
+                                        aaaaaaaaaaaaaa
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </ul>
-
             </div>
             <!--        kết thúc phần khởi đầu-->
         </div>
@@ -151,39 +244,308 @@
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle btn_Navbar" data-toggle="collapse"
                                 data-target="#myNavbar">
-                            <img class="iconMenuHdn" src="public/images/open-menu.png">
+                            <img class="iconMenuHdn" src="../public/images/open-menu.png">
                         </button>
                     </div>
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <hr style="width: 100%"/>
-                        <!--            card-->
-                        <div id="demo3" style="margin: 5px">
-                            <div class="card" style="margin-top: 50px">
-                                <div class="card-body">
-                                    <h4>Hãy tham gia cộng đồng</h4>
-                                    <h3>D.I.Y</h3>
-                                    Khám phá những ý tưởng sáng tạo tốt nhất ở mọi nơi<br/>
-                                    <button class="btn_light">Tham gia ngay</button>
+                        <!--     Một phần của nội dung                   -->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="">
+                                <div class="div_MenuNavBar_Hdn">
+                                    <div class="icon_MenuNavbar_Hdn">
+                                        <img src="../public/images/sticky-note.png"/>
+                                    </div>
+                                    <div class="lb_menu_hidden_bv g1">
+                                        Bài viết của bạn
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
+                            </a></li>
+                            <li><a href="">
+                                <div class="div_MenuNavBar_Hdn">
+                                    <div class="icon_MenuNavbar_Hdn">
+                                        <img src="../public/images/history.png"/>
+                                    </div>
+                                    <div class="lb_menu_hidden_ls g1">
+                                        Lịch sử
+                                    </div>
+                                </div>
+                            </a></li>
+                            <li><a href="">
+                                <div class="div_MenuNavBar_Hdn">
+                                    <div class="icon_MenuNavbar_Hdn">
+                                        <img src="../public/images/follow.png"/>
+                                    </div>
+                                    <div class="lb_menu_hidden_fl g1">
+                                        Bạn đang theo dõi
+                                    </div>
+                                </div>
+                            </a></li>
+                        </ul>
+                        <hr style="width: 100%"/>
+                        <!--     Cùng 1 phần nhưng khác nội dung-->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    Bạn đang theo dõi <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu g" style="background-color: #b9f6ca">
+                                    <li><a href="#">
+                                        <div class="div_Fl_MenuNavbar">
+                                            <div>
+                                                <img class="icon_Fl_MenuHdn"
+                                                     src="../public/images/picture%20of%20danhmuc/picture%20carousel/10.png">
+                                            </div>
+                                            <div class="rps_Lb_Fl_MenuNavBar">
+                                                People 1
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="#">
+                                        <div class="div_Fl_MenuNavbar">
+                                            <div>
+                                                <img class="icon_Fl_MenuHdn"
+                                                     src="../public/images/picture%20of%20danhmuc/picture%20carousel/10.png">
+                                            </div>
+                                            <div class="rps_Lb_Fl_MenuNavBar">
+                                                People 1
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="#">
+                                        <div class="div_Fl_MenuNavbar">
+                                            <div>
+                                                <img class="icon_Fl_MenuHdn"
+                                                     src="../public/images/picture%20of%20danhmuc/picture%20carousel/10.png">
+                                            </div>
+                                            <div class="rps_Lb_Fl_MenuNavBar">
+                                                People 1
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <div>
+                                        <a href="">
+                                            <div class="div_more">
+                                                Xem thêm
+                                            </div>
+                                        </a>
+                                    </div>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </nav>
         </div>
         <!--        phần của col 2-->
         <div class="col-lg-2 col2 col2_1" style="background-color: #c2c2c2;padding:5px 0 5px 0 ">
+            <!--            menu-->
+            <div style="padding-top: 20px;">
+                <!--                bài viết của bạn-->
+                <div class="rlCol2 rl1">
+                    <a href="">
+                        <div>
+                            <div class="iconCol2">
+                                <img src="../public/images/sticky-note.png"/>
+                            </div>
+                            <div id="demo3" class="lbCol2">
+                                Bài viết của bạn
+                            </div>
+                        </div>
+                    </a>
+                </div>
 
-            <!--            card-->
-            <div id="demo3" style="margin: 5px">
-                <div class="card" style="margin-top: 50px">
-                    <div class="card-body">
-                        <h4>Hãy tham gia cộng đồng</h4>
-                        <h3>D.I.Y</h3>
-                        Khám phá những ý tưởng sáng tạo tốt nhất ở mọi nơi<br/>
-                        <button class="btn_light">Tham gia ngay</button>
+                <!--                Lịch sử-->
+                <div class="rlCol2 rl2">
+                    <a href="">
+                        <div class="iconCol2">
+                            <img src="../public/images/history.png"/>
+                        </div>
+                        <div id="demo3" class="lbCol2">
+                            Lịch sử
+                        </div>
+                    </a>
+                </div>
+
+                <!--                Bạn đang theo dõi-->
+                <div class="rlCol2 rl3">
+                    <a href="">
+                        <div class="iconCol2">
+                            <img src="../public/images/follow.png"/>
+                        </div>
+                        <div id="demo3" class="lbCol2">
+                            Bạn đang theo dõi
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!--            gạch ngang-->
+            <div>
+                <hr/>
+            </div>
+
+            <!--            follow-->
+            <div>
+                <div id="demo3">
+                    NGƯỜI BẠN ĐANG THEO DÕI
+                </div>
+                <div>
+                    <!--                    fl1-->
+                    <div class="fl_Col2">
+                        <a href="">
+                            <div class="icon_Fl_Col2">
+                                <img src="../public/images/picture%20of%20danhmuc/picture%20carousel/10.png">
+                            </div>
+                            <div id="demo3">
+                                <div class="lb_Fl_Col2">
+                                    People 1
+                                </div>
+                                <div class="icon_PostNew">
+                                    <img src="../public/images/oval.png">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!--                    fl2-->
+                    <div class="fl_Col2">
+                        <a href="">
+                            <div class="icon_Fl_Col2">
+                                <img src="../public/images/picture%20of%20danhmuc/picture%20carousel/10.png">
+                            </div>
+                            <div id="demo3">
+                                <div class="lb_Fl_Col2">
+                                    People 1
+                                </div>
+                                <div class="icon_PostNew">
+                                    <img src="../public/images/oval.png">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!--                    fl3-->
+                    <div class="fl_Col2">
+                        <a href="">
+                            <div class="icon_Fl_Col2">
+                                <img src="../public/images/picture%20of%20danhmuc/picture%20carousel/10.png">
+                            </div>
+                            <div id="demo3">
+                                <div class="lb_Fl_Col2">
+                                    People 1
+                                </div>
+                                <div class="icon_PostNew">
+                                    <img src="../public/images/oval.png">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!--                    fl4-->
+                    <div class="fl_Col2">
+                        <a href="">
+                            <div class="icon_Fl_Col2">
+                                <img src="../public/images/picture%20of%20danhmuc/picture%20carousel/10.png">
+                            </div>
+                            <div id="demo3">
+                                <div class="lb_Fl_Col2">
+                                    People 1
+                                </div>
+                                <div class="icon_PostNew">
+                                    <img src="../public/images/oval.png">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!--                    fl5-->
+                    <div class="fl_Col2">
+                        <a href="">
+                            <div class="icon_Fl_Col2">
+                                <img src="../public/images/picture%20of%20danhmuc/picture%20carousel/10.png">
+                            </div>
+                            <div id="demo3">
+                                <div class="lb_Fl_Col2">
+                                    People 1
+                                </div>
+                                <div class="icon_PostNew">
+                                    <img src="../public/images/oval.png">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!--                    fl6-->
+                    <div class="fl_Col2">
+                        <a href="">
+                            <div class="icon_Fl_Col2">
+                                <img src="../public/images/picture%20of%20danhmuc/picture%20carousel/10.png">
+                            </div>
+                            <div id="demo3">
+                                <div class="lb_Fl_Col2">
+                                    People 1
+                                </div>
+                                <div class="icon_PostNew">
+                                    <img src="../public/images/oval.png">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!--                    fl7-->
+                    <div class="fl_Col2">
+                        <a href="">
+                            <div class="icon_Fl_Col2">
+                                <img src="../public/images/picture%20of%20danhmuc/picture%20carousel/10.png">
+                            </div>
+                            <div id="demo3">
+                                <div class="lb_Fl_Col2">
+                                    People 1
+                                </div>
+                                <div class="icon_PostNew">
+                                    <img src="../public/images/oval.png">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!--                    fl8-->
+                    <div class="fl_Col2">
+                        <a href="">
+                            <div class="icon_Fl_Col2">
+                                <img src="../public/images/picture%20of%20danhmuc/picture%20carousel/10.png">
+                            </div>
+                            <div id="demo3">
+                                <div class="lb_Fl_Col2">
+                                    People 1
+                                </div>
+                                <div class="icon_PostNew">
+                                    <img src="../public/images/oval.png">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="demo3">
+                        <div class="fl_Col2">
+                            <a href="">
+                                <div class="iconMore">
+                                    <img src="../public/images/expand.png">
+                                </div>
+                                <div class="labelMore">
+                                    Hiển thị thêm ... mục
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
+
+                <!--                gạch ngang-->
+                <div>
+                    <hr/>
+                </div>
+
             </div>
 
         </div>
@@ -546,7 +908,7 @@
                 <li class="list-group-item">
                     <div class="divImg">
                         <a href="">
-                            <img src="public/images/picture%20of%20content%201/cnt1.jpg">
+                            <img src="../public/images/picture%20of%20content%201/cnt1.jpg">
                         </a>
                     </div>
                     <div>
@@ -572,7 +934,7 @@
                 <li class="list-group-item lx ">
                     <div class="divImg">
                         <a href="">
-                            <img src="public/images/picture%20of%20content%201/cnt5.jpg">
+                            <img src="../public/images/picture%20of%20content%201/cnt5.jpg">
                         </a>
                     </div>
                     <div>
@@ -598,7 +960,7 @@
                 <li class="list-group-item lx col_rp col_rp_col3_a">
                     <div class="divImg">
                         <a href="">
-                            <img src="public/images/picture%20of%20content%201/cnt3.jpg">
+                            <img src="../public/images/picture%20of%20content%201/cnt3.jpg">
                         </a>
                     </div>
                     <div>
@@ -624,7 +986,7 @@
                 <li class="list-group-item lx col_rp">
                     <div class="divImg">
                         <a href="">
-                            <img src="public/images/picture%20of%20content%201/cnt4.jpg">
+                            <img src="../public/images/picture%20of%20content%201/cnt4.jpg">
                         </a>
                     </div>
                     <div>
@@ -672,7 +1034,7 @@
                 <li class="list-group-item">
                     <div class="divImg">
                         <a href="">
-                            <img src="public/images/picture%20of%20content%202/cnt1.jpg">
+                            <img src="../public/images/picture%20of%20content%202/cnt1.jpg">
                         </a>
                     </div>
                     <div>
@@ -698,7 +1060,7 @@
                 <li class="list-group-item lx">
                     <div class="divImg">
                         <a href="">
-                            <img src="public/images/picture%20of%20content%202/cnt2.jpg">
+                            <img src="../public/images/picture%20of%20content%202/cnt2.jpg">
                         </a>
                     </div>
                     <div>
@@ -724,7 +1086,7 @@
                 <li class="list-group-item lx">
                     <div class="divImg">
                         <a href="">
-                            <img src="public/images/picture%20of%20content%202/cnt3.jpg">
+                            <img src="../public/images/picture%20of%20content%202/cnt3.jpg">
                         </a>
                     </div>
                     <div>
@@ -750,7 +1112,7 @@
                 <li class="list-group-item lx col_rp_col4">
                     <div class="divImg">
                         <a href="">
-                            <img src="public/images/103565285_568639967055254_6792322041172748592_n.jpg">
+                            <img src="../public/images/103565285_568639967055254_6792322041172748592_n.jpg">
                         </a>
                     </div>
                     <div>
@@ -776,7 +1138,7 @@
                 <li class="list-group-item lx col_rp col_rp_col4">
                     <div class="divImg">
                         <a href="">
-                            <img src="public/images/picture%20of%20content%202/cnt4.jpg">
+                            <img src="../public/images/picture%20of%20content%202/cnt4.jpg">
                         </a>
                     </div>
                     <div>
@@ -802,7 +1164,7 @@
                 <li class="list-group-item lx col_rp col_rp_col4">
                     <div class="divImg">
                         <a href="">
-                            <img src="public/images/picture%20of%20content%202/cnt5.jpg">
+                            <img src="../public/images/picture%20of%20content%202/cnt5.jpg">
                         </a>
                     </div>
                     <div>
@@ -828,7 +1190,7 @@
                 <li class="list-group-item lx col_rp col_rp_col4">
                     <div class="divImg">
                         <a href="">
-                            <img src="public/images/picture%20of%20content%202/cnt6.jpg">
+                            <img src="../public/images/picture%20of%20content%202/cnt6.jpg">
                         </a>
                     </div>
                     <div>
@@ -854,7 +1216,7 @@
                 <li class="list-group-item lx col_rp col_rp_col4">
                     <div class="divImg">
                         <a href="">
-                            <img src="public/images/picture%20of%20content%202/cnt7.jpg">
+                            <img src="../public/images/picture%20of%20content%202/cnt7.jpg">
                         </a>
                     </div>
                     <div>
@@ -895,7 +1257,7 @@
                     <li class="list-group-item">
                         <div class="col-lg-6">
                             <a href="">
-                                <img src="public/images/picture%20of%20content%203/diy-resin-tumbler.jpg"/>
+                                <img src="../public/images/picture%20of%20content%203/diy-resin-tumbler.jpg"/>
                             </a>
                         </div>
 
@@ -918,7 +1280,7 @@
                             <hr/>
                             <div>
                                 <a href="">
-                                    <img src="public/images/account.png" class="iconAccount"/>
+                                    <img src="../public/images/account.png" class="iconAccount"/>
                                     People 1
                                 </a>
                             </div>
@@ -929,7 +1291,7 @@
                     <li class="list-group-item" style="margin-left: 30px">
                         <div class="col-lg-6">
                             <a href="">
-                                <img src="public/images/picture%20of%20content%203/simple-wood-box.jpg"/>
+                                <img src="../public/images/picture%20of%20content%203/simple-wood-box.jpg"/>
                             </a>
                         </div>
 
@@ -953,7 +1315,7 @@
                             <hr/>
                             <div>
                                 <a href="">
-                                    <img src="public/images/account.png" class="iconAccount"/>
+                                    <img src="../public/images/account.png" class="iconAccount"/>
                                     People 2
                                 </a>
                             </div>
@@ -967,7 +1329,7 @@
                     <li class="list-group-item col_rp">
                         <div class="col-lg-6">
                             <a href="">
-                                <img src="public/images/picture%20of%20content%203/n.jpg"/>
+                                <img src="../public/images/picture%20of%20content%203/n.jpg"/>
                             </a>
                         </div>
 
@@ -990,7 +1352,7 @@
                             <hr/>
                             <div>
                                 <a href="">
-                                    <img src="public/images/account.png" class="iconAccount"/>
+                                    <img src="../public/images/account.png" class="iconAccount"/>
                                     People 3
                                 </a>
                             </div>
@@ -1001,7 +1363,7 @@
                     <li class="list-group-item col_rp" style="margin-left: 30px">
                         <div class="col-lg-6">
                             <a href="">
-                                <img src="public/images/picture%20of%20content%203/104182266_311404879854548_275254133652055942_n.jpg"/>
+                                <img src="../public/images/picture%20of%20content%203/104182266_311404879854548_275254133652055942_n.jpg"/>
                             </a>
                         </div>
 
@@ -1025,7 +1387,7 @@
                             <hr/>
                             <div>
                                 <a href="">
-                                    <img src="public/images/account.png" class="iconAccount"/>
+                                    <img src="../public/images/account.png" class="iconAccount"/>
                                     People 4
                                 </a>
                             </div>
@@ -1056,14 +1418,16 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<script src="./node_modules/jquery/dist/jquery.min.js"></script>
-<script src="./node_modules/popper.js/dist/popper.min.js"></script>
-<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="./public/owlcarousel/owl.carousel.min.js"></script>
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../node_modules/popper.js/dist/popper.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../public/owlcarousel/owl.carousel.min.js"></script>
 <!--import icon-->
 <script src="https://kit.fontawesome.com/2fe833f814.js" crossorigin="anonymous"></script>
 <!--Dropdown btn js-->
-<script src="./public/js/btnDropdown.js"></script>
+<script src="../public/js/btnDropdown.js"></script>
+<script src="../public/js/btnDropdown_1.js"></script>
+<script src="../public/js/btnDropdown_2.js"></script>
 
 </body>
 </html>

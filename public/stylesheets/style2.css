@@ -165,10 +165,6 @@ div.divRp{
     color: #6f42c1;
 }
 
-.col2 div.rlCol2 a{
-
-}
-
 .col2 div.rlCol2:hover{
     background-color: #eeeeee;
 }
@@ -241,6 +237,93 @@ div.rl3 .lbCol2{
 a div.labelMore:hover{
     color: #6f42c1;
 }
+
+.rp1 .clp_hide{
+    display: none;
+}
+
+div.div_MenuNavBar_Hdn{
+    position: relative;
+}
+
+div.div_Fl_MenuNavbar{
+    position: relative;
+}
+
+
+.btn_Navbar{
+    border: 1px;
+    border-radius: 3px;
+    width: 50px;
+    height: 35px;
+}
+
+div.lb_menu_hidden_bv{
+    position: absolute;
+    left: 30px;
+    top: 9px;
+}
+
+div.lb_menu_hidden_ls{
+    position: absolute;
+    left: 30px;
+    top: 8px;
+}
+
+div.lb_menu_hidden_fl{
+    position: absolute;
+    left: 30px;
+    top: 6px;
+}
+
+div.icon_MenuNavbar_Hdn{
+    padding: 6px 6px 6px 0;
+}
+
+div.rps_Lb_Fl_MenuNavBar{
+    position: absolute;
+    top:2px;
+    left: 40px;
+}
+
+ul.g{
+    padding: 10px;
+}
+
+div.div_more{
+    margin-left: 90px;
+}
+
+div.g1{
+    color: #1a1a1a;
+}
+div.g1:hover{
+    color: #e83e8c;
+}
+
+a.dropdown-toggle{
+    color: #1a1a1a;
+}
+a.dropdown-toggle:hover{
+    color: #e83e8c;
+}
+
+div.rps_Lb_Fl_MenuNavBar{
+    color: #1a1a1a;
+}
+div.rps_Lb_Fl_MenuNavBar:hover{
+    color: #e83e8c;
+}
+
+div.div_more{
+    color: #1a1a1a;
+}
+div.div_more:hover{
+    color: #e83e8c;
+}
+
+
+
 
 
 
