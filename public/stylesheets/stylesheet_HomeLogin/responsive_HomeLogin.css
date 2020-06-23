@@ -71,16 +71,40 @@
         padding-left: 20px;
         padding-top: 6px;
     }
-   .iconLogin{
-       width: 18px;
-       height: 18px;
+   img.iconLogin{
+       width: 24px;
+       height: 24px;
    }
-
    button.dropbtn_a{
-       height: 18px;
-       width: 18px;
+       height: 24px;
+       width: 24px;
        border-radius: 10px;
    }
+    div.dropdown-content1 {
+        font-size: 8px;
+        width: 100px;
+        top: 20px;
+        left: -100px;
+    }
+    div.dropdown-content2 {
+        font-size: 8px;
+        width: 100px;
+        top: 20px;
+        left: -100px;
+        height: 350px;
+    }
+    img.iconBell{
+        width: 50px;
+        height: 50px;
+    }
+    div.ps_IconBell{
+        top: 155px;
+        left: 60px;
+    }
+    div.ps_lb_notification{
+        top: 250px;
+        left: 40px;
+    }
     .list-group li.col_rp{
         display: none;
     }
@@ -195,17 +219,35 @@
         padding-left: 10px;
         padding-top: 8px;
     }
-    .iconLogin{
-        width: 24px;
-        height: 24px;
+    img.iconLogin{
+        width: 22px;
+        height: 22px;
     }
-
     button.dropbtn_a{
-        height: 18px;
-        width: 18px;
-        border-radius: 10px;
+        height: 20px;
+        width: 20px;
+        border-radius: 18px;
     }
-
+    div.dropdown{
+        padding-left: 2px;
+    }
+    div.dropdown-content2{
+        left: -300px;
+        width: 350px;
+        height: 250px;
+    }
+    img.iconBell{
+        width: 80px;
+        height: 80px;
+    }
+    div.ps_IconBell{
+        top: 110px;
+        left: 140px;
+    }
+    div.ps_lb_notification{
+        top: 190px;
+        left: 80px;
+    }
     .list-group li.col_rp{
         display: none;
     }

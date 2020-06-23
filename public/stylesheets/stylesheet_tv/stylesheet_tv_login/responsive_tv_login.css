@@ -1,4 +1,34 @@
 @media screen and (width: 320px){
+    .dropdown .dropdown-content h4{
+        font-size: 12px;
+    }
+
+    .dropdown .dropdown-content{
+        left: -80px;
+    }
+
+    td.bx1 a{
+        font-size: 9px;
+    }
+
+    td.bx1{
+        width: 20px;
+        padding: 0;
+    }
+    .rp1 div.clp_hide{
+        display: block;
+        width: 100%;
+    }
+    /*aaaaa*/
+    .col2{
+        /*max-width: 10%;*/
+        display: none;
+    }
+
+    .col10{
+        padding-top: 50px;
+        /*max-width: 90%;*/
+    }
 
     .col2{
         display: none;
@@ -39,15 +69,47 @@
         padding-left: 20px;
         padding-top: 6px;
     }
-    button.btnDk.btn-secondary, button.btnDn.btn-info {
-        font-size: 4px;
-        width: 30px;
-        height: 35px;
+    img.iconLogin_x{
+        width: 24px;
+        height: 24px;
+    }
+    button.dropbtn_a{
+        height: 18px;
+        width: 18px;
+        border-radius: 10px;
+    }
+    div.dropdown-content1 {
+        font-size: 8px;
+        width: 100px;
+        top: 20px;
+        left: -100px;
+    }
+    div.dropdown-content2 {
+        font-size: 8px;
+        width: 100px;
+        top: 20px;
+        left: -100px;
+        height: 350px;
+    }
+    img.iconBell_x{
+        width: 50px;
+        height: 50px;
+    }
+    div.ps_IconBell_x{
+        top: 155px;
+        left: 60px;
+    }
+    div.ps_lb_notification_x{
+        top: 250px;
+        left: 40px;
+    }
+
+    div.dropdown{
+        padding-left: 7px;
     }
     .list-group li.rp_li_x{
         display: none;
     }
-
 
     /*phần xem thêm*/
     .rp1_2{
@@ -63,13 +125,6 @@
     hr.hr1{
         max-width: 30%;
     }
-    .x_lb_h6{
-        display: none;
-    }
-    div.card-body{
-        display: none;
-    }
-
 
     /*phần phổ biến*/
     div a.x_linkP2 h6{
@@ -177,15 +232,12 @@
     .list-group li.rp_li_x{
         display: none;
     }
-
     .list-group li.col_rp{
         display: none;
     }
-
     .list-group li.col_rp_col4{
         display: none;
     }
-
     .carousel-inner .list-group li div.a5{
         top: 70px;
         left:5px;
@@ -218,24 +270,43 @@
         border-radius: 28px;
         height: 28px;
     }
-
-    .col2 h6{
-        display: none;
-    }
-
-    div.card-body{
-        display: none;
-    }
 }
 
 @media screen and (width: 375px){
+    .dropdown .dropdown-content h4{
+        font-size: 12px;
+    }
 
+    .dropdown .dropdown-content{
+        left: -80px;
+    }
+
+    td.bx1 a{
+        font-size: 9px;
+    }
+
+    td.bx1{
+        width: 20px;
+        padding: 0;
+    }
+    .rp1 div.clp_hide{
+        display: block;
+        width: 100%;
+    }
+
+    .rp1 div.clp_hide{
+        display: block;
+        width: 100%;
+    }
+    /*aaaaa*/
     .col2{
-        width: 10%;
+        /*max-width: 10%;*/
+        display: none;
     }
 
     .col10{
-        width: 90%;
+        padding-top: 50px;
+        /*max-width: 90%;*/
     }
 
     /*phần navBar*/
@@ -260,11 +331,11 @@
         width: 40px;
     }
     input.setTfSearch {
-        width: 70px;
+       display: none;
     }
     div.divSearch {
         padding: 7px 0 0 10px;
-        width: 120px;
+        width:40px;
     }
     button.btn-primary.setButton {
         width: 40px;
@@ -273,10 +344,27 @@
         padding-left: 20px;
         padding-top: 6px;
     }
-    button.btnDk.btn-secondary, button.btnDn.btn-info {
-        font-size: 4px;
-        width: 30px;
-        height: 35px;
+    div.dropdown-content1{
+        top: 30px;
+        left: -260px;
+        width: 320px;
+    }
+    div.dropdown-content2{
+        left: -250px;
+        width: 350px;
+        height: 250px;
+    }
+    img.iconBell_x{
+        width: 80px;
+        height: 80px;
+    }
+    div.ps_IconBell_x{
+        top: 110px;
+        left: 140px;
+    }
+    div.ps_lb_notification_x{
+        top: 190px;
+        left: 80px;
     }
 
     .list-group li.col_rp{
@@ -304,7 +392,7 @@
     /*phần slide*/
     .carousel-control-next{
         top:45px;
-        left: 270px;
+        left: 315px;
     }
     .ex_Next{
         top:45px;
@@ -335,6 +423,21 @@
 }
 
 @media screen and (width: 414px){
+
+    .rp1 div.clp_hide{
+        display: block;
+        width: 100%;
+    }
+    /*aaaaa*/
+    .col2{
+        /*max-width: 10%;*/
+        display: none;
+    }
+
+    .col10{
+        padding-top: 10px;
+        /*max-width: 90%;*/
+    }
 
     /*phần navBar*/
     .ds{
@@ -371,38 +474,18 @@
         padding-left: 20px;
         padding-top: 6px;
     }
-    button.btnDk.btn-secondary, button.btnDn.btn-info {
-        font-size: 6px;
-        width: 50px;
-        height: 35px;
-    }
-
-    .col2{
-        max-width: 9%;
-    }
-
-    div.col10{
-        max-width: 91%;
-        padding-top: 10px;
+    div.dropdown-content2{
+        left: -300px;
     }
 
     .col2 h6{
         display: none;
     }
 
-    .col10{
-        padding-top: 50px;
-        max-width: 91%;
-    }
-
-    div.card-body{
-        display: none;
-    }
-
     /*phần slide*/
     .carousel-control-next{
         top:45px;
-        left: 310px;
+        left: 355px;
     }
     .ex_Next{
         top:45px;
@@ -445,90 +528,24 @@
     hr.hr1{
         max-width: 30%;
     }
-    .x_lb_h6{
-        display: none;
-    }
-}
-
-@media screen and (max-width: 767px){
-
-    .list-group li.x_li_slide1_a{
-        display: block;
-    }
-
-    .col2{
-        max-width:5%;
-    }
-
-    .col10{
-        padding-top: 50px;
-        max-width: 95%;
-    }
-
-    /*phần navBar*/
-    .ds{
-        display: none;
-    }
-    img.iconGif {
-        width: 18px;
-        height: 18px;
-    }
-    img.iconTV{
-        width: 18px;
-        height: 18px;
-    }
-    .nav-link img.iconHdn{
-        display: block;
-        height: 18px;
-        width: 18px;
-    }
-    button.dropbtn {
-        font-size: 3px;
-        width: 40px;
-    }
-    input.setTfSearch {
-        width: 60px ;
-    }
-    div.divSearch {
-        padding: 7px 0 0 10px;
-        width: 100px;
-    }
-    button.btn-primary.setButton {
-        width: 30px;
-    }
-    div.dkdn{
-        padding-left: 20px;
-        padding-top: 6px;
-    }
-    button.btnDk.btn-secondary, button.btnDn.btn-info {
-        font-size: 6px;
-        width: 50px;
-        height: 35px;
-    }
-    .list-group li.col_rp{
-        display: none;
-    }
-
-    .list-group li.col_rp_col4{
-        display: none;
-    }
-
-    /*phần xem thêm*/
-    .rp1_2{
-        font-size: 10px;
-    }
-    .rp1_2 div .btn-light{
-        padding-top: 5px;
-    }
-    hr.hr0{
-        max-width: 38%;
-    }
-    hr.hr1{
-        max-width: 33%;
-    }
 }
 
 @media screen and (min-width: 768px){
+    .rp1 div.clp_hide{
+        display: block;
+        width: 100%;
+    }
+    /*aaaaa*/
+    .col2{
+        /*max-width: 10%;*/
+        display: none;
+    }
+
+    .col10{
+        padding-top: 10px;
+        /*max-width: 90%;*/
+    }
+
     /*phần navBar*/
     .ds{
         display: block;
@@ -564,18 +581,8 @@
         padding-top: 6px;
         width: 180px;
     }
-    button.btnDk.btn-secondary, button.btnDn.btn-info {
-        font-size: 10px;
-        width: 70px;
-        height: 35px;
-    }
-
-    .col2{
-        width: 5%;
-    }
-
-    .col10{
-        width: 95%;
+    div.dropdown{
+        padding-left: 10px;
     }
 
     /*picture bg*/
@@ -585,28 +592,24 @@
     div.x_ps_cnt{
         top: 12%;
     }
-
     img.x_imgIcon{
         width: 12px;
         height: 12px;
         left: 84px;
         top:1px;
     }
-
     .row_img img.x_img_Bg{
         height: 200px;
     }
 
-
     /*phần slide*/
     .carousel-control-next{
         top:45px;
-        left: 670px;
+        left: 705px;
     }
     .ex_Next{
         top:45px;
     }
-
     .row_img{
         padding-top: 50px;
     }
@@ -625,14 +628,13 @@
     hr.hr1{
         max-width: 30%;
     }
-    .x_lb_h6{
-        display: none;
-    }
-
     .list-group li.x_li_slide1{
         display: block;
     }
     .list-group li.rp_li_x_a{
+        display: block;
+    }
+    .list-group li.x_li_slide2_a{
         display: block;
     }
 }
@@ -647,12 +649,25 @@
 }
 
 @media screen and (min-width: 1024px){
+    .rp1 div.clp_hide{
+        display: none;
+    }
+    /*aaaaa*/
+    .col2{
+        /*max-width: 10%;*/
+        display: block;
+    }
+
+    .col10{
+        padding-top: 10px;
+        /*max-width: 90%;*/
+    }
     /*phần image bg*/
     .x_ps_cnt h1, .x_ps_cnt h2{
         font-size: 21px;
     }
     div.x_ps_cnt{
-        top: 15%;
+        top: 8%;
         left: 10%;
     }
 
@@ -687,24 +702,19 @@
         width: 200px;
     }
     input.setTfSearch {
-        width: 240px ;
+        width: 310px ;
     }
     div.divSearch {
         padding: 7px 0 0 10px;
-        width: 310px;
+        width: 380px;
     }
     button.btn-primary.setButton {
         width: 50px;
     }
     div.dkdn{
-        padding-left: 10px;
+        padding-left: 25px;
         padding-top: 6px;
-        width: 200px;
-    }
-    button.btnDk.btn-secondary, button.btnDn.btn-info {
-        font-size: 15px;
-        width: 90px;
-        height: 35px;
+        width: 170px;
     }
     .list-group li.col_rp{
         display: none;
@@ -740,10 +750,13 @@
         display: block;
     }
 
+    .x_lb_h6{
+        display: block;
+    }
 
 }
 
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1460px){
 
     /*phần xem thêm*/
     hr.hr0{
@@ -754,28 +767,24 @@
     }
     /*phần navbar*/
     input.setTfSearch {
-        width: 500px ;
+        width: 550px ;
     }
     div.divSearch {
         padding: 7px 0 0 30px;
-        width: 600px;
+        width: 660px;
     }
     button.btn-primary.setButton {
         width: 70px;
     }
+
     div.dkdn{
-        padding-left: 75px;
-        width: 340px;
+        padding-left: 100px;
+        padding-top: 6px;
+        width: 290px;
     }
 
-    button.btnDk.btn-secondary, button.btnDn.btn-info {
-        font-size: 16px;
-        width: 130px;
-        height: 35px;
-    }
-
-    .list-group li.rp_li_x{
-        display: block;
+    .dropdown{
+        padding-left: 20px;
     }
 
     div a.x_linkP2 h6{
@@ -846,4 +855,28 @@
     div.card-body{
         display: block;
     }
+}
+
+@media screen and (min-width: 1500px){
+    /*phần navbar*/
+    input.setTfSearch {
+        width: 550px ;
     }
+    div.divSearch {
+        padding: 7px 0 0 30px;
+        width: 660px;
+    }
+    button.btn-primary.setButton {
+        width: 70px;
+    }
+
+    div.dkdn{
+        padding-left: 200px;
+        padding-top: 6px;
+        width: 360px;
+    }
+
+    .dropdown{
+        padding-left: 20px;
+    }
+}
