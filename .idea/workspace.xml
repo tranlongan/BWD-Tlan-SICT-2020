@@ -19,21 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c0de636-d54c-44a4-b34e-b3ce868a9240" name="Default Changelist" comment="22062020">
-      <change afterPath="$PROJECT_DIR$/public/stylesheets/stylesheet_tv/stylesheet_tv_login/iconTvLogin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/stylesheets/stylesheet_tv/stylesheet_tv_login/responsive_tv_login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/stylesheets/stylesheet_tv/stylesheet_tv_login/styleTvLg.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tv_login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/stylesheet_DanhMuc/icon_x.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/stylesheet_tv/icon_x.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/stylesheet_DanhMuc/responsive_DanhMuc.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/stylesheet_tv/responsive_tv.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/stylesheet_DanhMuc/style_x.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/stylesheet_tv/style_x.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/stylesheet_DanhMuc/x_slide.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/stylesheet_tv/x_slide.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/stylesheet_HomeLogin/responsive_HomeLogin.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/stylesheet_HomeLogin/responsive_HomeLogin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Home_Login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home_Login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/danh_muc_.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/tv.html" afterDir="false" />
-    </list>
+    <list default="true" id="4c0de636-d54c-44a4-b34e-b3ce868a9240" name="Default Changelist" comment="01072020" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,9 +33,9 @@
       <list>
         <option value="Sass File" />
         <option value="SCSS File" />
-        <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -71,14 +57,17 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\NORMAL\Desktop\BWD\src" />
-      <recent name="C:\Users\NORMAL\Desktop\BWD" />
+      <recent name="C:\xampp\htdocs\BWD\public\images" />
+      <recent name="C:\xampp\htdocs\BWD\src" />
+      <recent name="C:\xampp\htdocs\BWD\public\stylesheets\stysheet_Login" />
+      <recent name="C:\xampp\htdocs\BWD\public\stylesheets\stylesheet_DanhMuc" />
+      <recent name="C:\xampp\htdocs\BWD" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -121,7 +110,14 @@
       <workItem from="1592743112612" duration="11194000" />
       <workItem from="1592812888432" duration="19697000" />
       <workItem from="1592841645319" duration="141000" />
-      <workItem from="1592893994298" duration="9509000" />
+      <workItem from="1592893994298" duration="10790000" />
+      <workItem from="1592909656753" duration="7496000" />
+      <workItem from="1593136325067" duration="783000" />
+      <workItem from="1593138600958" duration="4234000" />
+      <workItem from="1593143695260" duration="2605000" />
+      <workItem from="1593165972361" duration="814000" />
+      <workItem from="1593225590829" duration="11664000" />
+      <workItem from="1593592230636" duration="77000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1591942114052</created>
@@ -186,7 +182,21 @@
       <option name="project" value="LOCAL" />
       <updated>1592839114000</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="23062020">
+      <created>1592903606701</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1592903606701</updated>
+    </task>
+    <task id="LOCAL-00011" summary="01072020">
+      <created>1593592266188</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1593592266188</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,7 +222,9 @@
     <MESSAGE value="19062020" />
     <MESSAGE value="19062020_1" />
     <MESSAGE value="22062020" />
-    <option name="LAST_COMMIT_MESSAGE" value="22062020" />
+    <MESSAGE value="23062020" />
+    <MESSAGE value="01072020" />
+    <option name="LAST_COMMIT_MESSAGE" value="01072020" />
   </component>
   <component name="WindowStateProjectService">
     <state x="654" y="246" key="#File_Watchers" timestamp="1592036829029">
@@ -223,10 +235,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="395" y="91" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1592371862221" />
-    <state x="654" y="275" key="#Notifications" timestamp="1592036720363">
+    <state x="654" y="275" key="#Notifications" timestamp="1592911236284">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="654" y="275" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1592036720363" />
+    <state x="654" y="275" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1592911236284" />
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592818355894">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -251,10 +263,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="618" y="326" key="VCS.ChangelistChooser/0.0.1536.824@0.0.1536.824" timestamp="1592020143859" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1592839120624">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1593592275753">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1592839120624" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1593592275753" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1592392906670">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
