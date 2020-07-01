@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    < <!-- reponsive-->
+    <link rel="stylesheet" href="../public/stylesheets/reponsive.css">
+    <!--     stylesheets-->
+    <link rel="stylesheet" href="../public/stylesheets/style2.css">
+    <!--    set icon-->
+    <link rel="stylesheet" href="../public/stylesheets/icon.css">
+    <!--    set a_link-->
+    <link rel="stylesheet" href="../public/stylesheets/a_link.css">
+    <!--    dropdown-->
+    <link rel="stylesheet" href="../public/stylesheets/cssOfDropdown.css">
+    <!--    list-->
+    <link rel="stylesheet" href="../public/stylesheets/list.css">
+    <!--import owl.carousel-->
+    <link rel="stylesheet" href="../public/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../public/owlcarousel/assets/owl.theme.default.min.css">
+    <title>Title</title>
+
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+    <link rel="stylesheet" href="../public/stylesheets/stylesheet_DanhMuc/CSSDmuc.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<!--    khởi đầu-->
+<div class="container-fluid">
+    style="display: flex;flex-direction: column;height: 100%;width: 1200.81px; padding-left: 0px;">
+    <!--    phần navBar-->
+    <nav class="navbar-light fixed-top" style="background-color: #ffffff ">
+        <div class="row" style="padding: 6px">
+            <!--            col 12-->
+            <div class="col-lg-12">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="" style="padding-left: 5px">
+                            <img class="iconGif" src="../public/images/picture%20icon%20gif/tải%20xuống.png"/>
+                        </a>
+                    </li>
+                    <li class="nav-item" style="margin-left: 12px">
+                        <a class="nav-link" href="">
+                            <img class="iconHdn" src="../public/images/forum.png"/>
+                            <div class="ds">Diễn đàn D.I.Y</div>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href=""><img class="iconTV" src="../public/images/tv.png"/></a>
+                    </li>
+
+                    <li class="nav-item btn" style="padding-top: 0; padding-bottom: 0;padding-right: 0">
+                        <!--                        btn dropdown-->
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">
+                                Khám phá các ý tưởng
+                            </button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <div>
+                                    <a href="" class="aT">
+                                        <h4>Làm thế nào để: </h4>
+                                    </a>
+                                    <table class="table table-borderless">
+                                        <tr>
+                                            <td class="bx1"><a href="#home">Xây dựng</a></td>
+                                            <td class="bx1"><a href="#about">Sửa chữa</a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="bx1"><a href="#contact">Sơn</a></td>
+                                            <td class="bx1"><a href="#contact">Lau dọn</a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="bx1"><a href="#contact">Thủ công</a></td>
+                                            <td class="bx1"><a href="#contact">Trang trí</a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="bx1"><a href="#contact">Trồng trọt</a></td>
+                                            <td class="bx1"><a href="#contact">Organize</a></td>
+                                        </tr>
+                                    </table>
+                                    <hr/>
+
+                                    <a href="" class="aT">
+                                        <h4>Căn phòng & Không gian</h4>
+                                    </a>
+                                    <table class="table table-borderless">
+                                        <tr>
+                                            <td class="bx1"><a href="#home">Nhà bếp & Phòng ăn</a></td>
+                                            <td class="bx1"><a href="#about">Lối vào</a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="bx1"><a href="#contact">Phòng khách</a></td>
+                                            <td class="bx1"><a href="#contact">Tầng thượng</a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="bx1"><a href="#contact">Phòng ngủ</a></td>
+                                            <td class="bx1"><a href="#contact">Ngoài trời</a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="bx1"><a href="#contact">Phòng tắm</a></td>
+                                            <td class="bx1"><a href="#contact">Cửa sổ & Cửa ra vào</a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="bx1"><a href="#contact">Phòng thủ công</a></td>
+                                            <td class="bx1"><a href="#contact">Nền & Trần nhà</a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="bx1"><a href="#contact">Phòng làm việc</a></td>
+                                            <td class="bx1"><a href="#contact">Cầu thang</a></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!--                        end btn dropdown-->
+                    </li>
+
+                    <div class="divSearch">
+                        <input type="search" class="setTfSearch" placeholder="Search DIY ideas here">
+                        <button type="submit" class="btn-primary setButton" style="outline: none">
+                            <i class="material-icons" style="font-size: small;">search</i>
+                        </button>
+                    </div>
+
+                    <div class="dkdn" style="padding-top: 5px">
+                        <button class="btnDk btn-secondary" type="submit">Đăng ký</button>
+                        <button class="btnDn btn-info" type="submit">Đăng nhập</button>
+                    </div>
+                </ul>
+
+            </div>
+            <!--        kết thúc phần khởi đầu-->
+        </div>
+        <!--        kết thúc Scrollspy-->
+    </nav>
+
+    <!---->
+    <div class="row ">
+        <img class="img_header"
+             src="https://cdn-fastly.hometalk.com/resources/imgs-responsive/categories/how-to/tier_1/covers/build_large.jpg">
+        <div class="tfXd">
+            Xây dựng
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- -->
+        <div class="textdm">
+            <p>
+                Bạn đang tìm kiếm sự giúp đỡ để bắt đầu một dự án xây dựng DIY? Cho dù đó là tủ, cửa hay người trồng,
+                chúng tôi có những gì bạn đang tìm kiếm. Kiểm tra các bảng thảo luận, hướng dẫn bằng video, trình chiếu
+                và bộ sưu tập các dự án xây dựng hàng đầu, mới
+                và tốt nhất. Bạn sẽ tìm thấy tất cả các mẹo, hướng dẫn và hack bạn cần.
+            </p>
+            <h1> Bạn muốn xây dựng cái gì ?</h1>
+        </div>
+
+        <!--        -->
+        <div class="row">
+            <ul class="list-group list-group-horizontal danhMuc">
+                <!--                col 1-->
+                <li class="list-group-item">
+                    <div class="divImg">
+                        <a href="">
+                            <img src="../public/images/img_DanhMuc/SN.jpg">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="linkP2">
+                            <center>
+                                <h5>Sàn hành lan</h5>
+                            </center>
+                        </a>
+                    </div>
+                </li>
+
+                <!--                col 2-->
+                <li class="list-group-item lx">
+                    <div class="divImg">
+                        <a href="">
+                            <img src="../public/images/img_DanhMuc/CS.jpg">
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="" class="linkP2">
+                            <center>
+                                <h5>Cửa & Windows </h5>
+                            </center>
+                        </a>
+                    </div>
+                </li>
+
+                <!--                col 3-->
+                <li class="list-group-item lx">
+                    <div class="divImg">
+                        <a href="">
+                            <img src="../public/images/img_DanhMuc/GV1.png">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="linkP2">
+                            <center>
+                                <h5>Giường vườn</h5>
+                            </center>
+                        </a>
+                    </div>
+                </li>
+
+                <!--                col 4-->
+                <li class="list-group-item lx">
+                    <div class="divImg">
+                        <a href="">
+                            <img src="../public/images/img_DanhMuc/NT.png">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="linkP2">
+                            <center>
+                                <h5>Đồ nội thất</h5>
+                            </center>
+                        </a>
+                    </div>
+                </li>
+
+                <!--                col 5-->
+                <li class="list-group-item lx">
+                    <div class="divImg">
+                        <a href="">
+                            <img src="../public/images/img_DanhMuc/TT (2).jpg">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="linkP2">
+                            <center>
+                                <h5>Trồng trọt</h5>
+                            </center>
+                        </a>
+                    </div>
+                </li>
+
+                <!--                col 6-->
+                <li class="list-group-item lx">
+                    <div class="divImg">
+                        <a href="">
+                            <img src="../public/images/img_DanhMuc/NCK (2).jpg">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="linkP2">
+                            <center>
+                                <h5>Những cái kệ</h5>
+                            </center>
+                        </a>
+                    </div>
+
+                </li>
+
+                <!--                col 7-->
+                <li class="list-group-item lx">
+                    <div class="divImg">
+                        <a href="">
+                            <img src="../public/images/img_DanhMuc/ST.png">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="linkP2">
+                            <center>
+                                <h5>Sơn tường</h5>
+                            </center>
+                        </a>
+                    </div>
+                </li>
+
+                <!--                col 8-->
+                <li class="list-group-item lx">
+                    <div class="divImg">
+                        <a href="">
+                            <img src="../public/images/img_DanhMuc/MH.jpg">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="linkP2">
+                            <center>
+                                <h5>Mái hiên</h5>
+                            </center>
+                        </a>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <!--dụ án hàng đầu-->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Các dự án hàng đầu của xây dựng </h2>
+                <p style="color: silver;">
+                    Bạn đang tìm kiếm các dự án xây dựng DIY hàng đầu? Không tìm đâu xa.
+                </p>
+
+            </div>
+        </div>
+        <!---->
+        <div class="row">
+            <ul class="list-group list-group-horizontal rp1_1">
+                <!--                col 1-->
+                <li class="list-group-item">
+                    <div class="DaHD">
+                        <div class="divImg">
+                            <a href="">
+                                <img style="width: 269px;" src="../public/images/img_DanhMuc/sansau.jpg">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="" class="linkP2">
+                                <h6 style="padding: 5px 15px 0px 15px;">18 kế hoạch xây dựng DIY để truyền cảm hứng cho
+                                    bạn để làm sân sau của riêng bạn</h6>
+                            </a>
+                        </div>
+                        <div class="rounded-bottom mdb-color lighten-3 text-center pt-3"
+                             style="padding-top: 0px; padding-bottom: 10px;">
+                            <hr>
+                            <ul class="list-unstyled list-inline font-small">
+
+                                <li class="list-inline-item pr-2 white-text"><i class="fas fa-user"></i> admin</li>
+                                <li style="margin-left: 25px;" class="list-inline-item pr-2"><a href="#"
+                                                                                                class="white-text"><i
+                                        class="far fa-comments pr-1"></i>465</a></li>
+                                <li class="list-inline-item pr-2"><a href="#" class="white-text"><i
+                                        class="far fa-eye"></i>1245</a></li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </li>
+
+                <!--                col 2-->
+                <li class="list-group-item lx ">
+                    <div class="DaHD">
+                        <div class="divImg">
+                            <a href="">
+                                <img style="width: 269px;" src="../public/images/img_DanhMuc/lancan.jpg">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="" class="linkP2">
+                                <h6 style="padding: 5px 15px 0px 15px;">15 ý tưởng lan can sàn sáng tạo cho kháng cáo
+                                    ngay lập tức</h6>
+                            </a>
+                        </div>
+                        <div class="rounded-bottom mdb-color lighten-3 text-center pt-3"
+                             style="padding-top: 0px; padding-bottom: 10px;">
+                            <hr>
+                            <ul class="list-unstyled list-inline font-small">
+
+                                <li class="list-inline-item pr-2 white-text"><i class="fas fa-user"></i> admin</li>
+                                <li style="margin-left: 25px;" class="list-inline-item pr-2"><a href="#"
+                                                                                                class="white-text"><i
+                                        class="far fa-comments pr-1"></i>542</a></li>
+                                <li class="list-inline-item pr-2"><a href="#" class="white-text"><i
+                                        class="far fa-eye"></i>1243</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <!--                col 3-->
+                <li class="list-group-item lx">
+                    <div class="DaHD">
+                        <div class="divImg">
+                            <a href="">
+                                <img style="width: 269px;" src="../public/images/img_DanhMuc/noithat.jpg">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="" class="linkP2">
+                                <h6 style="padding: 5px 15px 0px 15px;">Làm thế nào để Fake Nội thất tích hợp tuyệt đẹp
+                                    (12 ý tưởng)</h6>
+                            </a>
+                        </div>
+                        <div class="rounded-bottom mdb-color lighten-3 text-center pt-3"
+                             style="padding-top: 0px; padding-bottom: 10px;">
+                            <hr>
+                            <ul class="list-unstyled list-inline font-small">
+
+                                <li class="list-inline-item pr-2 white-text"><i class="fas fa-user"></i> admin</li>
+                                <li style="margin-left: 25px;" class="list-inline-item pr-2"><a href="#"
+                                                                                                class="white-text"><i
+                                        class="far fa-comments pr-1"></i>442</a></li>
+                                <li class="list-inline-item pr-2"><a href="#" class="white-text"><i
+                                        class="far fa-eye"></i>1424</a></li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </li>
+
+                <!--                col 4-->
+                <li class="list-group-item lx">
+                    <div class="DaHD">
+                        <div class="divImg">
+                            <a href="">
+                                <img style="width: 269px;" src="../public/images/img_DanhMuc/15duan.png">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="" class="linkP2">
+                                <h6 style="padding: 5px 15px 0px 15px;">15 dự án gỗ DIY bạn có thể bắt đầu ngay hôm
+                                    nay</h6>
+                            </a>
+                        </div>
+                        <div class="rounded-bottom mdb-color lighten-3 text-center pt-3"
+                             style="padding-top: 0px; padding-bottom: 10px;">
+                            <hr>
+                            <ul class="list-unstyled list-inline font-small">
+
+                                <li class="list-inline-item pr-2 white-text"><i class="fas fa-user"></i> admin</li>
+                                <li style="margin-left: 25px;" class="list-inline-item pr-2"><a href="#"
+                                                                                                class="white-text"><i
+                                        class="far fa-comments pr-1"></i>472</a></li>
+                                <li class="list-inline-item pr-2"><a href="#" class="white-text"><i
+                                        class="far fa-eye"></i>2144</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </li>
+
+            </ul>
+        </div>
+        <!--                    mục xem thêm-->
+        <div class="rp1_2" style="margin-bottom: 10px; margin-top: 10px">
+            <div>
+                <hr style="float: left; width:40%;"/>
+                <button class="btn-light" style="margin-left: 10px; border: 0; color: #6f42c1; outline: none">
+                    Hiển thị thêm <i class="material-icons" style="font-size: 12px">expand_more</i>
+                </button>
+                <hr class="hr1" style="float: right; width: 45%;">
+            </div>
+            <!--                kết thúc mục xem thêm-->
+        </div>
+
+
+        <!--phần watch TV-->
+
+
+        <div class="wTV">
+            <!-- phần label-->
+            <div>
+                <h2>Một Số Xem video hướng dẫn xây dựng </h2>
+            </div>
+
+            <!--                list 1-->
+            <div class="moreBox1">
+                <ul class="list-group list-group-horizontal watchTV">
+                    <!--                col 1-->
+                    <li class="list-group-item">
+                        <div class="col-lg-6">
+                            <a href="">
+                                <img src="../public/images/picture%20of%20content%203/diy-resin-tumbler.jpg"/>
+                            </a>
+                        </div>
+
+                        <div class="infWatchTV">
+                            <div class="divRp">
+                                <div class="divRp_1">
+                                    <a href="" class="linkP2">
+                                        <h6> Tìm hiểu cách tạo một thiết kế đại dương êm dịu trên một chiếc cốc bằng
+                                            nhựa</h6>
+                                    </a>
+                                </div>
+
+                                <div class="fontSize_View">
+                                    <a href="" class="linkP2">
+                                        Bạn có mơ về đại dương? Bạn muốn cảm nhận cát trong ngón chân và nước trên
+                                        da?
+                                        Tôi có thể mang ...
+                                    </a>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div>
+                                <a href="">
+                                    <img src="../public/images/account.png" class="iconAccount"/>
+                                    People 1
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--                col 2 -->
+                    <li class="list-group-item" style="margin-left: 30px">
+                        <div class="col-lg-6">
+                            <a href="">
+                                <img src="../public/images/picture%20of%20content%203/simple-wood-box.jpg"/>
+                            </a>
+                        </div>
+
+                        <div class="infWatchTV">
+                            <div class="divRp">
+                                <div class="divRp_1">
+                                    <a href="" class="linkP2">
+                                        <h6>Hộp gỗ đơn giản</h6>
+                                    </a>
+                                </div>
+                                <div class="fontSize_View ">
+                                    <a href="" class="linkP2">
+                                        <div>
+                                            Hộp gỗ đơn giản này là một công trình dễ dàng và có thể phục vụ như một
+                                            món
+                                            đồ mộc mạc
+                                            tuyệt đẹp ở mọi nơi trong ...
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div>
+                                <a href="">
+                                    <img src="../public/images/account.png" class="iconAccount"/>
+                                    People 2
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- kết thúc TV   -->
+
+        <!--        hiển thị thêm-->
+        <div class="rp1_2" style="margin-bottom: 10px; margin-top: 10px">
+            <div>
+                <hr style="float: left; width: 40%;"/>
+                <button class="btn-light" style="margin-left: 10px; border: 0; color: #6f42c1; outline: none">
+                    Hiển thị thêm <i class="material-icons" style="font-size: 12px">expand_more</i>
+                </button>
+                <hr class="hr1" style="float: right; width: 45%;">
+            </div>
+            <!--                kết thúc mục xem thêm-->
+        </div>
+
+        <!-- phần slide dự án yêu thích-->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Các dự án xây dựng được yêu thích nhất</h2>
+                <p style="color: silver;">
+                    Chúng tôi đã biên soạn tốt nhất của các dự án xây dựng tốt nhất cho bạn. Thưởng thức.
+                </p>
+
+            </div>
+        </div>
+        <!--        -->
+        <div class="row1">
+            <div class="col-sm-12">
+                <div id="inam" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12 col-lg-4">
+                                        <a href="">
+                                            <div class="card-slide">
+                                                <!-- Card image -->
+                                                <div class="view overlay">
+                                                    <img class="card-img-top"
+                                                         src="https://cdn-fastly.hometalk.com/media/2019/01/30/5299804/pyramid-crate-organizer.jpg?size=350x220"
+                                                         alt="Card image cap">
+                                                </div>
+                                                <!-- Card content -->
+                                                <div class="card-body">
+                                                    <!-- Title -->
+                                                    <h6 class="card-title" style="margin-bottom: 0px;">KIM TỰ THÁP TỔ
+                                                        CHỨC</h6>
+
+                                                </div>
+
+                                                <!-- Card footer -->
+                                                <div class="rounded-bottom mdb-color lighten-3 text-center pt-3"
+                                                     style="padding-top: 0px;">
+                                                    <hr>
+                                                    <ul class="list-unstyled list-inline font-small">
+
+                                                        <li class="list-inline-item pr-2 white-text"><i
+                                                                class="fas fa-user"></i> admin
+                                                        </li>
+                                                        <li style="margin-left: 50px;" class="list-inline-item pr-2"><a
+                                                                href="#" class="white-text"><i
+                                                                class="far fa-comments pr-1"></i>1845</a></li>
+                                                        <li class="list-inline-item pr-2"><a href="#"
+                                                                                             class="white-text"><i
+                                                                class="far fa-eye"></i>4524</a></li>
+
+                                                    </ul>
+
+                                                </div>
+
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                    <div class="col-sm-12 col-lg-4">
+                                        <a href="">
+                                            <div class="card-slide">
+                                                <!-- Card image -->
+                                                <div class="view overlay">
+                                                    <img class="card-img-top"
+                                                         src="https://cdn-fastly.hometalk.com/media/2019/01/06/5263151/15-creative-diy-wood-projects.jpg?size=350x220"
+                                                         alt="Card image cap">
+                                                </div>
+                                                <!-- Card content -->
+                                                <div class="card-body">
+                                                    <!-- Title -->
+                                                    <h6 class="card-title" style="margin-bottom: 0px;">15 Dự án bằng gỗ
+                                                        DIY sáng tạo nhất</h6>
+                                                </div>
+
+
+                                                <!-- Card footer -->
+                                                <div class="rounded-bottom mdb-color lighten-3 text-center pt-3"
+                                                     style="padding-top: 0px;">
+                                                    <hr>
+                                                    <ul class="list-unstyled list-inline font-small">
+
+                                                        <li class="list-inline-item pr-2 white-text"><i
+                                                                class="fas fa-user"></i> admin
+                                                        </li>
+                                                        <li style="margin-left: 50px;" class="list-inline-item pr-2"><a
+                                                                href="#" class="white-text"><i
+                                                                class="far fa-comments pr-1"></i>1235</a></li>
+                                                        <li class="list-inline-item pr-2"><a href="#"
+                                                                                             class="white-text"><i
+                                                                class="far fa-eye"></i>2424</a></li>
+
+                                                    </ul>
+
+                                                </div>
+
+                                            </div>
+                                        </a>
+                                    </div>
+
+
+                                    <div class="col-sm-12 col-lg-4">
+                                        <a href="">
+                                            <div class="card-slide">
+                                                <!-- Card image -->
+                                                <div class="view overlay">
+                                                    <img class="card-img-top"
+                                                         src="https://cdn-fastly.hometalk.com/media/247e9acb627155cde392fa690dfce69b47.jpg?size=350x220"
+                                                         alt="Card image cap">
+                                                </div>
+                                                <!-- Card content -->
+                                                <div class="card-body">
+                                                    <!-- Title -->
+                                                    <h6 class="card-title" style="margin-bottom: 0px;">Hướng dẫn làm
+                                                        bảng cửa sổ DIY</h6>
+                                                </div>
+
+
+                                                <!-- Card footer -->
+                                                <div class="rounded-bottom mdb-color lighten-3 text-center pt-3"
+                                                     style="padding-top: 0px;">
+                                                    <hr>
+                                                    <ul class="list-unstyled list-inline font-small">
+
+                                                        <li class="list-inline-item pr-2 white-text"><i
+                                                                class="fas fa-user"></i> admin
+                                                        </li>
+                                                        <li style="margin-left: 50px;" class="list-inline-item pr-2"><a
+                                                                href="#" class="white-text"><i
+                                                                class="far fa-comments pr-1"></i>964</a></li>
+                                                        <li class="list-inline-item pr-2"><a href="#"
+                                                                                             class="white-text"><i
+                                                                class="far fa-eye"></i>2674</a></li>
+
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12 col-lg-4">
+                                        <a href="">
+                                            <div class="card-slide">
+                                                <!-- Card image -->
+                                                <div class="view overlay">
+                                                    <img class="card-img-top"
+                                                         src="https://cdn-fastly.hometalk.com/media/2019/02/10/5312273/wine-rack-wall-hang.jpg?size=350x220"
+                                                         alt="Card image cap">
+                                                </div>
+                                                <!-- Card content -->
+                                                <div class="card-body">
+                                                    <!-- Title -->
+                                                    <h6 class="card-title" style="margin-bottom: 0px;">RƯỢU VANG(Treo
+                                                        Tường)</h6>
+                                                </div>
+
+
+                                                <!-- Card footer -->
+                                                <div class="rounded-bottom mdb-color lighten-3 text-center pt-3"
+                                                     style="padding-top: 0px;">
+                                                    <hr>
+                                                    <ul class="list-unstyled list-inline font-small">
+
+                                                        <li class="list-inline-item pr-2 white-text"><i
+                                                                class="fas fa-user"></i> admin
+                                                        </li>
+                                                        <li style="margin-left: 50px;" class="list-inline-item pr-2"><a
+                                                                href="#" class="white-text"><i
+                                                                class="far fa-comments pr-1"></i>892</a></li>
+                                                        <li class="list-inline-item pr-2"><a href="#"
+                                                                                             class="white-text"><i
+                                                                class="far fa-eye"></i>4254</a></li>
+
+                                                    </ul>
+
+                                                </div>
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-12 col-lg-4">
+                                        <a href="">
+                                            <div class="card-slide">
+                                                <!-- Card image -->
+                                                <div class="view overlay">
+                                                    <img class="card-img-top"
+                                                         src="https://cdn-fastly.hometalk.com/media/rvtxidufj36w0ewztrzq50097dda86e01.jpg?size=350x220"
+                                                         alt="Card image cap">
+                                                </div>
+                                                <!-- Card content -->
+                                                <div class="card-body">
+                                                    <!-- Title -->
+                                                    <h6 class="card-title" style="margin-bottom: 0px;">You-Nique *
+                                                        Giường Ngủ* chuyển đổi</h6>
+
+                                                </div>
+
+                                                <!-- Card footer -->
+                                                <div class="rounded-bottom mdb-color lighten-3 text-center pt-3"
+                                                     style="padding-top: 0px;">
+                                                    <hr>
+                                                    <ul class="list-unstyled list-inline font-small">
+
+                                                        <li class="list-inline-item pr-2 white-text"><i
+                                                                class="fas fa-user"></i> admin
+                                                        </li>
+                                                        <li style="margin-left: 50px;" class="list-inline-item pr-2"><a
+                                                                href="#" class="white-text"><i
+                                                                class="far fa-comments pr-1"></i>1242</a></li>
+                                                        <li class="list-inline-item pr-2"><a href="#"
+                                                                                             class="white-text"><i
+                                                                class="far fa-eye"></i>3154</a></li>
+
+                                                    </ul>
+
+                                                </div>
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-12 col-lg-4">
+                                        <a href="">
+                                            <div class="card-slide">
+                                                <!-- Card image -->
+                                                <div class="view overlay">
+                                                    <img class="card-img-top"
+                                                         src="https://cdn-fastly.hometalk.com/media/5iv4vo3tqehbw1faemqg504ba5b68579b.JPG?size=350x220"
+                                                         alt="Card image cap">
+                                                </div>
+                                                <!-- Card content -->
+                                                <div class="card-body">
+                                                    <!-- Title -->
+                                                    <h6 class="card-title" style="margin-bottom: 0px;">GIƯỜNG TẦNG CHO
+                                                        BÉ TRAI</h6>
+
+                                                </div>
+
+                                                <!-- Card footer -->
+                                                <div class="rounded-bottom mdb-color lighten-3 text-center pt-3"
+                                                     style="padding-top: 0px;">
+                                                    <hr>
+                                                    <ul class="list-unstyled list-inline font-small">
+
+                                                        <li class="list-inline-item pr-2 white-text"><i
+                                                                class="fas fa-user"></i> admin
+                                                        </li>
+                                                        <li style="margin-left: 50px;" class="list-inline-item pr-2"><a
+                                                                href="#" class="white-text"><i
+                                                                class="far fa-comments pr-1"></i>1022</a></li>
+                                                        <li class="list-inline-item pr-2"><a href="#"
+                                                                                             class="white-text"><i
+                                                                class="far fa-eye"></i>3289</a></li>
+
+                                                    </ul>
+
+                                                </div>
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a style="padding-right: 10px; width: 50px;" href="#inam" class="carousel-control-prev"
+                       data-slide="prev">
+                        <div class="span-pre"><span class="carousel-control-prev-icon"></span></div>
+                    </a>
+                    <a style="padding-left: 10px; width: 50px;" href="#inam" class="carousel-control-next"
+                       data-slide="next">
+                        <div class="span-next"><span class="carousel-control-next-icon"></span></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--kết thúc slide -->
+
+
+        <!--phần question-->
+        <div class="question" style="background-color: white;">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Một số thảo luận xây dựng phổ biến</h2>
+                    <p style="color: silver;">
+                        Các cuộc thảo luận phổ biến là một nơi tốt để bắt đầu với dự án xây dựng của bạn.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card-qs">
+                        <h5>Làm thế nào tôi có thể làm một giá rượu bằng cách sử dụng một pallet?</h5>
+                        <i class="fas fa-user"></i> admin
+                        <br>
+                        <br>
+                        <center>
+                            <button button class="btn-2"><i class="fas fa-comments"></i> xem thảo luận</button>
+                        </center>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card-qs">
+                        <h5>Làm thế nào tôi có thể xây dựng một tổ ong Long Langstroth?
+                        </h5>
+                        <i class="fas fa-user"></i> admin
+                        <br>
+                        <br>
+                        <center>
+                            <button button class="btn-2"><i class="fas fa-comments"></i> xem thảo luận</button>
+                        </center>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="row" style="padding-top:20px ;">
+                <div class="col-lg-6">
+                    <div class="card-qs">
+                        <h5>Làm thế nào tôi có thể xây dựng một nhà kho để lưu trữ củi ngoài trời?</h5>
+                        <i class="fas fa-user"></i> admin
+                        <br>
+                        <br>
+                        <center>
+                            <button button class="btn-2"><i class="fas fa-comments"></i> xem thảo luận</button>
+                        </center>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card-qs">
+                        <h5>Cách tốt nhất để khoan một lỗ trên nồi gốm là gì?</h5>
+                        <i class="fas fa-user"></i> admin
+                        <br>
+                        <br>
+                        <br>
+                        <center><a href="">
+                            <button button class="btn-2"><i class="fas fa-comments"></i> xem thảo luận</button>
+                        </a></center>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--form quétion-->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Đặt câu hỏi của bạn</h2>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="form-qs">
+                    <i class="fas fa-user" style="float: left;"></i>
+                    <input type="text" class="form-control" placeholder=" Câu hỏi của bạn ?"
+                           style="width:600px; float: right;">
+                    <br><br>
+                    <div class="md-form amber-textarea active-amber-textarea-2">
+                        <i class="fas fa-pencil-alt prefix"></i>
+                        <textarea id="form24" class="md-textarea form-control" rows="3"
+                                  placeholder="Mô tả...."></textarea>
+
+                    </div>
+                    <br>
+                    <a href="">
+                        <button class="btn-2"><i class="fas fa-paper-plane"></i> Gửi câu hỏi</button>
+                    </a>
+
+
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="img-qs">
+                    <img style="width: 370px; height: 250px; border-radius: 30px 30px 30px 30px;"
+                         src="../public/images/img_DanhMuc/qs.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!--Phần tất cả các dự án -->
+
+        <div class="row">
+            <h2>Các dự xây dựng của chúng tôi</h2>
+            <p style="color: silver;">
+                Tại đây bạn có thể duyệt, tìm hiểu và tham khảo tất cả các dự án xây dựng mới nhất của chúng tôi.
+            </p>
+        </div>
+
+        <div class="row">
+            <ul class="list-group list-group-horizontal rp1_1">
+                <!--                col 1-->
+
+                <li class="list-group-item">
+                    <div class="DaHD">
+                        <div class="divImg">
+                            <a href="">
+                                <img style="width: 269px;"
+                                     src="https://cdn-fastly.hometalk.com/media/2019/06/29/5532617/portable-slide-on-bar-railing-countertop.jpg?size=350x220">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="" class="linkP2">
+                                <h6 style="padding: 5px 15px 0px 15px;">Làm thế nào để xây dựng một thanh / thanh trượt
+                                    trên thanh trượt di động</h6>
+                            </a>
+                        </div>
+                        <div class="rounded-bottom mdb-color lighten-3 text-center pt-3"
+                             style="padding-top: 0px; padding-bottom: 10px;">
+                            <hr>
+                            <ul class="list-unstyled list-inline font-small">
+
+                                <li class="list-inline-item pr-2 white-text"><i class="fas fa-user"></i> admin</li>
+                                <li style="margin-left: 25px;" class="list-inline-item pr-2"><a href="#"
+                                                                                                class="white-text"><i
+                                        class="far fa-comments pr-1"></i>425</a></li>
+                                <li class="list-inline-item pr-2"><a href="#" class="white-text"><i
+                                        class="far fa-eye"></i>455</a></li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </li>
+
+                <!--                col 2-->
+                <li class="list-group-item lx ">
+                    <div class="DaHD">
+                        <div class="divImg">
+                            <a href="">
+                                <img style="width: 269px;"
+                                     src="https://cdn-fastly.hometalk.com/media/2014/08/25/795918/backyard-ideas-playground-flooring-outdoor-living.jpg?size=350x220">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="" class="linkP2">
+                                <h6 style="padding: 5px 15px 0px 15px;">Các loại sân chơi</h6>
+                            </a>
+                        </div>
+                        <div class="rounded-bottom mdb-color lighten-3 text-center pt-3"
+                             style="padding-top: 0px; padding-bottom: 10px;">
+                            <hr>
+                            <ul class="list-unstyled list-inline font-small">
+
+                                <li class="list-inline-item pr-2 white-text"><i class="fas fa-user"></i> admin</li>
+                                <li style="margin-left: 25px;" class="list-inline-item pr-2"><a href="#"
+                                                                                                class="white-text"><i
+                                        class="far fa-comments pr-1"></i>245</a></li>
+                                <li class="list-inline-item pr-2"><a href="#" class="white-text"><i
+                                        class="far fa-eye"></i>743</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <!--                col 3-->
+                <li class="list-group-item lx">
+                    <div class="DaHD">
+                        <div class="divImg">
+                            <a href="">
+                                <img style="width: 269px;"
+                                     src="https://cdn-fastly.hometalk.com/media/wvp5s0u7aylc583cdo3o516caa070aeae.JPG?size=350x220">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="" class="linkP2">
+                                <h6 style="padding: 5px 15px 0px 15px;">Landscaper Biết làm thế nào" ~ Cổ điển Cedar
+                                    Pergola - Ghi chú bài</h6>
+                            </a>
+                        </div>
+                        <div class="rounded-bottom mdb-color lighten-3 text-center pt-3"
+                             style="padding-top: 0px; padding-bottom: 10px;">
+                            <hr>
+                            <ul class="list-unstyled list-inline font-small">
+
+                                <li class="list-inline-item pr-2 white-text"><i class="fas fa-user"></i> admin</li>
+                                <li style="margin-left: 25px;" class="list-inline-item pr-2"><a href="#"
+                                                                                                class="white-text"><i
+                                        class="far fa-comments pr-1"></i>652</a></li>
+                                <li class="list-inline-item pr-2"><a href="#" class="white-text"><i
+                                        class="far fa-eye"></i>1024</a></li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </li>
+
+                <!--                col 4-->
+                <li class="list-group-item lx">
+                    <div class="DaHD">
+                        <div class="divImg">
+                            <a href="">
+                                <img style="width: 269px;"
+                                     src="https://cdn-fastly.hometalk.com/media/2015/06/03/2878118/natural-wood-diy-garden-bench-tutorial-diy-how-to-outdoor-furniture.jpg?size=350x220">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="" class="linkP2">
+                                <h6 style="padding: 5px 15px 0px 15px;">Hướng dẫn sử dụng ghế gỗ tự nhiên</h6>
+                            </a>
+                        </div>
+                        <div class="rounded-bottom mdb-color lighten-3 text-center pt-3"
+                             style="padding-top: 0px; padding-bottom: 10px;">
+                            <hr>
+                            <ul class="list-unstyled list-inline font-small">
+
+                                <li class="list-inline-item pr-2 white-text"><i class="fas fa-user"></i> admin</li>
+                                <li style="margin-left: 25px;" class="list-inline-item pr-2"><a href="#"
+                                                                                                class="white-text"><i
+                                        class="far fa-comments pr-1"></i>325</a></li>
+                                <li class="list-inline-item pr-2"><a href="#" class="white-text"><i
+                                        class="far fa-eye"></i>644</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </li>
+
+            </ul>
+        </div>
+
+        <!--                    mục xem thêm-->
+        <div class="rp1_2" style="margin-bottom: 50px; margin-top: 10px">
+            <div>
+                <hr style="float: left; width: 46%;"/>
+                <button class="btn-light" style="margin-left: 10px; border: 0; color: #6f42c1; outline: none">
+                    Hiển thị thêm <i class="material-icons" style="font-size: 12px">expand_more</i>
+                </button>
+                <hr class="hr1" style="float: right; width: 45%;">
+            </div>
+            <!--                kết thúc mục xem thêm-->
+        </div>
+
+    </div>
+    <!-- Footer -->
+    <footer class="page-footer font-small indigo">
+
+        <!-- Footer Links -->
+        <div class="container">
+
+            <!-- Grid row-->
+
+            <div class="row text-center" style="padding: 20px 0px 0px 170px;">
+
+                <!-- Grid column -->
+                <div class="col-md-2 mb-3">
+                    <h6 class="text-uppercase ">
+                        <a href="#!">About us</a>
+                    </h6>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 mb-3">
+                    <h6 class="text-uppercase ">
+                        <a href="#!">Privacy</a>
+                    </h6>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 mb-3">
+                    <h6 class="text-uppercase ">
+                        <a href="#!">Terms</a>
+                    </h6>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 mb-3">
+                    <h6 class="text-uppercase">
+                        <a href="#!">Help</a>
+                    </h6>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 mb-3">
+                    <h6 class="text-uppercase">
+                        <a href="#!">Contact</a>
+                    </h6>
+                </div>
+                <!-- Grid column -->
+
+            </div>
+
+            <!-- Grid row-->
+            <hr class="rgba-white-light" style="margin: 0 15%;">
+
+            <!-- Grid row-->
+            <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+
+
+            </div>
+            <!-- Grid row-->
+            <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+
+            <!-- Grid row-->
+
+
+            <!-- Grid column -->
+            <div class="row" style="padding:40px 0px 50px 440px;">
+                <ul class="list-group list-group-horizontal rp1_1">
+                    <!--                col 1-->
+
+                    <li class="list-group-item">
+                        <div class="fb">
+                            <a class="fb-ic">
+                                <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
+                            </a>
+                        </div>
+                    </li>
+                    <!-- Twitter -->
+                    <li class="list-group-item">
+                        <div class="tw">
+                            <a class="tw-ic">
+                                <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
+                            </a>
+                        </div>
+                    </li>
+                    <!-- Google +-->
+                    <li class="list-group-item">
+                        <div class="gp">
+                            <a class="gplus-ic">
+                                <i class="fab fa-google-plus-g fa-lg white-text mr-4"> </i>
+                            </a>
+                        </div>
+                    </li>
+                    <!--Linkedin -->
+                    <li class="list-group-item">
+                        <div class="li">
+                            <a class="li-ic">
+                                <i class="fab fa-linkedin-in fa-lg white-text mr-4"> </i>
+                            </a>
+                        </div>
+                    </li>
+                    <!--Instagram-->
+                    <li class="list-group-item">
+                        <div class="ins">
+                            <a class="ins-ic">
+                                <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
+                            </a>
+                        </div>
+                    </li>
+
+                    <!--Pinterest-->
+                    <li class="list-group-item">
+                        <div class="pin">
+                            <a class="pin-ic">
+                                <i class="fab fa-pinterest fa-lg white-text"> </i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- Grid column -->
+
+
+            <!-- Grid row-->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+</div>
+
+<script src="../node_modules/jquery/dist/jquery.min.js "></script>
+<script src="../node_modules/popper.js/dist/popper.min.js "></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js "></script>
+<script src="../public/owlcarousel/owl.carousel.min.js "></script>
+<!--import icon-->
+<script src="https://kit.fontawesome.com/2fe833f814.js " crossorigin="anonymous "></script>
+<!--Dropdown btn js-->
+<script src="../public/js/btnDropdown.js"></script>
+</body>
+
+
+</html>

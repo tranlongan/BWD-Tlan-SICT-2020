@@ -95,7 +95,7 @@ hr.hr1{
 }
 
 .rp1_2 div .btn-light{
-    margin: 3px 0 0 10px;
+    margin: 3px 0 0 18px;
     border: 0;
     color: #6f42c1;
     outline: none;
@@ -228,13 +228,7 @@ div.rl3 .lbCol2{
     text-decoration: none;
 }
 
-.labelMore{
-    position: absolute;
-    top:8px;
-    left: 20px;
-}
-
-a div.labelMore:hover{
+div.labelMore:hover{
     color: #6f42c1;
 }
 
@@ -315,14 +309,13 @@ div.rps_Lb_Fl_MenuNavBar:hover{
     color: #e83e8c;
 }
 
-div.div_more{
-    color: #1a1a1a;
-}
-div.div_more:hover{
+.div_more button:hover{
     color: #e83e8c;
 }
 
-
+.loadMore_PB{
+    display: none;
+}
 
 
 

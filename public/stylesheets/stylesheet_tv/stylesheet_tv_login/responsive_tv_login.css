@@ -855,6 +855,9 @@
     div.card-body{
         display: block;
     }
+    .list-group li.rp_li_x{
+        display: block;
+    }
 }
 
 @media screen and (min-width: 1500px){
@@ -878,5 +881,8 @@
 
     .dropdown{
         padding-left: 20px;
+    }
+    .list-group li.rp_li_x{
+        display: block;
     }
 }
