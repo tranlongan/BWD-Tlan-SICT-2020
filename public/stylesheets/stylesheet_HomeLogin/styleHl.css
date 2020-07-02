@@ -25,3 +25,14 @@
     left: 94px;
 }
 
+.col-lg-2.col2{
+    position: fixed;
+    overflow: auto;
+    max-height: inherit;
+    height: 100%;
+}
+
+.col10 {
+    position: absolute;
+    left:253.200px;
+}

@@ -18,6 +18,7 @@
     }
     .rp1 div.clp_hide{
         display: block;
+        position: absolute;
         width: 100%;
     }
     /*aaaaa*/
@@ -26,8 +27,11 @@
         display: none;
     }
 
-    .col10{
+    div.col10{
         padding-top: 50px;
+        position: absolute;
+        left: 1px;
+        top:100px;
         /*max-width: 90%;*/
     }
 
@@ -174,8 +178,11 @@
         display: none;
     }
 
-    .col10{
+    div.col10{
         padding-top: 50px;
+        position: absolute;
+        left: 1px;
+        top:100px;
         /*max-width: 90%;*/
     }
 
@@ -318,8 +325,12 @@
         display: none;
     }
 
-    .col10{
+    div.col10{
         padding-top: 50px;
+        position: absolute;
+        left: 1px;
+        top:100px;
+        /*max-width: 90%;*/
     }
 
     /*Phần slide*/
@@ -429,8 +440,12 @@
         display: none;
     }
 
-    .col10{
+    div.col10{
         padding-top: 50px;
+        position: absolute;
+        left: 1px;
+        top:100px;
+        /*max-width: 90%;*/
     }
 
     /*phần navBar*/
@@ -521,6 +536,10 @@
 
     div.col10{
         padding-top: 50px;
+        position: absolute;
+        left: 170px;
+        top:54px;
+        /*max-width: 90%;*/
     }
 
     .col-lg-10{
@@ -602,9 +621,15 @@
 @media screen and (min-width: 1045px){
     div.infWatchTV{
         position: absolute;
-        left: 210px;
+        left: 200px;
         top: 10px;
     }
+    div.col10{
+        left: 200px;
+        top:54px;
+        /*max-width: 90%;*/
+    }
+
 }
 
 @media screen and (min-width: 1110px){
@@ -640,6 +665,12 @@
         padding-top: 6px;
         width: 260px;
     }
+
+    div.col10{
+        left: 210px;
+        top:54px;
+        /*max-width: 90%;*/
+    }
 }
 
 @media screen and (min-width: 1240px){
@@ -674,6 +705,11 @@
 
     .list-group li.col_rp_col4, .list-group li.col_rp{
         display: block;
+    }
+    div.col10{
+        left: 250px;
+        top:54px;
+        /*max-width: 90%;*/
     }
 
 }
@@ -717,6 +753,11 @@
     }
     hr.hr1{
         max-width: 44%;
+    }
+    div.col10{
+        left: 230px;
+        top:54px;
+        /*max-width: 90%;*/
     }
 }
 
@@ -803,5 +844,7 @@
     .dropdown{
         padding-left: 20px;
     }
-
+    div.col10 {
+        left:253.200px;
+    }
 }
