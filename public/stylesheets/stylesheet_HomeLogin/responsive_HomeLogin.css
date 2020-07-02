@@ -1,850 +1,572 @@
-@media screen and (width: 320px){
-
-    .dropdown .dropdown-content h4{
-       font-size: 12px;
-    }
-
-    .dropdown .dropdown-content{
-        left: -80px;
-    }
-
-    td.bx1 a{
-        font-size: 9px;
-    }
-
-    td.bx1{
-        width: 20px;
-        padding: 0;
-    }
-    .rp1 div.clp_hide{
-        display: block;
-        position: absolute;
-        width: 100%;
-    }
-    /*aaaaa*/
-    .col2{
-        /*max-width: 10%;*/
-        display: none;
-    }
-
-    div.col10{
-        padding-top: 50px;
-        position: absolute;
-        left: 1px;
-        top:100px;
-        /*max-width: 90%;*/
-    }
-
-    /*Phần slide*/
-    #slider{
-        display: none;
-    }
-
-    /*phần navBar*/
-    .ds{
-        display: none;
-    }
-    img.iconGif {
-        width: 18px;
-        height: 18px;
-    }
-    img.iconTV{
-        width: 18px;
-        height: 18px;
-    }
-    .nav-link img.iconHdn{
-        display: block;
-        height: 18px;
-        width: 18px;
-    }
-    button.dropbtn {
-        font-size: 3px;
-        width: 40px;
-    }
-    input.setTfSearch {
-        display: none;
-    }
-    div.divSearch {
-        padding: 7px 0 0 10px;
-        width: 40px;
-    }
-    button.btn-primary.setButton {
-        width: 40px;
-    }
-    div.dkdn{
-        padding-left: 20px;
-        padding-top: 6px;
-    }
-   img.iconLogin{
-       width: 24px;
-       height: 24px;
-   }
-   button.dropbtn_a{
-       height: 24px;
-       width: 24px;
-       border-radius: 10px;
-   }
-    div.dropdown-content1 {
-        font-size: 8px;
-        width: 100px;
-        top: 20px;
-        left: -100px;
-    }
-    div.dropdown-content2 {
-        font-size: 8px;
-        width: 100px;
-        top: 20px;
-        left: -100px;
-        height: 350px;
-    }
-    img.iconBell{
-        width: 50px;
-        height: 50px;
-    }
-    div.ps_IconBell{
-        top: 155px;
-        left: 60px;
-    }
-    div.ps_lb_notification{
-        top: 250px;
-        left: 40px;
-    }
-    .list-group li.col_rp{
-        display: none;
-    }
-
-    .list-group li.col_rp_col4{
-        display: none;
-    }
-
-    /*phần xem thêm*/
-    .rp1_2{
-        font-size: 9px;
-    }
-    .rp1_2 div .btn-light{
-        padding-top: 5px;
-    }
-    hr.hr0{
-        max-width: 35%;
-    }
-    hr.hr1{
-        max-width: 32%;
-    }
-
-    /*phần phổ biến*/
-    div a.linkP2 h6{
-        font-size: 11px;
-        margin: 0;
-    }
-    div a.linkP2{
-        font-size: 8px;
-    }
-
-    .linkP2 h5{
-        font-size: 6px;
-    }
-
-    .lb_h5 h5{
-        font-size: 13px;
-    }
-
-
-}
-
-@media screen and (width: 375px){
-    .dropdown .dropdown-content h4{
-        font-size: 12px;
-    }
-
-    .dropdown .dropdown-content{
-        left: -80px;
-    }
-
-    td.bx1 a{
-        font-size: 9px;
-    }
-
-    td.bx1{
-        width: 20px;
-        padding: 0;
-    }
-
-    .rp1 div.clp_hide{
-        display: block;
-        width: 100%;
-    }
-
-    .col2{
-        display: none;
-    }
-
-    div.col10{
-        padding-top: 50px;
-        position: absolute;
-        left: 1px;
-        top:100px;
-        /*max-width: 90%;*/
-    }
-
-    /*Phần slide*/
-    #slider{
-        display: none;
-    }
-
-    /*phần navBar*/
-    .ds{
-        display: none;
-    }
-    img.iconGif {
-        width: 18px;
-        height: 18px;
-    }
-    img.iconTV{
-        width: 18px;
-        height: 18px;
-    }
-    .nav-link img.iconHdn{
-        display: block;
-        height: 18px;
-        width: 18px;
-    }
-    button.dropbtn {
-        font-size: 3px;
-        width: 40px;
-    }
-    input.setTfSearch {
-        width: 70px;
-    }
-    div.divSearch {
-        padding: 7px 0 0 10px;
-        width: 120px;
-    }
-    button.btn-primary.setButton {
-        width: 40px;
-    }
-    div.dkdn{
-        padding-left: 10px;
-        padding-top: 8px;
-    }
-    img.iconLogin{
-        width: 22px;
-        height: 22px;
-    }
-    button.dropbtn_a{
-        height: 20px;
-        width: 20px;
-        border-radius: 18px;
-    }
-    div.dropdown{
-        padding-left: 2px;
-    }
-    div.dropdown-content2{
-        left: -300px;
-        width: 350px;
-        height: 250px;
-    }
-    img.iconBell{
-        width: 80px;
-        height: 80px;
-    }
-    div.ps_IconBell{
-        top: 110px;
-        left: 140px;
-    }
-    div.ps_lb_notification{
-        top: 190px;
-        left: 80px;
-    }
-    .list-group li.col_rp{
-        display: none;
-    }
-
-    .list-group li.col_rp_col4{
-        display: none;
-    }
-
-    /*phần xem thêm*/
-    .rp1_2{
-        font-size: 9px;
-    }
-    .rp1_2 div .btn-light{
-        padding-top: 5px;
-    }
-    hr.hr0{
-        max-width: 35%;
-    }
-    hr.hr1{
-        max-width: 32%;
-    }
-
-    /*phần phổ biến*/
-    div a.linkP2 h6{
-        font-size: 11px;
-        margin: 0;
-    }
-    div a.linkP2{
-        font-size: 8px;
-    }
-
-    linkP2 h5{
-        font-size: 6px;
-    }
-
-    .lb_h5 h5{
-        font-size: 13px;
-    }
-
-
-}
-
-@media screen and (width: 414px){
-
-    .dropdown .dropdown-content h4{
-        font-size: 12px;
-    }
-
-    .dropdown .dropdown-content{
-        left: -80px;
-    }
-
-    td.bx1 a{
-        font-size: 9px;
-    }
-
-    td.bx1{
-        width: 20px;
-        padding: 0;
-    }
-
-    .rp1 div.clp_hide{
-        display: block;
-        width: 100%;
-    }
-
-    .col2{
-        display: none;
-    }
-
-    div.col10{
-        padding-top: 50px;
-        position: absolute;
-        left: 1px;
-        top:100px;
-        /*max-width: 90%;*/
-    }
-
-    /*Phần slide*/
-    #slider{
-        display: none;
-    }
-
-    /*phần navBar*/
-    .ds{
-        display: none;
-    }
-    img.iconGif {
-        width: 18px;
-        height: 18px;
-    }
-    img.iconTV{
-        width: 18px;
-        height: 18px;
-    }
-    .nav-link img.iconHdn{
-        display: block;
-        height: 18px;
-        width: 18px;
-    }
-    button.dropbtn {
-        font-size: 3px;
-        width: 40px;
-    }
-    input.setTfSearch {
-        width: 60px ;
-    }
-    div.divSearch {
-        padding: 7px 0 0 10px;
-        width: 100px;
-    }
-    button.btn-primary.setButton {
-        width: 30px;
-    }
-    div.dkdn{
-        padding-left: 20px;
-        padding-top: 6px;
-    }
-
-    .list-group li.col_rp{
-        display: none;
-    }
-
-    .list-group li.col_rp_col4{
-        display: none;
-    }
-
-    /*phần xem thêm*/
-    .rp1_2{
-        font-size: 10px;
-    }
-    .rp1_2 div .btn-light{
-        padding-top: 5px;
-    }
-    hr.hr0{
-        max-width: 38%;
-    }
-    hr.hr1{
-        max-width: 33%;
-    }
-
-    /*phần phổ biến*/
-    div a.linkP2 h6{
-        font-size: 11px;
-        margin: 0;
-    }
-    div a.linkP2{
-        font-size: 8px;
-    }
-
-    linkP2 h5{
-        font-size: 6px;
-    }
-
-    .lb_h5 h5{
-        font-size: 13px;
-    }
-
-
-}
-
-@media screen and (min-width: 768px){
-    .rp1 div.clp_hide{
-        display: block;
-        width: 100%;
-    }
-
-    /*Phần slide*/
-    div.sl_rps #slider{
-        perspective: 850px;
-        height: 45vw;
-    }
-    div.sl_rps #slider label{
-        left: 120px;
-        top: 0;
-    }
-
-    div.sl_rps #slider label  div.divSlide{
-        font-size: 12px;
-    }
-
-    .col2{
-        display: none;
-    }
-
-    div.col10{
-        padding-top: 50px;
-        position: absolute;
-        left: 1px;
-        top:100px;
-        /*max-width: 90%;*/
-    }
-
-    /*phần navBar*/
-    .ds{
-        display: block;
-        font-size: 14px;
-    }
-    img.iconGif {
-        width: 28px;
-        height: 28px;
-    }
-    img.iconTV{
-        width: 28px;
-        height: 28px;
-    }
-    .nav-link img.iconHdn{
-        display: none;
-    }
-    button.dropbtn {
-        font-size: 10px;
-        width: 80px;
-    }
-    input.setTfSearch {
-        width: 200px ;
-    }
-    div.divSearch {
-        padding: 7px 0 0 10px;
-        width: 270px;
-    }
-    button.btn-primary.setButton {
-        width: 50px;
-    }
-    div.dkdn{
-        padding-left: 40px;
-        padding-top: 6px;
-        width: 180px;
-    }
-
-    .dropdown{
-        padding-left: 10px;
-    }
-
-    .list-group li.col_rp{
-        display: none;
-    }
-
-    /*phần xem thêm*/
-    .rp1_2{
-        font-size: 16px;
-    }
-    .rp1_2 div .btn-light{
-        padding-top: 5px;
-    }
-    hr.hr0{
-        max-width: 42%;
-    }
-    hr.hr1{
-        max-width: 36%;
-    }
-}
-
-@media screen and (min-width: 1024px){
-    .rp1 div.clp_hide{
-        display: none;
-    }
-
-    #demo3{
-        font-size: 13px;
-    }
-
-    /*Phần slide*/
-    div.sl_rps #slider{
-        perspective: 1000px;
-        height: 35vw;
-    }
-    div.sl_rps #slider label{
-        left: 140px;
-        top: 0;
-    }
-
-    div.sl_rps #slider label  div.divSlide{
-        font-size: 12px;
-    }
-
-    .col2{
-        display: block;
-    }
-
-    div.col10{
-        padding-top: 50px;
-        position: absolute;
-        left: 170px;
-        top:54px;
-        /*max-width: 90%;*/
-    }
-
-    .col-lg-10{
-        width: 100%;
-    }
-
-    /*phần navBar*/
-    .ds{
-        font-size: 18px;
-    }
-    img.iconGif {
-        width: 30px;
-        height: 30px;
-    }
-    img.iconTV{
-        width: 30px;
-        height: 30px;
-    }
-    .nav-link img.iconHdn{
-        display: none;
-    }
-    button.dropbtn {
-        font-size: 18px;
-        width: 200px;
-    }
-    input.setTfSearch {
-        width: 240px ;
-    }
-    div.divSearch {
-        padding: 7px 0 0 10px;
-        width: 310px;
-    }
-    button.btn-primary.setButton {
-        width: 50px;
-    }
-    div.dkdn{
-        padding-left: 40px;
-        padding-top: 6px;
-        width: 200px;
-    }
-
-    .dropdown{
-        padding-left: 20px;
-    }
-
-    .list-group li.col_rp{
-        display: none;
-    }
-
-    /*phần xem thêm*/
-    .rp1_2{
-        font-size: 16px;
-    }
-    .rp1_2 div .btn-light{
-        padding-top: 5px;
-    }
-    hr.hr0{
-        max-width: 42%;
-    }
-    hr.hr1{
-        max-width: 39%;
-    }
-
-    /*phần phổ biến*/
-    .list-group li.col_rp_col3_a, .list-group li.col_rp_col4{
-        display: block;
-    }
-
-    div.infWatchTV{
-        position: absolute;
-        left: 200px;
-        top: 10px;
-    }
-    div.infWatchTV div a.linkP2 h6{
-        height: 55px;
-    }
-}
-
-@media screen and (min-width: 1045px){
-    div.infWatchTV{
-        position: absolute;
-        left: 200px;
-        top: 10px;
-    }
-    div.col10{
-        left: 200px;
-        top:54px;
-        /*max-width: 90%;*/
-    }
-
-}
-
-@media screen and (min-width: 1110px){
-
-    #demo3{
-        font-size: 1.2vw;
-    }
-
-    /*Phần slide*/
-    div.sl_rps #slider{
-        perspective: 1080px;
-        height: 35vw;
-    }
-
-    div.infWatchTV{
-        position: absolute;
-        left: 240px;
-        top: 10px;
-    }
-
-    input.setTfSearch {
-        width: 280px ;
-    }
-    div.divSearch {
-        padding: 7px 0 0 10px;
-        width: 340px;
-    }
-    button.btn-primary.setButton {
-        width: 50px;
-    }
-    div.dkdn{
-        padding-left: 60px;
-        padding-top: 6px;
-        width: 260px;
-    }
-
-    div.col10{
-        left: 210px;
-        top:54px;
-        /*max-width: 90%;*/
-    }
-}
-
-@media screen and (min-width: 1240px){
-
-    /*Phần slide*/
-    div.sl_rps #slider{
-        perspective: 1080px;
-        height: 30vw;
-    }
-
-    div.infWatchTV{
-        position: absolute;
-        left: 260px;
-        top: 10px;
-    }
-
-    input.setTfSearch {
-        width: 340px ;
-    }
-    div.divSearch {
-        padding: 7px 0 0 30px;
-        width: 480px;
-    }
-    button.btn-primary.setButton {
-        width: 80px;
-    }
-    div.dkdn{
-        padding-left: 60px;
-        padding-top: 6px;
-        width: 280px;
-    }
-
-    .list-group li.col_rp_col4, .list-group li.col_rp{
-        display: block;
-    }
-    div.col10{
-        left: 250px;
-        top:54px;
-        /*max-width: 90%;*/
-    }
-
-}
-
-@media screen and (min-width: 1350px){
-    /*Phần slide*/
-    div.sl_rps #slider{
-        perspective: 1150px;
-        height: 30vw;
-    }
-
-    div.sl_rps #slider label{
-        left: 170px;
-        top: 0;
-    }
-
-    div.infWatchTV{
-        left: 280px;
-        top: 10px;
-    }
-
-    input.setTfSearch {
-        width: 430px ;
-    }
-    div.divSearch {
-        padding: 7px 0 0 30px;
-        width: 540px;
-    }
-    button.btn-primary.setButton {
-        width: 80px;
-    }
-    div.dkdn{
-        padding-left: 100px;
-        padding-top: 6px;
-        width: 310px;
-    }
-
-    /*phần xem thêm*/
-    hr.hr0{
-        max-width: 43%;
-    }
-    hr.hr1{
-        max-width: 44%;
-    }
-    div.col10{
-        left: 230px;
-        top:54px;
-        /*max-width: 90%;*/
-    }
-}
-
-@media screen and (min-width: 1460px){
-    /*Phần slide*/
-    div.sl_rps #slider{
-        perspective: 1150px;
-        height: 30vw;
-    }
-
-    div.sl_rps #slider label{
-        left: 190px;
-        top: 0;
-    }
-
-    div.infWatchTV{
-        left: 310px;
-        top: 10px;
-    }
-    /*phần navbar*/
-    input.setTfSearch {
-        width: 550px ;
-    }
-    div.divSearch {
-        padding: 7px 0 0 30px;
-        width: 660px;
-    }
-    button.btn-primary.setButton {
-        width: 70px;
-    }
-
-    div.dkdn{
-        padding-left: 100px;
-        padding-top: 6px;
-        width: 290px;
-    }
-
-    .dropdown{
-        padding-left: 20px;
-    }
-    /*phần xem thêm*/
-    hr.hr0{
-        max-width: 45%;
-    }
-    hr.hr1{
-        max-width: 45%;
-    }
-}
-
-@media screen and (min-width: 1500px){
-    /*Phần slide*/
-    div.sl_rps #slider{
-        perspective: 1150px;
-        height: 30vw;
-    }
-
-    div.sl_rps #slider label{
-        left: 208px;
-        top: 0;
-    }
-
-    div.infWatchTV{
-        left: 330px;
-    }
-
-    /*phần navbar*/
-    input.setTfSearch {
-        width: 550px ;
-    }
-    div.divSearch {
-        padding: 7px 0 0 30px;
-        width: 660px;
-    }
-    button.btn-primary.setButton {
-        width: 70px;
-    }
-
-    div.dkdn{
-        padding-left: 200px;
-        padding-top: 6px;
-        width: 360px;
-    }
-
-    .dropdown{
-        padding-left: 20px;
-    }
-    div.col10 {
-        left:253.200px;
-    }
-}
+/*@media screen and (width: 320px){*/
+
+/*    .dropdown .dropdown-content h4{*/
+/*       font-size: 12px;*/
+/*    }*/
+
+/*    .dropdown .dropdown-content{*/
+/*        left: -80px;*/
+/*    }*/
+
+/*    td.bx1 a{*/
+/*        font-size: 9px;*/
+/*    }*/
+
+/*    td.bx1{*/
+/*        width: 20px;*/
+/*        padding: 0;*/
+/*    }*/
+/*    .rp1 div.clp_hide{*/
+/*        display: block;*/
+/*        position: absolute;*/
+/*        width: 100%;*/
+/*    }*/
+/*    !*aaaaa*!*/
+/*    .col2{*/
+/*        !*max-width: 10%;*!*/
+/*        display: none;*/
+/*    }*/
+
+/*    div.col10{*/
+/*        padding-top: 50px;*/
+/*        position: absolute;*/
+/*        left: 1px;*/
+/*        top:100px;*/
+/*        !*max-width: 90%;*!*/
+/*    }*/
+
+/*    !*phần navBar*!*/
+/*    .ds{*/
+/*        display: none;*/
+/*    }*/
+/*    img.iconGif {*/
+/*        width: 18px;*/
+/*        height: 18px;*/
+/*    }*/
+/*    img.iconTV{*/
+/*        width: 18px;*/
+/*        height: 18px;*/
+/*    }*/
+/*    .nav-link img.iconHdn{*/
+/*        display: block;*/
+/*        height: 18px;*/
+/*        width: 18px;*/
+/*    }*/
+/*    button.dropbtn {*/
+/*        font-size: 3px;*/
+/*        width: 40px;*/
+/*    }*/
+/*    input.setTfSearch {*/
+/*        display: none;*/
+/*    }*/
+/*    div.divSearch {*/
+/*        padding: 7px 0 0 10px;*/
+/*        width: 40px;*/
+/*    }*/
+/*    button.btn-primary.setButton {*/
+/*        width: 40px;*/
+/*    }*/
+/*    div.dkdn{*/
+/*        padding-left: 20px;*/
+/*        padding-top: 6px;*/
+/*    }*/
+/*   img.iconLogin{*/
+/*       width: 24px;*/
+/*       height: 24px;*/
+/*   }*/
+/*   button.dropbtn_a{*/
+/*       height: 24px;*/
+/*       width: 24px;*/
+/*       border-radius: 10px;*/
+/*   }*/
+/*    div.dropdown-content1 {*/
+/*        font-size: 8px;*/
+/*        width: 100px;*/
+/*        top: 20px;*/
+/*        left: -100px;*/
+/*    }*/
+/*    div.dropdown-content2 {*/
+/*        font-size: 8px;*/
+/*        width: 100px;*/
+/*        top: 20px;*/
+/*        left: -100px;*/
+/*        height: 350px;*/
+/*    }*/
+/*    img.iconBell{*/
+/*        width: 50px;*/
+/*        height: 50px;*/
+/*    }*/
+/*    div.ps_IconBell{*/
+/*        top: 155px;*/
+/*        left: 60px;*/
+/*    }*/
+/*    div.ps_lb_notification{*/
+/*        top: 250px;*/
+/*        left: 40px;*/
+/*    }*/
+/*    .list-group li.col_rp{*/
+/*        display: none;*/
+/*    }*/
+
+/*    .list-group li.col_rp_col4{*/
+/*        display: none;*/
+/*    }*/
+
+/*}*/
+
+/*@media screen and (width: 375px){*/
+/*    .dropdown .dropdown-content h4{*/
+/*        font-size: 12px;*/
+/*    }*/
+
+/*    .dropdown .dropdown-content{*/
+/*        left: -80px;*/
+/*    }*/
+
+/*    td.bx1 a{*/
+/*        font-size: 9px;*/
+/*    }*/
+
+/*    td.bx1{*/
+/*        width: 20px;*/
+/*        padding: 0;*/
+/*    }*/
+
+/*    .rp1 div.clp_hide{*/
+/*        display: block;*/
+/*        width: 100%;*/
+/*    }*/
+
+/*    .col2{*/
+/*        display: none;*/
+/*    }*/
+
+/*    div.col10{*/
+/*        padding-top: 50px;*/
+/*        position: absolute;*/
+/*        left: 1px;*/
+/*        top:100px;*/
+/*        !*max-width: 90%;*!*/
+/*    }*/
+
+/*    !*phần navBar*!*/
+/*    .ds{*/
+/*        display: none;*/
+/*    }*/
+/*    img.iconGif {*/
+/*        width: 18px;*/
+/*        height: 18px;*/
+/*    }*/
+/*    img.iconTV{*/
+/*        width: 18px;*/
+/*        height: 18px;*/
+/*    }*/
+/*    .nav-link img.iconHdn{*/
+/*        display: block;*/
+/*        height: 18px;*/
+/*        width: 18px;*/
+/*    }*/
+/*    button.dropbtn {*/
+/*        font-size: 3px;*/
+/*        width: 40px;*/
+/*    }*/
+/*    input.setTfSearch {*/
+/*        width: 70px;*/
+/*    }*/
+/*    div.divSearch {*/
+/*        padding: 7px 0 0 10px;*/
+/*        width: 120px;*/
+/*    }*/
+/*    button.btn-primary.setButton {*/
+/*        width: 40px;*/
+/*    }*/
+/*    div.dkdn{*/
+/*        padding-left: 10px;*/
+/*        padding-top: 8px;*/
+/*    }*/
+/*    img.iconLogin{*/
+/*        width: 22px;*/
+/*        height: 22px;*/
+/*    }*/
+/*    button.dropbtn_a{*/
+/*        height: 20px;*/
+/*        width: 20px;*/
+/*        border-radius: 18px;*/
+/*    }*/
+/*    div.dropdown{*/
+/*        padding-left: 2px;*/
+/*    }*/
+/*    div.dropdown-content2{*/
+/*        left: -300px;*/
+/*        width: 350px;*/
+/*        height: 250px;*/
+/*    }*/
+/*    img.iconBell{*/
+/*        width: 80px;*/
+/*        height: 80px;*/
+/*    }*/
+/*    div.ps_IconBell{*/
+/*        top: 110px;*/
+/*        left: 140px;*/
+/*    }*/
+/*    div.ps_lb_notification{*/
+/*        top: 190px;*/
+/*        left: 80px;*/
+/*    }*/
+/*    .list-group li.col_rp{*/
+/*        display: none;*/
+/*    }*/
+
+/*    .list-group li.col_rp_col4{*/
+/*        display: none;*/
+/*    }*/
+
+/*}*/
+
+/*@media screen and (width: 414px){*/
+
+/*    .dropdown .dropdown-content h4{*/
+/*        font-size: 12px;*/
+/*    }*/
+
+/*    .dropdown .dropdown-content{*/
+/*        left: -80px;*/
+/*    }*/
+
+/*    td.bx1 a{*/
+/*        font-size: 9px;*/
+/*    }*/
+
+/*    td.bx1{*/
+/*        width: 20px;*/
+/*        padding: 0;*/
+/*    }*/
+
+/*    .rp1 div.clp_hide{*/
+/*        display: block;*/
+/*        width: 100%;*/
+/*    }*/
+
+/*    .col2{*/
+/*        display: none;*/
+/*    }*/
+
+/*    div.col10{*/
+/*        padding-top: 50px;*/
+/*        position: absolute;*/
+/*        left: 1px;*/
+/*        top:100px;*/
+/*        !*max-width: 90%;*!*/
+/*    }*/
+
+/*    !*phần navBar*!*/
+/*    .ds{*/
+/*        display: none;*/
+/*    }*/
+/*    img.iconGif {*/
+/*        width: 18px;*/
+/*        height: 18px;*/
+/*    }*/
+/*    img.iconTV{*/
+/*        width: 18px;*/
+/*        height: 18px;*/
+/*    }*/
+/*    .nav-link img.iconHdn{*/
+/*        display: block;*/
+/*        height: 18px;*/
+/*        width: 18px;*/
+/*    }*/
+/*    button.dropbtn {*/
+/*        font-size: 3px;*/
+/*        width: 40px;*/
+/*    }*/
+/*    input.setTfSearch {*/
+/*        width: 60px ;*/
+/*    }*/
+/*    div.divSearch {*/
+/*        padding: 7px 0 0 10px;*/
+/*        width: 100px;*/
+/*    }*/
+/*    button.btn-primary.setButton {*/
+/*        width: 30px;*/
+/*    }*/
+/*    div.dkdn{*/
+/*        padding-left: 20px;*/
+/*        padding-top: 6px;*/
+/*    }*/
+
+/*}*/
+
+/*@media screen and (min-width: 768px){*/
+/*    .rp1 div.clp_hide{*/
+/*        display: block;*/
+/*        width: 100%;*/
+/*    }*/
+
+/*    .col2{*/
+/*        display: none;*/
+/*    }*/
+
+/*    div.col10{*/
+/*        padding-top: 50px;*/
+/*        position: absolute;*/
+/*        left: 1px;*/
+/*        top:100px;*/
+/*        !*max-width: 90%;*!*/
+/*    }*/
+
+/*    !*phần navBar*!*/
+/*    .ds{*/
+/*        display: block;*/
+/*        font-size: 14px;*/
+/*    }*/
+/*    img.iconGif {*/
+/*        width: 28px;*/
+/*        height: 28px;*/
+/*    }*/
+/*    img.iconTV{*/
+/*        width: 28px;*/
+/*        height: 28px;*/
+/*    }*/
+/*    .nav-link img.iconHdn{*/
+/*        display: none;*/
+/*    }*/
+/*    button.dropbtn {*/
+/*        font-size: 10px;*/
+/*        width: 80px;*/
+/*    }*/
+/*    input.setTfSearch {*/
+/*        width: 200px ;*/
+/*    }*/
+/*    div.divSearch {*/
+/*        padding: 7px 0 0 10px;*/
+/*        width: 270px;*/
+/*    }*/
+/*    button.btn-primary.setButton {*/
+/*        width: 50px;*/
+/*    }*/
+/*    div.dkdn{*/
+/*        padding-left: 40px;*/
+/*        padding-top: 6px;*/
+/*        width: 180px;*/
+/*    }*/
+
+/*    .dropdown{*/
+/*        padding-left: 10px;*/
+/*    }*/
+/*}*/
+
+/*@media screen and (min-width: 1024px){*/
+/*    .rp1 div.clp_hide{*/
+/*        display: none;*/
+/*    }*/
+
+/*    #demo3{*/
+/*        font-size: 13px;*/
+/*    }*/
+
+/*    .col2{*/
+/*        display: block;*/
+/*    }*/
+
+/*    div.col10{*/
+/*        padding-top: 0;*/
+/*        position: absolute;*/
+/*        left: 150px;*/
+/*        top:54px;*/
+/*        !*max-width: 90%;*!*/
+/*    }*/
+/*    !*phần navBar*!*/
+/*    .ds{*/
+/*        font-size: 18px;*/
+/*    }*/
+/*    img.iconGif {*/
+/*        width: 30px;*/
+/*        height: 30px;*/
+/*    }*/
+/*    img.iconTV{*/
+/*        width: 30px;*/
+/*        height: 30px;*/
+/*    }*/
+/*    .nav-link img.iconHdn{*/
+/*        display: none;*/
+/*    }*/
+/*    button.dropbtn {*/
+/*        font-size: 18px;*/
+/*        width: 200px;*/
+/*    }*/
+/*    input.setTfSearch {*/
+/*        width: 240px ;*/
+/*    }*/
+/*    div.divSearch {*/
+/*        padding: 7px 0 0 10px;*/
+/*        width: 310px;*/
+/*    }*/
+/*    button.btn-primary.setButton {*/
+/*        width: 50px;*/
+/*    }*/
+/*    div.dkdn{*/
+/*        padding-left: 40px;*/
+/*        padding-top: 6px;*/
+/*        width: 200px;*/
+/*    }*/
+
+/*    .dropdown{*/
+/*        padding-left: 20px;*/
+/*    }*/
+/*}*/
+
+/*@media screen and (min-width: 1045px){*/
+/*    div.infWatchTV{*/
+/*        position: absolute;*/
+/*        left: 200px;*/
+/*        top: 10px;*/
+/*    }*/
+/*    div.col10{*/
+/*        left: 200px;*/
+/*        top:54px;*/
+/*        !*max-width: 90%;*!*/
+/*    }*/
+
+/*}*/
+
+/*@media screen and (min-width: 1110px){*/
+
+/*    #demo3{*/
+/*        font-size: 1.2vw;*/
+/*    }*/
+/*    div.infWatchTV{*/
+/*        position: absolute;*/
+/*        left: 240px;*/
+/*        top: 10px;*/
+/*    }*/
+
+/*    input.setTfSearch {*/
+/*        width: 280px ;*/
+/*    }*/
+/*    div.divSearch {*/
+/*        padding: 7px 0 0 10px;*/
+/*        width: 340px;*/
+/*    }*/
+/*    button.btn-primary.setButton {*/
+/*        width: 50px;*/
+/*    }*/
+/*    div.dkdn{*/
+/*        padding-left: 60px;*/
+/*        padding-top: 6px;*/
+/*        width: 260px;*/
+/*    }*/
+
+/*    div.col10{*/
+/*        left: 210px;*/
+/*        top:54px;*/
+/*        !*max-width: 90%;*!*/
+/*    }*/
+/*}*/
+
+/*@media screen and (min-width: 1240px){*/
+
+/*    div.infWatchTV{*/
+/*        position: absolute;*/
+/*        left: 260px;*/
+/*        top: 10px;*/
+/*    }*/
+
+/*    input.setTfSearch {*/
+/*        width: 340px ;*/
+/*    }*/
+/*    div.divSearch {*/
+/*        padding: 7px 0 0 30px;*/
+/*        width: 480px;*/
+/*    }*/
+/*    button.btn-primary.setButton {*/
+/*        width: 80px;*/
+/*    }*/
+/*    div.dkdn{*/
+/*        padding-left: 60px;*/
+/*        padding-top: 6px;*/
+/*        width: 280px;*/
+/*    }*/
+
+/*    div.col10{*/
+/*        left: 250px;*/
+/*        top:0;*/
+/*        !*max-width: 90%;*!*/
+/*        height: 100%;*/
+/*    }*/
+
+/*}*/
+
+/*@media screen and (min-width: 1350px){*/
+/*    div.infWatchTV{*/
+/*        left: 280px;*/
+/*        top: 10px;*/
+/*    }*/
+
+/*    input.setTfSearch {*/
+/*        width: 430px ;*/
+/*    }*/
+/*    div.divSearch {*/
+/*        padding: 7px 0 0 30px;*/
+/*        width: 540px;*/
+/*    }*/
+/*    button.btn-primary.setButton {*/
+/*        width: 80px;*/
+/*    }*/
+/*    div.dkdn{*/
+/*        padding-left: 100px;*/
+/*        padding-top: 6px;*/
+/*        width: 310px;*/
+/*    }*/
+/*}*/
+
+/*@media screen and (min-width: 1460px){*/
+/*    !*phần navbar*!*/
+/*    input.setTfSearch {*/
+/*        width: 550px ;*/
+/*    }*/
+/*    div.divSearch {*/
+/*        padding: 7px 0 0 30px;*/
+/*        width: 660px;*/
+/*    }*/
+/*    button.btn-primary.setButton {*/
+/*        width: 70px;*/
+/*    }*/
+
+/*    div.dkdn{*/
+/*        padding-left: 100px;*/
+/*        padding-top: 6px;*/
+/*        width: 290px;*/
+/*    }*/
+
+/*    .dropdown{*/
+/*        padding-left: 20px;*/
+/*    }*/
+/*}*/
+
+/*@media screen and (min-width: 1500px){*/
+/*    !*phần navbar*!*/
+/*    input.setTfSearch {*/
+/*        width: 550px ;*/
+/*    }*/
+/*    div.divSearch {*/
+/*        padding: 7px 0 0 30px;*/
+/*        width: 660px;*/
+/*    }*/
+/*    button.btn-primary.setButton {*/
+/*        width: 70px;*/
+/*    }*/
+
+/*    div.dkdn{*/
+/*        padding-left: 200px;*/
+/*        padding-top: 6px;*/
+/*        width: 360px;*/
+/*    }*/
+
+/*    .dropdown{*/
+/*        padding-left: 20px;*/
+/*    }*/
+/*    div.col10 {*/
+/*        left:383.5px;*/
+/*    }*/
+/*}*/

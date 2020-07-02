@@ -1,7 +1,7 @@
 .iconLogin{
-    width: 35px;
-    height: 35px;
-    border-radius: 40px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
     border: 1px solid #b9f6ca;
 }
 .iconLogin_1{
@@ -25,3 +25,63 @@
     width: 150px;
     height: 150px;
 }
+
+.iconAccount1{
+    width: 54px;
+    height: 54px;
+    border: 1px solid #1a1a1a;
+}
+div img.iconAccount1{
+    border-radius: 32px;
+}
+.iconPost{
+    width: 32px;
+    height: 32px;
+}
+
+.imgAcount{
+    width:34px ;
+    height: 34px;
+}
+
+.imgOfPost{
+    width: 200px;
+    height: 300px;
+}
+
+.imgOfPost{
+    max-width: inherit;
+    width: 100%;
+}
+
+img.imgOfPost{
+    border-radius: 5px;
+}
+
+.iconCmt{
+    width: 20px;
+    height: 20px;
+}
+
+.iconHome{
+    width: 105px;
+    height: 100px;
+}
+img.iconHome{
+    border-radius: 100%;
+}
+
+.divIconHome{
+    margin-bottom: 55px;
+}
+
+.iconSearch{
+    width: 24px;
+    height: 24px;
+}
+
+.iconSetting{
+    width: 30px;
+    height: 30px;
+}
+

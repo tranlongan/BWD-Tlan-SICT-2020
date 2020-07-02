@@ -1,38 +1,249 @@
-.tbDrp1 tr td{
-   padding: 18px 0 0 20px;
-}
-.lb_LogOut{
-    position: absolute;
-    top: 145px;
-    left:45px;
-}
-.lb_Setting{
-    position: absolute;
-    top: 97px;
-    left:45px;
+.tbDrp1 tr td {
+    padding: 18px 0 0 20px;
 }
 
-.ps_IconBell{
+.lb_LogOut {
+    position: absolute;
+    top: 145px;
+    left: 45px;
+}
+
+.lb_Setting {
+    position: absolute;
+    top: 97px;
+    left: 45px;
+}
+
+.ps_IconBell {
     position: absolute;
     top: 155px;
     left: 120px;
 }
 
-.ps_lb_notification{
+.ps_lb_notification {
     position: absolute;
     text-align: center;
     top: 320px;
     left: 94px;
 }
 
-.col-lg-2.col2{
+.col-lg-3.col2 {
     position: fixed;
     overflow: auto;
     max-height: inherit;
     height: 100%;
+    z-index: 100;
 }
 
-.col10 {
+.col-lg-4.col5_1 {
+    position: fixed;
+    overflow: auto;
+    max-height: inherit;
+    height: 100%;
+    z-index: 100;
+    left: 1012.8px;
+}
+
+div.col5 {
+    position: relative;
+    left: 379.8px;
+}
+
+.divTrangChu {
+    position: fixed;
+    background-color: #f1f8e9;
+    max-width: inherit;
+    width: 630.9px;
+    z-index: 100;
+    border-bottom: 1px solid #c2c2c2;
+    padding: 14px;
+    left: 396px;
+    top: 0px;
+}
+
+.divTrangChu a{
+    color: #1a1a1a;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.divTrangChu a:hover{
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+.divDangBai {
+    background-color: white;
+    padding-top: 53px;
+}
+
+.divDangBai1 {
+    background-color: white;
+    padding-left: 50px;
+    border-bottom: 8px solid #AAAAAA;
+}
+
+.btnDangBai {
+    border: 0;
+    border-radius: 15px;
+    padding: 5px 10px 5px 10px;
+}
+
+.divBtn {
+    padding: 5px 11px;
+}
+
+.last_Item {
+    margin-left: 180px;
+}
+
+.divDangBai1 li a :hover {
+    border-radius: 48%;
+    background-color: #b9f6ca;
+}
+
+div.tfPost {
     position: absolute;
-    left:253.200px;
+    left: 70px;
+    top: 25px;
+}
+
+.noteAndImgOfPost {
+    padding: 8px 16px 8px 70px;
+}
+
+.inpSearch {
+    width: 563.5px;
+    height: 40px;
+    outline: none;
+    position: absolute;
+    left: 68px;
+    top: 70px;
+}
+
+.fixItem {
+    padding-left: 185px;
+}
+
+.btnDangBai1 {
+    padding: 14px;
+    border: 0;
+    border-radius: 50px;
+    width: 230px;
+}
+
+.divBtnDangBai {
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.psLbAcount {
+    position: absolute;
+    left: 54px;
+    top: 0;
+}
+
+div.psLbAcount:hover {
+    background-color: #f1f1f1;
+    border-radius: 18px;
+    height: 55px;
+}
+
+.inpSearch1 {
+    border-radius: 18px;
+    border: 1px solid #c2c2c2;
+    outline: none;
+    padding-left: 44px;
+    height: 35px;
+    width: 340px;
+}
+
+.divInpSearch {
+    padding-top: 10px;
+}
+
+.divIconSearch {
+    position: absolute;
+    top: 13px;
+    left: 25px;
+}
+
+.divTable {
+    margin-top: 25px;
+    background-color: #f1f8e9;
+}
+
+.divTable div {
+    padding: 10px;
+}
+
+.divTable a, .divTable a:hover {
+    text-decoration: none;
+    color: #1a1a1a;
+}
+
+.divTable a div:hover {
+    background-color: #bec5b7;
+}
+
+.divTable div a:hover {
+    background-color: #bec5b7;
+}
+
+.divTable hr {
+    padding: 0;
+    margin: 0;
+}
+
+.divIconSetting {
+    position: absolute;
+    top: 75px;
+    left: 414px;
+}
+
+.divLastCnt{
+    margin-top: 32px;
+}
+.divLastCnt .nav-link{
+    color: #869791;
+    font-size: 13px;
+}
+
+.divLastCnt .nav-link:hover{
+    color: #869791;
+    text-decoration: underline;
+}
+
+.rowOfPost a, .rowOfPost a:hover{
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+.divHover a:hover{
+    color: #6f42c1;
+}
+
+.itmeN{
+    color: #818182;
+}
+
+.itmeN_:hover{
+    text-decoration: underline;
+}
+
+.itmeN a{
+    color: #818182;
+}
+
+.itmeN a:hover{
+    color: #818182;
+    text-decoration: underline;
+}
+
+.stDropdown{
+    margin-top: 100px;
+}
+
+.hoverA div :hover{
+    background-color: #818182;
 }

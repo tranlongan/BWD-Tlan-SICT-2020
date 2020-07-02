@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="public/stylesheets/reponsive.css">
     <!--     stylesheets-->
     <link rel="stylesheet" href="./public/stylesheets/style2.css">
+    <link rel="stylesheet" href="./public/stylesheets/stysheet_Login/123.css">
     <!--    slide stylesheets-->
     <link rel="stylesheet" href="./public/stylesheets/slide.css">
     <!--    set icon-->
@@ -28,7 +29,6 @@
     <title>Home</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
@@ -131,8 +131,12 @@
                     </div>
 
                     <div class="dkdn">
-                        <button class="btnDk btn-secondary" type="submit">Đăng ký</button>
-                        <button class="btnDn btn-info" type="submit">
+                        <button class="btnDk btn-secondary" type="submit"
+                                onclick="document.getElementById('id01').style.display='block'">
+                            Đăng ký
+                        </button>
+                        <button class="btnDn btn-info" type="submit"
+                                onclick="document.getElementById('id01').style.display='block'">
                             Đăng nhập
                         </button>
                     </div>
@@ -143,7 +147,62 @@
         </div>
         <!--        kết thúc Scrollspy-->
     </nav>
+    <!-- form đăng nhập -->
+    <div id="id01" class="modal">
+        <div id="login-box" class="modal-content animate" action="/action_page.php" method="post">
+            <div class="left">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#dangnhap"
+                           style="width:175px; text-align: center; font-weight:bold;">Đăng Nhập</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#dangky"
+                           style="width:175px; text-align: center; font-weight:bold;">Đăng ký</a>
+                    </li>
 
+                </ul>
+
+                <div class="tab-content">
+                    <div id="dangnhap" class="container tab-pane active">
+                        <input type="text" name="username" placeholder="Tên đăng nhập">
+
+                        <input type="password" name="password" placeholder="Mật khẩu">
+                        <a class="textsg" style="float: left; text-decoration: none;" href="">Quên mật khẩu</a>
+                        <a class="textsg" style="float: right; text-decoration: none;" href="#car">Bạn đã có tài
+                            khoản chưa ?</a>
+                        <br>
+                        <input type="submit" name="signup_submit" value="Đăng nhập">
+                    </div>
+
+
+                    <div id="dangky" class="container tab-pane fade">
+                        <input type="text" name="username" placeholder="Tên đăng nhập">
+                        <input type="text" name="email" placeholder="E-mail">
+                        <input type="password" name="password" placeholder="Nhập mật khẩu">
+                        <input type="password" name="password2" placeholder="Nhạp lại mật khẩu">
+                        <input type="submit" name="signup_submit" value="Đăng Ký">
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="right">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                          title="Close Modal">&times;</span>
+
+                </div>
+                <span class="loginwith">Sign in with<br>social network</span>
+                <button class="social-signin facebook">Log in with facebook</button>
+                <button class="social-signin twitter">Log in with Twitter</button>
+                <button class="social-signin google">Log in with Google+</button>
+            </div>
+            <div class="or">OR</div>
+        </div>
+
+    </div>
+    <!--kết thúc form-->
     <!--    phần thân-->
     <div class="row rp1" style="margin-top: 55px;">
         <!--        menu hiden responsive-->
@@ -165,7 +224,10 @@
                                     <h4>Hãy tham gia cộng đồng</h4>
                                     <h3>D.I.Y</h3>
                                     Khám phá những ý tưởng sáng tạo tốt nhất ở mọi nơi<br/>
-                                    <button class="btn_light">Tham gia ngay</button>
+                                    <button class="btn_light" type="submit"
+                                            onclick="document.getElementById('id01').style.display='block'">
+                                        Tham gia ngay
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -1168,7 +1230,8 @@
                                 <div class="divRp">
                                     <div class="divRp_1">
                                         <a href="" class="linkP2">
-                                            <h6> Xây dựng một khu vườn đá để tăng tính bền vững cho khu vườn của bạn</h6>
+                                            <h6> Xây dựng một khu vườn đá để tăng tính bền vững cho khu vườn của
+                                                bạn</h6>
                                         </a>
                                     </div>
 
@@ -1259,5 +1322,15 @@
 <!--Dropdown btn js-->
 <script src="./public/js/btnDropdown.js"></script>
 <script src="./public/js/loadMore.js"></script>
+<script>
+    var modal = document.getElementById('id01');
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+
 </body>
 </html>

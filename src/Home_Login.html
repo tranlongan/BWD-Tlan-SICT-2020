@@ -38,206 +38,8 @@
 
 <!--    khởi đầu-->
 <div class="container-fluid" style="display: flex;flex-direction: column;height: 100%;width: 100%">
-    <!--    phần navBar-->
-    <nav class="navbar-light fixed-top" style="background-color: #ffffff ">
-        <div class="row" style="padding: 6px">
-            <!--            col 12-->
-            <div class="col-lg-12">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="" style="padding-left: 5px">
-                            <img class="iconGif" src="../public/images/picture%20icon%20gif/tải%20xuống.png"/>
-                        </a>
-                    </li>
-                    <li class="nav-item" style="margin-left: 12px">
-                        <a class="nav-link" href="">
-                            <img class="iconHdn" src="../public/images/forum.png"/>
-                            <div class="ds">Diễn đàn D.I.Y</div>
-                        </a>
-                    </li>
-                    <li class="nav-item"><a href="../src/tv_login.html"><img class="iconTV"
-                                                                             src="../public/images/tv.png"/></a></li>
-                    <li class="nav-item btn" style="padding-top: 0; padding-bottom: 0;padding-right: 0">
-                        <!--                        btn dropdown-->
-                        <div class="dropdown">
-                            <button onclick="myFunction()" class="dropbtn">
-                                Khám phá các ý tưởng
-                            </button>
-                            <div id="myDropdown" class="dropdown-content">
-                                <div>
-                                    <a href="" class="aT"><h4>Làm thế nào để: </h4></a>
-                                    <table class="table table-borderless">
-                                        <tr>
-                                            <td class="bx1"><a href="#home">Xây dựng</a></td>
-                                            <td class="bx1"><a href="#about">Sửa chữa</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="bx1"><a href="#contact">Sơn</a></td>
-                                            <td class="bx1"><a href="#contact">Lau dọn</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="bx1"><a href="#contact">Thủ công</a></td>
-                                            <td class="bx1"><a href="#contact">Trang trí</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="bx1"><a href="#contact">Trồng trọt</a></td>
-                                            <td class="bx1"><a href="#contact">Organize</a></td>
-                                        </tr>
-                                    </table>
-                                    <hr/>
-
-                                    <a href="" class="aT"><h4>Căn phòng & Không gian</h4></a>
-                                    <table class="table table-borderless">
-                                        <tr>
-                                            <td class="bx1"><a href="#home">Nhà bếp & Phòng ăn</a></td>
-                                            <td class="bx1"><a href="#about">Lối vào</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="bx1"><a href="#contact">Phòng khách</a></td>
-                                            <td class="bx1"><a href="#contact">Tầng thượng</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="bx1"><a href="#contact">Phòng ngủ</a></td>
-                                            <td class="bx1"><a href="#contact">Ngoài trời</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="bx1"><a href="#contact">Phòng tắm</a></td>
-                                            <td class="bx1"><a href="#contact">Cửa sổ & Cửa ra vào</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="bx1"><a href="#contact">Phòng thủ công</a></td>
-                                            <td class="bx1"><a href="#contact">Nền & Trần nhà</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="bx1"><a href="#contact">Phòng làm việc</a></td>
-                                            <td class="bx1"><a href="#contact">Cầu thang</a></td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <!--                        end btn dropdown-->
-                    </li>
-
-                    <div class="divSearch">
-                        <input type="search" class="setTfSearch">
-                        <button type="submit" class="btn-primary setButton" style="outline: none">
-                            <i class="material-icons" style="font-size: small;">search</i>
-                        </button>
-                    </div>
-
-                    <div class="dkdn">
-                        <a href="">
-                            <img style="border: 0" class="iconLogin"
-                                 src="../public/images/picture%20home%20login/blog.png">
-                        </a>
-
-                        <!--                        dropdown notification -->
-                        <div class="dropdown">
-                            <button class="dropbtn_a" style="background-color: white">
-                                <img onclick="myFunction2()" class="iconLogin dropbtn2"
-                                     src="../public/images/picture%20home%20login/notification.png">
-                            </button>
-                            <div id="myDropdown2" class="dropdown-content2">
-                                <div>
-                                    <table class="table table-borderless">
-                                        <tr>
-                                            <td>
-                                                Thông báo
-                                            </td>
-                                            <td style="width: 10%">
-                                                <a href="" style="padding: 0">
-                                                    <img class="iconGear"
-                                                         src="../public/images/picture%20home%20login/gear.png">
-                                                </a>
-                                            </td>
-
-                                        </tr>
-                                    </table>
-                                </div>
-                                <hr style="padding: 0; margin: 0"/>
-                                <div>
-                                    <div class="ps_IconBell">
-                                        <img class="iconBell" src="../public/images/picture%20home%20login/bell.png">
-                                    </div>
-                                    <div class="ps_lb_notification">
-                                        <b>Thông báo của bạn ở đây</b>
-                                        <br/>
-                                        Bạn không có thông báo nào
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--                        drop down account-->
-                        <div class="dropdown">
-                            <button class="dropbtn_a">
-                                <img onclick="myFunction1()" class="iconLogin dropbtn1"
-                                     src="../public/images/picture%20home%20login/tenor.gif">
-                            </button>
-                            <div id="myDropdown1" class="dropdown-content1">
-                                <div>
-                                    <table class="table table-borderless tbDrp1">
-                                        <tr>
-                                            <td style="width: 25%">
-                                                <img class="iconLogin_1"
-                                                     src="../public/images/picture%20home%20login/tenor.gif">
-                                            </td>
-                                            <td>
-                                                Norman
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </div>
-                                <hr style="padding: 0; margin: 0"/>
-                                <a href="" class="aaa">
-                                    <div class="ps_iconUser">
-                                        <div>
-                                            <img class="iconLogOut"
-                                                 src="../public/images/picture%20home%20login/settings.png">
-                                        </div>
-                                        <div class="lb_Setting">
-                                            Quản lý tài khoản
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="" class="aaa">
-                                    <div class="ps_iconUser">
-                                        <div>
-                                            <img class="iconLogOut"
-                                                 src="../public/images/picture%20home%20login/out.png">
-                                        </div>
-                                        <div class="lb_LogOut">
-                                            Đăng xuất
-                                        </div>
-                                    </div>
-                                </a>
-                                <hr style="padding: 0; margin: 0"/>
-                                <a href="">
-                                    <div>
-                                        aaaaaaaaaaaaaa
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </ul>
-            </div>
-            <!--        kết thúc phần khởi đầu-->
-        </div>
-        <!--        kết thúc Scrollspy-->
-    </nav>
-
     <!--    phần thân-->
-    <div class="row rp1" style="margin-top: 55px;">
+    <div class="row rp1">
         <!--        menu hiden responsive-->
         <div class="clp_hide" style="background-color: #4DC7A0;z-index: 2">
             <nav class="navbar navbar-inverse">
@@ -334,11 +136,27 @@
                 </div>
             </nav>
         </div>
-        <!--        phần của col 2-->
-        <div class="col-lg-2 col2 col2_1"
-             style="background-color: #c2c2c2;padding:5px 0 5px 0;">
-            <!--            menu-->
-            <div style="padding-top: 20px;">
+        <!--        phần của col 3-->
+        <div class="col-lg-3 col2"
+             style="background-color: #f1f8e9;padding:5px 0 5px 100px;">
+            <div style="padding-top: 20px">
+                <div class="divIconHome">
+                    <img class="iconHome"
+                         src="../public/images/picture%20icon%20gif/506491bb384d29a5-animate-bulb-by-cabaroc-dribbble.gif">
+                </div>
+                <!--                home-->
+                <div class="rlCol2 rl1">
+                    <a href="">
+                        <div>
+                            <div class="iconCol2">
+                                <img src="../public/images/picture%20home%20login/icons8-home-80.png"/>
+                            </div>
+                            <div id="demo3" class="lbCol2">
+                                Home
+                            </div>
+                        </div>
+                    </a>
+                </div>
                 <!--                bài viết của bạn-->
                 <div class="rlCol2 rl1">
                     <a href="">
@@ -352,7 +170,19 @@
                         </div>
                     </a>
                 </div>
-
+                <!--                Thông báo-->
+                <div class="rlCol2 rl1">
+                    <a href="">
+                        <div>
+                            <div class="iconCol2">
+                                <img src="../public/images/picture%20home%20login/icons8-notification-50.png"/>
+                            </div>
+                            <div id="demo3" class="lbCol2">
+                                Thông báo
+                            </div>
+                        </div>
+                    </a>
+                </div>
                 <!--                Lịch sử-->
                 <div class="rlCol2 rl2">
                     <a href="">
@@ -365,1380 +195,518 @@
                     </a>
                 </div>
 
-                <!--                Bạn đang theo dõi-->
-                <div class="rlCol2 rl3">
+                <!--                profile-->
+                <div class="rlCol2 rl2">
                     <a href="">
                         <div class="iconCol2">
-                            <img src="../public/images/follow.png"/>
+                            <img src="../public/images/picture%20home%20login/icons8-customer-50.png"/>
                         </div>
                         <div id="demo3" class="lbCol2">
-                            Bạn đang theo dõi
+                            Cá nhân
+                        </div>
+                    </a>
+                </div>
+
+                <!--                more-->
+                <div class="rlCol2 rl2">
+                    <a href="">
+                        <div class="iconCol2">
+                            <img src="../public/images/picture%20home%20login/icons8-view-more-50.png"/>
+                        </div>
+                        <div id="demo3" class="lbCol2">
+                            Nhiều hơn
+                        </div>
+                    </a>
+                </div>
+                <!--                btn đăng bài-->
+                <div class="divBtnDangBai">
+                    <button class="btn-primary btnDangBai1">
+                        Đăng bài
+                    </button>
+                </div>
+
+                <!--                        drop down account-->
+                <div class="dropdown stDropdown">
+                    <button class="dropbtn_a" onclick="myFunction1()" style="outline: none">
+                        <img class="iconLogin dropbtn1"
+                             src="../public/images/picture%20home%20login/tenor.gif">
+                        <div class="psLbAcount">
+                            Norman
+                            <p style="color: #AAAAAA">@Norman48267172</p>
+                        </div>
+                    </button>
+                    <div id="myDropdown1" class="dropdown-content1">
+                        <div>
+                            <table class="table table-borderless tbDrp1">
+                                <tr>
+                                    <td style="width: 25%">
+                                        <img class="iconLogin_1"
+                                             src="../public/images/picture%20home%20login/tenor.gif">
+                                    </td>
+                                    <td>
+                                        Norman
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <hr style="padding: 0; margin: 0"/>
+                        <a href="" class="aaa_x">
+                            <div class="ps_iconUser_x">
+                                <div>
+                                    <img class="iconLogOut"
+                                         src="../public/images/picture%20home%20login/settings.png">
+                                </div>
+                                <div class="lb_Setting">
+                                    Quản lý tài khoản
+                                </div>
+                            </div>
+                        </a>
+                        <a href="../index.html" class="aaa">
+                            <div class="ps_iconUser">
+                                <div>
+                                    <img class="iconLogOut"
+                                         src="../public/images/picture%20home%20login/out.png">
+                                </div>
+                                <div class="lb_LogOut">
+                                    Đăng xuất
+                                </div>
+                            </div>
+                        </a>
+                        <hr style="padding: 0; margin: 0"/>
+                        <a href="">
+                            <div>
+                                aaaaaaaaaaaaaa
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--        phần của col 5-->
+        <div class="col-lg-5 col5"
+             style="background-color: #f1f8e9;z-index: 1;border: 1px solid #c2c2c2; max-height: inherit;height: 100%">
+            <div class="row divTrangChu">
+                <a href="">
+                    Trang chủ
+                </a>
+            </div>
+
+            <!--            phần đăng bài-->
+            <div class="row divDangBai">
+                <div style="padding: 10px;">
+                    <img class="iconAccount1" src="../public/images/picture%20home%20login/tenor.gif">
+                </div>
+                <input class="inpSearch" type="text" placeholder="Bạn có ý tưởng gì??" style="border: 0"/>
+            </div>
+            <div class="row divDangBai1">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            <img class="iconPost"
+                                 src="../public/images/picture%20home%20login/icons8-full-image-100.png">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img class="iconPost"
+                                 src="../public/images/picture%20home%20login/icons8-gif-80.png">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img class="iconPost"
+                                 src="../public/images/picture%20home%20login/icons8-questions-80.png">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img class="iconPost"
+                                 src="../public/images/picture%20home%20login/icons8-happy-100.png">
+                        </a>
+                    </li>
+                    <li class="nav-item last_Item">
+                        <div class="divBtn">
+                            <button class="btnDangBai btn-primary">
+                                Đăng bài
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--            hết phần đăng bài-->
+
+            <!--                bài đăng 1-->
+            <a class="hoverA" href="" style="border-bottom: 1px solid #c2c2c2">
+                <div class="row rowOfPost"
+                     style="border-bottom: 1px solid #c2c2c2; padding-bottom: 10px;position: relative">
+                    <div>
+                        <div style="padding: 10px">
+                            <img class="iconAccount1" src="../public/images/picture%20home%20login/tenor.gif">
+                        </div>
+                        <div class="tfPost">
+                            <ul class="nav">
+                                <li class="nav-item itmeN_">
+                                    <a href="">
+                                        People
+                                    </a>
+                                </li>
+                                <li class="nav-item itmeN" style="padding-left:32px; ">
+                                    @People - <a href="">Tháng 7</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="">
+                        <div class="noteAndImgOfPost">
+                            <div>
+                                Trang trí chiếc cốc bằng cách vẽ
+                            </div>
+                            <div>
+                                <img class="imgOfPost" src="../public/images/img_DanhMuc/15duan.png">
+                            </div>
+                        </div>
+                    </a>
+                    <div class="divHover">
+                        <ul class="nav">
+                            <li class="nav-item" style="padding-left: 70px">
+                                <a href="">
+                                    <div>
+                                        <img class="iconCmt"
+                                             src="../public/images/picture%20home%20login/icons8-speech-bubble-100.png">
+                                        1.2k
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item fixItem">
+                                <a href="">
+                                    <div>
+                                        <img class="iconCmt"
+                                             src="../public/images/picture%20home%20login/icons8-heart-100.png">
+                                        1.2k
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item fixItem">
+                                <a href="">
+                                    <div>
+                                        <img class="iconCmt"
+                                             src="../public/images/picture%20home%20login/icons8-level-up-50.png">
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+
+            <!--                bài đăng 2-->
+            <a href="" style="border-bottom: 1px solid #c2c2c2">
+                <div class="row rowOfPost"
+                     style="border-bottom: 1px solid #c2c2c2; padding-bottom: 10px;position: relative">
+
+                    <div>
+                        <div style="padding: 10px">
+                            <img class="iconAccount1" src="../public/images/picture%20home%20login/tenor.gif">
+                        </div>
+                        <div class="tfPost">
+                            <ul class="nav">
+                                <li class="nav-item itmeN_">
+                                    <a href="">
+                                        People
+                                    </a>
+                                </li>
+                                <li class="nav-item itmeN" style="padding-left: 32px">
+                                    @People - <a href="">Tháng 7</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="">
+                        <div class="noteAndImgOfPost">
+                            <div>
+                                Bạn có tin giá đỡ này được làm từ ván trượt
+                            </div>
+                            <div>
+                                <img class="imgOfPost"
+                                     src="../public/images/picture%20home%20login/diy-skateboard-shelfs.jpg">
+                            </div>
+                        </div>
+                    </a>
+                    <div class="divHover">
+                        <ul class="nav">
+                            <li class="nav-item" style="padding-left: 70px">
+                                <a href="">
+                                    <div>
+                                        <img class="iconCmt"
+                                             src="../public/images/picture%20home%20login/icons8-speech-bubble-100.png">
+                                        1.2k
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item fixItem">
+                                <a href="">
+                                    <div>
+                                        <img class="iconCmt"
+                                             src="../public/images/picture%20home%20login/icons8-heart-100.png">
+                                        1.2k
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item fixItem">
+                                <a href="">
+                                    <div>
+                                        <img class="iconCmt"
+                                             src="../public/images/picture%20home%20login/icons8-level-up-50.png">
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+
+            <!--                bài đăng 3-->
+            <a href="" style="border-bottom: 1px solid #c2c2c2">
+                <div class="row rowOfPost"
+                     style="border-bottom: 1px solid #c2c2c2; padding-bottom: 10px;position: relative">
+
+                    <div>
+                        <div style="padding: 10px">
+                            <img class="iconAccount1" src="../public/images/picture%20home%20login/tenor.gif">
+                        </div>
+                        <div class="tfPost">
+                            <ul class="nav">
+                                <li class="nav-item itmeN_">
+                                    <a href="">
+                                        People
+                                    </a>
+                                </li>
+                                <li class="nav-item itmeN" style="padding-left: 32px">
+                                    @People - <a href="">Tháng 7</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="">
+                        <div class="noteAndImgOfPost">
+                            <div>
+                                Cách củng cố vườn của bạn bạn bằng cách lát đá
+                            </div>
+                            <div>
+                                <img class="imgOfPost" src="../public/images/picture%20of%20content%203/low.jpg">
+                            </div>
+                        </div>
+                    </a>
+                    <div class="divHover">
+                        <ul class="nav">
+                            <li class="nav-item" style="padding-left: 70px">
+                                <a href="">
+                                    <div>
+                                        <img class="iconCmt"
+                                             src="../public/images/picture%20home%20login/icons8-speech-bubble-100.png">
+                                        1.2k
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item fixItem">
+                                <a href="">
+                                    <div>
+                                        <img class="iconCmt"
+                                             src="../public/images/picture%20home%20login/icons8-heart-100.png">
+                                        1.2k
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item fixItem">
+                                <a href="">
+                                    <div>
+                                        <img class="iconCmt"
+                                             src="../public/images/picture%20home%20login/icons8-level-up-50.png">
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+
+            <!--                bài đăng 3-->
+            <a href="" style="border-bottom: 1px solid #c2c2c2">
+                <div class="row rowOfPost"
+                     style="border-bottom: 1px solid #c2c2c2; padding-bottom: 10px;position: relative">
+
+                    <div>
+                        <div style="padding: 10px">
+                            <img class="iconAccount1" src="../public/images/picture%20home%20login/tenor.gif">
+                        </div>
+                        <div class="tfPost">
+                            <ul class="nav">
+                                <li class="nav-item itmeN_">
+                                    <a href="">
+                                        People
+                                    </a>
+                                </li>
+                                <li class="nav-item itmeN" style="padding-left: 32px">
+                                    @People - <a href="">Tháng 7</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="">
+                        <div class="noteAndImgOfPost">
+                            <div>
+                                Vệ sinh máy giặt chỉ bằng 2 sản phẩm không độc hại
+                            </div>
+                            <div>
+                                <img class="imgOfPost"
+                                     src="../public/images/picture%20home%20login/how-to-clean-a-washing-machine-using-just-2-non-toxic-products.jpg">
+                            </div>
+                        </div>
+                    </a>
+                    <div class="divHover">
+                        <ul class="nav">
+                            <li class="nav-item" style="padding-left: 70px">
+                                <a href="">
+                                    <div>
+                                        <img class="iconCmt"
+                                             src="../public/images/picture%20home%20login/icons8-speech-bubble-100.png">
+                                        1.2k
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item fixItem">
+                                <a href="">
+                                    <div>
+                                        <img class="iconCmt"
+                                             src="../public/images/picture%20home%20login/icons8-heart-100.png">
+                                        1.2k
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item fixItem">
+                                <a href="">
+                                    <div>
+                                        <img class="iconCmt"
+                                             src="../public/images/picture%20home%20login/icons8-level-up-50.png">
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+
+            <!--        kết thúc col 10-->
+        </div>
+        <div class="col-lg-4 col5_1" style="background-color: #f5f5f5;z-index: 1">
+            <div class="divInpSearch">
+                <input class="inpSearch1" type="text" placeholder="Tìm kiếm trên D.I.Y"/>
+                <div class="divIconSearch">
+                    <img class="iconSearch" src="../public/images/picture%20home%20login/icons8-search-50.png">
+                </div>
+            </div>
+
+            <div class="divTable" ; style="border: 1px solid #c2c2c2; padding: 8px; border-radius: 16px">
+                <div>
+                    Xu hướng cho bạn
+                    <div class="divIconSetting">
+                        <a href="" style="padding: 10px">
+                            <img class="iconSetting"
+                                 src="../public/images/picture%20home%20login/icons8-settings-50.png">
+                        </a>
+                    </div>
+                </div>
+                <hr/>
+                <div class="moreBox" style="padding: 0">
+                    <a href="">
+                        <div>
+                            Văn phòng tại nhà<br/>
+                            <b>#Phòng & Không gian</b>
+                        </div>
+                        <hr/>
+                    </a>
+                    <a href="">
+                        <div>
+                            Xây dựng<br/>
+                            <b>#Làm thế nào</b>
+                        </div>
+                        <hr/>
+                    </a>
+                    <a href="">
+                        <div>
+                            Cầu thang<br/>
+                            <b>#Phòng và không gian</b>
+                        </div>
+                        <hr/>
+                    </a>
+                    <a href="">
+                        <div>
+                            Dọn dẹp<br/>
+                            <b>#làm thế nào</b>
+                        </div>
+                        <hr/>
+                    </a>
+                    <a id="loadMore">
+                        <div>
+                            Xem thêm
+                        </div>
+                    </a>
+                </div>
+                <div class="moreBox blogBox" style="padding: 0;display: none">
+                    <a href="">
+                        <div>
+                            Văn phòng tại nhà<br/>
+                            <b>#Phòng & Không gian</b>
+                        </div>
+                        <hr/>
+                    </a>
+                    <a href="">
+                        <div>
+                            Xây dựng<br/>
+                            <b>#Làm thế nào</b>
+                        </div>
+                        <hr/>
+                    </a>
+                    <a href="">
+                        <div>
+                            Cầu thang<br/>
+                            <b>#Phòng và không gian</b>
+                        </div>
+                        <hr/>
+                    </a>
+                    <a href="">
+                        <div>
+                            Dọn dẹp<br/>
+                            <b>#làm thế nào</b>
+                        </div>
+                        <hr/>
+                    </a>
+                    <a id="loadMore">
+                        <div>
+                            Xem thêm
                         </div>
                     </a>
                 </div>
             </div>
-
-            <!--            gạch ngang-->
-            <div>
-                <hr/>
+            <div class="divLastCnt">
+                <nav class="nav">
+                    <li class="nav-item"><a href="" class="nav-link">Điều kiện</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Chính sách bảo mật</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Cookie</a></li>
+                </nav>
+                <nav class="nav">
+                    <li class="nav-item"><a href="" class="nav-link">Thông tin quảng cáo</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">More</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">@@@</a></li>
+                </nav>
             </div>
 
-            <!--            follow-->
-            <div>
-                <div id="demo3">
-                    NGƯỜI BẠN ĐANG THEO DÕI
-                </div>
-                <div>
-                    <div class="moreBox2">
-                        <!--                    fl1-->
-                        <div class="fl_Col2">
-                            <a href="">
-                                <div class="icon_Fl_Col2">
-                                    <img src="../public/images/picture%20of%20danhmuc/picture%20carousel/10.png">
-                                </div>
-                                <div id="demo3">
-                                    <div class="lb_Fl_Col2">
-                                        People 1
-                                    </div>
-                                    <div class="icon_PostNew">
-                                        <img src="../public/images/oval.png">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!--                    fl2-->
-                        <div class="fl_Col2">
-                            <a href="">
-                                <div class="icon_Fl_Col2">
-                                    <img src="../public/images/picture%20of%20danhmuc/picture%20carousel/10.png">
-                                </div>
-                                <div id="demo3">
-                                    <div class="lb_Fl_Col2">
-                                        People 1
-                                    </div>
-                                    <div class="icon_PostNew">
-                                        <img src="../public/images/oval.png">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!--                    fl3-->
-                        <div class="fl_Col2">
-                            <a href="">
-                                <div class="icon_Fl_Col2">
-                                    <img src="../public/images/picture%20of%20danhmuc/picture%20carousel/10.png">
-                                </div>
-                                <div id="demo3">
-                                    <div class="lb_Fl_Col2">
-                                        People 1
-                                    </div>
-                                    <div class="icon_PostNew">
-                                        <img src="../public/images/oval.png">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!--                    fl4-->
-                        <div class="fl_Col2">
-                            <a href="">
-                                <div class="icon_Fl_Col2">
-                                    <img src="../public/images/picture%20of%20danhmuc/picture%20carousel/10.png">
-                                </div>
-                                <div id="demo3">
-                                    <div class="lb_Fl_Col2">
-                                        People 1
-                                    </div>
-                                    <div class="icon_PostNew">
-                                        <img src="../public/images/oval.png">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!--                    fl5-->
-                        <div class="fl_Col2">
-                            <a href="">
-                                <div class="icon_Fl_Col2">
-                                    <img src="../public/images/picture%20of%20danhmuc/picture%20carousel/10.png">
-                                </div>
-                                <div id="demo3">
-                                    <div class="lb_Fl_Col2">
-                                        People 1
-                                    </div>
-                                    <div class="icon_PostNew">
-                                        <img src="../public/images/oval.png">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!--                    fl6-->
-                        <div class="fl_Col2">
-                            <a href="">
-                                <div class="icon_Fl_Col2">
-                                    <img src="../public/images/picture%20of%20danhmuc/picture%20carousel/10.png">
-                                </div>
-                                <div id="demo3">
-                                    <div class="lb_Fl_Col2">
-                                        People 1
-                                    </div>
-                                    <div class="icon_PostNew">
-                                        <img src="../public/images/oval.png">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!--                    fl7-->
-                        <div class="fl_Col2">
-                            <a href="">
-                                <div class="icon_Fl_Col2">
-                                    <img src="../public/images/picture%20of%20danhmuc/picture%20carousel/10.png">
-                                </div>
-                                <div id="demo3">
-                                    <div class="lb_Fl_Col2">
-                                        People 1
-                                    </div>
-                                    <div class="icon_PostNew">
-                                        <img src="../public/images/oval.png">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!--                    fl8-->
-                        <div class="fl_Col2">
-                            <a href="">
-                                <div class="icon_Fl_Col2">
-                                    <img src="../public/images/picture%20of%20danhmuc/picture%20carousel/10.png">
-                                </div>
-                                <div id="demo3">
-                                    <div class="lb_Fl_Col2">
-                                        People 1
-                                    </div>
-                                    <div class="icon_PostNew">
-                                        <img src="../public/images/oval.png">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!--                    load more-->
-                    <div class="blogBox2 moreBox2 " style="display: none">
-                        <!--                    fl1-->
-                        <div class="fl_Col2">
-                            <a href="">
-                                <div class="icon_Fl_Col2">
-                                    <img src="../public/images/picture%20of%20danhmuc/picture%20carousel/10.png">
-                                </div>
-                                <div id="demo3">
-                                    <div class="lb_Fl_Col2">
-                                        People 1
-                                    </div>
-                                    <div class="icon_PostNew">
-                                        <img src="../public/images/oval.png">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!--                    fl2-->
-                        <div class="fl_Col2">
-                            <a href="">
-                                <div class="icon_Fl_Col2">
-                                    <img src="../public/images/picture%20of%20danhmuc/picture%20carousel/10.png">
-                                </div>
-                                <div id="demo3">
-                                    <div class="lb_Fl_Col2">
-                                        People 1
-                                    </div>
-                                    <div class="icon_PostNew">
-                                        <img src="../public/images/oval.png">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!--                    fl3-->
-                        <div class="fl_Col2">
-                            <a href="">
-                                <div class="icon_Fl_Col2">
-                                    <img src="../public/images/picture%20of%20danhmuc/picture%20carousel/10.png">
-                                </div>
-                                <div id="demo3">
-                                    <div class="lb_Fl_Col2">
-                                        People 1
-                                    </div>
-                                    <div class="icon_PostNew">
-                                        <img src="../public/images/oval.png">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!--                    fl4-->
-                        <div class="fl_Col2">
-                            <a href="">
-                                <div class="icon_Fl_Col2">
-                                    <img src="../public/images/picture%20of%20danhmuc/picture%20carousel/10.png">
-                                </div>
-                                <div id="demo3">
-                                    <div class="lb_Fl_Col2">
-                                        People 1
-                                    </div>
-                                    <div class="icon_PostNew">
-                                        <img src="../public/images/oval.png">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!--                    fl5-->
-                        <div class="fl_Col2">
-                            <a href="">
-                                <div class="icon_Fl_Col2">
-                                    <img src="../public/images/picture%20of%20danhmuc/picture%20carousel/10.png">
-                                </div>
-                                <div id="demo3">
-                                    <div class="lb_Fl_Col2">
-                                        People 1
-                                    </div>
-                                    <div class="icon_PostNew">
-                                        <img src="../public/images/oval.png">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!--                    fl6-->
-                        <div class="fl_Col2">
-                            <a href="">
-                                <div class="icon_Fl_Col2">
-                                    <img src="../public/images/picture%20of%20danhmuc/picture%20carousel/10.png">
-                                </div>
-                                <div id="demo3">
-                                    <div class="lb_Fl_Col2">
-                                        People 1
-                                    </div>
-                                    <div class="icon_PostNew">
-                                        <img src="../public/images/oval.png">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!--                    fl7-->
-                        <div class="fl_Col2">
-                            <a href="">
-                                <div class="icon_Fl_Col2">
-                                    <img src="../public/images/picture%20of%20danhmuc/picture%20carousel/10.png">
-                                </div>
-                                <div id="demo3">
-                                    <div class="lb_Fl_Col2">
-                                        People 1
-                                    </div>
-                                    <div class="icon_PostNew">
-                                        <img src="../public/images/oval.png">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!--                    fl8-->
-                        <div class="fl_Col2">
-                            <a href="">
-                                <div class="icon_Fl_Col2">
-                                    <img src="../public/images/picture%20of%20danhmuc/picture%20carousel/10.png">
-                                </div>
-                                <div id="demo3">
-                                    <div class="lb_Fl_Col2">
-                                        People 1
-                                    </div>
-                                    <div class="icon_PostNew">
-                                        <img src="../public/images/oval.png">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div id="demo3">
-                        <div class="fl_Col2">
-                            <button id="loadMore2" style="max-width: inherit; width: 100%; border: 0;height: 40px">
-                                <div class="labelMore">
-                                    Hiển thị thêm ... mục
-                                </div>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!--                gạch ngang-->
-                <div>
-                    <hr/>
-                </div>
-            </div>
-
-        </div>
-        <!--        phần của col 10-->
-        <div class="col-lg-10 col10" style="background-color: #f5f5f5;z-index: 1">
-
-            <!--           phần slide-->
-            <div class="sl_rps">
-                <section id="slider">
-                    <input type="radio" name="slider" id="s1" checked>
-                    <input type="radio" name="slider" id="s2">
-                    <input type="radio" name="slider" id="s3">
-                    <input type="radio" name="slider" id="s4">
-                    <input type="radio" name="slider" id="s5">
-                    <input type="radio" name="slider" id="s6">
-                    <input type="radio" name="slider" id="s7">
-                    <input type="radio" name="slider" id="s8">
-                    <input type="radio" name="slider" id="s9">
-                    <input type="radio" name="slider" id="s10">
-
-                    <!--                    slide 1-->
-                    <label for="s1" id="slide1">
-                        <img src="https://cdn-fastly.hometalk.com/resources/imgs-responsive/categories/how-to/tier_1/covers/build_large.jpg">
-                        <!--                        phần chứa nội dung của slide-->
-                        <div class="divSlide">
-                            <!--                            phần review-->
-                            <div class="row container">
-                                <div class="col-lg-2">
-                                    <i class="material-icons">batch_prediction</i>
-                                </div>
-
-                                <div class="col-lg-10">
-                                    <a href="">Tốt nhất của chúng tôi</a>
-                                </div>
-                            </div>
-
-                            <!--                            phần btn-->
-                            <div class="container">
-                                <a href="" class="btn-light">Xây dựng</a>
-                            </div>
-
-                            <!--                            phần nội dung-->
-                            <div class="container cnt1" style="font-size: 12px">
-                                Bạn đang tìm kiếm sự giúp đỡ để bắt đầu một dự án xây dựng DIY? Cho dù đó là tủ,
-                                cửa hay người trồng, chúng tôi có những gì bạn đang tìm kiếm.
-                                Kiểm tra các bảng thảo luận, hướng dẫn bằng video,
-                                trình chiếu và bộ sưu tập các dự án xây dựng hàng đầu, mới và tốt nhất.
-                                Bạn sẽ tìm thấy tất cả các mẹo, hướng dẫn và hack bạn cần.
-                            </div>
-                        </div>
-                    </label>
-                    <!--                    slide 2-->
-                    <label for="s2" id="slide2">
-                        <img src="https://cdn-fastly.hometalk.com/resources/imgs-responsive/categories/how-to/tier_1/covers/paint_large.jpg">
-                        <!--                        phần chứa nội dung của slide-->
-                        <div class="divSlide">
-                            <!--                            phần review-->
-                            <div class="row container">
-                                <div class="col-lg-2">
-                                    <i class="material-icons">batch_prediction</i>
-                                </div>
-
-                                <div class="col-lg-10">
-                                    <a href="">Tốt nhất của chúng tôi</a>
-                                </div>
-                            </div>
-
-                            <!--                            phần btn-->
-                            <div class="container">
-                                <a href="" class="btn-light">Sơn</a>
-                            </div>
-
-                            <!--                            phần nội dung-->
-                            <div class="container cnt1" style="font-size: 12px">
-                                Tìm kiếm lời khuyên về cách vẽ? Bạn đã đến đúng nơi.
-                                Hãy để Hometalk giúp bạn lập kế hoạch dự án vẽ DIY tiếp theo của bạn.
-                                Chọn từ nhiều nguồn khác nhau, bao gồm bảng thảo luận, hướng dẫn bằng video,
-                                trình chiếu và tổng hợp các dự án sơn hàng đầu, tốt nhất và mới.
-                                Bạn thậm chí có thể hỏi cộng đồng Hometalk một câu hỏi!
-                            </div>
-                        </div>
-                    </label>
-
-                    <!--                    slide 3-->
-                    <label for="s3" id="slide3">
-                        <img src="https://cdn-fastly.hometalk.com/resources/imgs-responsive/categories/how-to/tier_1/covers/repair_large.jpg">
-                        <!--                        phần chứa nội dung của slide-->
-                        <div class="divSlide">
-                            <!--                            phần review-->
-                            <div class="row container">
-                                <div class="col-lg-2">
-                                    <i class="material-icons">batch_prediction</i>
-                                </div>
-
-                                <div class="col-lg-10">
-                                    <a href="">Tốt nhất của chúng tôi</a>
-                                </div>
-                            </div>
-
-                            <!--                            phần btn-->
-                            <div class="container">
-                                <a href="" class="btn-light">Sửa chữa</a>
-                            </div>
-
-                            <!--                            phần nội dung-->
-                            <div class="container cnt1" style="font-size: 12px">
-                                Sẵn sàng để thử sửa chữa DIY?
-                                Bạn đã biết rằng khi một cái gì đó trong nhà của bạn bị hỏng,
-                                bạn phải tìm một thợ sửa chữa chuyên nghiệp
-                                (thường rất tốn kém và có thể bao gồm thêm thời gian để chờ đợi).
-                                Tại Hometalk, chúng tôi sẽ giúp bạn với các công cụ,
-                                mẹo và kỹ thuật bạn cần để đưa bạn đến với thành công sửa chữa DIY.
-                            </div>
-                        </div>
-                    </label>
-
-                    <!--                    slide 4-->
-                    <label for="s4" id="slide4">
-                        <img src="https://cdn-fastly.hometalk.com/resources/imgs-responsive/categories/how-to/tier_1/covers/clean_large.jpg">
-                        <!--                        phần chứa nội dung của slide-->
-                        <div class="divSlide">
-                            <!--                            phần review-->
-                            <div class="row container">
-                                <div class="col-lg-2">
-                                    <i class="material-icons">batch_prediction</i>
-                                </div>
-
-                                <div class="col-lg-10">
-                                    <a href="">Tốt nhất của chúng tôi</a>
-                                </div>
-                            </div>
-
-                            <!--                            phần btn-->
-                            <div class="container">
-                                <a href="" class="btn-light">Lau dọn</a>
-                            </div>
-
-                            <!--                            phần nội dung-->
-                            <div class="container cnt1" style="font-size: 12px">
-                                Bạn đã sẵn sàng để giải quyết công việc dọn dẹp trong nhà của bạn?
-                                Cho dù đó là sàn nhà hay máy giặt của bạn,
-                                chúng tôi luôn sẵn sàng giúp bạn hướng dẫn từng bước về chính xác cách thức và
-                                những gì bạn cần làm để bắt đầu. Kiểm tra các video hướng dẫn DIY, bảng thảo luận,
-                                trình chiếu và các dự án làm sạch hàng đầu của chúng tôi. Chào mừng đến với quê hương.
-                                Chúc bạn dọn dẹp vui vẻ!
-                            </div>
-                        </div>
-                    </label>
-
-                    <!--                    slide 5-->
-                    <label for="s5" id="slide5">
-                        <img src="https://cdn-fastly.hometalk.com/resources/imgs-responsive/categories/how-to/tier_1/covers/organize_large.jpg">
-                        <!--                        phần chứa nội dung của slide-->
-                        <div class="divSlide">
-                            <!--                            phần review-->
-                            <div class="row container">
-                                <div class="col-lg-2">
-                                    <i class="material-icons">batch_prediction</i>
-                                </div>
-
-                                <div class="col-lg-10">
-                                    <a href="">Tốt nhất của chúng tôi</a>
-                                </div>
-                            </div>
-
-                            <!--                            phần btn-->
-                            <div class="container">
-                                <a href="" class="btn-light">Organize</a>
-                            </div>
-
-                            <!--                            phần nội dung-->
-                            <div class="container cnt1" style="font-size: 12px">
-                                Bạn đã sẵn sàng để tổ chức,
-                                nhưng cần một số lời khuyên về chính xác cách thức và nơi bắt đầu?
-                                Chúng tôi có những gì bạn đang tìm kiếm ở đây.
-                                Kiểm tra nhiều loại tổ chức nhà của chúng tôi từ tủ quần áo của bạn đến tầng hầm của bạn
-                                và tất cả mọi thứ ở giữa. Hãy xem qua các video hướng dẫn DIY của chúng tôi,
-                                các dự án hàng đầu, bảng thảo luận và trình chiếu.
-                            </div>
-                        </div>
-                    </label>
-
-                    <!--                    slide 6-->
-                    <label for="s6" id="slide6">
-                        <img src="https://cdn-fastly.hometalk.com/resources/imgs-responsive/categories/rooms-spaces/tier_1/covers/kitchen-dining_large.jpg">
-                        <!--                        phần chứa nội dung của slide-->
-                        <div class="divSlide">
-                            <!--                            phần review-->
-                            <div class="row container">
-                                <div class="col-lg-2">
-                                    <i class="material-icons">batch_prediction</i>
-                                </div>
-
-                                <div class="col-lg-10">
-                                    <a href="">Tốt nhất của chúng tôi</a>
-                                </div>
-                            </div>
-
-                            <!--                            phần btn-->
-                            <div class="container">
-                                <a href="" class="btn-light">Nhà bếp & Phòng ăn</a>
-                            </div>
-
-                            <!--                            phần nội dung-->
-                            <div class="container cnt1" style="font-size: 12px">
-                                Khả năng là vô tận khi thiết kế khu vực nhà bếp và phòng ăn mơ ước của bạn.
-                                Cho phép Hometalk truyền cảm hứng cho bạn!
-                                Cho dù bạn yêu thích trang trại hay công nghiệp, hiện đại hay retro,
-                                tại Hometalk, chúng tôi có các mẹo, thủ thuật và kỹ thuật mà bạn đang tìm kiếm.
-                                Hãy để chúng tôi giúp bạn tạo ra khu vực nhà bếp và phòng ăn hoàn hảo mà bạn luôn mong
-                                muốn.
-                            </div>
-                        </div>
-                    </label>
-
-                    <!--                    slide 7-->
-                    <label for="s7" id="slide7">
-                        <img src="https://cdn-fastly.hometalk.com/resources/imgs-responsive/categories/rooms-spaces/tier_1/covers/living-room_large.jpg">
-                        <!--                        phần chứa nội dung của slide-->
-                        <div class="divSlide">
-                            <!--                            phần review-->
-                            <div class="row container">
-                                <div class="col-lg-2">
-                                    <i class="material-icons">batch_prediction</i>
-                                </div>
-
-                                <div class="col-lg-10">
-                                    <a href="">Tốt nhất của chúng tôi</a>
-                                </div>
-                            </div>
-
-                            <!--                            phần btn-->
-                            <div class="container">
-                                <a href="" class="btn-light">Phòng khách</a>
-                            </div>
-
-                            <!--                            phần nội dung-->
-                            <div class="container cnt1" style="font-size: 12px">
-
-                                Phòng khách là trái tim của ngôi nhà,
-                                vì vậy điều quan trọng là biến nó thành không gian mời cho cả gia đình.
-                                Hometalk có thể giúp bạn đạt được điều này.
-                                Kiểm tra bảng thảo luận của chúng tôi hoặc đặt câu hỏi. Duyệt các dự án tốt nhất,
-                                hàng đầu và mới nhất của chúng tôi để tìm ý tưởng mới Hoặc dành một chút thời gian
-                                để xem video hướng dẫn và tìm hiểu điều gì đó mới. Thưởng thức!
-                            </div>
-                        </div>
-                    </label>
-
-                    <!--                    slide 8-->
-                    <label for="s8" id="slide8">
-                        <img src="https://cdn-fastly.hometalk.com/resources/imgs-responsive/categories/rooms-spaces/tier_1/covers/bedroom_large.jpg">
-                        <!--                        phần chứa nội dung của slide-->
-                        <div class="divSlide">
-                            <!--                            phần review-->
-                            <div class="row container">
-                                <div class="col-lg-2">
-                                    <i class="material-icons">batch_prediction</i>
-                                </div>
-
-                                <div class="col-lg-10">
-                                    <a href="">Tốt nhất của chúng tôi</a>
-                                </div>
-                            </div>
-
-                            <!--                            phần btn-->
-                            <div class="container">
-                                <a href="" class="btn-light">Phòng ngủ</a>
-                            </div>
-
-                            <!--                            phần nội dung-->
-                            <div class="container cnt1" style="font-size: 12px">
-
-                                Hometalk có thể giúp bạn làm cho phòng ngủ của bạn phát huy hết tiềm năng và
-                                trở thành không gian bạn yêu thích. Chúng tôi đã tập hợp các dự án phòng ngủ tốt nhất,
-                                hàng đầu và mới nhất trên Hometalk. Hãy xem video và trình chiếu của chúng tôi,
-                                hoặc tham gia vào cuộc trò chuyện trên bảng thảo luận phòng ngủ của chúng tôi.
-                                Chúng tôi có một cái gì đó cho mọi phong cách.
-                            </div>
-                        </div>
-                    </label>
-
-                    <!--                    slide 9-->
-                    <label for="s9" id="slide9">
-                        <img src="https://cdn-fastly.hometalk.com/resources/imgs-responsive/categories/rooms-spaces/tier_1/covers/bathroom_large.jpg">
-                        <!--                        phần chứa nội dung của slide-->
-                        <div class="divSlide">
-                            <!--                            phần review-->
-                            <div class="row container">
-                                <div class="col-lg-2">
-                                    <i class="material-icons">batch_prediction</i>
-                                </div>
-
-                                <div class="col-lg-10">
-                                    <a href="">Tốt nhất của chúng tôi</a>
-                                </div>
-                            </div>
-
-                            <!--                            phần btn-->
-                            <div class="container">
-                                <a href="" class="btn-light">Phòng tắm</a>
-                            </div>
-
-                            <!--                            phần nội dung-->
-                            <div class="container cnt1" style="font-size: 12px">
-
-                                Một phòng tắm được trang trí tốt có thể trở thành ốc đảo
-                                và Hometalk có thể giúp bạn đến đó! Hãy xem các dự án phòng tắm tốt nhất,
-                                mới nhất và phổ biến nhất mà Hometalk cung cấp.
-                                Tìm hiểu một cái gì đó mới từ video và trình chiếu của chúng tôi.
-                                Đặt câu hỏi hoặc tham gia vào các bảng thảo luận phổ biến của chúng tôi.
-                            </div>
-                        </div>
-                    </label>
-
-                    <!--                    slide 10-->
-                    <label for="s10" id="slide10">
-                        <img src="https://cdn-fastly.hometalk.com/resources/imgs-responsive/categories/rooms-spaces/tier_1/covers/home-office_large.jpg">
-                        <!--                        phần chứa nội dung của slide-->
-                        <div class="divSlide">
-                            <!--                            phần review-->
-                            <div class="row container">
-                                <div class="col-lg-2">
-                                    <i class="material-icons">batch_prediction</i>
-                                </div>
-
-                                <div class="col-lg-10">
-                                    <a href="">Tốt nhất của chúng tôi</a>
-                                </div>
-                            </div>
-
-                            <!--                            phần btn-->
-                            <div class="container">
-                                <a href="" class="btn-light">Phòng làm việc</a>
-                            </div>
-
-                            <!--                            phần nội dung-->
-                            <div class="container cnt1" style="font-size: 12px">
-                                Tìm kiếm những ý tưởng văn phòng tại nhà phù hợp để làm cho không gian của bạn lý tưởng
-                                cho công việc? Cần một số ý tưởng để làm cho nó xảy ra?
-                                Kiểm tra những gì Hometalk cung cấp. Xem qua các dự án tốt nhất,
-                                hàng đầu và mới nhất trên Hometalk ngày hôm nay.
-                                Dành một chút thời gian để xem một video hướng dẫn và tìm hiểu một số mẹo và thủ thuật
-                                để làm cho văn phòng tại nhà của bạn đáp ứng nhu cầu của bạn.
-                            </div>
-                        </div>
-                    </label>
-                </section>
-                <!--            kết thúc slide-->
-            </div>
-
-            <!--           phần label-->
-            <div class="lb_h5">
-                <h5>Những ý tưởng D.I.Y chúng tôi nghĩ bạn sẽ thích</h5>
-            </div>
-            <!--            phần phổ biến-->
-            <div class="moreBox" style="padding-bottom: 20px">
-                <ul class="list-group list-group-horizontal rp1_1">
-                    <!--                col 1-->
-                    <li class="list-group-item">
-                        <div class="divImg">
-                            <a href="">
-                                <img src="../public/images/picture%20of%20content%201/cnt1.jpg">
-                            </a>
-                        </div>
-                        <div>
-                            <a href="" class="linkP2">
-                                <h6> Làm thế nào để biến hộp thực phẩm thành lọ hoa</h6>
-                            </a>
-                        </div>
-
-                        <div>
-                            <a href="" class="linkP2">
-                                Thủ công
-                            </a>
-                        </div>
-
-                        <div>
-                            <a href="" class="linkP2">
-                                Làm thế nào
-                            </a>
-                        </div>
-                    </li>
-
-                    <!--                col 2-->
-                    <li class="list-group-item lx ">
-                        <div class="divImg">
-                            <a href="">
-                                <img src="../public/images/picture%20of%20content%201/cnt5.jpg">
-                            </a>
-                        </div>
-                        <div>
-                            <a href="" class="linkP2">
-                                <h6> Làm thế nào để sơn sàn nhà đúng cách</h6>
-                            </a>
-                        </div>
-
-                        <div>
-                            <a href="" class="linkP2">
-                                Sơn
-                            </a>
-                        </div>
-
-                        <div>
-                            <a href="" class="linkP2">
-                                Làm thế nào
-                            </a>
-                        </div>
-                    </li>
-
-                    <!--                col 3-->
-                    <li class="list-group-item lx col_rp col_rp_col3_a">
-                        <div class="divImg">
-                            <a href="">
-                                <img src="../public/images/picture%20of%20content%201/cnt3.jpg">
-                            </a>
-                        </div>
-                        <div>
-                            <a href="" class="linkP2">
-                                <h6>Trang trí phòng khách bằng cách sắp xếp ngăn nắp phần tủ đựng TV</h6>
-                            </a>
-                        </div>
-
-                        <div>
-                            <a href="" class="linkP2">
-                                Nhà bếp & Phòng ăn
-                            </a>
-                        </div>
-
-                        <div>
-                            <a href="" class="linkP2">
-                                Căn phòng & không gian
-                            </a>
-                        </div>
-                    </li>
-
-                    <!--                col 4-->
-                    <li class="list-group-item lx col_rp">
-                        <div class="divImg">
-                            <a href="">
-                                <img src="../public/images/picture%20of%20content%201/cnt4.jpg">
-                            </a>
-                        </div>
-                        <div>
-                            <a href="" class="linkP2">
-                                <h6>Tạo ra không gian lưu trữ sơn</h6>
-                            </a>
-                        </div>
-
-                        <div>
-                            <a href="" class="linkP2">
-                                Thủ công
-                            </a>
-                        </div>
-
-                        <div>
-                            <a href="" class="linkP2">
-                                Căn phòng & không gian
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-                <!--                kết thúc phần phổ biến-->
-            </div>
-
-            <!--            phần phổ biến load more-->
-            <div class="blogBox moreBox loadMore_PB">
-                <ul class="list-group list-group-horizontal rp1_1">
-                    <!--                col 1-->
-                    <li class="list-group-item">
-                        <div class="divImg">
-                            <a href="">
-                                <img src="../public/images/picture%20of%20content%201/yoga-mat-and-nail-polish-lampshade.jpg">
-                            </a>
-                        </div>
-                        <div>
-                            <a href="" class="linkP2">
-                                <h6>Thảm tập Yoga và chụp đèn sơn móng tay</h6>
-                            </a>
-                        </div>
-
-                        <div>
-                            <a href="" class="linkP2">
-                                Thủ công
-                            </a>
-                        </div>
-
-                        <div>
-                            <a href="" class="linkP2">
-                                Làm thế nào
-                            </a>
-                        </div>
-                    </li>
-
-                    <!--                col 2-->
-                    <li class="list-group-item lx ">
-                        <div class="divImg">
-                            <a href="">
-                                <img src="../public/images/picture%20of%20content%201/baking-cabinet-makeover.jpg">
-                            </a>
-                        </div>
-                        <div>
-                            <a href="" class="linkP2">
-                                <h6>Tủ nướng MAKEOVER!</h6>
-                            </a>
-                        </div>
-
-                        <div>
-                            <a href="" class="linkP2">
-                                Sơn
-                            </a>
-                        </div>
-
-                        <div>
-                            <a href="" class="linkP2">
-                                Làm thế nào
-                            </a>
-                        </div>
-                    </li>
-
-                    <!--                col 3-->
-                    <li class="list-group-item lx col_rp col_rp_col3_a">
-                        <div class="divImg">
-                            <a href="">
-                                <img src="../public/images/picture%20of%20content%201/s-home-office-decor.jpg">
-                            </a>
-                        </div>
-                        <div>
-                            <a href="" class="linkP2">
-                                <h6>Thiết kế rèm cửa tùy chỉnh cho DIY Home Office Decor</h6>
-                            </a>
-                        </div>
-
-                        <div>
-                            <a href="" class="linkP2">
-                                Nhà bếp & Phòng ăn
-                            </a>
-                        </div>
-
-                        <div>
-                            <a href="" class="linkP2">
-                                Căn phòng & không gian
-                            </a>
-                        </div>
-                    </li>
-
-                    <!--                col 4-->
-                    <li class="list-group-item lx col_rp">
-                        <div class="divImg">
-                            <a href="">
-                                <img src="../public/images/picture%20of%20content%201/office-wall-organization-organizing.jpg">
-                            </a>
-                        </div>
-                        <div>
-                            <a href="" class="linkP2">
-                                <h6>Office Wall Organization</h6>
-                            </a>
-                        </div>
-
-                        <div>
-                            <a href="" class="linkP2">
-                                Thủ công
-                            </a>
-                        </div>
-
-                        <div>
-                            <a href="" class="linkP2">
-                                Căn phòng & không gian
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-                <!--                kết thúc phần phổ biến-->
-            </div>
-
-            <!--                    mục xem thêm-->
-            <div class="rp1_2" style="padding-bottom:25px">
-                <div>
-                    <hr class="hr0" id="hr0"/>
-                    <button class="btn-light" id="loadMore">
-                        Hiển thị thêm <i class="material-icons" style="font-size: 12px">expand_more</i>
-                    </button>
-                    <hr class="hr1" id="hr1"/>
-                </div>
-                <!--                kết thúc mục xem thêm-->
-            </div>
-
-            <!--            phần label-->
-            <div class="lb_h5">
-                <h5 class="h_a5"><a href="" class="a5">Các dự án D.I.Y</a> có nhiều lượt xem</h5>
-            </div>
-
-            <!--            phần danh mục-->
-            <ul class="list-group list-group-horizontal danhMuc">
-                <!--                col 1-->
-                <li class="list-group-item">
-                    <div class="divImg">
-                        <a href="">
-                            <img src="../public/images/picture%20of%20content%202/cnt1.jpg">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="" class="linkP2">
-                            <h5>Trang trí phòng ngủ</h5>
-                        </a>
-                    </div>
-
-                    <div class="fontSize_View">
-                        <a href="" class="linkP2">
-                            1000 người xem
-                        </a>
-                    </div>
-
-                    <div class="fontSize_btnCtn">
-                        <button class="btnCtn">
-                            Trang trí
-                        </button>
-                    </div>
-                </li>
-
-                <!--                col 2-->
-                <li class="list-group-item lx">
-                    <div class="divImg">
-                        <a href="">
-                            <img src="../public/images/picture%20of%20content%202/cnt2.jpg">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="" class="linkP2">
-                            <h5>Lau dọn thảm</h5>
-                        </a>
-                    </div>
-
-                    <div class="fontSize_View">
-                        <a href="" class="linkP2">
-                            1000 người xem
-                        </a>
-                    </div>
-
-                    <div class="fontSize_btnCtn">
-                        <button class="btnCtn">
-                            Lau dọn
-                        </button>
-                    </div>
-                </li>
-
-                <!--                col 3-->
-                <li class="list-group-item lx">
-                    <div class="divImg">
-                        <a href="">
-                            <img src="../public/images/picture%20of%20content%202/cnt3.jpg">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="" class="linkP2">
-                            <h5>Lối vào</h5>
-                        </a>
-                    </div>
-
-                    <div class="fontSize_View">
-                        <a href="" class="linkP2">
-                            1000 người xem
-                        </a>
-                    </div>
-
-                    <div class="fontSize_btnCtn">
-                        <button class="btnCtn">
-                            Thủ công
-                        </button>
-                    </div>
-                </li>
-
-                <!--                col 4-->
-                <li class="list-group-item lx col_rp_col4">
-                    <div class="divImg">
-                        <a href="">
-                            <img src="../public/images/103565285_568639967055254_6792322041172748592_n.jpg">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="" class="linkP2">
-                            <h5>Tùy chỉnh phòng ăn</h5>
-                        </a>
-                    </div>
-
-                    <div class="fontSize_View">
-                        <a href="" class="linkP2">
-                            1000 người xem
-                        </a>
-                    </div>
-
-                    <div class="fontSize_btnCtn">
-                        <button class="btnCtn">
-                            Thủ công
-                        </button>
-                    </div>
-                </li>
-
-                <!--                col 5-->
-                <li class="list-group-item lx col_rp col_rp_col4">
-                    <div class="divImg">
-                        <a href="">
-                            <img src="../public/images/picture%20of%20content%202/cnt4.jpg">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="" class="linkP2">
-                            <h5>Sàn nhà</h5>
-                        </a>
-                    </div>
-
-                    <div class="fontSize_View">
-                        <a href="" class="linkP2">
-                            1000 người xem
-                        </a>
-                    </div>
-
-                    <div class="fontSize_btnCtn">
-                        <button class="btnCtn">
-                            Thủ công
-                        </button>
-                    </div>
-                </li>
-
-                <!--                col 6-->
-                <li class="list-group-item lx col_rp col_rp_col4">
-                    <div class="divImg">
-                        <a href="">
-                            <img src="../public/images/picture%20of%20content%202/cnt5.jpg">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="" class="linkP2">
-                            <h5>Cửa ra vào</h5>
-                        </a>
-                    </div>
-
-                    <div class="fontSize_View">
-                        <a href="" class="linkP2">
-                            1000 người xem
-                        </a>
-                    </div>
-
-                    <div class="fontSize_btnCtn">
-                        <button class="btnCtn">
-                            Trang trí
-                        </button>
-                    </div>
-                </li>
-
-                <!--                col 7-->
-                <li class="list-group-item lx col_rp col_rp_col4">
-                    <div class="divImg">
-                        <a href="">
-                            <img src="../public/images/picture%20of%20content%202/cnt6.jpg">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="" class="linkP2">
-                            <h5>Cải tạo cầu thang</h5>
-                        </a>
-                    </div>
-
-                    <div class="fontSize_View">
-                        <a href="" class="linkP2">
-                            1000 người xem
-                        </a>
-                    </div>
-
-                    <div class="fontSize_btnCtn">
-                        <button class="btnCtn">
-                            Sửa chữa
-                        </button>
-                    </div>
-                </li>
-
-                <!--                col 8-->
-                <li class="list-group-item lx col_rp col_rp_col4">
-                    <div class="divImg">
-                        <a href="">
-                            <img src="../public/images/picture%20of%20content%202/cnt7.jpg">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="" class="linkP2">
-                            <h5>Đèn led</h5>
-                        </a>
-                    </div>
-
-                    <div class="fontSize_View">
-                        <a href="" class="linkP2">
-                            1000 người xem
-                        </a>
-                    </div>
-
-                    <div class="fontSize_btnCtn">
-                        <button class="btnCtn">
-                            Thủ công
-                        </button>
-                    </div>
-                </li>
-                <!--                kết thúc phần danh mục-->
-            </ul>
-
-            <!--            phần gạch ngang-->
-            <div>
-                <hr style="width: 100%"/>
-            </div>
-
-            <!--            phần watch TV-->
-            <div class="wTV">
-                <!--           phần label-->
-                <div class="lb_h5">
-                    <h5>Xem video hướng dẫn</h5>
-                </div>
-                <!--                list 1-->
-                <div class="moreBox1">
-                    <ul class="list-group list-group-horizontal watchTV">
-                        <!--                col 1-->
-                        <li class="list-group-item">
-                            <div class="col-lg-6">
-                                <a href="">
-                                    <img src="../public/images/picture%20of%20content%203/diy-resin-tumbler.jpg"/>
-                                </a>
-                            </div>
-
-                            <div class="infWatchTV">
-                                <div class="divRp">
-                                    <div class="divRp_1">
-                                        <a href="" class="linkP2">
-                                            <h6> Tìm hiểu cách tạo một thiết kế đại dương êm dịu trên một chiếc cốc bằng
-                                                nhựa</h6>
-                                        </a>
-                                    </div>
-
-                                    <div class="fontSize_View">
-                                        <a href="" class="linkP2">
-                                            Bạn có mơ về đại dương? Bạn muốn cảm nhận cát trong ngón chân và nước trên
-                                            da?
-                                            Tôi có thể mang ...
-                                        </a>
-                                    </div>
-                                </div>
-                                <hr/>
-                                <div>
-                                    <a href="">
-                                        <img src="../public/images/account.png" class="iconAccount"/>
-                                        People 1
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-
-                        <!--                col 2 -->
-                        <li class="list-group-item" style="margin-left: 30px">
-                            <div class="col-lg-6">
-                                <a href="">
-                                    <img src="../public/images/picture%20of%20content%203/simple-wood-box.jpg"/>
-                                </a>
-                            </div>
-
-                            <div class="infWatchTV">
-                                <div class="divRp">
-                                    <div class="divRp_1">
-                                        <a href="" class="linkP2">
-                                            <h6>Hộp gỗ đơn giản</h6>
-                                        </a>
-                                    </div>
-                                    <div class="fontSize_View ">
-                                        <a href="" class="linkP2">
-                                            <div>
-                                                Hộp gỗ đơn giản này là một công trình dễ dàng và có thể phục vụ như một
-                                                món
-                                                đồ mộc mạc
-                                                tuyệt đẹp ở mọi nơi trong ...
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <hr/>
-                                <div>
-                                    <a href="">
-                                        <img src="../public/images/account.png" class="iconAccount"/>
-                                        People 2
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <!--                list 2-->
-                <div class="moreBox1">
-                    <ul class="list-group list-group-horizontal watchTV">
-                        <!--                col 1-->
-                        <li class="list-group-item col_rp">
-                            <div class="col-lg-6">
-                                <a href="">
-                                    <img src="../public/images/picture%20of%20content%203/n.jpg"/>
-                                </a>
-                            </div>
-
-                            <div class="infWatchTV">
-                                <div class="divRp">
-                                    <div class="divRp_1">
-                                        <a href="" class="linkP2">
-                                            <h6>Làm đẹp chiếc gối của bạn bằng những nét vẽ </h6>
-                                        </a>
-                                    </div>
-                                    <div class="fontSize_View ">
-                                        <a href="" class="linkP2">
-                                            <div>
-                                                Có rất nhiều cách để biến chiếc gối của bạn thành những tác phẩm nghệ
-                                                thuật
-                                                tuyệt đẹp, bạn có muố biết...
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <hr/>
-                                <div>
-                                    <a href="">
-                                        <img src="../public/images/account.png" class="iconAccount"/>
-                                        People 3
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-
-                        <!--                col 2 -->
-                        <li class="list-group-item col_rp" style="margin-left: 30px">
-                            <div class="col-lg-6">
-                                <a href="">
-                                    <img src="../public/images/picture%20of%20content%203/104182266_311404879854548_275254133652055942_n.jpg"/>
-                                </a>
-                            </div>
-
-                            <div class="infWatchTV">
-                                <div class="divRp">
-                                    <div class="divRp_1">
-                                        <a href="" class="linkP2">
-                                            <h6>Hộp gỗ đơn giản</h6>
-                                        </a>
-                                    </div>
-                                    <div class="fontSize_View">
-                                        <a href="" class="linkP2">
-                                            <div>
-                                                Hộp gỗ đơn giản này là một công trình dễ dàng và có thể phục vụ như một
-                                                món
-                                                đồ mộc mạc
-                                                tuyệt đẹp ở mọi nơi trong ...
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <hr/>
-                                <div>
-                                    <a href="">
-                                        <img src="../public/images/account.png" class="iconAccount"/>
-                                        People 4
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <!--                list 3 load more-->
-                <div class="blogBox1 moreBox1" style="display: none">
-                    <ul class="list-group list-group-horizontal watchTV">
-                        <!--                col 1-->
-                        <li class="list-group-item">
-                            <div class="col-lg-6">
-                                <a href="">
-                                    <img src="../public/images/picture%20of%20content%203/low.jpg"/>
-                                </a>
-                            </div>
-
-                            <div class="infWatchTV">
-                                <div class="divRp">
-                                    <div class="divRp_1">
-                                        <a href="" class="linkP2">
-                                            <h6> Xây dựng một khu vườn đá để tăng tính bền vững cho khu vườn của
-                                                bạn</h6>
-                                        </a>
-                                    </div>
-
-                                    <div class="fontSize_View">
-                                        <a href="" class="linkP2">
-                                            Nếu bạn đam mê tạo ra một sân sau bảo trì thấp,
-                                            bền vững, một khu vườn đá là phải.
-                                            Hometalker này nói với bạn thông qua quá trình....
-                                        </a>
-                                    </div>
-                                </div>
-                                <hr/>
-                                <div>
-                                    <a href="">
-                                        <img src="../public/images/account.png" class="iconAccount"/>
-                                        People 5
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-
-                        <!--                col 2 -->
-                        <li class="list-group-item" style="margin-left: 30px">
-                            <div class="col-lg-6">
-                                <a href="">
-                                    <img src="../public/images/picture%20of%20content%203/how%20to.jpg"/>
-                                </a>
-                            </div>
-
-                            <div class="infWatchTV">
-                                <div class="divRp">
-                                    <div class="divRp_1">
-                                        <a href="" class="linkP2">
-                                            <h6>Gạch phòng tắm lớn có thể làm cho phòng tắm nhỏ cảm thấy ít bừa bộn</h6>
-                                        </a>
-                                    </div>
-                                    <div class="fontSize_View ">
-                                        <a href="" class="linkP2">
-                                            <div>
-                                                Gạch lát sàn và tường lớn hơn rất hiệu quả cho phòng tắm
-                                                nơi không gian sàn ở mức cao.
-                                                Có ít dòng vữa có thể nhìn thấy và sàn nhà dường như ít lộn xộn hơn ...
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <hr/>
-                                <div>
-                                    <a href="">
-                                        <img src="../public/images/account.png" class="iconAccount"/>
-                                        People 6
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!--            end watchTV-->
-
-            <!--                    mục xem thêm-->
-            <div class="rp1_2" style="padding-bottom:25px">
-                <div>
-                    <hr class="hr0" id="hr0_1"/>
-                    <button class="btn-light" id="loadMore1">
-                        Hiển thị thêm <i class="material-icons" style="font-size: 12px">expand_more</i>
-                    </button>
-                    <hr class="hr1" id="hr1_1"/>
-                </div>
-                <!--                kết thúc mục xem thêm-->
-            </div>
-
-            <!--        kết thúc col 10-->
         </div>
 
         <!--        kết thúc phần thân-->
     </div>
+
+
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
