@@ -14,6 +14,18 @@
     left: 45px;
 }
 
+.lb_LogOut1 {
+    position: absolute;
+    top: 54px;
+    left: 45px;
+}
+
+.lb_Setting1 {
+    position: absolute;
+    top: 17px;
+    left: 45px;
+}
+
 .ps_IconBell {
     position: absolute;
     top: 155px;
@@ -246,4 +258,24 @@ div.psLbAcount:hover {
 
 .hoverA div :hover{
     background-color: #818182;
+}
+/* css phần loading*/
+.load {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 100000;
+    display: block;
+    overflow: hidden;
+}
+
+.load img {
+    width: 100%;
+    max-height: inherit;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }

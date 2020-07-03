@@ -85,3 +85,11 @@ img.iconHome{
     height: 30px;
 }
 
+.iconAcept{
+    width: 16px;
+    height: 16px;
+}
+
+img.iconAcept{
+    border-radius: 100%;
+}

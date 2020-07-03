@@ -149,7 +149,7 @@
     </nav>
     <!-- form đăng nhập -->
     <div id="id01" class="modal">
-        <div id="login-box" class="modal-content animate" action="/action_page.php" method="post">
+        <form id="loginbox" class="modal-content animate" action="/action_page.php" method="post">
             <div class="left">
                 <ul class="nav nav-tabs">
                     <li class="nav-item">
@@ -165,9 +165,9 @@
 
                 <div class="tab-content">
                     <div id="dangnhap" class="container tab-pane active">
-                        <input type="text" name="username" placeholder="Tên đăng nhập">
+                        <input type="text" name="username" id="user" placeholder="Tên đăng nhập">
 
-                        <input type="password" name="password" placeholder="Mật khẩu">
+                        <input type="password" name="password" id="pass" placeholder="Mật khẩu">
                         <a class="textsg" style="float: left; text-decoration: none;" href="">Quên mật khẩu</a>
                         <a class="textsg" style="float: right; text-decoration: none;" href="#car">Bạn đã có tài
                             khoản chưa ?</a>
@@ -199,7 +199,7 @@
                 <button class="social-signin google">Log in with Google+</button>
             </div>
             <div class="or">OR</div>
-        </div>
+        </form>
 
     </div>
     <!--kết thúc form-->
@@ -1328,6 +1328,35 @@
         if (event.target == modal) {
             modal.style.display = "none";
         }
+    }
+</script>
+<script>
+    var CORRECT_USER = 'admin';
+    var CORRECT_PASS = 'admin123';
+
+    var inputUsername = document.getElementById('user');
+    var inputpassword = document.getElementById('pass');
+
+    var loginbox = document.getElementById('loginbox');
+    if (loginbox.attachEvent) {
+        loginbox.attachEvent('submit', onFormSubmit);
+    } else {
+        loginbox.addEventListener('submit', onFormSubmit);
+    }
+
+    function onFormSubmit(e) {
+        if (e.preventDefault) e.preventDefault();
+
+        var user = inputUsername.value;
+        var pass = inputpassword.value;
+
+        if (user == CORRECT_USER && pass == CORRECT_PASS) {
+            window.location = './src/Home_Login.html';
+
+        } else {
+            alert('Bạn đã nhập sai tên đăng nhập hoặc mật khẩu, Vui lòng nhập lại.')
+        }
+        return false;
     }
 </script>
 

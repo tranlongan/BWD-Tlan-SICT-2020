@@ -19,6 +19,11 @@
     display: inline-block;
 }
 
+.dropdown1 {
+    /*position: relative;*/
+    display: inline-block;
+}
+
 /*hiển thị phần div chứa các itemDrop*/
 .dropdown-content {
     margin-top: 8px;
