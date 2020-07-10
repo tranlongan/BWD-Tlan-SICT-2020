@@ -1,8 +1,11 @@
+<?php
+include "../public/php/connect.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home Login</title>
+    <title>D.I.Y | Do it yourself</title>
     <style>
     </style>
 
@@ -14,6 +17,8 @@
     <!--     stylesheets-->
     <link rel="stylesheet" href="../public/stylesheets/style2.css">
     <link rel="stylesheet" href="../public/stylesheets/stylesheet_HomeLogin/styleHl.css">
+    <link rel="stylesheet" href="../public/stylesheets/stylesheet_HomeLogin/form_post.css">
+
     <!--    slide stylesheets-->
     <link rel="stylesheet" href="../public/stylesheets/slide.css">
     <!--    set icon-->
@@ -58,35 +63,35 @@
                         <!--     Một phần của nội dung                   -->
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="">
-                                <div class="div_MenuNavBar_Hdn">
-                                    <div class="icon_MenuNavbar_Hdn">
-                                        <img src="../public/images/sticky-note.png"/>
+                                    <div class="div_MenuNavBar_Hdn">
+                                        <div class="icon_MenuNavbar_Hdn">
+                                            <img src="../public/images/sticky-note.png"/>
+                                        </div>
+                                        <div class="lb_menu_hidden_bv g1">
+                                            Bài viết của bạn
+                                        </div>
                                     </div>
-                                    <div class="lb_menu_hidden_bv g1">
-                                        Bài viết của bạn
-                                    </div>
-                                </div>
-                            </a></li>
+                                </a></li>
                             <li><a href="">
-                                <div class="div_MenuNavBar_Hdn">
-                                    <div class="icon_MenuNavbar_Hdn">
-                                        <img src="../public/images/history.png"/>
+                                    <div class="div_MenuNavBar_Hdn">
+                                        <div class="icon_MenuNavbar_Hdn">
+                                            <img src="../public/images/history.png"/>
+                                        </div>
+                                        <div class="lb_menu_hidden_ls g1">
+                                            Lịch sử
+                                        </div>
                                     </div>
-                                    <div class="lb_menu_hidden_ls g1">
-                                        Lịch sử
-                                    </div>
-                                </div>
-                            </a></li>
+                                </a></li>
                             <li><a href="">
-                                <div class="div_MenuNavBar_Hdn">
-                                    <div class="icon_MenuNavbar_Hdn">
-                                        <img src="../public/images/follow.png"/>
+                                    <div class="div_MenuNavBar_Hdn">
+                                        <div class="icon_MenuNavbar_Hdn">
+                                            <img src="../public/images/follow.png"/>
+                                        </div>
+                                        <div class="lb_menu_hidden_fl g1">
+                                            Bạn đang theo dõi
+                                        </div>
                                     </div>
-                                    <div class="lb_menu_hidden_fl g1">
-                                        Bạn đang theo dõi
-                                    </div>
-                                </div>
-                            </a></li>
+                                </a></li>
                         </ul>
                         <hr style="width: 100%"/>
                         <!--     Cùng 1 phần nhưng khác nội dung-->
@@ -98,38 +103,38 @@
                                 <ul class="dropdown-menu g" style="background-color: #b9f6ca">
                                     <div>
                                         <li><a href="#">
-                                            <div class="div_Fl_MenuNavbar">
-                                                <div>
-                                                    <img class="icon_Fl_MenuHdn"
-                                                         src="../public/images/picture%20of%20danhmuc/picture%20carousel/10.png">
+                                                <div class="div_Fl_MenuNavbar">
+                                                    <div>
+                                                        <img class="icon_Fl_MenuHdn"
+                                                             src="../public/images/picture%20of%20danhmuc/picture%20carousel/10.png">
+                                                    </div>
+                                                    <div class="rps_Lb_Fl_MenuNavBar">
+                                                        People 1
+                                                    </div>
                                                 </div>
-                                                <div class="rps_Lb_Fl_MenuNavBar">
-                                                    People 1
-                                                </div>
-                                            </div>
-                                        </a></li>
+                                            </a></li>
                                         <li><a href="#">
-                                            <div class="div_Fl_MenuNavbar">
-                                                <div>
-                                                    <img class="icon_Fl_MenuHdn"
-                                                         src="../public/images/picture%20of%20danhmuc/picture%20carousel/10.png">
+                                                <div class="div_Fl_MenuNavbar">
+                                                    <div>
+                                                        <img class="icon_Fl_MenuHdn"
+                                                             src="../public/images/picture%20of%20danhmuc/picture%20carousel/10.png">
+                                                    </div>
+                                                    <div class="rps_Lb_Fl_MenuNavBar">
+                                                        People 1
+                                                    </div>
                                                 </div>
-                                                <div class="rps_Lb_Fl_MenuNavBar">
-                                                    People 1
-                                                </div>
-                                            </div>
-                                        </a></li>
+                                            </a></li>
                                         <li><a href="#">
-                                            <div class="div_Fl_MenuNavbar">
-                                                <div>
-                                                    <img class="icon_Fl_MenuHdn"
-                                                         src="../public/images/picture%20of%20danhmuc/picture%20carousel/10.png">
+                                                <div class="div_Fl_MenuNavbar">
+                                                    <div>
+                                                        <img class="icon_Fl_MenuHdn"
+                                                             src="../public/images/picture%20of%20danhmuc/picture%20carousel/10.png">
+                                                    </div>
+                                                    <div class="rps_Lb_Fl_MenuNavBar">
+                                                        People 1
+                                                    </div>
                                                 </div>
-                                                <div class="rps_Lb_Fl_MenuNavBar">
-                                                    People 1
-                                                </div>
-                                            </div>
-                                        </a></li>
+                                            </a></li>
                                     </div>
                                 </ul>
                             </li>
@@ -240,10 +245,12 @@
                 </div>
                 <!--                btn đăng bài-->
                 <div class="divBtnDangBai">
-                    <button class="btn-primary btnDangBai1">
+                    <button class="btn-primary btnDangBai1"
+                            onclick="document.getElementById('id01').style.display='block'" ; style="outline: none">
                         Đăng bài
                     </button>
                 </div>
+
 
                 <!--                        drop down account-->
                 <div class="dropdown stDropdown">
@@ -252,7 +259,7 @@
                              src="../public/images/picture%20home%20login/tenor.gif">
                         <div class="psLbAcount">
                             Norman
-                            <p style="color: #AAAAAA">@Norman48267172</p>
+                            <p style="color: #AAAAAA">@People</p>
                         </div>
                     </button>
                     <div id="myDropdown1" class="dropdown-content1">
@@ -323,32 +330,34 @@
             <div class="row divDangBai1">
                 <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="">
+                        <a class="nav-link" href="" data-toggle="tooltip" title="Ảnh">
                             <img class="iconPost"
                                  src="../public/images/picture%20home%20login/icons8-full-image-100.png">
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="#" data-toggle="tooltip" title="Video">
                             <img class="iconPost"
-                                 src="../public/images/picture%20home%20login/icons8-gif-80.png">
+                                 src="../public/images/picture%20home%20login/icons8-video-playlist-100.png">
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="#" data-toggle="tooltip" title="Thảo luận">
                             <img class="iconPost"
                                  src="../public/images/picture%20home%20login/icons8-questions-80.png">
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="#" data-toggle="tooltip" title="Biểu cảm">
                             <img class="iconPost"
                                  src="../public/images/picture%20home%20login/icons8-happy-100.png">
                         </a>
                     </li>
                     <li class="nav-item last_Item">
                         <div class="divBtn">
-                            <button class="btnDangBai btn-primary">
+                            <button class="btnDangBai btn-primary"
+                                    onclick="document.getElementById('id01').style.display='block'"
+                                    style="outline: none">
                                 Đăng bài
                             </button>
                         </div>
@@ -356,6 +365,7 @@
                 </ul>
             </div>
             <!--            hết phần đăng bài-->
+
 
             <!--                bài đăng của admin-->
             <a class="hoverA" href="" style="border-bottom: 1px solid #c2c2c2">
@@ -453,202 +463,12 @@
             </a>
 
             <!--                bài đăng 1-->
-            <a class="hoverA" href="" style="border-bottom: 1px solid #c2c2c2">
-                <div class="row rowOfPost"
-                     style="border-bottom: 1px solid #c2c2c2; padding-bottom: 10px;position: relative">
-                    <div>
-                        <div style="padding: 10px">
-                            <img class="iconAccount1" src="../public/images/picture%20home%20login/tenor%20(1).gif">
-                        </div>
-                        <div class="tfPost">
-                            <ul class="nav">
-                                <li class="nav-item itmeN_">
-                                    <a href="">
-                                        People
-                                    </a>
-                                </li>
-                                <li class="nav-item itmeN" style="padding-left:32px; ">
-                                    @People - <a href="">Tháng 7</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <a href="">
-                        <div class="noteAndImgOfPost">
-                            <div>
-                                Trang trí chiếc cốc bằng cách vẽ
-                            </div>
-                            <div>
-                                <img class="imgOfPost" src="../public/images/img_DanhMuc/15duan.png">
-                            </div>
-                        </div>
-                    </a>
-                    <div class="divHover">
-                        <ul class="nav">
-                            <li class="nav-item" style="padding-left: 70px">
-                                <a href="">
-                                    <div>
-                                        <img class="iconCmt"
-                                             src="../public/images/picture%20home%20login/icons8-speech-bubble-100.png">
-                                        1.2k
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="nav-item fixItem">
-                                <a href="">
-                                    <div>
-                                        <img class="iconCmt"
-                                             src="../public/images/picture%20home%20login/icons8-heart-100.png">
-                                        1.2k
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="nav-item fixItem">
-                                <a href="">
-                                    <div>
-                                        <img class="iconCmt"
-                                             src="../public/images/picture%20home%20login/icons8-level-up-50.png">
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </a>
-
-            <!--                bài đăng 2-->
-            <a href="" style="border-bottom: 1px solid #c2c2c2">
-                <div class="row rowOfPost"
-                     style="border-bottom: 1px solid #c2c2c2; padding-bottom: 10px;position: relative">
-
-                    <div>
-                        <div style="padding: 10px">
-                            <img class="iconAccount1" src="../public/images/picture%20home%20login/tenor%20(2).gif">
-                        </div>
-                        <div class="tfPost">
-                            <ul class="nav">
-                                <li class="nav-item itmeN_">
-                                    <a href="">
-                                        People1
-                                    </a>
-                                </li>
-                                <li class="nav-item itmeN" style="padding-left: 32px">
-                                    @People - <a href="">Tháng 7</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <a href="">
-                        <div class="noteAndImgOfPost">
-                            <div>
-                                Bạn có tin giá đỡ này được làm từ ván trượt
-                            </div>
-                            <div>
-                                <img class="imgOfPost"
-                                     src="../public/images/picture%20home%20login/diy-skateboard-shelfs.jpg">
-                            </div>
-                        </div>
-                    </a>
-                    <div class="divHover">
-                        <ul class="nav">
-                            <li class="nav-item" style="padding-left: 70px">
-                                <a href="">
-                                    <div>
-                                        <img class="iconCmt"
-                                             src="../public/images/picture%20home%20login/icons8-speech-bubble-100.png">
-                                        1.2k
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="nav-item fixItem">
-                                <a href="">
-                                    <div>
-                                        <img class="iconCmt"
-                                             src="../public/images/picture%20home%20login/icons8-heart-100.png">
-                                        1.2k
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="nav-item fixItem">
-                                <a href="">
-                                    <div>
-                                        <img class="iconCmt"
-                                             src="../public/images/picture%20home%20login/icons8-level-up-50.png">
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </a>
-
-            <!--                bài đăng 3-->
-            <a href="" style="border-bottom: 1px solid #c2c2c2">
-                <div class="row rowOfPost"
-                     style="border-bottom: 1px solid #c2c2c2; padding-bottom: 10px;position: relative">
-
-                    <div>
-                        <div style="padding: 10px">
-                            <img class="iconAccount1" src="../public/images/picture%20home%20login/tenor%20(3).gif">
-                        </div>
-                        <div class="tfPost">
-                            <ul class="nav">
-                                <li class="nav-item itmeN_">
-                                    <a href="">
-                                        People 2
-                                    </a>
-                                </li>
-                                <li class="nav-item itmeN" style="padding-left: 32px">
-                                    @People - <a href="">Tháng 7</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <a href="">
-                        <div class="noteAndImgOfPost">
-                            <div>
-                                Cách củng cố vườn của bạn bạn bằng cách lát đá
-                            </div>
-                            <div>
-                                <img class="imgOfPost" src="../public/images/picture%20of%20content%203/low.jpg">
-                            </div>
-                        </div>
-                    </a>
-                    <div class="divHover">
-                        <ul class="nav">
-                            <li class="nav-item" style="padding-left: 70px">
-                                <a href="">
-                                    <div>
-                                        <img class="iconCmt"
-                                             src="../public/images/picture%20home%20login/icons8-speech-bubble-100.png">
-                                        1.2k
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="nav-item fixItem">
-                                <a href="">
-                                    <div>
-                                        <img class="iconCmt"
-                                             src="../public/images/picture%20home%20login/icons8-heart-100.png">
-                                        1.2k
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="nav-item fixItem">
-                                <a href="">
-                                    <div>
-                                        <img class="iconCmt"
-                                             src="../public/images/picture%20home%20login/icons8-level-up-50.png">
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </a>
-
-            <!--                bài đăng 3-->
-            <a href="" style="border-bottom: 1px solid #c2c2c2">
+            <?php
+            $sql = " SELECT * FROM `news` ";
+            $result = mysqli_query($conn, $sql);
+            while ($data = mysqli_fetch_array($result)) {
+                echo '
+                        <a href="" style="border-bottom: 1px solid #c2c2c2">
                 <div class="row rowOfPost"
                      style="border-bottom: 1px solid #c2c2c2; padding-bottom: 10px;position: relative">
 
@@ -660,7 +480,7 @@
                             <ul class="nav">
                                 <li class="nav-item itmeN_">
                                     <a href="">
-                                        People 2
+                                        Norman
                                     </a>
                                 </li>
                                 <li class="nav-item itmeN" style="padding-left: 32px">
@@ -672,11 +492,11 @@
                     <a href="">
                         <div class="noteAndImgOfPost">
                             <div>
-                                Vệ sinh máy giặt chỉ bằng 2 sản phẩm không độc hại
+                                ' . $data["content"] . '
                             </div>
                             <div>
                                 <img class="imgOfPost"
-                                     src="../public/images/picture%20home%20login/how-to-clean-a-washing-machine-using-just-2-non-toxic-products.jpg">
+                                     src="../public/' . $data["link_image"] . '">
                             </div>
                         </div>
                     </a>
@@ -712,6 +532,9 @@
                     </div>
                 </div>
             </a>
+                        ';
+            }
+            ?>
 
             <!--                bài đăng 4-->
             <a href="" style="border-bottom: 1px solid #c2c2c2">
@@ -741,8 +564,9 @@
                                 Video quảng cáo
                             </div>
                             <div>
-                                <video class="imgOfPost" autoplay="1" controls="1">
-                                    <source src="../public/images/video/otiv-tvc-quang-cao-10s.mp4" type="video/mp4">
+                                <video class="imgOfPost" controls="1">
+                                    <source src="../public/images/video/otiv-tvc-quang-cao-10s.mp4" autoplay="false"
+                                            type="video/mp4">
                                 </video>
                             </div>
                         </div>
@@ -894,8 +718,30 @@
 
 </div>
 
+<!-- form đăng bài -->
+<div id="id01" class="modal">
+    <form id="loginbox" class="modal-content animate" action="../public/php/upload_news.php" method="POST"
+          enctype="multipart/form-data">
+        <div style="padding: 50px">
+            <div>
+                <div style="margin-top: 16px ; margin-bottom: 16px">
+                    <input type="textarea" placeholder="Content" name="content" required="required"
+                           style="width: 500px; height: 100px">
+                </div>
+            </div>
+            <div>
+                <label for="myfile">Chọn ảnh:</label>
+                <input type="file" id="myfile" name="image" multiple><br><br>
+                <button type="submit">
+                    Đăng bài
+                </button>
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                      title="Close Modal">&times;</span>
+            </div>
+        </div>
+    </form>
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
 <script src="../node_modules/jquery/dist/jquery.min.js"></script>
 <script src="../node_modules/popper.js/dist/popper.min.js"></script>
 <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -909,10 +755,22 @@
 <script src="../public/js/btnDropdown_3.js.js"></script>
 <script src="../public/js/loadMore.js"></script>
 <script>
-    $(window).on('load', function(event) {
+    $(window).on('load', function (event) {
         $('body').removeClass('preloading');
         $('.load').delay(3000).fadeOut('fast');
     });
+</script>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
 </script>
 </body>
 </html>

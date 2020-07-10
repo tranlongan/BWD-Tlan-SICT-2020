@@ -82,43 +82,43 @@ input[type=radio]:checked {
 
 /*màu background của slide*/
 #slide1 {
-    background: white;
+    background:#e2ffa9;
 }
 
 #slide2 {
-    background: yellowgreen;
+    background:#b2ff8e;
 }
 
 #slide3 {
-    background: dodgerblue;
+    background: #84ffc9;
 }
 
 #slide4 {
-    background: slateblue;
+    background:#c08bff;
 }
 
 #slide5 {
-    background: violet;
+    background:#ffaef9;
 }
 
 #slide6 {
-    background: tomato;
+    background:#ff91ae;
 }
 
 #slide7 {
-    background: violet;
+    background:#a4b7ff;
 }
 
 #slide8 {
-    background: slateblue;
+    background:#ba82ff;
 }
 
 #slide9 {
-    background: dodgerblue;
+    background:#c9ffb9;
 }
 
 #slide10 {
-    background: yellowgreen;
+    background:#ffc4a2;
 }
 
 
