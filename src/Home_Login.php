@@ -91,7 +91,7 @@ include "../public/php/connect.php";
                     <!--                khám phá các dự án-->
                     <!--                Thông báo-->
                     <div class="rlCol2 rl1">
-                        <a href="">
+                        <a class="tablinks" onclick="openCity(event, 'Idea')">
                             <div>
                                 <div class="iconCol2">
                                     <img src="../public/images/picture%20home%20login/icons8-info-squared-100.png"/>
@@ -104,7 +104,7 @@ include "../public/php/connect.php";
                     </div>
                     <!--                Thông báo-->
                     <div class="rlCol2 rl1">
-                        <a href="">
+                        <a class="tablinks" onclick="openCity(event, 'Notifications')">
                             <div>
                                 <div class="iconCol2">
                                     <img src="../public/images/picture%20home%20login/icons8-notification-50.png"/>
@@ -129,7 +129,7 @@ include "../public/php/connect.php";
 
                     <!--                profile-->
                     <div class="rlCol2 rl2">
-                        <a class="tablinks" onclick="openCity(event, 'Paris')">
+                        <a class="tablinks" onclick="openCity(event, 'Profile')">
                             <div class="iconCol2">
                                 <img src="../public/images/picture%20home%20login/icons8-customer-50.png"/>
                             </div>
@@ -277,9 +277,6 @@ include "../public/php/connect.php";
                 </div>
                 <!--            hết phần đăng bài-->
 
-                <?php
-
-                ?>
                 <!--                bài đăng của admin-->
                 <a class="hoverA" href="" style="border-bottom: 1px solid #c2c2c2">
                     <div class="row rowOfPost"
@@ -379,11 +376,12 @@ include "../public/php/connect.php";
                 </a>
 
                 <!--                bài đăng 1-->
-                <?php
-                $sql = " SELECT * FROM `news` ";
-                $result = mysqli_query($conn, $sql);
-                while ($data = mysqli_fetch_array($result)) {
-                    echo '
+                <div id="posts">
+                    <?php
+                    $sql = " SELECT * FROM `news` ";
+                    $result = mysqli_query($conn, $sql);
+                    while ($data = mysqli_fetch_array($result)) {
+                        echo '
                         <a href="" style="border-bottom: 1px solid #c2c2c2">
                 <div class="row rowOfPost"
                      style="border-bottom: 1px solid #c2c2c2; padding-bottom: 10px;position: relative">
@@ -411,7 +409,7 @@ include "../public/php/connect.php";
                                 ' . $data["content"] . '
                             </div>
                             <div>
-                                    '.$data["category"].'
+                                    ' . $data["category"] . '
                             </div>
                             <div>
                                 <img class="imgOfPost"
@@ -452,8 +450,9 @@ include "../public/php/connect.php";
                 </div>
             </a>
                         ';
-                }
-                ?>
+                    }
+                    ?>
+                </div>
 
                 <!--                bài đăng 4-->
                 <a href="" style="border-bottom: 1px solid #c2c2c2">
@@ -525,7 +524,7 @@ include "../public/php/connect.php";
 
             </div>
             <!--    form profile-->
-            <div id="Paris" class="tabcontent" style="margin-top: 64px;height: 670px;position: relative">
+            <div id="Profile" class="tabcontent" style="margin-top: 64px;height: 670px;position: relative">
                 <div class="divProfile">
                     <div style="background-color: #818182; height: 160px; padding: 0"></div>
                     <img class="iconPrf"
@@ -605,19 +604,115 @@ include "../public/php/connect.php";
                     </a>
                 </div>
             </div>
+            <!--            form notifications-->
+            <!--    form Notification-->
+            <div id="Notifications" class="tabcontent" style="margin-top: 64px;height: 670px;position: relative">
+                <div style="font-weight: bolder">
+                    Thông báo
+                </div>
+                <nav class="nav listNtf" style="border-bottom: 1px solid #AAAAAA">
+                    <li class="nav-item">
+                        <div>
+                            <a class="nav-link">
+                                All
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div>
+                            <a class="nav-link">
+                                Đề cập
+                            </a>
+                        </div>
+                    </li>
+                </nav>
+                <div style="text-align: center; padding-top: 32px">
+                    Nothing to see here — yet<br/>
+                    When someone mentions you, you’ll find it here.
+                </div>
+            </div>
+            <!--            form idea-->
+            <div id="Idea" class="tabcontent" style="margin-top: 64px;height: 100%;position: relative">
+                <div class="div_imgOfIdea">
+                    <img class="imgOfIdea" src="../public/images/picture%20home%20login/file-20200612-93521-lbqvzj.jpg">
+                </div>
+                <div style="font-weight: bolder; padding: 16px 0 8px 0; border-bottom: 1px solid #c2c2c2">
+                    Khám phá các ý tưởng
+                </div>
+                <div class="cntOfIdea moreBox">
+                    <a href="">
+                        <div style="padding: 8px 0 8px 0; border-bottom: 1px solid #c2c2c2">
+                            <font style="color: #AAAAAA;font-size: 12px">Chủ đề đang hot</font><br/>
+                            <font>#Xây dựng</font><br/>
+                            <font style="color: #AAAAAA;font-size: 12px">1.0N View</font>
+                        </div>
+                    </a>
+
+                    <a href="">
+                        <div style="padding: 8px 0 8px 0; border-bottom: 1px solid #c2c2c2">
+                            <font style="color: #AAAAAA;font-size: 12px">Chủ đề đang hot</font><br/>
+                            <font>#Sơn</font><br/>
+                            <font style="color: #AAAAAA;font-size: 12px">1.0N View</font>
+                        </div>
+                    </a>
+
+                    <a href="">
+                        <div style="padding: 8px 0 8px 0; border-bottom: 1px solid #c2c2c2">
+                            <font style="color: #AAAAAA;font-size: 12px">Chủ đề đang hot</font><br/>
+                            <font>#Sửa chữa</font><br/>
+                            <font style="color: #AAAAAA;font-size: 12px">1.0N View</font>
+                        </div>
+                    </a>
+
+                    <div style="padding: 0">
+                        <a id="loadMore">Hiển thị thêm</a>
+                    </div>
+                </div>
+
+                <div class="cntOfIdea moreBox blogBox" style="display: none">
+                    <a href="">
+                        <div style="padding: 8px 0 8px 0; border-bottom: 1px solid #c2c2c2">
+                            <font style="color: #AAAAAA;font-size: 12px">Chủ đề đang hot</font><br/>
+                            <font>#Trang trí</font><br/>
+                            <font style="color: #AAAAAA;font-size: 12px">1.0N View</font>
+                        </div>
+                    </a>
+
+                    <a href="">
+                        <div style="padding: 8px 0 8px 0; border-bottom: 1px solid #c2c2c2">
+                            <font style="color: #AAAAAA;font-size: 12px">Chủ đề đang hot</font><br/>
+                            <font>#Lau dọn</font><br/>
+                            <font style="color: #AAAAAA;font-size: 12px">1.0N View</font>
+                        </div>
+                    </a>
+
+                    <a href="">
+                        <div style="padding: 8px 0 8px 0; border-bottom: 1px solid #c2c2c2">
+                            <font style="color: #AAAAAA;font-size: 12px">Chủ đề đang hot</font><br/>
+                            <font>#Trồng trọt</font><br/>
+                            <font style="color: #AAAAAA;font-size: 12px">1.0N View</font>
+                        </div>
+                    </a>
+
+                    <div style="padding: 0">
+                        <a id="loadMore">Hiển thị thêm</a>
+                    </div>
+                </div>
+            </div>
             <!--        kết thúc col 5-->
         </div>
         <!--        phần của col4-->
         <div class="col-lg-4 col5_1" style="background-color: #f5f5f5;z-index: 1">
             <div class="divInpSearch">
-                <form action="../public/php/search_news.php" method="post"
-                      enctype="multipart/form-data">
-                    <input class="inpSearch1" name="search" type="search" placeholder="Tìm kiếm trên D.I.Y" required="required"/>
+<!--                <form action="../public/php/search_news.php" method="post"-->
+<!--                      enctype="multipart/form-data">-->
+                    <input id="searchBox" class="inpSearch1" name="search" type="search" placeholder="`Tìm` kiếm trên D.I.Y"
+                           required="required"/>
                     <div class="divIconSearch">
                         <img class="iconSearch" src="../public/images/picture%20home%20login/icons8-search-50.png">
                     </div>
-                    <button type="submit" style="border: 0"></button>
-                </form>
+<!--                    <button type="submit" style="border: 0"></button>-->
+<!--                </form>-->
             </div>
 
             <div class="divTable" ; style="border: 1px solid #c2c2c2; padding: 8px; border-radius: 16px">
@@ -746,7 +841,7 @@ include "../public/php/connect.php";
 
 </div>
 
-
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="../node_modules/jquery/dist/jquery.min.js"></script>
 <script src="../node_modules/popper.js/dist/popper.min.js"></script>
@@ -773,7 +868,7 @@ include "../public/php/connect.php";
 
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function (event) {
-        if (event.target == modal) {
+        if (event.target === modal) {
             modal.style.display = "none";
         }
     }
@@ -781,7 +876,7 @@ include "../public/php/connect.php";
 
 <script>
     function openCity(evt, cityName) {
-        var i, tabcontent, tablinks;
+        let i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
             tabcontent[i].style.display = "none";
@@ -796,6 +891,88 @@ include "../public/php/connect.php";
 
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
+</script>
+<script>
+    const searchBox = document.getElementById("searchBox");
+    const posts = document.getElementById("posts")
+    const getPosts = async (searchParams) => {
+        const response = await axios.get("http://localhost/BWD/public/php/search_news.php?search=" + searchParams);
+        console.log(response);
+        posts.innerHTML = response.data.map(post => {
+            return "<a href=\"\" style=\"border-bottom: 1px solid #c2c2c2\">\n" +
+                "                <div class=\"row rowOfPost\"\n" +
+                "                     style=\"border-bottom: 1px solid #c2c2c2; padding-bottom: 10px;position: relative\">\n" +
+                "\n" +
+                "                    <div>\n" +
+                "                        <div style=\"padding: 10px\">\n" +
+                "                            <img class=\"iconAccount1\" src=\"../public/images/picture%20home%20login/tenor.gif\">\n" +
+                "                        </div>\n" +
+                "                        <div class=\"tfPost\">\n" +
+                "                            <ul class=\"nav\">\n" +
+                "                                <li class=\"nav-item itmeN_\">\n" +
+                "                                    <a href=\"\">\n" +
+                "                                        Norman\n" +
+                "                                    </a>\n" +
+                "                                </li>\n" +
+                "                                <li class=\"nav-item itmeN\" style=\"padding-left: 32px\">\n" +
+                "                                    @People - <a href=\"\">Tháng 7</a>\n" +
+                "                                </li>\n" +
+                "                            </ul>\n" +
+                "                        </div>\n" +
+                "                    </div>\n" +
+                "                    <a href=\"\">\n" +
+                "                        <div class=\"noteAndImgOfPost\">\n" +
+                "                            <div>\n" + post.content + "\n" +
+                "                            </div>\n" +
+                "                            <div>\n" + post.category + "\n" +
+                "                            </div>\n" +
+                "                            <div>\n" +
+                "                                <img class=\"imgOfPost\"\n" +
+                "                                     src=\"../public/" + post.link_image + "\">\n" +
+                "                            </div>\n" +
+                "                        </div>\n" +
+                "                    </a>\n" +
+                "                    <div class=\"divHover\">\n" +
+                "                        <ul class=\"nav\">\n" +
+                "                            <li class=\"nav-item\" style=\"padding-left: 70px\">\n" +
+                "                                <a href=\"\">\n" +
+                "                                    <div>\n" +
+                "                                        <img class=\"iconCmt\"\n" +
+                "                                             src=\"../public/images/picture%20home%20login/icons8-speech-bubble-100.png\">\n" +
+                "                                        1.2k\n" +
+                "                                    </div>\n" +
+                "                                </a>\n" +
+                "                            </li>\n" +
+                "                            <li class=\"nav-item fixItem\">\n" +
+                "                                <a href=\"\">\n" +
+                "                                    <div>\n" +
+                "                                        <img class=\"iconCmt\"\n" +
+                "                                             src=\"../public/images/picture%20home%20login/icons8-heart-100.png\">\n" +
+                "                                        1.2k\n" +
+                "                                    </div>\n" +
+                "                                </a>\n" +
+                "                            </li>\n" +
+                "                            <li class=\"nav-item fixItem\">\n" +
+                "                                <a href=\"\">\n" +
+                "                                    <div>\n" +
+                "                                        <img class=\"iconCmt\"\n" +
+                "                                             src=\"../public/images/picture%20home%20login/icons8-level-up-50.png\">\n" +
+                "                                    </div>\n" +
+                "                                </a>\n" +
+                "                            </li>\n" +
+                "                        </ul>\n" +
+                "                    </div>\n" +
+                "                </div>\n" +
+                "            </a>";
+        });
+    };
+
+    searchBox.addEventListener("keypress", (event) => {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            getPosts(searchBox.textContent);
+        }
+    });
 </script>
 </body>
 </html>

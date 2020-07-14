@@ -115,6 +115,14 @@ img.iconAcPrf{
     border-radius: 100%;
 }
 
+.imgOfIdea{
+    max-width: inherit;
+    width: 100%;
+    height: auto;
+}
+
+
+
 
 
 

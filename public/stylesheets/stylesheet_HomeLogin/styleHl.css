@@ -315,16 +315,21 @@ div.psLbAcount:hover {
     top:18px;
 }
 
-/*button.tablinks{*/
-/*    border: 0;*/
-/*    color: #6f42c1;*/
-/*    background-color: #f1f8e9;*/
-/*    padding: 0;*/
-/*    margin: 0;*/
-/*}*/
+.listNtf li{
+    max-width: inherit;
+    width: 50%;
+    text-align: center;
+}
 
-/*button.tablinks:hover{*/
-/*    color: #e83e8c;*/
-/*    background-color: #869791;*/
-/*}*/
+.listNtf li div:hover{
+    background-color: #b9f6ca;
+}
+
+.div_imgOfIdea{
+    border-bottom: 8px solid #AAAAAA;
+}
+
+.cntOfIdea div:hover{
+    background-color: #e0e0e0;
+}
 
