@@ -93,3 +93,28 @@ img.iconHome{
 img.iconAcept{
     border-radius: 100%;
 }
+
+.iconPrf{
+    width: 160px;
+    height: 160px;
+}
+
+img.iconPrf{
+    border-radius: 100%;
+    position: absolute;
+    left: 50px;
+    top:80px;
+}
+
+.iconAcPrf{
+    width:48px;
+    height: 48px;
+}
+
+img.iconAcPrf{
+    border-radius: 100%;
+}
+
+
+
+

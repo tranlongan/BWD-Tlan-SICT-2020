@@ -279,3 +279,52 @@ div.psLbAcount:hover {
     top: 0;
     left: 0;
 }
+
+.btnPrf button{
+    border: 1px solid #1a1a1a;
+    position: absolute;
+    left: 400px;
+    top:180px;
+    height: 64px;
+    width: 148px;
+    border-radius: 64px;
+
+}
+
+.btnPrf button:hover{
+    background-color: #869791;
+}
+
+.tfPrf{
+    color: #818182
+}
+
+.listPrf li div:hover{
+    background-color: #b9f6ca;
+}
+
+.listPrf li{
+    max-width: inherit;
+    width: 33.3333333333333333333%;
+    text-align: center ;
+}
+
+.tfAcPrf{
+    position: absolute;
+    left: 90px;
+    top:18px;
+}
+
+/*button.tablinks{*/
+/*    border: 0;*/
+/*    color: #6f42c1;*/
+/*    background-color: #f1f8e9;*/
+/*    padding: 0;*/
+/*    margin: 0;*/
+/*}*/
+
+/*button.tablinks:hover{*/
+/*    color: #e83e8c;*/
+/*    background-color: #869791;*/
+/*}*/
+

@@ -48,102 +48,6 @@ include "../public/php/connect.php";
 <div class="container-fluid" style="display: flex;flex-direction: column;height: 100%;width: 100%">
     <!--    phần thân-->
     <div class="row rp1">
-        <!--        menu hiden responsive-->
-        <div class="clp_hide" style="background-color: #4DC7A0;z-index: 2">
-            <nav class="navbar navbar-inverse">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle btn_Navbar" data-toggle="collapse"
-                                data-target="#myNavbar">
-                            <img class="iconMenuHdn" src="../public/images/open-menu.png">
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <hr style="width: 100%"/>
-                        <!--     Một phần của nội dung                   -->
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="">
-                                    <div class="div_MenuNavBar_Hdn">
-                                        <div class="icon_MenuNavbar_Hdn">
-                                            <img src="../public/images/sticky-note.png"/>
-                                        </div>
-                                        <div class="lb_menu_hidden_bv g1">
-                                            Bài viết của bạn
-                                        </div>
-                                    </div>
-                                </a></li>
-                            <li><a href="">
-                                    <div class="div_MenuNavBar_Hdn">
-                                        <div class="icon_MenuNavbar_Hdn">
-                                            <img src="../public/images/history.png"/>
-                                        </div>
-                                        <div class="lb_menu_hidden_ls g1">
-                                            Lịch sử
-                                        </div>
-                                    </div>
-                                </a></li>
-                            <li><a href="">
-                                    <div class="div_MenuNavBar_Hdn">
-                                        <div class="icon_MenuNavbar_Hdn">
-                                            <img src="../public/images/follow.png"/>
-                                        </div>
-                                        <div class="lb_menu_hidden_fl g1">
-                                            Bạn đang theo dõi
-                                        </div>
-                                    </div>
-                                </a></li>
-                        </ul>
-                        <hr style="width: 100%"/>
-                        <!--     Cùng 1 phần nhưng khác nội dung-->
-                        <ul class="nav navbar-nav">
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                    Bạn đang theo dõi <span class="caret"></span>
-                                </a>
-                                <ul class="dropdown-menu g" style="background-color: #b9f6ca">
-                                    <div>
-                                        <li><a href="#">
-                                                <div class="div_Fl_MenuNavbar">
-                                                    <div>
-                                                        <img class="icon_Fl_MenuHdn"
-                                                             src="../public/images/picture%20of%20danhmuc/picture%20carousel/10.png">
-                                                    </div>
-                                                    <div class="rps_Lb_Fl_MenuNavBar">
-                                                        People 1
-                                                    </div>
-                                                </div>
-                                            </a></li>
-                                        <li><a href="#">
-                                                <div class="div_Fl_MenuNavbar">
-                                                    <div>
-                                                        <img class="icon_Fl_MenuHdn"
-                                                             src="../public/images/picture%20of%20danhmuc/picture%20carousel/10.png">
-                                                    </div>
-                                                    <div class="rps_Lb_Fl_MenuNavBar">
-                                                        People 1
-                                                    </div>
-                                                </div>
-                                            </a></li>
-                                        <li><a href="#">
-                                                <div class="div_Fl_MenuNavbar">
-                                                    <div>
-                                                        <img class="icon_Fl_MenuHdn"
-                                                             src="../public/images/picture%20of%20danhmuc/picture%20carousel/10.png">
-                                                    </div>
-                                                    <div class="rps_Lb_Fl_MenuNavBar">
-                                                        People 1
-                                                    </div>
-                                                </div>
-                                            </a></li>
-                                    </div>
-                                </ul>
-                            </li>
-                        </ul>
-
-                    </div>
-                </div>
-            </nav>
-        </div>
         <!--        phần của col 3-->
         <div class="col-lg-3 col2"
              style="background-color: #f1f8e9;padding:5px 0 5px 100px;">
@@ -156,92 +60,98 @@ include "../public/php/connect.php";
                     </div>
                 </a>
                 <!--                home-->
-                <div class="rlCol2 rl1">
-                    <a href="">
-                        <div>
-                            <div class="iconCol2">
-                                <img src="../public/images/picture%20home%20login/icons8-home-80.png"/>
+                <div class="tab">
+                    <!--                home-->
+                    <div class="rlCol2 rl1">
+                        <a class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">
+                            <div>
+                                <div class="iconCol2">
+                                    <img src="../public/images/picture%20home%20login/icons8-home-80.png"/>
+                                </div>
+                                <div id="demo3" class="lbCol2">
+                                    Home
+                                </div>
                             </div>
-                            <div id="demo3" class="lbCol2">
-                                Home
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!--                bài viết của bạn-->
-                <div class="rlCol2 rl1">
-                    <a href="">
-                        <div>
-                            <div class="iconCol2">
-                                <img src="../public/images/sticky-note.png"/>
-                            </div>
-                            <div id="demo3" class="lbCol2">
-                                Bài viết của bạn
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!--                khám phá các dự án-->
-                <!--                Thông báo-->
-                <div class="rlCol2 rl1">
-                    <a href="">
-                        <div>
-                            <div class="iconCol2">
-                                <img src="../public/images/picture%20home%20login/icons8-info-squared-100.png"/>
-                            </div>
-                            <div id="demo3" class="lbCol2">
-                                Khám phá các ý tưởng
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!--                Thông báo-->
-                <div class="rlCol2 rl1">
-                    <a href="">
-                        <div>
-                            <div class="iconCol2">
-                                <img src="../public/images/picture%20home%20login/icons8-notification-50.png"/>
-                            </div>
-                            <div id="demo3" class="lbCol2">
-                                Thông báo
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!--                Lịch sử-->
-                <div class="rlCol2 rl2">
-                    <a href="">
-                        <div class="iconCol2">
-                            <img src="../public/images/history.png"/>
-                        </div>
-                        <div id="demo3" class="lbCol2">
-                            Lịch sử
-                        </div>
-                    </a>
-                </div>
+                        </a>
+                    </div>
 
-                <!--                profile-->
-                <div class="rlCol2 rl2">
-                    <a href="">
-                        <div class="iconCol2">
-                            <img src="../public/images/picture%20home%20login/icons8-customer-50.png"/>
-                        </div>
-                        <div id="demo3" class="lbCol2">
-                            Cá nhân
-                        </div>
-                    </a>
-                </div>
+                    <!--                bài viết của bạn-->
+                    <div class="rlCol2 rl1">
+                        <a href="">
+                            <div>
+                                <div class="iconCol2">
+                                    <img src="../public/images/sticky-note.png"/>
+                                </div>
+                                <div id="demo3" class="lbCol2">
+                                    Bài viết của bạn
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!--                khám phá các dự án-->
+                    <!--                Thông báo-->
+                    <div class="rlCol2 rl1">
+                        <a href="">
+                            <div>
+                                <div class="iconCol2">
+                                    <img src="../public/images/picture%20home%20login/icons8-info-squared-100.png"/>
+                                </div>
+                                <div id="demo3" class="lbCol2">
+                                    Khám phá các ý tưởng
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!--                Thông báo-->
+                    <div class="rlCol2 rl1">
+                        <a href="">
+                            <div>
+                                <div class="iconCol2">
+                                    <img src="../public/images/picture%20home%20login/icons8-notification-50.png"/>
+                                </div>
+                                <div id="demo3" class="lbCol2">
+                                    Thông báo
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!--                Lịch sử-->
+                    <div class="rlCol2 rl2">
+                        <a>
+                            <div class="iconCol2">
+                                <img src="../public/images/history.png"/>
+                            </div>
+                            <div id="demo3" class="lbCol2">
+                                Lịch sử
+                            </div>
+                        </a>
+                    </div>
 
-                <!--                more-->
-                <div class="rlCol2 rl2">
-                    <a href="">
-                        <div class="iconCol2">
-                            <img src="../public/images/picture%20home%20login/icons8-view-more-50.png"/>
-                        </div>
-                        <div id="demo3" class="lbCol2">
-                            Nhiều hơn
-                        </div>
-                    </a>
+                    <!--                profile-->
+                    <div class="rlCol2 rl2">
+                        <a class="tablinks" onclick="openCity(event, 'Paris')">
+                            <div class="iconCol2">
+                                <img src="../public/images/picture%20home%20login/icons8-customer-50.png"/>
+                            </div>
+                            <div id="demo3" class="lbCol2">
+                                <div class="tab">
+                                    Cá nhân
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!--                more-->
+                    <div class="rlCol2 rl2">
+                        <a href="">
+                            <div class="iconCol2">
+                                <img src="../public/images/picture%20home%20login/icons8-view-more-50.png"/>
+                            </div>
+                            <div id="demo3" class="lbCol2">
+                                Nhiều hơn
+                            </div>
+                        </a>
+                    </div>
                 </div>
                 <!--                btn đăng bài-->
                 <div class="divBtnDangBai">
@@ -319,162 +229,168 @@ include "../public/php/connect.php";
             </div>
 
             <!--            phần đăng bài-->
-            <div class="row divDangBai">
-                <a href="">
-                    <div style="padding: 10px;">
-                        <img class="iconAccount1" src="../public/images/picture%20home%20login/tenor.gif">
-                    </div>
-                </a>
-                <input class="inpSearch" type="text" placeholder="Bạn có ý tưởng gì??" style="border: 0"/>
-            </div>
-            <div class="row divDangBai1">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="" data-toggle="tooltip" title="Ảnh">
-                            <img class="iconPost"
-                                 src="../public/images/picture%20home%20login/icons8-full-image-100.png">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" data-toggle="tooltip" title="Video">
-                            <img class="iconPost"
-                                 src="../public/images/picture%20home%20login/icons8-video-playlist-100.png">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" data-toggle="tooltip" title="Thảo luận">
-                            <img class="iconPost"
-                                 src="../public/images/picture%20home%20login/icons8-questions-80.png">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" data-toggle="tooltip" title="Biểu cảm">
-                            <img class="iconPost"
-                                 src="../public/images/picture%20home%20login/icons8-happy-100.png">
-                        </a>
-                    </li>
-                    <li class="nav-item last_Item">
-                        <div class="divBtn">
-                            <button class="btnDangBai btn-primary"
-                                    onclick="document.getElementById('id01').style.display='block'"
-                                    style="outline: none">
-                                Đăng bài
-                            </button>
+            <div id="London" class="tabcontent">
+                <div class="row divDangBai">
+                    <a href="">
+                        <div style="padding: 10px;">
+                            <img class="iconAccount1" src="../public/images/picture%20home%20login/tenor.gif">
                         </div>
-                    </li>
-                </ul>
-            </div>
-            <!--            hết phần đăng bài-->
+                    </a>
+                    <input class="inpSearch" type="text" placeholder="Bạn có ý tưởng gì??" style="border: 0"/>
+                </div>
+                <div class="row divDangBai1">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="" data-toggle="tooltip" title="Ảnh">
+                                <img class="iconPost"
+                                     src="../public/images/picture%20home%20login/icons8-full-image-100.png">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="tooltip" title="Video">
+                                <img class="iconPost"
+                                     src="../public/images/picture%20home%20login/icons8-video-playlist-100.png">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="tooltip" title="Thảo luận">
+                                <img class="iconPost"
+                                     src="../public/images/picture%20home%20login/icons8-questions-80.png">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="tooltip" title="Biểu cảm">
+                                <img class="iconPost"
+                                     src="../public/images/picture%20home%20login/icons8-happy-100.png">
+                            </a>
+                        </li>
+                        <li class="nav-item last_Item">
+                            <div class="divBtn">
+                                <button class="btnDangBai btn-primary"
+                                        onclick="document.getElementById('id01').style.display='block'"
+                                        style="outline: none">
+                                    Đăng bài
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--            hết phần đăng bài-->
 
+                <?php
 
-            <!--                bài đăng của admin-->
-            <a class="hoverA" href="" style="border-bottom: 1px solid #c2c2c2">
-                <div class="row rowOfPost"
-                     style="border-bottom: 1px solid #c2c2c2; padding-bottom: 10px;position: relative">
-                    <div>
-                        <div style="padding: 10px">
-                            <img class="iconAccount1"
-                                 src="../public/images/picture%20home%20login/icons8-google-home-64.png">
+                ?>
+                <!--                bài đăng của admin-->
+                <a class="hoverA" href="" style="border-bottom: 1px solid #c2c2c2">
+                    <div class="row rowOfPost"
+                         style="border-bottom: 1px solid #c2c2c2; padding-bottom: 10px;position: relative">
+                        <div>
+                            <div style="padding: 10px">
+                                <img class="iconAccount1"
+                                     src="../public/images/picture%20home%20login/icons8-google-home-64.png">
+                            </div>
+                            <div class="tfPost">
+                                <ul class="nav">
+                                    <li class="nav-item itmeN_">
+                                        <a href="">
+                                            Admin A
+                                        </a>
+                                        <img class="iconAcept"
+                                             src="../public/images/picture%20home%20login/icons8-instagram-check-mark-100%20(1).png">
+                                    </li>
+                                    <li class="nav-item itmeN" style="padding-left:32px; ">
+                                        @Admin A - <a href="">Tháng 7</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="tfPost">
+                        <a href="">
+                            <div class="noteAndImgOfPost">
+                                <div>
+                                    Ý tưởng hàng rào cây cho không gian nhỏ
+                                </div>
+                                <div>
+                                    #Xây dựng
+                                </div>
+                                <div>
+                                    <img class="imgOfPost"
+                                         src="../public/images/picture%20home%20login/the-most-ingenious-vertical-garden-ideas-for-small-spaces.jpg">
+                                </div>
+                            </div>
+                        </a>
+                        <div class="divHover">
                             <ul class="nav">
-                                <li class="nav-item itmeN_">
+                                <li class="nav-item" style="padding-left: 70px">
                                     <a href="">
-                                        Admin A
+                                        <div>
+                                            <img class="iconCmt"
+                                                 src="../public/images/picture%20home%20login/icons8-speech-bubble-100.png">
+                                            1.2k
+                                        </div>
                                     </a>
-                                    <img class="iconAcept"
-                                         src="../public/images/picture%20home%20login/icons8-instagram-check-mark-100%20(1).png">
                                 </li>
-                                <li class="nav-item itmeN" style="padding-left:32px; ">
-                                    @Admin A - <a href="">Tháng 7</a>
+                                <li class="nav-item fixItem">
+                                    <a href="">
+                                        <div>
+                                            <img class="iconCmt"
+                                                 src="../public/images/picture%20home%20login/icons8-heart-100.png">
+                                            1.2k
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav-item fixItem">
+                                    <!--                        drop down account-->
+                                    <div class="dropdown1">
+                                        <button class="dropbtn_b" onclick="myFunction2()" style="outline: none">
+                                            <img class="iconCmt dropbtn2"
+                                                 src="../public/images/picture%20home%20login/icons8-level-up-50.png">
+                                        </button>
+                                        <div id="myDropdown2" class="dropdown-content2">
+
+                                            <hr style="padding: 0; margin: 0"/>
+                                            <a href="" class="aaa_x">
+                                                <div class="ps_iconUser_x">
+                                                    <div>
+                                                        <img class="iconLogOut"
+                                                             src="../public/images/picture%20home%20login/icons8-share-160.png">
+                                                    </div>
+                                                    <div class="lb_Setting1">
+                                                        Chia sẻ
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="../index.html" class="aaa">
+                                                <div class="ps_iconUser">
+                                                    <div>
+                                                        <img class="iconLogOut"
+                                                             src="../public/images/picture%20home%20login/out.png">
+                                                    </div>
+                                                    <div class="lb_LogOut1">
+                                                        Tôi không muốn thấy tin tức này nữa
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <a href="">
-                        <div class="noteAndImgOfPost">
-                            <div>
-                                Ý tưởng hàng rào cây cho không gian nhỏ
-                            </div>
-                            <div>
-                                <img class="imgOfPost"
-                                     src="../public/images/picture%20home%20login/the-most-ingenious-vertical-garden-ideas-for-small-spaces.jpg">
-                            </div>
-                        </div>
-                    </a>
-                    <div class="divHover">
-                        <ul class="nav">
-                            <li class="nav-item" style="padding-left: 70px">
-                                <a href="">
-                                    <div>
-                                        <img class="iconCmt"
-                                             src="../public/images/picture%20home%20login/icons8-speech-bubble-100.png">
-                                        1.2k
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="nav-item fixItem">
-                                <a href="">
-                                    <div>
-                                        <img class="iconCmt"
-                                             src="../public/images/picture%20home%20login/icons8-heart-100.png">
-                                        1.2k
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="nav-item fixItem">
-                                <!--                        drop down account-->
-                                <div class="dropdown1">
-                                    <button class="dropbtn_b" onclick="myFunction2()" style="outline: none">
-                                        <img class="iconCmt dropbtn2"
-                                             src="../public/images/picture%20home%20login/icons8-level-up-50.png">
-                                    </button>
-                                    <div id="myDropdown2" class="dropdown-content2">
+                </a>
 
-                                        <hr style="padding: 0; margin: 0"/>
-                                        <a href="" class="aaa_x">
-                                            <div class="ps_iconUser_x">
-                                                <div>
-                                                    <img class="iconLogOut"
-                                                         src="../public/images/picture%20home%20login/icons8-share-160.png">
-                                                </div>
-                                                <div class="lb_Setting1">
-                                                    Chia sẻ
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a href="../index.html" class="aaa">
-                                            <div class="ps_iconUser">
-                                                <div>
-                                                    <img class="iconLogOut"
-                                                         src="../public/images/picture%20home%20login/out.png">
-                                                </div>
-                                                <div class="lb_LogOut1">
-                                                    Tôi không muốn thấy tin tức này nữa
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </a>
-
-            <!--                bài đăng 1-->
-            <?php
-            $sql = " SELECT * FROM `news` ";
-            $result = mysqli_query($conn, $sql);
-            while ($data = mysqli_fetch_array($result)) {
-                echo '
+                <!--                bài đăng 1-->
+                <?php
+                $sql = " SELECT * FROM `news` ";
+                $result = mysqli_query($conn, $sql);
+                while ($data = mysqli_fetch_array($result)) {
+                    echo '
                         <a href="" style="border-bottom: 1px solid #c2c2c2">
                 <div class="row rowOfPost"
                      style="border-bottom: 1px solid #c2c2c2; padding-bottom: 10px;position: relative">
 
                     <div>
                         <div style="padding: 10px">
-                            <img class="iconAccount1" src="../public/images/picture%20home%20login/tenor%20(5).gif">
+                            <img class="iconAccount1" src="../public/images/picture%20home%20login/tenor.gif">
                         </div>
                         <div class="tfPost">
                             <ul class="nav">
@@ -493,6 +409,9 @@ include "../public/php/connect.php";
                         <div class="noteAndImgOfPost">
                             <div>
                                 ' . $data["content"] . '
+                            </div>
+                            <div>
+                                    '.$data["category"].'
                             </div>
                             <div>
                                 <img class="imgOfPost"
@@ -533,86 +452,172 @@ include "../public/php/connect.php";
                 </div>
             </a>
                         ';
-            }
-            ?>
+                }
+                ?>
 
-            <!--                bài đăng 4-->
-            <a href="" style="border-bottom: 1px solid #c2c2c2">
-                <div class="row rowOfPost"
-                     style="border-bottom: 1px solid #c2c2c2; padding-bottom: 10px;position: relative">
+                <!--                bài đăng 4-->
+                <a href="" style="border-bottom: 1px solid #c2c2c2">
+                    <div class="row rowOfPost"
+                         style="border-bottom: 1px solid #c2c2c2; padding-bottom: 10px;position: relative">
 
-                    <div>
-                        <div style="padding: 10px">
-                            <img class="iconAccount1" src="../public/images/picture%20home%20login/tenor%20(4).gif">
+                        <div>
+                            <div style="padding: 10px">
+                                <img class="iconAccount1" src="../public/images/picture%20home%20login/tenor%20(4).gif">
+                            </div>
+                            <div class="tfPost">
+                                <ul class="nav">
+                                    <li class="nav-item itmeN_">
+                                        <a href="">
+                                            People 3
+                                        </a>
+                                    </li>
+                                    <li class="nav-item itmeN" style="padding-left: 32px">
+                                        @People - <a href="">Tháng 7</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="tfPost">
+                        <a href="">
+                            <div class="noteAndImgOfPost">
+                                <div>
+                                    Video quảng cáo
+                                </div>
+                                <div>
+                                    <video class="imgOfPost" controls="1">
+                                        <source src="../public/images/video/otiv-tvc-quang-cao-10s.mp4" autoplay="false"
+                                                type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="divHover">
                             <ul class="nav">
-                                <li class="nav-item itmeN_">
+                                <li class="nav-item" style="padding-left: 70px">
                                     <a href="">
-                                        People 3
+                                        <div>
+                                            <img class="iconCmt"
+                                                 src="../public/images/picture%20home%20login/icons8-speech-bubble-100.png">
+                                            1.2k
+                                        </div>
                                     </a>
                                 </li>
-                                <li class="nav-item itmeN" style="padding-left: 32px">
-                                    @People - <a href="">Tháng 7</a>
+                                <li class="nav-item fixItem">
+                                    <a href="">
+                                        <div>
+                                            <img class="iconCmt"
+                                                 src="../public/images/picture%20home%20login/icons8-heart-100.png">
+                                            1.2k
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav-item fixItem">
+                                    <a href="">
+                                        <div>
+                                            <img class="iconCmt"
+                                                 src="../public/images/picture%20home%20login/icons8-level-up-50.png">
+                                        </div>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <a href="">
-                        <div class="noteAndImgOfPost">
+                </a>
+
+            </div>
+            <!--    form profile-->
+            <div id="Paris" class="tabcontent" style="margin-top: 64px;height: 670px;position: relative">
+                <div class="divProfile">
+                    <div style="background-color: #818182; height: 160px; padding: 0"></div>
+                    <img class="iconPrf"
+                         src="../public/images/picture%20home%20login/tenor.gif">
+                    <div style="padding-top: 75px;padding-bottom: 16px;">
+                        <font style="font-size: 28px; font-weight: bolder">Norman</font>
+                        <div class="tfPrf">@ People</div>
+                        <div class="tfPrf"> Đã tham gia tháng 7 năm 2020</div>
+                    </div>
+
+                    <div class="btnPrf">
+                        <button type="submit">
+                            Chỉnh hồ sơ
+                        </button>
+                    </div>
+
+                    <nav class="nav listPrf" style="border-bottom: 1px solid #AAAAAA">
+                        <li class="nav-item">
                             <div>
-                                Video quảng cáo
+                                <a href="" class="nav-link">Theo dõi</a>
                             </div>
+                        </li>
+                        <li class="nav-item">
                             <div>
-                                <video class="imgOfPost" controls="1">
-                                    <source src="../public/images/video/otiv-tvc-quang-cao-10s.mp4" autoplay="false"
-                                            type="video/mp4">
-                                </video>
+                                <a href="" class="nav-link">Bài đăng</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div>
+                                <a href="" class="nav-link">Like</a>
+                            </div>
+                        </li>
+                    </nav>
+                    <div style="font-size: 20px; font-weight: bolder;border-bottom: 1px solid #AAAAAA; padding: 8px">
+                        Bạn đang theo dõi
+                    </div>
+                    <a href="">
+                        <div style="padding: 16px;position: relative;border-bottom: 1px solid #AAAAAA">
+                            <div>
+                                <img class="iconAcPrf" src="../public/images/picture%20home%20login/tenor%20(2).gif">
+                            </div>
+                            <div class="tfAcPrf">
+                                <a href="">People1</a>
+                                <div>
+                                    @Pl1
+                                </div>
                             </div>
                         </div>
                     </a>
-                    <div class="divHover">
-                        <ul class="nav">
-                            <li class="nav-item" style="padding-left: 70px">
-                                <a href="">
-                                    <div>
-                                        <img class="iconCmt"
-                                             src="../public/images/picture%20home%20login/icons8-speech-bubble-100.png">
-                                        1.2k
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="nav-item fixItem">
-                                <a href="">
-                                    <div>
-                                        <img class="iconCmt"
-                                             src="../public/images/picture%20home%20login/icons8-heart-100.png">
-                                        1.2k
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="nav-item fixItem">
-                                <a href="">
-                                    <div>
-                                        <img class="iconCmt"
-                                             src="../public/images/picture%20home%20login/icons8-level-up-50.png">
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </a>
 
-            <!--        kết thúc col 10-->
+                    <a href="">
+                        <div style="padding: 16px;position: relative;border-bottom: 1px solid #AAAAAA">
+                            <div>
+                                <img class="iconAcPrf" src="../public/images/picture%20home%20login/tenor%20(3).gif">
+                            </div>
+                            <div class="tfAcPrf">
+                                <a href="">People2</a>
+                                <div>
+                                    @Pl2
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="">
+                        <div style="padding: 16px;position: relative;border-bottom: 1px solid #AAAAAA">
+                            <div>
+                                <img class="iconAcPrf" src="../public/images/picture%20home%20login/tenor%20(4).gif">
+                            </div>
+                            <div class="tfAcPrf">
+                                <a href="">People3</a>
+                                <div>
+                                    @Pl3
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--        kết thúc col 5-->
         </div>
         <!--        phần của col4-->
         <div class="col-lg-4 col5_1" style="background-color: #f5f5f5;z-index: 1">
             <div class="divInpSearch">
-                <input class="inpSearch1" type="text" placeholder="Tìm kiếm trên D.I.Y"/>
-                <div class="divIconSearch">
-                    <img class="iconSearch" src="../public/images/picture%20home%20login/icons8-search-50.png">
-                </div>
+                <form action="../public/php/search_news.php" method="post"
+                      enctype="multipart/form-data">
+                    <input class="inpSearch1" name="search" type="search" placeholder="Tìm kiếm trên D.I.Y" required="required"/>
+                    <div class="divIconSearch">
+                        <img class="iconSearch" src="../public/images/picture%20home%20login/icons8-search-50.png">
+                    </div>
+                    <button type="submit" style="border: 0"></button>
+                </form>
             </div>
 
             <div class="divTable" ; style="border: 1px solid #c2c2c2; padding: 8px; border-radius: 16px">
@@ -715,32 +720,33 @@ include "../public/php/connect.php";
         <!--        kết thúc phần thân-->
     </div>
 
-
-</div>
-
-<!-- form đăng bài -->
-<div id="id01" class="modal">
-    <form id="loginbox" class="modal-content animate" action="../public/php/upload_news.php" method="POST"
-          enctype="multipart/form-data">
-        <div style="padding: 50px">
-            <div>
-                <div style="margin-top: 16px ; margin-bottom: 16px">
-                    <input type="textarea" placeholder="Content" name="content" required="required"
-                           style="width: 500px; height: 100px">
+    <!-- form đăng bài -->
+    <div id="id01" class="modal">
+        <form id="loginbox" class="modal-content animate" action="../public/php/upload_news.php" method="POST"
+              enctype="multipart/form-data">
+            <div style="padding: 50px">
+                <div>
+                    <div style="margin-top: 16px ; margin-bottom: 16px">
+                        <input type="textarea" placeholder="Content" name="content" required="required"
+                               style="width: 500px; height: 100px">
+                    </div>
+                </div>
+                <div>
+                    <label for="myfile">Chọn ảnh:</label>
+                    <input type="file" id="myfile" name="image" multiple><br><br>
+                    <button type="submit">
+                        Đăng bài
+                    </button>
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                          title="Close Modal">&times;</span>
                 </div>
             </div>
-            <div>
-                <label for="myfile">Chọn ảnh:</label>
-                <input type="file" id="myfile" name="image" multiple><br><br>
-                <button type="submit">
-                    Đăng bài
-                </button>
-                <span onclick="document.getElementById('id01').style.display='none'" class="close"
-                      title="Close Modal">&times;</span>
-            </div>
-        </div>
-    </form>
+        </form>
+    </div>
+
 </div>
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="../node_modules/jquery/dist/jquery.min.js"></script>
 <script src="../node_modules/popper.js/dist/popper.min.js"></script>
@@ -771,6 +777,25 @@ include "../public/php/connect.php";
             modal.style.display = "none";
         }
     }
+</script>
+
+<script>
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
 </script>
 </body>
 </html>
