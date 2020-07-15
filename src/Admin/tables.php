@@ -1,3 +1,6 @@
+<?php
+include "../../public/php/connect.php";
+?>
 <!doctype html>
 <html class="no-js h-100" lang="en">
   <head>
@@ -55,7 +58,7 @@
                 </a>
 				</li>
               <li class="nav-item">
-                <a class="nav-link active " href="tables.html">
+                <a class="nav-link active " href="tables.php">
                   <i class="material-icons">table_chart</i>
                   <span>Người sử dụng</span>
                 </a>
@@ -180,41 +183,22 @@
                         </tr>
                       </thead>
                       <tbody>
-                        <tr>
-                          <td>1</td>
-                          <td>vantuong</td>
-                          <td>Trần Long Tường</td>
-                          <td>*********</td>
-                          <td>124</td>
-                          <td>5674</td>
+                      <?php
+                      $sql = "SELECT * FROM `account_login`";
+                      $result = mysqli_query($conn,$sql);
+                      while ($data = mysqli_fetch_array($result)){
+                          echo '
+                      <tr>
+                          <td>'.$data["id"].'</td>
+                          <td>'.$data["username"].'</td>
+                          <td>Default</td>
+                          <td>'.$data["password"].'</td>
+                          <td>...</td>
+                          <td>...</td>
                         </tr>
-                        <tr>
-                          <td>2</td>
-                          <td>phamhien</td>
-                          <td>Phạm Thế Hiển</td>
-                          <td>*********</td>
-                          <td>56</td>
-                          <td>2404</td>
-                        </tr>
-                        <tr>
-                          <td>3</td>
-                          <td>Vanan</td>
-                          <td>Nguyễn Văn An</td>
-                          <td>*********</td>
-                          <td>23</td>
-                          <td>1254</td>
-                        </tr>
-                        <tr>
-                          <td>4</td>
-                          <td>Tandat</td>
-                          <td>Trương Nguyễn Tấn Đạt</td>
-                          <td>*********</td>
-                          <td>12</td>
-                          <td>805</td>
-                        </tr>
-						<tr>
-						  <td colspan="6"><a href="#">Xem thêm</a></td>
-						  </tr>
+                      ';
+                      }
+                      ?>
                       </tbody>
                     </table>
                   </div>
@@ -222,68 +206,6 @@
               </div>
             </div>
             <!-- End Default Light Table -->
-            <!-- Default Dark Table -->
-            <div class="row">
-              <div class="col">
-                <div class="card card-small overflow-hidden mb-4">
-                  <div class="card-header bg-dark">
-                    <h6 class="m-0 text-white">Người dùng không hoạt động</h6>
-                  </div>
-                  <div class="card-body p-0 pb-3 bg-dark text-center">
-                    <table class="table table-dark mb-0">
-                      <thead class="thead-dark">
-                        <tr>
-                          <th scope="col" class="border-bottom-0">#</th>
-                          <th scope="col" class="border-bottom-0">Tên đăng nhập</th>
-                          <th scope="col" class="border-bottom-0">Tên người sử dụng</th>
-                          <th scope="col" class="border-bottom-0">Mật khẩu</th>
-                          <th scope="col" class="border-bottom-0">Số bài đăng</th>
-                          <th scope="col" class="border-bottom-0">Điểm tương tác</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>1</td>
-                          <td>Thisuong</td>
-                          <td>Cao Thị Sương</td>
-                          <td>********</td>
-                          <td>2</td>
-                          <td>120</td>
-                        </tr>
-                        <tr>
-                          <td>2</td>
-                          <td>Vantrieu</td>
-                          <td>Nguyễn Văn Triều</td>
-                          <td>*******</td>
-                          <td>0</td>
-                          <td>0</td>
-                        </tr>
-                        <tr>
-                          <td>3</td>
-                          <td>Hieumy</td>
-                          <td>Trần Hiếu My</td>
-                          <td>*******</td>
-                          <td>0</td>
-                          <td>0</td>
-                        </tr>
-                        <tr>
-                          <td>4</td>
-                          <td>Thanhlong</td>
-                          <td>Phan Thành Long</td>
-                          <td>*******</td>
-                          <td>0</td>
-                          <td>0</td>
-                        </tr>
-						<tr>
-						  <td colspan="6"><a href="#">Xem thêm</a></td>
-						  </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End Default Dark Table -->
           </div>
           <footer class="main-footer d-flex p-2 px-3 bg-white border-top">
             <ul class="nav">

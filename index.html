@@ -149,7 +149,7 @@
     </nav>
     <!-- form đăng nhập -->
     <div id="id01" class="modal">
-        <form id="loginbox" class="modal-content animate" action="/action_page.php" method="post">
+        <div id="loginbox" class="modal-content animate">
             <div class="left">
                 <ul class="nav nav-tabs">
                     <li class="nav-item">
@@ -157,32 +157,34 @@
                            style="width:175px; text-align: center; font-weight:bold;">Đăng Nhập</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-t baoggle="tab" href="#dangky"
+                        <a class="nav-link" data-toggle="tab" href="#dangky"
                            style="width:175px; text-align: center; font-weight:bold;">Đăng ký</a>
                     </li>
 
                 </ul>
 
                 <div class="tab-content">
-                    <div id="dangnhap" class="container tab-pane active">
-                        <input type="text" name="username" id="user" placeholder="Tên đăng nhập">
+                    <form id="dangnhap" class="container tab-pane active" action="public/php/dn_account.php"
+                          method="post" enctype="multipart/form-data">
+                        <input type="text" name="username" id="user" placeholder="Tên đăng nhập" required="required">
 
-                        <input type="password" name="password" id="pass" placeholder="Mật khẩu">
+                        <input type="password" name="password" id="pass" placeholder="Mật khẩu" required="required">
                         <a class="textsg" style="float: left; text-decoration: none;" href="">Quên mật khẩu</a>
                         <a class="textsg" style="float: right; text-decoration: none;" href="#car">Bạn đã có tài
                             khoản chưa ?</a>
                         <br>
                         <input type="submit" name="signup_submit" value="Đăng nhập">
-                    </div>
+                    </form>
 
 
-                    <div id="dangky" class="container tab-pane fade">
-                        <input type="text" name="username" placeholder="Tên đăng nhập">
-                        <input type="text" name="email" placeholder="E-mail">
-                        <input type="password" name="password" placeholder="Nhập mật khẩu">
-                        <input type="password" name="password2" placeholder="Nhạp lại mật khẩu">
+                    <form id="dangky" class="container tab-pane fade" action="./public/php/dk_account.php"
+                          method="post" enctype="multipart/form-data">
+                        <input type="text" name="dk_username" placeholder="Tên đăng nhập" required="required">
+                        <input type="text" name="nameAccount" placeholder="Tên tài khoản" required="required">
+                        <input type="password" name="dk_password" placeholder="Nhập mật khẩu" required="required">
+                        <input type="password" name="dk_password2" placeholder="Nhạp lại mật khẩu" required="required">
                         <input type="submit" name="signup_submit" value="Đăng Ký">
-                    </div>
+                    </form>
 
 
                 </div>
@@ -199,7 +201,7 @@
                 <button class="social-signin google">Log in with Google+</button>
             </div>
             <div class="or">OR</div>
-        </form>
+        </div>
 
     </div>
     <!--kết thúc form-->
@@ -1330,36 +1332,5 @@
         }
     }
 </script>
-<script>
-    var CORRECT_USER = 'admin';
-    var CORRECT_PASS = 'admin123';
-
-    var inputUsername = document.getElementById('user');
-    var inputpassword = document.getElementById('pass');
-
-    var loginbox = document.getElementById('loginbox');
-    if (loginbox.attachEvent) {
-        loginbox.attachEvent('submit', onFormSubmit);
-    } else {
-        loginbox.addEventListener('submit', onFormSubmit);
-    }
-
-    function onFormSubmit(e) {
-        if (e.preventDefault) e.preventDefault();
-
-        var user = inputUsername.value;
-        var pass = inputpassword.value;
-
-        if (user == CORRECT_USER && pass == CORRECT_PASS) {
-            window.location = 'src/Home_Login.php';
-
-        } else {
-            alert('Bạn đã nhập sai tên đăng nhập hoặc mật khẩu, Vui lòng nhập lại.')
-        }
-        return false;
-    }
-</script>
-
-
 </body>
 </html>

@@ -47,6 +47,10 @@
     z-index: 100;
 }
 
+.menuCol2{
+    padding:5px 0 5px 100px;
+}
+
 .col-lg-4.col5_1 {
     position: fixed;
     overflow: auto;
@@ -56,7 +60,7 @@
     left: 1012.8px;
 }
 
-div.col5 {
+.col5 {
     position: relative;
     left: 379.8px;
 }

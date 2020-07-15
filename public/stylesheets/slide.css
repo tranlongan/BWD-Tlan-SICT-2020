@@ -82,15 +82,15 @@ input[type=radio]:checked {
 
 /*màu background của slide*/
 #slide1 {
-    background:#e2ffa9;
+    background: #4DC7A0 ;
 }
 
 #slide2 {
-    background:#b2ff8e;
+    background:white;
 }
 
 #slide3 {
-    background: #84ffc9;
+    background: red;
 }
 
 #slide4 {
