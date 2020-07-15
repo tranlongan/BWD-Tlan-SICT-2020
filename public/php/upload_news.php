@@ -15,8 +15,8 @@ if (isset($_FILES['image'])) {
         move_uploaded_file($_FILES['image']['tmp_name'], '../img_uploads/'.$time.'.jpg');
 
         if (!empty($content) && !empty($category)){
-            $sql = "INSERT INTO `news`(`title`, `content`, `category`, `link_image`) VALUES ('".$title."','".$content
-                ."','".$category."','img_uploads/$time.jpg')";
+            $sql = "INSERT INTO `news`(`title`, `content`, `category`, `link_image`, `allowed`) VALUES ('".$title."','".$content
+                ."','".$category."','img_uploads/$time.jpg','0')";
             mysqli_query($conn,$sql);
             header("Location: ../../src/Home_Login.php");
         }

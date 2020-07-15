@@ -77,7 +77,7 @@ include "../public/php/connect.php";
 
                     <!--                bài viết của bạn-->
                     <div class="rlCol2 rl1">
-                        <a href="">
+                        <a class="tablinks" onclick="openCity(event, 'myPost')">
                             <div>
                                 <div class="iconCol2">
                                     <img src="../public/images/sticky-note.png"/>
@@ -117,7 +117,7 @@ include "../public/php/connect.php";
                     </div>
                     <!--                Lịch sử-->
                     <div class="rlCol2 rl2">
-                        <a>
+                        <a class="tablinks" onclick="openCity(event, 'history')">
                             <div class="iconCol2">
                                 <img src="../public/images/history.png"/>
                             </div>
@@ -378,7 +378,7 @@ include "../public/php/connect.php";
                 <!--                bài đăng 1-->
                 <div id="posts">
                     <?php
-                    $sql = " SELECT * FROM `news` ";
+                    $sql = " SELECT * FROM `news` WHERE `allowed` = '1'";
                     $result = mysqli_query($conn, $sql);
                     while ($data = mysqli_fetch_array($result)) {
                         echo '
@@ -695,8 +695,92 @@ include "../public/php/connect.php";
                     </a>
 
                     <div style="padding: 0">
-                        <a id="loadMore1">Hiển thị thêm</a>
+                        <a>Hiển thị thêm</a>
                     </div>
+                </div>
+            </div>
+            <!--            form bài viết-->
+            <div id="myPost" class="tabcontent" style="margin-top: 64px;height: 100%;position: relative">
+                <?php
+                $sql = "SELECT * FROM `news`";
+                $result = mysqli_query($conn, $sql);
+                while ($data = mysqli_fetch_array($result)) {
+                    echo '
+                    <a href="" style="border-bottom: 1px solid #c2c2c2">
+                <div class="row rowOfPost"
+                     style="border-bottom: 1px solid #c2c2c2; padding-bottom: 10px;position: relative">
+
+                    <div>
+                        <div style="padding: 10px">
+                            <img class="iconAccount1" src="../public/images/picture%20home%20login/tenor.gif">
+                        </div>
+                        <div class="tfPost">
+                            <ul class="nav">
+                                <li class="nav-item itmeN_">
+                                    <a href="">
+                                        Norman
+                                    </a>
+                                </li>
+                                <li class="nav-item itmeN" style="padding-left: 32px">
+                                    @People - <a href="">Tháng 7</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="">
+                        <div class="noteAndImgOfPost">
+                            <div>
+                                ' . $data["content"] . '
+                            </div>
+                            <div>
+                                    ' . $data["category"] . '
+                            </div>
+                            <div>
+                                <img class="imgOfPost"
+                                     src="../public/' . $data["link_image"] . '">
+                            </div>
+                        </div>
+                    </a>
+                    <div class="divHover">
+                        <ul class="nav">
+                            <li class="nav-item" style="padding-left: 70px">
+                                <a href="">
+                                    <div>
+                                        <img class="iconCmt"
+                                             src="../public/images/picture%20home%20login/icons8-speech-bubble-100.png">
+                                        1.2k
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item fixItem">
+                                <a href="">
+                                    <div>
+                                        <img class="iconCmt"
+                                             src="../public/images/picture%20home%20login/icons8-heart-100.png">
+                                        1.2k
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item fixItem">
+                                <a href="">
+                                    <div>
+                                        <img class="iconCmt"
+                                             src="../public/images/picture%20home%20login/icons8-level-up-50.png">
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+                    ';
+                }
+                ?>
+            </div>
+            <!--            form lịch sử-->
+            <div id="history" class="tabcontent" style="margin-top: 64px;height: 700px;position: relative">
+                <div>
+                    Nothing is here!!!
                 </div>
             </div>
             <!--        kết thúc col 5-->
@@ -706,7 +790,8 @@ include "../public/php/connect.php";
             <div class="divInpSearch">
                 <form action="../public/php/search_news.php" method="post"
                       enctype="multipart/form-data">
-                    <input id="searchBox" class="inpSearch1" name="search" type="search" placeholder="`Tìm kiếm trên D.I.Y"
+                    <input id="searchBox" class="inpSearch1" name="search" type="search"
+                           placeholder="`Tìm kiếm trên D.I.Y"
                            required="required"/>
                     <div class="divIconSearch">
                         <img class="iconSearch" src="../public/images/picture%20home%20login/icons8-search-50.png">
@@ -823,9 +908,9 @@ include "../public/php/connect.php";
                 <div>
                     <div style="margin-top: 16px ; margin-bottom: 16px">
                         <input type="textarea" placeholder="Content" name="content" required="required"
-                               style="width: 500px; height: 100px">
+                               style="width: 600px; height: 48px">
                         <input type="textarea" placeholder="Category" name="category" required="required"
-                               style="width: 500px; height: 100px">
+                               style="width: 600px; height: 48px; margin-top: 16px">
                     </div>
                 </div>
                 <div>

@@ -1,3 +1,7 @@
+<?php
+include "../../public/php/connect.php";
+?>
+
 <!doctype html>
 <html class="no-js h-100" lang="en">
 <head>
@@ -54,7 +58,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active " href="components-blog-posts.html">
+                        <a class="nav-link active " href="components-blog-posts.php">
                             <i class="material-icons">vertical_split</i>
                             <span>Bài đăng</span>
                         </a>
@@ -144,7 +148,7 @@
                             <div class="dropdown-menu dropdown-menu-small">
                                 <a class="dropdown-item" href="user-profile-lite.html">
                                     <i class="material-icons">&#xE7FD;</i> Thông tin cá nhân</a>
-                                <a class="dropdown-item" href="components-blog-posts.html">
+                                <a class="dropdown-item" href="components-blog-posts.php">
                                     <i class="material-icons">vertical_split</i>Bài đăng</a>
                                 <a class="dropdown-item" href="add-new-post.html">
                                     <i class="material-icons">table_chart</i>Người sử dụng</a>
@@ -170,118 +174,48 @@
                 <div class="page-header row no-gutters py-4">
                     <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
                         <span class="text-uppercase page-subtitle">D.Y.I</span>
-                        <h3 class="page-title">Bài đăng</h3>
+                        <h3 class="page-title">Bài đăng đang chờ phê duyệt</h3>
                     </div>
                 </div>
                 <!-- End Page Header -->
                 <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4" >
+                    <?php
+                    $sql="SELECT * FROM `news` WHERE `allowed` = '0'";
+                    $result = mysqli_query($conn,$sql);
+                    while ($data = mysqli_fetch_array($result)){
+                        echo '
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4" >
 						<div class="mydivouter">
                         <div class="card card-small card-post card-post--1">
                             <div class="card-post__image"
-                                 style="background-image: url('../../public/images/picture of content 3/n.jpg');">
-                                <a href="#" class="card-post__category badge badge-pill badge-dark">Business</a>
+                                 style="background-image: url(\'../../public/'.$data["link_image"].'")>
+                                <a href="#" class="card-post__category badge badge-pill badge-dark">
+                                <div>
+                                       Write by '.$data["title"].'
+                                </div>
+                                </a>
                                 <div class="card-post__author d-flex">
                                     <a href="#" class="card-post__author-avatar card-post__author-avatar--small"
-                                       style="background-image: url('images/avatars/0.jpg');">Written by Anna Kunis</a>
+                                       style="background-image: url(\'../../public/images/picture home login/tenor.gif\');"></a>
                                 </div>
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">
-                                    <a class="text-fiord-blue" href="#">Làm đẹp chiếc gối của bạn bằng những nét vẽ</a>
+                                    <a class="text-fiord-blue" href="#">'.$data["content"].'</a>
                                 </h5>
-                                <p class="card-text d-inline-block mb-3">
-                                    Có rất nhiều cách để biến chiếc gối của bạn thành những tác phẩm nghệ thuật tuyệt
-                                    đẹp, bạn có muốn biết...</p>
                                 <span class="text-muted">28 February 2019</span><br>
-								<span><input type="button" class="mybuttonoverlap1 btn btn-outline-primary" value="Access"></span>
-								<span><input type="button" class="mybuttonoverlap2 btn btn-outline-danger" value="Delete"></span>
+								<span><a href="../../public/php/accept_post.php?id='.$data["id"].'"><input type="button" class="mybuttonoverlap1 btn btn-primary" value="Accept"></a></span>
+								<span><a href="../../public/php/delete_post.php?id='.$data["id"].'"><input type="button" class="mybuttonoverlap2 btn btn-danger" value="Delete"></a></span>
                             </div>
 							</div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-						<div class="mydivouter">
-                        <div class="card card-small card-post card-post--1">
-                            <div class="card-post__image"
-                                 style="background-image: url('../../public/images/picture of content 3/how to.jpg');">
-                                <a href="#" class="card-post__category badge badge-pill badge-info">Travel</a>
-                                <div class="card-post__author d-flex">
-                                    <a href="#" class="card-post__author-avatar card-post__author-avatar--small"
-                                       style="background-image: url('images/avatars/1.jpg');">Written by James
-                                        Jamerson</a>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    <a class="text-fiord-blue" href="#">Gạch phòng tắm lớn có thể làm cho phòng tắm nhỏ
-                                        cảm thấy ít bừa bộn</a>
-                                </h5>
-                                <p class="card-text d-inline-block mb-3">
-                                    Gạch lát sàn và tường lớn hơn rất hiệu quả cho phòng tắm nơi không gian sàn ở mức
-                                    cao...</p>
-                                <span class="text-muted">29 February 2019</span>
-								<span><input type="button" class="mybuttonoverlap1 btn btn-outline-primary" value="Access"></span>
-								<span><input type="button" class="mybuttonoverlap2 btn btn-outline-danger" value="Delete"></span>
-                            </div>
-                        </div>
-						</div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-						<div class="mydivouter">
-                        <div class="card card-small card-post card-post--1">
-                            <div class="card-post__image"
-                                 style="background-image: url('../../public/images/picture of content 3/diy-resin-tumbler.jpg');">
-                                <a href="#" class="card-post__category badge badge-pill badge-primary">Technology</a>
-                                <div class="card-post__author d-flex">
-                                    <a href="#" class="card-post__author-avatar card-post__author-avatar--small"
-                                       style="background-image: url('images/avatars/2.jpg');">Written by Jimmy
-                                        Jackson</a>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    <a class="text-fiord-blue" href="#">
-                                        Tìm hiểu cách tạo một thiết kế đại dương êm dịu trên một chiếc cốc bằng nhựa</a>
-                                </h5>
-                                <p class="card-text d-inline-block mb-3">
-                                    Bạn có mơ về đại dương? Bạn muốn cảm nhận cát trong...</p>
-                                <span class="text-muted">29 February 2019</span>
-								<span><input type="button" class="mybuttonoverlap1 btn btn-outline-primary" value="Access"></span>
-								<span><input type="button" class="mybuttonoverlap2 btn btn-outline-danger" value="Delete"></span>
-                            </div>
-                        </div>
-						</div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-						<div class="mydivouter">
-                        <div class="card card-small card-post card-post--1">
-                            <div class="card-post__image"
-                                 style="background-image: url('../../public/images/picture of content 3/simple-wood-box.jpg');">
-                                <a href="#" class="card-post__category badge badge-pill badge-warning">Technology</a>
-                                <div class="card-post__author d-flex">
-                                    <a href="#" class="card-post__author-avatar card-post__author-avatar--small"
-                                       style="background-image: url('images/avatars/3.jpg');">Written by John James</a>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    <a class="text-fiord-blue" href="#">Cách làm một hộp gỗ đơn giản</a>
-                                </h5>
-                                <p class="card-text d-inline-block mb-3">Hộp gỗ đơn giản này là một công trình dễ dàng
-                                    và có thể phục vụ như một món đồ mộc mạc tuyệt đẹp ở mọi nơi trong ...</p>
-                                <span class="text-muted">29 February 2019</span>
-								<span><input type="button" class="mybuttonoverlap1 btn btn-outline-primary" value="Access"></span>
-								<span><input type="button" class="mybuttonoverlap2 btn btn-outline-danger" value="Delete"></span>
-                            </div>
-                        </div>
-							</div>
-                    </div>
+                        ';
+                    }
+                    ?>
                 </div>
-      
-
-
             </div>
+
             <footer class="main-footer d-flex p-2 px-3 bg-white border-top">
                 <ul class="nav">
                     <li class="nav-item">
