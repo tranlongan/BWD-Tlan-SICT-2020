@@ -141,7 +141,7 @@ include "../../public/php/connect.php";
                     <a class="dropdown-item" href="add-new-post.html">
                       <i class="material-icons">table_chart</i>Người sử dụng</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item text-danger" href="#">
+                    <a class="dropdown-item text-danger" href="login.html">
                       <i class="material-icons text-danger">&#xE879;</i> Đăng xuất </a>
                   </div>
                 </li>
@@ -191,7 +191,7 @@ include "../../public/php/connect.php";
                       <tr>
                           <td>'.$data["id"].'</td>
                           <td>'.$data["username"].'</td>
-                          <td>Default</td>
+                          <td>'.$data["nameAccount"].'</td>
                           <td>'.$data["password"].'</td>
                           <td>...</td>
                           <td>...</td>

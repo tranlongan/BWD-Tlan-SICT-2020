@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+.mydivouter{
+	position: relative;
+}
+.mydivoverlap{
+    position: relative;
+    z-index: 1;
+}
+.mybuttonoverlap1{
+	position: absolute;
+    z-index: 2;
+    top: 10px;
+    display: none;
+    left: 20px;
+	font-size: 120%;
+}
+.mybuttonoverlap2{
+	position: absolute;
+	top: 10px;
+	display: none;
+	left: 120px;
+	font-size: 120%;
+}
+.mydivouter:hover .mybuttonoverlap1 { 
+	display:block;
+}
+.mydivouter:hover .mybuttonoverlap2 { 
+	display:block;
+}
