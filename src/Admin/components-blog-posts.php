@@ -64,7 +64,7 @@ include "../../public/php/connect.php";
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="tables.html">
+                        <a class="nav-link " href="tables.php">
                             <i class="material-icons">table_chart</i>
                             <span>Người sử dụng</span>
                         </a>
@@ -73,12 +73,6 @@ include "../../public/php/connect.php";
                         <a class="nav-link " href="user-profile-lite.html">
                             <i class="material-icons">person</i>
                             <span>Thông tin cá nhân</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="errors.html">
-                            <i class="material-icons">error</i>
-                            <span>Lỗi</span>
                         </a>
                     </li>
                 </ul>
@@ -169,6 +163,7 @@ include "../../public/php/connect.php";
                 </nav>
             </div>
             <!-- / .main-navbar -->
+
             <div class="main-content-container container-fluid px-4">
                 <!-- Page Header -->
                 <div class="page-header row no-gutters py-4">
@@ -214,8 +209,49 @@ include "../../public/php/connect.php";
                     }
                     ?>
                 </div>
+                <!-- Page Header -->
+                <div class="page-header row no-gutters py-4">
+                    <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
+                        <span class="text-uppercase page-subtitle">D.Y.I</span>
+                        <h3 class="page-title">Bài đăng đang đã được duyệt</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <?php
+                    $sql="SELECT * FROM `news` WHERE `allowed` = '1'";
+                    $result = mysqli_query($conn,$sql);
+                    while ($data = mysqli_fetch_array($result)){
+                        echo '
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4" >
+						<div class="mydivouter">
+                        <div class="card card-small card-post card-post--1">
+                            <div class="card-post__image"
+                                 style="background-image: url(\'../../public/'.$data["link_image"].'")>
+                                <a href="#" class="card-post__category badge badge-pill badge-dark">
+                                <div>
+                                       Write by '.$data["title"].'
+                                </div>
+                                </a>
+                                <div class="card-post__author d-flex">
+                                    <a href="#" class="card-post__author-avatar card-post__author-avatar--small"
+                                       style="background-image: url(\'../../public/images/picture home login/tenor.gif\');"></a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a class="text-fiord-blue" href="#">'.$data["content"].'</a>
+                                </h5>
+                                <span class="text-muted">28 February 2019</span><br>
+								<span><a href="../../public/php/delete_post.php?id='.$data["id"].'"><input type="button" class="mybuttonoverlap2 btn btn-danger" value="Delete"></a></span>
+                            </div>
+							</div>
+                        </div>
+                    </div>
+                        ';
+                    }
+                    ?>
+                </div>
             </div>
-
             <footer class="main-footer d-flex p-2 px-3 bg-white border-top">
                 <ul class="nav">
                     <li class="nav-item">

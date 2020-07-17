@@ -41,13 +41,12 @@ include "../public/php/connect.php";
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50" class="preloading" onload="initialize()">
 <div class="load">
-
     <img src="../public/images/picture%20home%20login/106633326_264158891546129_8621630981574718303_n.gif" alt="">
 </div>
 <!--    khởi đầu-->
 <div class="container-fluid" style="display: flex;flex-direction: column;height: 100%;width: 100%">
     <!--    phần thân-->
-    <div class="row rp1">
+    <div class="row rp1" style="position: relative">
         <!--        phần của col 3-->
         <div class="col-lg-3 col2"
              style="background-color: #f1f8e9;">
@@ -223,7 +222,7 @@ include "../public/php/connect.php";
         <div class="col-lg-5 col5"
              style="background-color: #f1f8e9;z-index: 1;border: 1px solid #c2c2c2; max-height: inherit;height: 100%">
             <div class="row divTrangChu">
-                <a href="">
+                <a class="aHdn1" href="">
                     Trang chủ
                 </a>
             </div>
@@ -236,7 +235,8 @@ include "../public/php/connect.php";
                             <img class="iconAccount1" src="../public/images/picture%20home%20login/tenor.gif">
                         </div>
                     </a>
-                    <input class="inpSearch" type="text" placeholder="Bạn có ý tưởng gì??" style="border: 0"/>
+                    <input onclick="document.getElementById('id01').style.display='block'"
+                           style="outline: none;border: 0" class="inpSearch" type="text" placeholder="Bạn có ý tưởng gì??"/>
                 </div>
                 <div class="row divDangBai1">
                     <ul class="nav">
@@ -263,15 +263,6 @@ include "../public/php/connect.php";
                                 <img class="iconPost"
                                      src="../public/images/picture%20home%20login/icons8-happy-100.png">
                             </a>
-                        </li>
-                        <li class="nav-item last_Item">
-                            <div class="divBtn">
-                                <button class="btnDangBai btn-primary"
-                                        onclick="document.getElementById('id01').style.display='block'"
-                                        style="outline: none">
-                                    Đăng bài
-                                </button>
-                            </div>
                         </li>
                     </ul>
                 </div>
@@ -613,20 +604,32 @@ include "../public/php/connect.php";
                 <nav class="nav listNtf" style="border-bottom: 1px solid #AAAAAA">
                     <li class="nav-item">
                         <div>
-                            <a class="nav-link">
-                                All
+                            <a class="nav-link tablinks" onclick="openCity(event, 'ntfAll')">
+                                <div>
+                                    <div>
+                                        All
+                                    </div>
+                                </div>
                             </a>
                         </div>
                     </li>
                     <li class="nav-item">
                         <div>
-                            <a class="nav-link">
-                                Đề cập
+                            <a class="nav-link tablinks" onclick="openCity(event, 'ntfDc')">
+                                <div id="ntfDc">
+                                    <div>
+                                        Đề cập
+                                    </div>
+                                </div>
                             </a>
                         </div>
                     </li>
                 </nav>
-                <div style="text-align: center; padding-top: 32px">
+                <div id="ntfAll" class="tabcontent" style="text-align: center;position: relative">
+                    Nothing to see here — yet<br/>
+                    When someone mentions you, you’ll find it here.
+                </div>
+                <div id="ntfDc" class="tabcontent" style="text-align: center;position: relative">
                     Nothing to see here — yet<br/>
                     When someone mentions you, you’ll find it here.
                 </div>
@@ -694,6 +697,38 @@ include "../public/php/connect.php";
                         </div>
                     </a>
 
+                    <a href="">
+                        <div style="padding: 8px 0 8px 0; border-bottom: 1px solid #c2c2c2">
+                            <font style="color: #AAAAAA;font-size: 12px">Chủ đề đang hot</font><br/>
+                            <font>#Phòng ngủ</font><br/>
+                            <font style="color: #AAAAAA;font-size: 12px">1.0N View</font>
+                        </div>
+                    </a>
+
+                    <a href="">
+                        <div style="padding: 8px 0 8px 0; border-bottom: 1px solid #c2c2c2">
+                            <font style="color: #AAAAAA;font-size: 12px">Chủ đề đang hot</font><br/>
+                            <font>#Phòng khách</font><br/>
+                            <font style="color: #AAAAAA;font-size: 12px">1.0N View</font>
+                        </div>
+                    </a>
+
+                    <a href="">
+                        <div style="padding: 8px 0 8px 0; border-bottom: 1px solid #c2c2c2">
+                            <font style="color: #AAAAAA;font-size: 12px">Chủ đề đang hot</font><br/>
+                            <font>#Phòng tắm</font><br/>
+                            <font style="color: #AAAAAA;font-size: 12px">1.0N View</font>
+                        </div>
+                    </a>
+
+                    <a href="">
+                        <div style="padding: 8px 0 8px 0; border-bottom: 1px solid #c2c2c2">
+                            <font style="color: #AAAAAA;font-size: 12px">Chủ đề đang hot</font><br/>
+                            <font>#Cầu thang</font><br/>
+                            <font style="color: #AAAAAA;font-size: 12px">1.0N View</font>
+                        </div>
+                    </a>
+
                     <div style="padding: 0">
                         <a>Hiển thị thêm</a>
                     </div>
@@ -702,7 +737,7 @@ include "../public/php/connect.php";
             <!--            form bài viết-->
             <div id="myPost" class="tabcontent" style="margin-top: 64px;height: 100%;position: relative">
                 <?php
-                $sql = "SELECT * FROM `news`";
+                $sql = "SELECT * FROM `news` WHERE `allowed` = '1'";
                 $result = mysqli_query($conn, $sql);
                 while ($data = mysqli_fetch_array($result)) {
                     echo '
@@ -978,6 +1013,31 @@ include "../public/php/connect.php";
 
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
+</script>
+
+<script>
+    const themeMap = {
+        dark: "light",
+        light: "solar",
+        solar: "dark"
+    };
+
+    const theme = localStorage.getItem('theme')
+        || (tmp = Object.keys(themeMap)[0],
+            localStorage.setItem('theme', tmp),
+            tmp);
+    const bodyClass = document.body.classList;
+    bodyClass.add(theme);
+
+    function toggleTheme() {
+        const current = localStorage.getItem('theme');
+        const next = themeMap[current];
+
+        bodyClass.replace(current, next);
+        localStorage.setItem('theme', next);
+    }
+
+    document.getElementById('themeButton').onclick = toggleTheme;
 </script>
 </body>
 </html>

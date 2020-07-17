@@ -39,10 +39,11 @@
 
 /*nút khác*/
 .dropdown-content2 {
+    font-size: 15px;
     display: none;
     position: absolute;
-    left: 400px;
-    top: 200px;
+    left: 410px;
+    top: 300px;
     background-color: #f1f1f1;
     min-width: 160px;
     overflow: auto;
