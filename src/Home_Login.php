@@ -13,6 +13,7 @@ include "../public/php/connect.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--    reponsive-->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="../public/stylesheets/stylesheet_HomeLogin/responsive_HomeLogin.css">
     <!--     stylesheets-->
     <link rel="stylesheet" href="../public/stylesheets/style2.css">
@@ -21,6 +22,8 @@ include "../public/php/connect.php";
 
     <!--    slide stylesheets-->
     <link rel="stylesheet" href="../public/stylesheets/slide.css">
+    <link rel="stylesheet" href="../public/stylesheets/stylesheet_HomeLogin/reponsi_navbar.css">
+
     <!--    set icon-->
     <link rel="stylesheet" href="../public/stylesheets/stylesheet_HomeLogin/iconHomeLogin.css">
     <link rel="stylesheet" href="../public/stylesheets/icon.css">
@@ -48,183 +51,200 @@ include "../public/php/connect.php";
     <!--    phần thân-->
     <div class="row rp1" style="position: relative">
         <!--        phần của col 3-->
-        <div class="col-lg-3 col2"
-             style="background-color: #f1f8e9;">
-            <div class="menuCol2" style="padding-top: 20px">
-                <!--                iconhome-->
-                <a href="">
-                    <div class="divIconHome">
-                        <img class="iconHome"
-                             src="../public/images/picture%20icon%20gif/506491bb384d29a5-animate-bulb-by-cabaroc-dribbble.gif">
-                    </div>
-                </a>
-                <!--                home-->
-                <div class="tab">
+        <div class="nav-items">
+            <div class="col-lg-3 col2"
+                 style="background-color: #f1f8e9;">
+                <div class="menuCol2" style="padding-top: 20px">
+                    <!--                iconhome-->
+                    <a href="">
+                        <div class="divIconHome">
+                            <img class="iconHome"
+                                 src="../public/images/picture%20icon%20gif/506491bb384d29a5-animate-bulb-by-cabaroc-dribbble.gif">
+                        </div>
+                    </a>
                     <!--                home-->
-                    <div class="rlCol2 rl1">
-                        <a class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">
-                            <div>
-                                <div class="iconCol2">
-                                    <img src="../public/images/picture%20home%20login/icons8-home-80.png"/>
-                                </div>
-                                <div id="demo3" class="lbCol2">
-                                    Home
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <!--                bài viết của bạn-->
-                    <div class="rlCol2 rl1">
-                        <a class="tablinks" onclick="openCity(event, 'myPost')">
-                            <div>
-                                <div class="iconCol2">
-                                    <img src="../public/images/sticky-note.png"/>
-                                </div>
-                                <div id="demo3" class="lbCol2">
-                                    Bài viết của bạn
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!--                khám phá các dự án-->
-                    <!--                Thông báo-->
-                    <div class="rlCol2 rl1">
-                        <a class="tablinks" onclick="openCity(event, 'Idea')">
-                            <div>
-                                <div class="iconCol2">
-                                    <img src="../public/images/picture%20home%20login/icons8-info-squared-100.png"/>
-                                </div>
-                                <div id="demo3" class="lbCol2">
-                                    Khám phá các ý tưởng
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!--                Thông báo-->
-                    <div class="rlCol2 rl1">
-                        <a class="tablinks" onclick="openCity(event, 'Notifications')">
-                            <div>
-                                <div class="iconCol2">
-                                    <img src="../public/images/picture%20home%20login/icons8-notification-50.png"/>
-                                </div>
-                                <div id="demo3" class="lbCol2">
-                                    Thông báo
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!--                Lịch sử-->
-                    <div class="rlCol2 rl2">
-                        <a class="tablinks" onclick="openCity(event, 'history')">
-                            <div class="iconCol2">
-                                <img src="../public/images/history.png"/>
-                            </div>
-                            <div id="demo3" class="lbCol2">
-                                Lịch sử
-                            </div>
-                        </a>
-                    </div>
-
-                    <!--                profile-->
-                    <div class="rlCol2 rl2">
-                        <a class="tablinks" onclick="openCity(event, 'Profile')">
-                            <div class="iconCol2">
-                                <img src="../public/images/picture%20home%20login/icons8-customer-50.png"/>
-                            </div>
-                            <div id="demo3" class="lbCol2">
-                                <div class="tab">
-                                    Cá nhân
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <!--                more-->
-                    <div class="rlCol2 rl2">
-                        <a href="">
-                            <div class="iconCol2">
-                                <img src="../public/images/picture%20home%20login/icons8-view-more-50.png"/>
-                            </div>
-                            <div id="demo3" class="lbCol2">
-                                Nhiều hơn
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!--                btn đăng bài-->
-                <div class="divBtnDangBai">
-                    <button class="btn-primary btnDangBai1"
-                            onclick="document.getElementById('id01').style.display='block'" ; style="outline: none">
-                        Đăng bài
-                    </button>
-                </div>
-
-
-                <!--                        drop down account-->
-                <div class="dropdown stDropdown">
-                    <button class="dropbtn_a" onclick="myFunction1()" style="outline: none">
-                        <img class="iconLogin dropbtn1"
-                             src="../public/images/picture%20home%20login/tenor.gif">
-                        <div class="psLbAcount">
-                            Norman
-                            <p style="color: #AAAAAA">@People</p>
-                        </div>
-                    </button>
-                    <div id="myDropdown1" class="dropdown-content1">
-                        <div>
-                            <table class="table table-borderless tbDrp1">
-                                <tr>
-                                    <td style="width: 25%">
-                                        <img class="iconLogin_1"
-                                             src="../public/images/picture%20home%20login/tenor.gif">
-                                    </td>
-                                    <td>
-                                        Norman
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <hr style="padding: 0; margin: 0"/>
-                        <a href="" class="aaa_x">
-                            <div class="ps_iconUser_x">
+                    <div class="tab">
+                        <!--                home-->
+                        <div class="rlCol2 rl1">
+                            <a class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">
                                 <div>
-                                    <img class="iconLogOut"
-                                         src="../public/images/picture%20home%20login/settings.png">
+                                    <div class="iconCol2">
+                                        <img src="../public/images/picture%20home%20login/icons8-home-80.png"/>
+                                    </div>
+                                    <div id="demo3" class="lbCol2">
+                                        Home
+                                    </div>
                                 </div>
-                                <div class="lb_Setting">
-                                    Quản lý tài khoản
-                                </div>
-                            </div>
-                        </a>
-                        <a href="../index.html" class="aaa">
-                            <div class="ps_iconUser">
+                            </a>
+                        </div>
+
+                        <!--                bài viết của bạn-->
+                        <div class="rlCol2 rl1">
+                            <a class="tablinks" onclick="openCity(event, 'myPost')">
                                 <div>
-                                    <img class="iconLogOut"
-                                         src="../public/images/picture%20home%20login/out.png">
+                                    <div class="iconCol2">
+                                        <img src="../public/images/sticky-note.png"/>
+                                    </div>
+                                    <div id="demo3" class="lbCol2">
+                                        Bài viết của bạn
+                                    </div>
                                 </div>
-                                <div class="lb_LogOut">
-                                    Đăng xuất
+                            </a>
+                        </div>
+                        <!--                khám phá các dự án-->
+                        <!--                Thông báo-->
+                        <div class="rlCol2 rl1">
+                            <a class="tablinks" onclick="openCity(event, 'Idea')">
+                                <div>
+                                    <div class="iconCol2">
+                                        <img src="../public/images/picture%20home%20login/icons8-info-squared-100.png"/>
+                                    </div>
+                                    <div id="demo3" class="lbCol2">
+                                        Khám phá các ý tưởng
+                                    </div>
                                 </div>
+                            </a>
+                        </div>
+                        <!--                Thông báo-->
+                        <div class="rlCol2 rl1">
+                            <a class="tablinks" onclick="openCity(event, 'Notifications')">
+                                <div>
+                                    <div class="iconCol2">
+                                        <img src="../public/images/picture%20home%20login/icons8-notification-50.png"/>
+                                    </div>
+                                    <div id="demo3" class="lbCol2">
+                                        Thông báo
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!--                Lịch sử-->
+                        <div class="rlCol2 rl2">
+                            <a class="tablinks" onclick="openCity(event, 'history')">
+                                <div class="iconCol2">
+                                    <img src="../public/images/history.png"/>
+                                </div>
+                                <div id="demo3" class="lbCol2">
+                                    Lịch sử
+                                </div>
+                            </a>
+                        </div>
+
+                        <!--                profile-->
+                        <div class="rlCol2 rl2">
+                            <a class="tablinks" onclick="openCity(event, 'Profile')">
+                                <div class="iconCol2">
+                                    <img src="../public/images/picture%20home%20login/icons8-customer-50.png"/>
+                                </div>
+                                <div id="demo3" class="lbCol2">
+                                    <div class="tab">
+                                        Cá nhân
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!--                more-->
+                        <div class="rlCol2 rl2">
+                            <a href="">
+                                <div class="iconCol2">
+                                    <img src="../public/images/picture%20home%20login/icons8-view-more-50.png"/>
+                                </div>
+                                <div id="demo3" class="lbCol2">
+                                    Nhiều hơn
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--                btn đăng bài-->
+                    <div class="divBtnDangBai">
+                        <button class="btn-primary btnDangBai1"
+                                onclick="document.getElementById('id01').style.display='block'" ; style="outline: none">
+                            Đăng bài
+                        </button>
+                    </div>
+
+
+                    <!--                        drop down account-->
+                    <div class="dropdown stDropdown">
+                        <button class="dropbtn_a" onclick="myFunction1()" style="outline: none">
+                            <img class="iconLogin dropbtn1"
+                                 src="../public/images/picture%20home%20login/tenor.gif">
+                            <div class="psLbAcount">
+                                Norman
+                                <p style="color: #AAAAAA">@People</p>
                             </div>
-                        </a>
-                        <hr style="padding: 0; margin: 0"/>
-                        <a href="">
+                        </button>
+                        <div id="myDropdown1" class="dropdown-content1">
                             <div>
-                                aaaaaaaaaaaaaa
+                                <table class="table table-borderless tbDrp1">
+                                    <tr>
+                                        <td style="width: 25%">
+                                            <img class="iconLogin_1"
+                                                 src="../public/images/picture%20home%20login/tenor.gif">
+                                        </td>
+                                        <td>
+                                            Norman
+                                        </td>
+                                    </tr>
+                                </table>
                             </div>
-                        </a>
+                            <hr style="padding: 0; margin: 0"/>
+                            <a href="" class="aaa_x">
+                                <div class="ps_iconUser_x">
+                                    <div>
+                                        <img class="iconLogOut"
+                                             src="../public/images/picture%20home%20login/settings.png">
+                                    </div>
+                                    <div class="lb_Setting">
+                                        Quản lý tài khoản
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="../index.html" class="aaa">
+                                <div class="ps_iconUser">
+                                    <div>
+                                        <img class="iconLogOut"
+                                             src="../public/images/picture%20home%20login/out.png">
+                                    </div>
+                                    <div class="lb_LogOut">
+                                        Đăng xuất
+                                    </div>
+                                </div>
+                            </a>
+                            <hr style="padding: 0; margin: 0"/>
+                            <a href="">
+                                <div>
+                                    aaaaaaaaaaaaaa
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <!--        phần của col 5-->
         <div class="col-lg-5 col5"
              style="background-color: #f1f8e9;z-index: 1;border: 1px solid #c2c2c2; max-height: inherit;height: 100%">
             <div class="row divTrangChu">
-                <a class="aHdn1" href="">
-                    Trang chủ
-                </a>
+                <nav>
+                    <div style="font-size: 28px; margin-left: -85px" class="hm">
+                        <a href="">
+                            Trang chủ
+                        </a>
+                    </div>
+                    <div class="menu-icon">
+
+                        <span class="fas fa-bars"></span></div>
+
+
+                    <div class="search-icon">
+                        <span class="fas fa-search"></span></div>
+                    <div class="cancel-icon">
+                        <span class="fas fa-times"></span></div>
+
+                </nav>
             </div>
 
             <!--            phần đăng bài-->
@@ -236,7 +256,8 @@ include "../public/php/connect.php";
                         </div>
                     </a>
                     <input onclick="document.getElementById('id01').style.display='block'"
-                           style="outline: none;border: 0" class="inpSearch" type="text" placeholder="Bạn có ý tưởng gì??"/>
+                           style="outline: none;border: 0" class="inpSearch" type="text"
+                           placeholder="Bạn có ý tưởng gì??"/>
                 </div>
                 <div class="row divDangBai1">
                     <ul class="nav">
@@ -951,7 +972,7 @@ include "../public/php/connect.php";
                 <div>
                     <label for="myfile">Chọn ảnh:</label>
                     <input type="file" id="myfile" name="image" multiple><br><br>
-                    <button type="submit">
+                    <button class="btn btn-primary" type="submit">
                         Đăng bài
                     </button>
                     <span onclick="document.getElementById('id01').style.display='none'" class="close"
@@ -1038,6 +1059,32 @@ include "../public/php/connect.php";
     }
 
     document.getElementById('themeButton').onclick = toggleTheme;
+</script>
+<script>
+    const menuBtn = document.querySelector(".menu-icon span");
+    const searchBtn = document.querySelector(".search-icon");
+    const cancelBtn = document.querySelector(".cancel-icon");
+    const items = document.querySelector(".nav-items");
+    const form = document.querySelector("form");
+    menuBtn.onclick = () => {
+        items.classList.add("active");
+        menuBtn.classList.add("hide");
+        searchBtn.classList.add("hide");
+        cancelBtn.classList.add("show");
+    }
+    cancelBtn.onclick = () => {
+        items.classList.remove("active");
+        menuBtn.classList.remove("hide");
+        searchBtn.classList.remove("hide");
+        cancelBtn.classList.remove("show");
+        form.classList.remove("active");
+        cancelBtn.style.color = "black";
+    }
+    searchBtn.onclick = () => {
+        form.classList.add("active");
+        searchBtn.classList.add("hide");
+        cancelBtn.classList.add("show");
+    }
 </script>
 </body>
 </html>

@@ -69,12 +69,6 @@ include "../../public/php/connect.php";
                   <span>Thông tin cá nhân</span>
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link " href="errors.html">
-                  <i class="material-icons">error</i>
-                  <span>Lỗi</span>
-                </a>
-              </li>
             </ul>
           </div>
         </aside>

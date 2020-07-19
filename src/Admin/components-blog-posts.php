@@ -213,7 +213,7 @@ include "../../public/php/connect.php";
                 <div class="page-header row no-gutters py-4">
                     <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
                         <span class="text-uppercase page-subtitle">D.Y.I</span>
-                        <h3 class="page-title">Bài đăng đang đã được duyệt</h3>
+                        <h3 class="page-title">Bài đăng đã được duyệt</h3>
                     </div>
                 </div>
                 <div class="row">
@@ -242,7 +242,7 @@ include "../../public/php/connect.php";
                                     <a class="text-fiord-blue" href="#">'.$data["content"].'</a>
                                 </h5>
                                 <span class="text-muted">28 February 2019</span><br>
-								<span><a href="../../public/php/delete_post.php?id='.$data["id"].'"><input type="button" class="mybuttonoverlap2 btn btn-danger" value="Delete"></a></span>
+								<span><a href="../../public/php/delete_post.php?id='.$data["id"].'"><input type="button" class="mybuttonoverlap3 btn btn-danger" value="Delete"></a></span>
                             </div>
 							</div>
                         </div>

@@ -1,138 +1,124 @@
 @media screen and (width: 414px) {
-    div.menuCol2{
-        padding:5px 0 5px 0;
-    }
-    div.col2{
+    div.hm{
         display: none;
     }
-
-    div.col5{
+    div.menuCol2 {
+        padding: 5px 0 5px 0;
+    }
+    div.col5 {
         left: 0;
-        width: 640px;
+        width: 670px;
     }
-
-    div.rp1{
-        width: 640px;
+    div.rp1 {
+        width: 670px;
     }
-
-    div.divTrangChu{
+    div.divTrangChu {
         left: auto;
-        width: 639.5px;
+        width: 670px;
     }
-
-    div.col-lg-4.col5_1  {
+    div.col-lg-4.col5_1 {
         display: none;
     }
-
-    div.divDangBai1{
+    div.divDangBai1 {
         padding-left: 0;
     }
-
-    li.fixItem{
-       padding-left: 95px;
+    li.fixItem {
+        padding-left: 200px;
     }
-
-    div.modal{
+    div.modal {
         width: 414px;
     }
-
-    div#loginbox{
+    div#loginbox {
         width: 414px;
     }
-
-    div.modal-content{
+    div.modal-content {
         width: 50%;
+    }
+    div.dropdown-content1{
+        left: 1px;
     }
 }
 
-@media screen and (min-width: 1200px){
-    div.menuCol2{
-        padding:5px 0 5px 0;
+@media screen and (min-width: 1200px) {
+    div.menuCol2 {
+        padding: 5px 0 5px 0;
     }
-    div.col5{
+    div.col5 {
         left: 300px;
     }
-    div.divTrangChu{
+    div.divTrangChu {
         left: 316px;
         border-right: 1px solid #818182;
         width: 499px;
     }
-    div.col-lg-4.col5_1  {
+    div.col-lg-4.col5_1 {
         left: 800px;
     }
-
-    div.divDangBai1{
+    div.divDangBai1 {
         padding-left: 0;
     }
-
-    div.btnPrf{
+    div.btnPrf {
         position: absolute;
         left: -100px;
-        top:60px;
+        top: 60px;
     }
-    div.divIconSetting{
+    div.divIconSetting {
         left: 320px;
     }
 }
 
-@media screen and (min-width: 1360px){
-    div.menuCol2{
-        padding:5px 0 5px 40px;
+@media screen and (min-width: 1360px) {
+    div.menuCol2 {
+        padding: 5px 0 5px 40px;
     }
-    div.col5{
+    div.col5 {
         left: 340px;
     }
-    div.divTrangChu{
+    div.divTrangChu {
         left: 356px;
         border-right: 1px solid #818182;
         width: 565px;
     }
-    div.col-lg-4.col5_1  {
+    div.col-lg-4.col5_1 {
         left: 906px;
     }
-
-    div.divDangBai1{
+    div.divDangBai1 {
         padding-left: 0;
     }
-
-    div.btnPrf{
+    div.btnPrf {
         position: absolute;
         left: -100px;
-        top:60px;
+        top: 60px;
     }
-
-    div.divIconSetting{
+    div.divIconSetting {
         left: 375px;
     }
 }
 
-@media screen and (min-width: 1519px){
-    div.menuCol2{
-        padding:5px 0 5px 100px;
+@media screen and (min-width: 1519px) {
+    div.menuCol2 {
+        padding: 5px 0 5px 100px;
     }
-    div.col5{
+    div.col5 {
         left: 379.8px;
     }
-    div.divTrangChu{
+    div.divTrangChu {
         left: 396px;
         border-right: 1px solid #818182;
         width: 631.4px;
     }
-    div.col-lg-4.col5_1  {
+    div.col-lg-4.col5_1 {
         left: 1012.8px;
     }
-
-    div.divDangBai1{
+    div.divDangBai1 {
         padding-left: 50px;
     }
-
-    div.btnPrf{
+    div.btnPrf {
         position: absolute;
         left: 0;
-        top:60px;
+        top: 60px;
     }
-
-    div.divIconSetting{
+    div.divIconSetting {
         left: 414px;
     }
 }

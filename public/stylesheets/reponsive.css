@@ -305,7 +305,10 @@
         font-size: 13px;
     }
 
-
+    div.dropdown-content{
+        left: -110px;
+        position: absolute;
+    }
 }
 
 @media screen and (min-width: 768px){

@@ -1,7 +1,12 @@
 
 <html>
+<head>
+    <meta charset="UTF-8">
 
-
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
 <?php
 session_start();
 include 'connect.php';
@@ -14,12 +19,9 @@ if (!empty($result)) {
                     <a href="../../src/Home_Login.php">Trang chủ</a>
                 </div>';
     while ($data = mysqli_fetch_array($result)) {
-
         echo '
-                <div>
-                <div href="" style="border-bottom: 1px solid #c2c2c2">
                 <div class="row"
-                     style="border-bottom: 1px solid #c2c2c2; padding-bottom: 10px;position: relative">
+                     style="border: 1px solid #c2c2c2; padding-bottom: 10px;position: relative">
                     <div>
                     <div>
                     Được đăng bởi
@@ -34,9 +36,6 @@ if (!empty($result)) {
                                     <a href="">
                                         Norman
                                     </a>
-                                </li>
-                                <li class="nav-item" style="padding-left: 32px">
-                                    @People - <a href="">Tháng 7</a>
                                 </li>
                             </ul>
                         </div>
@@ -78,15 +77,13 @@ if (!empty($result)) {
                         </ul>
                     </div>
                 </div>
-                </div>
-                </div>
-                
                         ';
-
     }
 } else {
     echo 'Không có';
 }
 ?>
+</div>
+</body>
 </html>
 

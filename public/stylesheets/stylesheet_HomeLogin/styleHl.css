@@ -40,15 +40,16 @@
 }
 
 .col-lg-3.col2 {
+    z-index: 10000;
     position: fixed;
     overflow: auto;
     max-height: inherit;
     height: 100%;
-    z-index: 100;
+
 }
 
-.menuCol2{
-    padding:5px 0 5px 100px;
+.menuCol2 {
+    padding: 5px 0 5px 100px;
 }
 
 .col-lg-4.col5_1 {
@@ -77,13 +78,13 @@
     top: 0px;
 }
 
-.divTrangChu a{
+.divTrangChu a {
     color: #1a1a1a;
     font-size: 18px;
     font-weight: bolder;
 }
 
-.divTrangChu a:hover{
+.divTrangChu a:hover {
     color: #1a1a1a;
     text-decoration: none;
 }
@@ -193,7 +194,8 @@ div.psLbAcount:hover {
     padding: 10px;
 }
 
-.divTable a, .divTable a:hover {
+.divTable a,
+.divTable a:hover {
     text-decoration: none;
     color: #1a1a1a;
 }
@@ -217,53 +219,58 @@ div.psLbAcount:hover {
     left: 414px;
 }
 
-.divLastCnt{
+.divLastCnt {
     margin-top: 32px;
 }
-.divLastCnt .nav-link{
+
+.divLastCnt .nav-link {
     color: #869791;
     font-size: 13px;
 }
 
-.divLastCnt .nav-link:hover{
+.divLastCnt .nav-link:hover {
     color: #869791;
     text-decoration: underline;
 }
 
-.rowOfPost a, .rowOfPost a:hover{
+.rowOfPost a,
+.rowOfPost a:hover {
     color: #1a1a1a;
     text-decoration: none;
 }
 
-.divHover a:hover{
+.divHover a:hover {
     color: #6f42c1;
 }
 
-.itmeN{
+.itmeN {
     color: #818182;
 }
 
-.itmeN_:hover{
+.itmeN_:hover {
     text-decoration: underline;
 }
 
-.itmeN a{
+.itmeN a {
     color: #818182;
 }
 
-.itmeN a:hover{
+.itmeN a:hover {
     color: #818182;
     text-decoration: underline;
 }
 
-.stDropdown{
+.stDropdown {
     margin-top: 100px;
 }
 
-.hoverA div :hover{
+.hoverA div :hover {
     background-color: #818182;
 }
+
+
 /* css phần loading*/
+
 .load {
     width: 100%;
     height: 100%;
@@ -284,60 +291,58 @@ div.psLbAcount:hover {
     left: 0;
 }
 
-.btnPrf button{
+.btnPrf button {
     border: 1px solid #1a1a1a;
     position: absolute;
     left: 400px;
-    top:180px;
+    top: 180px;
     height: 64px;
     width: 148px;
     border-radius: 64px;
-
 }
 
-.btnPrf button:hover{
+.btnPrf button:hover {
     background-color: #869791;
 }
 
-.tfPrf{
+.tfPrf {
     color: #818182
 }
 
-.listPrf li div:hover{
+.listPrf li div:hover {
     background-color: #b9f6ca;
 }
 
-.listPrf li{
+.listPrf li {
     max-width: inherit;
     width: 33.3333333333333333333%;
-    text-align: center ;
+    text-align: center;
 }
 
-.tfAcPrf{
+.tfAcPrf {
     position: absolute;
     left: 90px;
-    top:18px;
+    top: 18px;
 }
 
-.listNtf li{
+.listNtf li {
     max-width: inherit;
     width: 50%;
     text-align: center;
 }
 
-.listNtf li div:hover{
+.listNtf li div:hover {
     background-color: #b9f6ca;
 }
 
-.div_imgOfIdea{
+.div_imgOfIdea {
     border-bottom: 8px solid #AAAAAA;
 }
 
-.cntOfIdea div:hover{
+.cntOfIdea div:hover {
     background-color: #e0e0e0;
 }
 
-.aHdn{
+.aHdn {
     display: none;
 }
-
