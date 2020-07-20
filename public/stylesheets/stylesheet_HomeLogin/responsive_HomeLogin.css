@@ -39,20 +39,48 @@
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px){
     div.menuCol2 {
         padding: 5px 0 5px 0;
     }
     div.col5 {
-        left: 300px;
+        left: 256px;
     }
     div.divTrangChu {
-        left: 316px;
+        left: 272px;
         border-right: 1px solid #818182;
-        width: 499px;
+        width: 425px;
     }
     div.col-lg-4.col5_1 {
-        left: 800px;
+        left: 684px;
+    }
+    div.hm{
+        padding-left: 50px;
+    }
+    input.inpSearch1{
+        width: 300px;
+    }
+
+    button.btnDangBai1{
+        width: 190px;
+    }
+}
+
+
+@media screen and (min-width: 1440px) {
+    div.menuCol2 {
+        padding: 5px 0 5px 0;
+    }
+    div.col5 {
+        left: 360px;
+    }
+    div.divTrangChu {
+        left: 376px;
+        border-right: 1px solid #818182;
+        width: 599px;
+    }
+    div.col-lg-4.col5_1 {
+        left: 961px;
     }
     div.divDangBai1 {
         padding-left: 0;
@@ -64,34 +92,6 @@
     }
     div.divIconSetting {
         left: 320px;
-    }
-}
-
-@media screen and (min-width: 1360px) {
-    div.menuCol2 {
-        padding: 5px 0 5px 40px;
-    }
-    div.col5 {
-        left: 340px;
-    }
-    div.divTrangChu {
-        left: 356px;
-        border-right: 1px solid #818182;
-        width: 565px;
-    }
-    div.col-lg-4.col5_1 {
-        left: 906px;
-    }
-    div.divDangBai1 {
-        padding-left: 0;
-    }
-    div.btnPrf {
-        position: absolute;
-        left: -100px;
-        top: 60px;
-    }
-    div.divIconSetting {
-        left: 375px;
     }
 }
 
@@ -120,5 +120,22 @@
     }
     div.divIconSetting {
         left: 414px;
+    }
+    input.inpSearch1{
+        width: 400px;
+    }
+}
+
+@media screen and (width: 2560px){
+    div.col5 {
+        left: 641px;
+    }
+    div.divTrangChu {
+        left: 500px;
+        border-right: 1px solid #818182;
+        width: 631.4px;
+    }
+    div.col-lg-4.col5_1 {
+        left: 1710px;
     }
 }

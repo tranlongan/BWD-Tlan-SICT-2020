@@ -71,7 +71,7 @@ nav .search-icon {
     }
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 600px) {
     nav {
         padding: 0px;
     }
