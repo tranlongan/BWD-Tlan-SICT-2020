@@ -103,6 +103,111 @@
 
 }
 
+@media screen and (width: 360px){
+
+
+    .rp1 div.clp_hide{
+        display: block;
+        width: 100%;
+    }
+    /*aaaaa*/
+    .col2{
+        /*max-width: 10%;*/
+        display: none;
+    }
+
+    .col10{
+        padding-top: 50px;
+        /*max-width: 90%;*/
+    }
+
+    /*Phần slide*/
+    #slider{
+        display: none;
+    }
+
+    /*phần navBar*/
+    .ds{
+        display: none;
+    }
+    img.iconGif {
+        width: 18px;
+        height: 18px;
+    }
+    img.iconTV{
+        width: 18px;
+        height: 18px;
+    }
+    .nav-link img.iconHdn{
+        display: block;
+        height: 18px;
+        width: 18px;
+    }
+    button.dropbtn {
+        font-size: 3px;
+        width: 40px;
+    }
+    input.setTfSearch {
+        display: none;
+    }
+    div.divSearch {
+        padding: 7px 0 0 10px;
+        width: 40px;
+    }
+    button.btn-primary.setButton {
+        width: 40px;
+    }
+    div.dkdn{
+        padding-left: 20px;
+        padding-top: 6px;
+    }
+    button.btnDk.btn-secondary, button.btnDn.btn-info {
+        font-size: 4px;
+        width: 30px;
+        height: 35px;
+    }
+    .list-group li.col_rp{
+        display: none;
+    }
+
+    .list-group li.col_rp_col4{
+        display: none;
+    }
+
+    /*phần xem thêm*/
+    .rp1_2{
+        font-size: 9px;
+    }
+    .rp1_2 div .btn-light{
+        padding-top: 5px;
+    }
+    hr.hr0{
+        max-width: 35%;
+    }
+    hr.hr1{
+        max-width: 32%;
+    }
+
+    /*phần phổ biến*/
+    div a.linkP2 h6{
+        font-size: 11px;
+        margin: 0;
+    }
+    div a.linkP2{
+        font-size: 8px;
+    }
+
+    .linkP2 h5{
+        font-size: 6px;
+    }
+
+    .lb_h5 h5{
+        font-size: 13px;
+    }
+
+
+}
+
 @media screen and (width: 375px){
     .rp1 div.clp_hide{
         display: block;
@@ -204,6 +309,111 @@
     }
 
 
+}
+
+@media screen and (width: 411px){
+
+    .rp1 div.clp_hide{
+        display: block;
+        width: 100%;
+    }
+
+    .col2{
+        display: none;
+    }
+
+    .col10{
+        padding-top: 50px;
+    }
+
+    /*Phần slide*/
+    #slider{
+        display: none;
+    }
+
+    /*phần navBar*/
+    .ds{
+        display: none;
+    }
+    img.iconGif {
+        width: 18px;
+        height: 18px;
+    }
+    img.iconTV{
+        width: 18px;
+        height: 18px;
+    }
+    .nav-link img.iconHdn{
+        display: block;
+        height: 18px;
+        width: 18px;
+    }
+    button.dropbtn {
+        font-size: 3px;
+        width: 40px;
+    }
+    input.setTfSearch {
+        width: 60px ;
+    }
+    div.divSearch {
+        padding: 7px 0 0 10px;
+        width: 100px;
+    }
+    button.btn-primary.setButton {
+        width: 30px;
+    }
+    div.dkdn{
+        padding-left: 20px;
+        padding-top: 6px;
+    }
+    button.btnDk.btn-secondary, button.btnDn.btn-info {
+        font-size: 6px;
+        width: 50px;
+        height: 35px;
+    }
+    .list-group li.col_rp{
+        display: none;
+    }
+
+    .list-group li.col_rp_col4{
+        display: none;
+    }
+
+    /*phần xem thêm*/
+    .rp1_2{
+        font-size: 10px;
+    }
+    .rp1_2 div .btn-light{
+        padding-top: 5px;
+    }
+    hr.hr0{
+        max-width: 38%;
+    }
+    hr.hr1{
+        max-width: 33%;
+    }
+
+    /*phần phổ biến*/
+    div a.linkP2 h6{
+        font-size: 11px;
+        margin: 0;
+    }
+    div a.linkP2{
+        font-size: 8px;
+    }
+
+    linkP2 h5{
+        font-size: 6px;
+    }
+
+    .lb_h5 h5{
+        font-size: 13px;
+    }
+
+    div.dropdown-content{
+        left: -110px;
+        position: absolute;
+    }
 }
 
 @media screen and (width: 414px){
