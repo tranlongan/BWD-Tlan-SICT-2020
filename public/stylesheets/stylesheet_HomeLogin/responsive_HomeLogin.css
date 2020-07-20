@@ -66,6 +66,26 @@
     }
 }
 
+@media screen and (min-width: 1360px) {
+    div.menuCol2 {
+        padding: 5px 0 5px 60px;
+    }
+    div.col5 {
+        left: 340px;
+    }
+    div.divTrangChu {
+        left: 356px;
+        border-right: 1px solid #818182;
+        width: 565px;
+    }
+    div.col-lg-4.col5_1 {
+        left: 907px;
+    }
+
+    div.divIconSetting {
+        left: 360px;
+    }
+}
 
 @media screen and (min-width: 1440px) {
     div.menuCol2 {
