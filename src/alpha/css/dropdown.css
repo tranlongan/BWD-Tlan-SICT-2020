@@ -1,0 +1,33 @@
+.dropbtn_a{
+    padding: 0;
+    border: 0;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+
+/* */
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    left: 16px;
+    top: -215px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 300px;
+    opacity: 0.972;
+}
+
+.dropdown-content1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.show1 {display: block;}
+
+/*.dropdown a.aaa_x:hover {background-color: #ddd;}*/

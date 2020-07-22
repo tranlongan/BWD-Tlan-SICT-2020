@@ -16,7 +16,7 @@ if (mysqli_num_rows($result) == 0) {
 
 
 } else {
-    header("Location: ../../src/Home_Login.php");
+    header("Location: ../../src/alpha/index.php");
 }
 
 ?>

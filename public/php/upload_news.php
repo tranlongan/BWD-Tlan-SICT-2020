@@ -18,7 +18,7 @@ if (isset($_FILES['image'])) {
             $sql = "INSERT INTO `news`(`title`, `content`, `category`, `link_image`, `allowed`) VALUES ('".$title."','".$content
                 ."','".$category."','img_uploads/$time.jpg','0')";
             mysqli_query($conn,$sql);
-            header("Location: ../../src/Home_Login.php");
+            header("Location: ../../src/alpha/index.php");
         }
     }
 }

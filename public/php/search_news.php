@@ -16,7 +16,7 @@ $result = mysqli_query($conn, $sql);
 
 if (!empty($result)) {
     echo '<div style="margin: 32px; border: 1px #AAAAAA">
-                    <a href="../../src/Home_Login.php">Trang chủ</a>
+                    <a href="../../src/alpha/index.php">Trang chủ</a>
                 </div>';
     while ($data = mysqli_fetch_array($result)) {
         echo '

@@ -1,0 +1,129 @@
+.nav1 li.nav-item{
+    max-width: inherit;
+    width: 25%;
+}
+
+.load {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 100000;
+    display: block;
+    overflow: hidden;
+}
+
+.load img {
+    width: 100%;
+    max-height: inherit;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.moreBox a{
+    color: #1a1a1a;
+}
+
+.moreBox hr{
+    padding: 0;
+    margin: 0;
+}
+.moreBox a div{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.moreBox1 a div{
+    font-weight: bolder;
+}
+
+.moreBox3 hr{
+    padding: 0;
+    margin: 0;
+}
+
+nav.lighten-4{
+    padding: 0;
+}
+
+.divIconSearch {
+    position: absolute;
+    top: 9px;
+    left: 25px;
+}
+
+.b{
+    padding-bottom: 16px;
+}
+
+.c hr,.pl-1 hr{
+    margin: 0 ;
+}
+
+.hdn1{
+    display: none;
+}
+
+.imgHome{
+    width: 105px;
+    height: 100px;
+}
+
+.imgBtn{
+    width: 48px;
+    height: 48px;
+}
+
+.rps{
+    top: 105px;left: 160px;
+}
+
+.a1{
+    max-width: inherit; width: 35%;
+}
+
+.a2{
+    max-width: inherit; width: 58%;
+}
+
+.a3{
+    max-width: inherit; width: 76%;
+}
+
+.a4{
+    max-width: inherit; width: 46%;
+}
+
+.a5{
+    max-width: inherit; width: 40%;
+}
+
+.a6{
+    max-width: inherit; width: 40%;
+}
+
+
+.moreBox a div:hover{
+    background-color: rgba(158, 158, 158, 0.1);
+}
+.moreBox1 a div:hover{
+    background-color: #eceff1;
+}
+.a div.nav1:hover{
+    background-color: #c2c2c2;
+    border-radius: 35px;
+}
+div.b:hover{
+    background-color: rgba(158, 158, 158, 0.1);
+}
+
+.d2 nav:hover{
+    background-color: rgba(158, 158, 158, 0.1);
+}
+
+.listNav a:hover{
+    background-color: #e1f5fe;
+}
