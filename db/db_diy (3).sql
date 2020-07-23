@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th7 20, 2020 lúc 04:32 AM
+-- Thời gian đã tạo: Th7 23, 2020 lúc 08:30 AM
 -- Phiên bản máy phục vụ: 10.4.13-MariaDB
 -- Phiên bản PHP: 7.2.31
 
@@ -77,6 +77,7 @@ CREATE TABLE `news` (
   `title` varchar(500) COLLATE utf8_vietnamese_ci NOT NULL,
   `content` varchar(2000) COLLATE utf8_vietnamese_ci NOT NULL,
   `category` varchar(200) COLLATE utf8_vietnamese_ci NOT NULL,
+  `status` varchar(2000) COLLATE utf8_vietnamese_ci NOT NULL,
   `link_image` varchar(200) COLLATE utf8_vietnamese_ci NOT NULL,
   `allowed` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_vietnamese_ci;
@@ -85,15 +86,14 @@ CREATE TABLE `news` (
 -- Đang đổ dữ liệu cho bảng `news`
 --
 
-INSERT INTO `news` (`id`, `title`, `content`, `category`, `link_image`, `allowed`) VALUES
-(14, 'Norman', 'Trang trí chiếc cốc bằng cách vẽ', '#Trang trí', 'img_uploads/23150609072020.jpg', 0),
-(17, 'Norman', 'Cách củng cố vườn của bạn bằng cách lát đá', '#Lối vào, #Xây dựng', 'img_uploads/00082910072020.jpg', 1),
-(18, 'Norman', 'Vệ sinh máy giặt chỉ bằng 2 sản phầm không độc hại', '#Dọn dẹp', 'img_uploads/00095910072020.jpg', 1),
-(20, 'Norman', 'Thảm tập Yoga và đèn chụp sơn móng tay', '#Trang trí', 'img_uploads/09335010072020.jpg', 1),
-(21, 'Norman', 'Thiết kế rèm cửa tùy chỉnh ', '#Cửa sổ, #Xây dựng', 'img_uploads/09345410072020.jpg', 1),
-(29, 'Norman', 'Trang trí phòng bếp của bạn', 'aaaaaaaaaaaaaaa', 'img_uploads/07510616072020.jpg', 0),
-(30, 'Norman', 'Phòng tắm của bạn như thế nào', 'bbbbbbbbbbbb', 'img_uploads/14424917072020.jpg', 0),
-(35, 'Norman', 'Nội dung kiểm duyệt', '#Test', 'img_uploads/14490718072020.jpg', 1);
+INSERT INTO `news` (`id`, `title`, `content`, `category`, `status`, `link_image`, `allowed`) VALUES
+(14, 'Norman', 'Trang trí chiếc cốc bằng cách vẽ', '#Trang trí', '-Ý tưởng đã hoàn thiện', 'img_uploads/23150609072020.jpg', 0),
+(17, 'Norman', 'Cách củng cố vườn của bạn bằng cách lát đá', '#Lối vào, #Xây dựng', '-Ý tưởng chưa hoàn thiện', 'img_uploads/00082910072020.jpg', 1),
+(18, 'Norman', 'Vệ sinh máy giặt chỉ bằng 2 sản phầm không độc hại', '#Dọn dẹp', '-Ý tưởng đã hoàn thiện', 'img_uploads/00095910072020.jpg', 1),
+(20, 'Norman', 'Thảm tập Yoga và đèn chụp sơn móng tay', '#Trang trí', '-Ý tưởng đã hoàn thiện', 'img_uploads/09335010072020.jpg', 1),
+(21, 'Norman', 'Tôi đang gặp vấn đề việc trang trí rèm cửa', '#Cửa sổ, #Xây dựng', '-Hỏi đáp', 'img_uploads/09345410072020.jpg', 1),
+(29, 'Norman', 'Trang trí phòng bếp của bạn', 'aaaaaaaaaaaaaaa', '-Hỏi đáp', 'img_uploads/07510616072020.jpg', 0),
+(30, 'Norman', 'Phòng tắm của bạn như thế nào', 'bbbbbbbbbbbb', '-Hỏi đáp', 'img_uploads/14424917072020.jpg', 0);
 
 -- --------------------------------------------------------
 
@@ -165,7 +165,7 @@ ALTER TABLE `account_login`
 -- AUTO_INCREMENT cho bảng `news`
 --
 ALTER TABLE `news`
-  MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
 -- AUTO_INCREMENT cho bảng `new_post`
