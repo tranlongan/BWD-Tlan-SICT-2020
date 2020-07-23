@@ -198,6 +198,9 @@ include "../../public/php/connect.php";
                                 <h5 class="card-title">
                                     <a class="text-fiord-blue" href="#">'.$data["content"].'</a>
                                 </h5>
+                                <div>
+                                    '.$data["status"].'
+                                </div>
                                 <span class="text-muted">28 February 2019</span><br>
 								<span><a href="../../public/php/accept_post.php?id='.$data["id"].'"><input type="button" class="mybuttonoverlap1 btn btn-primary" value="Accept"></a></span>
 								<span><a href="../../public/php/delete_post.php?id='.$data["id"].'"><input type="button" class="mybuttonoverlap2 btn btn-danger" value="Delete"></a></span>
@@ -241,6 +244,9 @@ include "../../public/php/connect.php";
                                 <h5 class="card-title">
                                     <a class="text-fiord-blue" href="#">'.$data["content"].'</a>
                                 </h5>
+                                <div>
+                                    '.$data["status"].'
+                                </div>
                                 <span class="text-muted">28 February 2019</span><br>
 								<span><a href="../../public/php/delete_post.php?id='.$data["id"].'"><input type="button" class="mybuttonoverlap3 btn btn-danger" value="Delete"></a></span>
                             </div>

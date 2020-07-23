@@ -7,9 +7,9 @@ include "../../public/php/connect.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Material Design for Bootstrap</title>
+    <title>D.I.Y | Do it yourself</title>
     <!-- MDB icon -->
-    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/icons8-light-on-16.png" type="image/x-icon">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <!-- Google Fonts Roboto -->
@@ -23,7 +23,7 @@ include "../../public/php/connect.php";
     <link rel="stylesheet" href="css/dropDown.css">
     <link rel="stylesheet" href="css/formPost.css">
     <link rel="stylesheet" href="css/responsive.css">
-
+    <link rel="stylesheet" href="css/scroll.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50" class="preloading" onload="initialize()">
 <div class="load">
@@ -37,8 +37,10 @@ include "../../public/php/connect.php";
              style="background-color: #fafafa;border-right: 1px solid #c2c2c2;overflow: auto">
             <!--            gif icon home-->
             <div class="pb-5 pt-5 ">
-                <img class="rounded-circle imgHome"
-                     src="../../public/images/picture%20icon%20gif/506491bb384d29a5-animate-bulb-by-cabaroc-dribbble.gif">
+                <a href="index.php">
+                    <img class="rounded-circle imgHome"
+                         src="../../public/images/picture%20icon%20gif/506491bb384d29a5-animate-bulb-by-cabaroc-dribbble.gif">
+                </a>
             </div>
 
             <!--            list col3-->
@@ -273,6 +275,35 @@ include "../../public/php/connect.php";
                             <img class="rounded-lg" style="max-width: inherit;width: 100%;height: 300px "
                                  src="../../public/images/picture%20home%20login/the-most-ingenious-vertical-garden-ideas-for-small-spaces.jpg">
                         </div>
+                        <div style="padding: 8px 0 8px 400px">
+                            <nav class="nav nav3" style="font-size: 11px">
+                                <li class="nav-item">750 bình luận</li>
+                                <li class="nav-item">245 chia sẻ</li>
+                            </nav>
+                        </div>
+                        <nav class="nav nav-pills flex-sm-row pt-1 nav2">
+                            <li class="nav-item">
+                                <img style="width: 24px;height: 24px"
+                                     src="../../public/images/picture%20home%20login/icons8-heart-100.png">
+                                <span>
+                                    1.2k
+                                </span>
+                            </li>
+                            <li class="nav-item">
+                                <img style="width: 24px;height: 24px"
+                                     src="../../public/images/picture%20home%20login/icons8-speech-bubble-100.png">
+                                <span>
+                                    Bình luận
+                                </span>
+                            </li>
+                            <li class="nav-item">
+                                <img style="width: 24px;height: 24px"
+                                     src="../../public/images/picture%20home%20login/icons8-share-160.png">
+                                <span>
+                                    Chia sẻ
+                                </span>
+                            </li>
+                        </nav>
                     </div>
                     <hr/>
 
@@ -302,9 +333,38 @@ include "../../public/php/connect.php";
                             <div>
                                 ' . $data["category"] . '
                             </div>
+                            <div style="float: right; font-size: 12px">
+                                ' . $data["status"] . '
+                            </div>
                             <img class="rounded-lg" style="max-width: inherit;width: 100%;height: 300px "
                                  src="../../public/' . $data["link_image"] . '">
                         </div>
+                         <div style="padding: 8px 0 8px 400px">
+                            <nav class="nav nav3" style="font-size: 11px">
+                                <li class="nav-item">750 bình luận</li>
+                                <li class="nav-item">245 chia sẻ</li>
+                            </nav>
+                        </div>
+                        <nav class="nav nav-pills flex-sm-row pt-1 nav2">
+                            <li class="nav-item">
+                                <img style="width: 24px;height: 24px" src="../../public/images/picture%20home%20login/icons8-heart-100.png">
+                                <span>
+                                    1.2k
+                                </span>
+                            </li>
+                            <li class="nav-item">
+                                <img style="width: 24px;height: 24px" src="../../public/images/picture%20home%20login/icons8-speech-bubble-100.png">
+                                <span>
+                                    Bình luận
+                                </span>
+                            </li>
+                            <li class="nav-item">
+                                <img style="width: 24px;height: 24px" src="../../public/images/picture%20home%20login/icons8-share-160.png">
+                                <span>
+                                    Chia sẻ
+                                </span>
+                            </li>
+                        </nav>
                         </div>
                         <hr/>
                         ';
@@ -460,7 +520,28 @@ include "../../public/php/connect.php";
                 <div class="tab-pane fade pt-5" id="v-pills-notification" role="tabpanel"
                      aria-labelledby="v-pills-notification-tab">
                     <div class="h-100">
-                        notification
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-all-tab" data-toggle="tab" href="#nav-all"
+                                   role="tab"
+                                   aria-controls="nav-all" aria-selected="true">Tất cả</a>
+                                <a class="nav-item nav-link" id="nav-tag-tab" data-toggle="tab" href="#nav-tag"
+                                   role="tab"
+                                   aria-controls="nav-profile" aria-selected="false">Đề cập</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-all" role="tabpanel"
+                                 aria-labelledby="nav-all-tab">
+                                Bài viết của bạn đã được phê duyệt
+                            </div>
+                            <div class="tab-pane fade" id="nav-tag" role="tabpanel"
+                                 aria-labelledby="nav-tag-tab">
+                                <div style="text-align: center">
+                                    Không có ai đề cập đến bạn cả
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -576,7 +657,12 @@ include "../../public/php/connect.php";
                                 </div>
                             </div>
 
-                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <div style="text-align: center">
+                                    <font style="font-weight: bolder">Bạn không có bất kỳ lượt thích nào</font><br/>
+                                    Nhấn trái tim trên bất kỳ D.I.Y nào để thể hiện sự yêu thích. Khi bạn làm vậy, trái
+                                    tim sẽ hiển thị ở đây.
+                                </div>
                             </div>
 
                             <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...
@@ -590,196 +676,201 @@ include "../../public/php/connect.php";
         </div>
 
         <!--        col 4-->
-        <div class="col-md-4 col4 fixed-top offset-8 h-100"
+        <div class="col-md-4 col4 fixed-top offset-8 h-100 scrollbar scrollbar-primary bordered-primary thin"
              style="background-color: #fafafa ;border-left: 1px solid #c2c2c2;overflow: auto">
-            <div style="padding: 8px 0 32px 0">
-                <form action="../../public/php/search_news.php" method="post"
-                      enctype="multipart/form-data">
+            <div class="force-overflow">
+                <div style="padding: 8px 0 24px 0">
+                    <form action="../../public/php/search_news.php" method="post"
+                          enctype="multipart/form-data">
                     <span class="divIconSearch">
                         <img style="width: 25px;height: 25px"
                              src="../../public/images/picture%20home%20login/icons8-search-50.png">
                     </span>
-                    <input class="rounded-pill" id="searchBox" name="search" type="search"
-                           placeholder="Tìm kiếm trên D.I.Y"
-                           required="required"
-                           style="padding-left:44px; padding-right:8px;width: 400px;border: 1px solid #c2c2c2;outline: none;"/>
-                    <button type="submit" style="border: 0; opacity: 0"></button>
-                </form>
-            </div>
+                        <input class="rounded-pill" id="searchBox" name="search" type="search"
+                               placeholder="Tìm kiếm trên D.I.Y"
+                               required="required"
+                               style="padding-left:44px; padding-right:8px;width: 400px;border: 1px solid #c2c2c2;outline: none;"/>
+                        <button type="submit" style="border: 0; opacity: 0"></button>
+                    </form>
+                </div>
 
-            <div style="border: 1px solid #c2c2c2; border-radius: 16px;background-color: rgba(76, 175, 80, 0.1)">
-                <div class="p-2" style="font-size: 20px;font-weight: 1000">
-                    Xu hướng cho bạn
-                    <span style="float: right">
+                <div style="border: 1px solid #c2c2c2; border-radius: 16px;background-color: rgba(76, 175, 80, 0.1)">
+                    <div class="p-2" style="font-size: 20px;font-weight: 1000">
+                        Xu hướng cho bạn
+                        <span style="float: right">
                         <a href="">
                             <img style="width: 28px;height: 28px"
                                  src="../../public/images/picture%20home%20login/icons8-settings-50.png">
                         </a>
                     </span>
+                    </div>
+                    <hr style="margin: 0"/>
+                    <div class="moreBox">
+                        <a href="">
+                            <div>
+                                Văn phòng tại nhà<br/>
+                                <b>#Phòng & Không gian</b>
+                            </div>
+                            <hr/>
+                        </a>
+                        <a href="">
+                            <div>
+                                Xây dựng<br/>
+                                <b>#Làm thế nào</b>
+                            </div>
+                            <hr/>
+                        </a>
+                        <a href="">
+                            <div>
+                                Cầu thang<br/>
+                                <b>#Phòng và không gian</b>
+                            </div>
+                            <hr/>
+                        </a>
+                        <a href="">
+                            <div>
+                                Dọn dẹp<br/>
+                                <b>#làm thế nào</b>
+                            </div>
+                            <hr/>
+                        </a>
+                        <a id="loadMore">
+                            <div>
+                                Xem thêm
+                            </div>
+                        </a>
+                    </div>
+                    <div class="moreBox blogBox" style="display: none">
+                        <a href="">
+                            <div>
+                                Văn phòng tại nhà<br/>
+                                <b>#Phòng & Không gian</b>
+                            </div>
+                            <hr/>
+                        </a>
+                        <a href="">
+                            <div>
+                                Xây dựng<br/>
+                                <b>#Làm thế nào</b>
+                            </div>
+                            <hr/>
+                        </a>
+                        <a href="">
+                            <div>
+                                Cầu thang<br/>
+                                <b>#Phòng và không gian</b>
+                            </div>
+                            <hr/>
+                        </a>
+                        <a href="">
+                            <div>
+                                Dọn dẹp<br/>
+                                <b>#làm thế nào</b>
+                            </div>
+                            <hr/>
+                        </a>
+                        <a id="loadMore">
+                            <div>
+                                Xem thêm
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <hr style="margin: 0"/>
-                <div class="moreBox">
-                    <a href="">
-                        <div class="a3">
-                            Văn phòng tại nhà<br/>
-                            <b>#Phòng & Không gian</b>
-                        </div>
-                        <hr/>
-                    </a>
-                    <a href="">
-                        <div>
-                            Xây dựng<br/>
-                            <b>#Làm thế nào</b>
-                        </div>
-                        <hr/>
-                    </a>
-                    <a href="">
-                        <div>
-                            Cầu thang<br/>
-                            <b>#Phòng và không gian</b>
-                        </div>
-                        <hr/>
-                    </a>
-                    <a href="">
-                        <div>
-                            Dọn dẹp<br/>
-                            <b>#làm thế nào</b>
-                        </div>
-                        <hr/>
-                    </a>
-                    <a id="loadMore">
-                        <div>
-                            Xem thêm
-                        </div>
-                    </a>
-                </div>
-                <div class="moreBox blogBox" style="display: none">
-                    <a href="">
-                        <div>
-                            Văn phòng tại nhà<br/>
-                            <b>#Phòng & Không gian</b>
-                        </div>
-                        <hr/>
-                    </a>
-                    <a href="">
-                        <div>
-                            Xây dựng<br/>
-                            <b>#Làm thế nào</b>
-                        </div>
-                        <hr/>
-                    </a>
-                    <a href="">
-                        <div>
-                            Cầu thang<br/>
-                            <b>#Phòng và không gian</b>
-                        </div>
-                        <hr/>
-                    </a>
-                    <a href="">
-                        <div>
-                            Dọn dẹp<br/>
-                            <b>#làm thế nào</b>
-                        </div>
-                        <hr/>
-                    </a>
-                    <a id="loadMore">
-                        <div>
-                            Xem thêm
-                        </div>
-                    </a>
+
+                <div class="mt-3"
+                     style="border: 1px solid #c2c2c2; border-radius: 16px;background-color: rgba(76, 175, 80, 0.1)">
+                    <div class="p-2" style="font-size: 20px; font-weight: 1000">
+                        Những người khác cũng theo dõi
+                    </div>
+                    <hr style="margin: 0"/>
+                    <div class="moreBox2">
+                        <a href="">
+                            <nav class="nav p-2">
+                                <li class="nav-item pl-3">
+                                    <img class="rounded-circle"
+                                         style="width: 56px;height: 56px; border: 1px solid #c2c2c2"
+                                         src="../../public/images/picture%20home%20login/tenor%20(4).gif">
+                                </li>
+                                <li class="nav-item p-1">
+                                    People 4<br/>
+                                    <font style="color: #818182">@People4</font>
+                                </li>
+                                <li class="nav-item; pl-5">
+                                    <button class="btn btn-primary rounded-pill">Theo dõi</button>
+                                </li>
+                            </nav>
+                            <hr/>
+                        </a>
+
+                        <a href="">
+                            <nav class="nav p-2">
+                                <li class="nav-item pl-3">
+                                    <img class="rounded-circle"
+                                         style="width: 56px;height: 56px; border: 1px solid #c2c2c2"
+                                         src="../../public/images/picture%20home%20login/tenor%20(4).gif">
+                                </li>
+                                <li class="nav-item p-1">
+                                    People 4<br/>
+                                    <font style="color: #818182">@People4</font>
+                                </li>
+                                <li class="nav-item; pl-5">
+                                    <button class="btn btn-primary rounded-pill">Theo dõi</button>
+                                </li>
+                            </nav>
+                            <hr/>
+                        </a>
+
+                        <a id="loadMore2">
+                            <div class="pl-4 pb-2">
+                                Xem thêm
+                            </div>
+                        </a>
+                    </div>
+                    <div class="moreBox2 blogBox2" style="display: none">
+                        <a href="">
+                            <nav class="nav p-2">
+                                <li class="nav-item pl-3">
+                                    <img class="rounded-circle"
+                                         style="width: 56px;height: 56px; border: 1px solid #c2c2c2"
+                                         src="../../public/images/picture%20home%20login/tenor%20(4).gif">
+                                </li>
+                                <li class="nav-item p-1">
+                                    People 4<br/>
+                                    <font style="color: #818182">@People4</font>
+                                </li>
+                                <li class="nav-item; pl-5">
+                                    <button class="btn btn-primary rounded-pill">Theo dõi</button>
+                                </li>
+                            </nav>
+                            <hr/>
+                        </a>
+
+                        <a href="">
+                            <nav class="nav p-2">
+                                <li class="nav-item pl-3">
+                                    <img class="rounded-circle"
+                                         style="width: 56px;height: 56px; border: 1px solid #c2c2c2"
+                                         src="../../public/images/picture%20home%20login/tenor%20(4).gif">
+                                </li>
+                                <li class="nav-item p-1">
+                                    People 4<br/>
+                                    <font style="color: #818182">@People4</font>
+                                </li>
+                                <li class="nav-item; pl-5">
+                                    <button class="btn btn-primary rounded-pill">Theo dõi</button>
+                                </li>
+                            </nav>
+                            <hr/>
+                        </a>
+
+                        <a id="loadMore2">
+                            <div>
+                                Xem thêm
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
-
-            <div class="mt-3"
-                 style="border: 1px solid #c2c2c2; border-radius: 16px;background-color: rgba(76, 175, 80, 0.1)">
-                <div class="p-2" style="font-size: 20px; font-weight: 1000">
-                    Những người khác cũng theo dõi
-                </div>
-                <hr style="margin: 0"/>
-                <div class="moreBox2">
-                    <a href="">
-                        <nav class="nav p-2">
-                            <li class="nav-item pl-3">
-                                <img class="rounded-circle" style="width: 56px;height: 56px; border: 1px solid #c2c2c2"
-                                     src="../../public/images/picture%20home%20login/tenor%20(4).gif">
-                            </li>
-                            <li class="nav-item p-1">
-                                People 4<br/>
-                                <font style="color: #818182">@People4</font>
-                            </li>
-                            <li class="nav-item; pl-5">
-                                <button class="btn btn-primary rounded-pill">Theo dõi</button>
-                            </li>
-                        </nav>
-                        <hr/>
-                    </a>
-
-                    <a href="">
-                        <nav class="nav p-2">
-                            <li class="nav-item pl-3">
-                                <img class="rounded-circle" style="width: 56px;height: 56px; border: 1px solid #c2c2c2"
-                                     src="../../public/images/picture%20home%20login/tenor%20(4).gif">
-                            </li>
-                            <li class="nav-item p-1">
-                                People 4<br/>
-                                <font style="color: #818182">@People4</font>
-                            </li>
-                            <li class="nav-item; pl-5">
-                                <button class="btn btn-primary rounded-pill">Theo dõi</button>
-                            </li>
-                        </nav>
-                        <hr/>
-                    </a>
-
-                    <a id="loadMore2">
-                        <div class="pl-2">
-                            Xem thêm
-                        </div>
-                    </a>
-                </div>
-                <div class="moreBox2 blogBox2" style="display: none">
-                    <a href="">
-                        <nav class="nav p-2">
-                            <li class="nav-item pl-3">
-                                <img class="rounded-circle" style="width: 56px;height: 56px; border: 1px solid #c2c2c2"
-                                     src="../../public/images/picture%20home%20login/tenor%20(4).gif">
-                            </li>
-                            <li class="nav-item p-1">
-                                People 4<br/>
-                                <font style="color: #818182">@People4</font>
-                            </li>
-                            <li class="nav-item; pl-5">
-                                <button class="btn btn-primary rounded-pill">Theo dõi</button>
-                            </li>
-                        </nav>
-                        <hr/>
-                    </a>
-
-                    <a href="">
-                        <nav class="nav p-2">
-                            <li class="nav-item pl-3">
-                                <img class="rounded-circle" style="width: 56px;height: 56px; border: 1px solid #c2c2c2"
-                                     src="../../public/images/picture%20home%20login/tenor%20(4).gif">
-                            </li>
-                            <li class="nav-item p-1">
-                                People 4<br/>
-                                <font style="color: #818182">@People4</font>
-                            </li>
-                            <li class="nav-item; pl-5">
-                                <button class="btn btn-primary rounded-pill">Theo dõi</button>
-                            </li>
-                        </nav>
-                        <hr/>
-                    </a>
-
-                    <a id="loadMore2">
-                        <div>
-                            Xem thêm
-                        </div>
-                    </a>
-                </div>
-            </div>
-
         </div>
     </div>
     <!-- form đăng bài -->
@@ -789,10 +880,18 @@ include "../../public/php/connect.php";
             <div style="padding: 50px">
                 <div>
                     <div style="margin-top: 16px ; margin-bottom: 16px">
-                        <input type="textarea" placeholder="Content" name="content" required="required"
+                        <input type="textarea" placeholder="Nội dung" name="content" required="required"
                                style="max-width: inherit;width: 100%; height: 48px">
-                        <input type="textarea" placeholder="Category" name="category" required="required"
+                        <input type="textarea" placeholder="Thể loại" name="category" required="required"
                                style="max-width: inherit;width: 100%; height: 48px; margin-top: 16px">
+                        <select style="margin-top: 16px;border: 1px solid #818182" name="chooseStatus"
+                                class="browser-default custom-select"
+                                required="required">
+                            <option selected>Tình trạng</option>
+                            <option value="-Hỏi đáp">-Hỏi đáp</option>
+                            <option value="-Ý tưởng đã hoàn thiện">-Ý tưởng đã hoàn thiện</option>
+                            <option value="-Ý tưởng chưa hoàn thiện">-Ý tưởng chưa hoàn thiện</option>
+                        </select>
                     </div>
                 </div>
                 <div>
