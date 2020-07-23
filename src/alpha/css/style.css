@@ -106,16 +106,14 @@ nav.lighten-4{
     max-width: inherit; width: 40%;
 }
 
-.nav2 li {
-    max-width: inherit;
-    width: 33.3333333333333333333%;
-    padding-left: 64px;
-}
+/*.nav2 li {*/
+/*    max-width: inherit;*/
+/*    width: 33.3333333333333333333%;*/
+/*}*/
 
-.nav3 li{
-    padding-left: 16px;
+a.aName:hover{
+    text-decoration: underline;
 }
-
 .moreBox a div:hover{
     background-color: rgba(158, 158, 158, 0.1);
 }

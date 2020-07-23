@@ -58,7 +58,7 @@ include "../../public/php/connect.php";
 
                 <a class="nav-link aImg a2" id="v-pills-myPost-tab"
                    data-toggle="pill" href="#v-pills-myPost" role="tab"
-                   aria-controls="v-pills-myPost" aria-selected="false">
+                   aria-controls="v-pills-myPost" aria-selected="false" data-toggle="tooltip" title="Bài viết của bạn">
                     <img style="width: 25px; height: 25px" src="../../public/images/sticky-note.png"/>
                     <span class="tf">
                         Bài viết của bạn
@@ -67,7 +67,8 @@ include "../../public/php/connect.php";
 
                 <a class="nav-link aImg a3" id="v-pills-forIdea-tab"
                    data-toggle="pill" href="#v-pills-forIdea" role="tab"
-                   aria-controls="v-pills-forIdea" aria-selected="false">
+                   aria-controls="v-pills-forIdea" aria-selected="false" data-toggle="tooltip"
+                   title="Khám phá các ý tưởng">
                     <img style="width: 25px; height: 25px"
                          src="../../public/images/picture%20home%20login/icons8-info-squared-100.png"/>
                     <span class="tf">
@@ -77,7 +78,7 @@ include "../../public/php/connect.php";
 
                 <a class="nav-link aImg a4" id="v-pills-notification-tab"
                    data-toggle="pill" href="#v-pills-notification" role="tab"
-                   aria-controls="v-pills-notification" aria-selected="false">
+                   aria-controls="v-pills-notification" aria-selected="false" data-toggle="tooltip" title="Thông báo">
                     <img style="width: 25px; height: 25px"
                          src="../../public/images/picture%20home%20login/icons8-notification-50.png"/>
                     <span class="tf">
@@ -87,7 +88,7 @@ include "../../public/php/connect.php";
 
                 <a class="nav-link aImg a5" id="v-pills-history-tab" data-toggle="pill"
                    href="#v-pills-history" role="tab"
-                   aria-controls="v-pills-history" aria-selected="false">
+                   aria-controls="v-pills-history" aria-selected="false" data-toggle="tooltip" title="Lịch sử">
                     <img style="width: 25px; height: 25px" src="../../public/images/history.png"/>
                     <span class="tf">
                         Lịch sử
@@ -96,7 +97,7 @@ include "../../public/php/connect.php";
 
                 <a class="nav-link aImg a6" id="v-pills-profile-tab" data-toggle="pill"
                    href="#v-pills-profile" role="tab"
-                   aria-controls="v-pills-profile" aria-selected="false">
+                   aria-controls="v-pills-profile" aria-selected="false" data-toggle="tooltip" title="Cá nhân">
                     <img style="width: 25px; height: 25px"
                          src="../../public/images/picture%20home%20login/icons8-customer-50.png"/>
                     <span class="tf">
@@ -104,7 +105,8 @@ include "../../public/php/connect.php";
                     </span>
                 </a>
 
-                <a style="max-width: inherit; width: 100%" class="nav-link">
+                <a style="max-width: inherit; width: 100%; color: #55ACEE" class="nav-link" data-toggle="tooltip"
+                   title="Nhiều hơn">
                     <img style="width: 25px; height: 25px"
                          src="../../public/images/picture%20home%20login/icons8-view-more-50.png"/>
                     <span class="tf">
@@ -208,6 +210,7 @@ include "../../public/php/connect.php";
             <div class="tab-content" id="v-pills-tabContent">
                 <div class="tab-pane fade show active c" id="v-pills-home" role="tabpanel"
                      aria-labelledby="v-pills-home-tab">
+
                     <!--            phần đăng bài-->
                     <div class="row" style="padding-top: 56px;background-color: white;border-bottom: 8px solid #c2c2c2">
                         <nav class="nav nav-pills nav-justified">
@@ -256,7 +259,7 @@ include "../../public/php/connect.php";
                                 <img class="rounded-circle" style="width: 54px;height: 54px; border: 1px solid #1a1a1a"
                                      src="../../public/images/picture%20home%20login/icons8-google-home-64.png">
                             </a>
-                            <a class="nav-link pt-4" style="color: #1a1a1a" href="#">
+                            <a class="nav-link pt-4 aName" style="color: #1a1a1a" href="#">
                                 AdminA
                                 <img class="rounded-circle" style="width: 16px; height: 16px"
                                      src="../../public/images/picture%20home%20login/icons8-instagram-check-mark-100%20(1).png">
@@ -265,45 +268,47 @@ include "../../public/php/connect.php";
                                 @Admin-Tháng 7
                             </a>
                         </nav>
-                        <div class="pl-5 pr-3">
-                            <div>
-                                Ý tưởng hàng rào cây cho không gian nhỏ
+                        <a href="" style="color: #1a1a1a">
+                            <div class="pl-5 pr-3">
+                                <div>
+                                    Ý tưởng hàng rào cây cho không gian nhỏ
+                                </div>
+                                <div>
+                                    #Xây dựng
+                                </div>
+                                <img class="rounded-lg" style="max-width: inherit;width: 100%;height: 300px "
+                                     src="../../public/images/picture%20home%20login/the-most-ingenious-vertical-garden-ideas-for-small-spaces.jpg">
                             </div>
-                            <div>
-                                #Xây dựng
+                            <div style="padding: 8px 0 8px 0">
+                                <nav class="nav nav3 float-right" style="font-size: 11px">
+                                    <li class="nav-item">750 bình luận</li>
+                                    <li style="padding: 0 16px 0 16px" class="nav-item">245 chia sẻ</li>
+                                </nav>
                             </div>
-                            <img class="rounded-lg" style="max-width: inherit;width: 100%;height: 300px "
-                                 src="../../public/images/picture%20home%20login/the-most-ingenious-vertical-garden-ideas-for-small-spaces.jpg">
-                        </div>
-                        <div style="padding: 8px 0 8px 400px">
-                            <nav class="nav nav3" style="font-size: 11px">
-                                <li class="nav-item">750 bình luận</li>
-                                <li class="nav-item">245 chia sẻ</li>
-                            </nav>
-                        </div>
-                        <nav class="nav nav-pills flex-sm-row pt-1 nav2">
-                            <li class="nav-item">
-                                <img style="width: 24px;height: 24px"
-                                     src="../../public/images/picture%20home%20login/icons8-heart-100.png">
-                                <span>
+                            <nav class="nav nav-pills nav-fill">
+                                <li class="nav-item">
+                                    <img style="width: 24px;height: 24px"
+                                         src="../../public/images/picture%20home%20login/icons8-heart-100.png">
+                                    <span>
                                     1.2k
                                 </span>
-                            </li>
-                            <li class="nav-item">
-                                <img style="width: 24px;height: 24px"
-                                     src="../../public/images/picture%20home%20login/icons8-speech-bubble-100.png">
-                                <span>
+                                </li>
+                                <li class="nav-item">
+                                    <img style="width: 24px;height: 24px"
+                                         src="../../public/images/picture%20home%20login/icons8-speech-bubble-100.png">
+                                    <span>
                                     Bình luận
                                 </span>
-                            </li>
-                            <li class="nav-item">
-                                <img style="width: 24px;height: 24px"
-                                     src="../../public/images/picture%20home%20login/icons8-share-160.png">
-                                <span>
+                                </li>
+                                <li class="nav-item">
+                                    <img style="width: 24px;height: 24px"
+                                         src="../../public/images/picture%20home%20login/icons8-share-160.png">
+                                    <span>
                                     Chia sẻ
                                 </span>
-                            </li>
-                        </nav>
+                                </li>
+                            </nav>
+                        </a>
                     </div>
                     <hr/>
 
@@ -319,13 +324,14 @@ include "../../public/php/connect.php";
                                 <img class="rounded-circle" style="width: 54px;height: 54px; border: 1px solid #1a1a1a"
                                      src="../../public/images/picture%20home%20login/tenor.gif">
                             </a>
-                            <a class="nav-link pt-4" style="color: #1a1a1a" href="#">
+                            <a class="nav-link pt-4 aName" style="color: #1a1a1a" href="#">
                                  ' . $data["title"] . '
                             </a>
                             <a class="nav-link pt-4" style="color: #818182" href="#">
                                 @Admin-Tháng 7
                             </a>
                         </nav>
+                        <a href="" style="color: #1a1a1a">
                         <div class="pl-5 pr-3">
                             <div>
                                 ' . $data["content"] . '
@@ -333,39 +339,46 @@ include "../../public/php/connect.php";
                             <div>
                                 ' . $data["category"] . '
                             </div>
-                            <div style="float: right; font-size: 12px">
+                            <div class="float-right" style="font-size: 12px">
                                 ' . $data["status"] . '
                             </div>
                             <img class="rounded-lg" style="max-width: inherit;width: 100%;height: 300px "
                                  src="../../public/' . $data["link_image"] . '">
                         </div>
-                         <div style="padding: 8px 0 8px 400px">
-                            <nav class="nav nav3" style="font-size: 11px">
+                         <div style="padding: 8px 0 8px 0">
+                            <nav class="nav nav3 float-right" style="font-size: 11px">
                                 <li class="nav-item">750 bình luận</li>
-                                <li class="nav-item">245 chia sẻ</li>
+                                <li style="padding:0 16px 0 16px" class="nav-item">245 chia sẻ</li>
                             </nav>
                         </div>
-                        <nav class="nav nav-pills flex-sm-row pt-1 nav2">
+                        <nav class="nav nav-pills nav-fill">
                             <li class="nav-item">
+                            <a href="#" class="nav-link">
                                 <img style="width: 24px;height: 24px" src="../../public/images/picture%20home%20login/icons8-heart-100.png">
                                 <span>
                                     1.2k
                                 </span>
+                            </a>
                             </li>
                             <li class="nav-item">
+                            <a href="#" class="nav-link">
                                 <img style="width: 24px;height: 24px" src="../../public/images/picture%20home%20login/icons8-speech-bubble-100.png">
                                 <span>
                                     Bình luận
                                 </span>
+                            </a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link" href="#">
                                 <img style="width: 24px;height: 24px" src="../../public/images/picture%20home%20login/icons8-share-160.png">
                                 <span>
                                     Chia sẻ
                                 </span>
+                                </a>
                             </li>
                         </nav>
                         </div>
+                        </a>
                         <hr/>
                         ';
                     }
@@ -387,13 +400,14 @@ include "../../public/php/connect.php";
                                 <img class="rounded-circle" style="width: 54px;height: 54px; border: 1px solid #1a1a1a"
                                      src="../../public/images/picture%20home%20login/tenor.gif">
                             </a>
-                            <a class="nav-link pt-4" style="color: #1a1a1a" href="#">
+                            <a class="nav-link pt-4 aName" style="color: #1a1a1a" href="#">
                                  ' . $data["title"] . '
                             </a>
                             <a class="nav-link pt-4" style="color: #818182" href="#">
                                 @Admin-Tháng 7
                             </a>
                         </nav>
+                        <a href="" style="color: #1a1a1a">
                         <div class="pl-5 pr-3">
                             <div>
                                 ' . $data["content"] . '
@@ -401,10 +415,40 @@ include "../../public/php/connect.php";
                             <div>
                                 ' . $data["category"] . '
                             </div>
+                            <div class="float-right" style="font-size: 12px">
+                                ' . $data["status"] . '
+                            </div>
                             <img class="rounded-lg" style="max-width: inherit;width: 100%;height: 300px "
                                  src="../../public/' . $data["link_image"] . '">
                         </div>
+                         <div style="padding: 8px 0 8px 0">
+                            <nav class="nav nav3 float-right" style="font-size: 11px">
+                                <li class="nav-item">750 bình luận</li>
+                                <li style="padding:0 16px 0 16px" class="nav-item">245 chia sẻ</li>
+                            </nav>
                         </div>
+                        <nav class="nav justify-content-center lighten-4">
+                            <li class="nav-item">
+                                <img style="width: 24px;height: 24px" src="../../public/images/picture%20home%20login/icons8-heart-100.png">
+                                <span>
+                                    1.2k
+                                </span>
+                            </li>
+                            <li class="nav-item">
+                                <img style="width: 24px;height: 24px" src="../../public/images/picture%20home%20login/icons8-speech-bubble-100.png">
+                                <span>
+                                    Bình luận
+                                </span>
+                            </li>
+                            <li class="nav-item">
+                                <img style="width: 24px;height: 24px" src="../../public/images/picture%20home%20login/icons8-share-160.png">
+                                <span>
+                                    Chia sẻ
+                                </span>
+                            </li>
+                        </nav>
+                        </div>
+                        </a>
                         <hr style="margin: 0"/>
                         ';
                         }
@@ -679,20 +723,19 @@ include "../../public/php/connect.php";
         <div class="col-md-4 col4 fixed-top offset-8 h-100 scrollbar scrollbar-primary bordered-primary thin"
              style="background-color: #fafafa ;border-left: 1px solid #c2c2c2;overflow: auto">
             <div class="force-overflow">
-                <div style="padding: 8px 0 24px 0">
                     <form action="../../public/php/search_news.php" method="post"
                           enctype="multipart/form-data">
-                    <span class="divIconSearch">
-                        <img style="width: 25px;height: 25px"
-                             src="../../public/images/picture%20home%20login/icons8-search-50.png">
-                    </span>
-                        <input class="rounded-pill" id="searchBox" name="search" type="search"
-                               placeholder="Tìm kiếm trên D.I.Y"
-                               required="required"
-                               style="padding-left:44px; padding-right:8px;width: 400px;border: 1px solid #c2c2c2;outline: none;"/>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text cyan lighten-2" id="basic-text1">
+                                    <i class="fas fa-search text-white" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                            <input class="form-control my-0 py-1" name="search" type="text"
+                                   placeholder="Tìm kiếm trên D.I.Y" aria-label="Search">
+                        </div>
                         <button type="submit" style="border: 0; opacity: 0"></button>
                     </form>
-                </div>
 
                 <div style="border: 1px solid #c2c2c2; border-radius: 16px;background-color: rgba(76, 175, 80, 0.1)">
                     <div class="p-2" style="font-size: 20px;font-weight: 1000">
