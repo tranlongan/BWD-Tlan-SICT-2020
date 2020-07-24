@@ -1,33 +1,38 @@
 @media screen and (width: 320px){
-    div.col3{
+    div.col3_1{
         display: none;
     }
 
-    div.col5{
-        max-width: inherit;
-        width: 100%;
-    }
 }
 
+
 @media screen and (width: 414px){
-    div.col3{
+
+    div.col3_1{
         display: none;
     }
 
-    div.col5{
-        max-width: inherit;
-        width: 100%;
-    }
 }
 
 @media screen and (max-width: 575px){
+    div.bg{
+        display: block;
+    }
     div.col3{
+        display: block;
+    }
+    a.aHome{
+        display: none;
+    }
+    div.col3_1{
         display: none;
     }
 
-    div.col5{
-        max-width: inherit;
-        width: 100%;
+}
+
+@media screen  and (max-width: 567px){
+    div.divImgHome1{
+        padding-left: 70px;
     }
 }
 
@@ -35,8 +40,9 @@
     div.col4{
         display: none;
     }
-    span.tf{
-        display: none;
+
+    div.divImgHome{
+        padding-left: 3rem;
     }
 
     nav.hdn{
@@ -47,24 +53,25 @@
         display: block;
     }
 
-    .imgHome{
-        width: 48px;
-        height: 48px;
-    }
-
-    .imgBtn{
-        width: 32px;
-        height: 32px;
-    }
 }
 
+
 @media screen and (max-width: 975px){
+    div.divImgHome{
+        padding-left: 70px;
+    }
+
+    nav.hdn1{
+        padding-left: 70px;
+    }
+
+    div.col3_1{
+        padding-left: 0;
+    }
+
     div.col4{
         display: none;
     }
-    span.tf{
-        display: none;
-    }
 
     nav.hdn{
         display: none;
@@ -75,8 +82,8 @@
     }
 
     .imgHome{
-        width: 48px;
-        height: 48px;
+        width: 64px;
+        height: 64px;
     }
 
     .imgBtn{
@@ -86,9 +93,6 @@
 }
 
 @media screen and (width: 1024px ){
-    span.tf{
-        display: none;
-    }
     nav.hdn{
         display: none;
     }
