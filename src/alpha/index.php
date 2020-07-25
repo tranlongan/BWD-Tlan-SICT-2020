@@ -196,8 +196,8 @@ include "../../public/php/connect.php";
                         <img style="width: 25px; height: 25px"
                              src="../../public/images/picture%20home%20login/icons8-notification-50.png"/>
                         <span class="tf">
-                        Thông báo
-                    </span>
+                        Thông báo <span class="badge badge-danger ml-2">1</span>
+                        </span>
                     </a>
 
                     <a class="nav-link aImg a5" id="v-pills-history-tab" data-toggle="pill"
@@ -1060,7 +1060,6 @@ include "../../public/php/connect.php";
                 <div style="margin-top: 16px ; margin-bottom: 16px">
                     <select name="chooseStatus" class="mdb-select md-form colorful-select dropdown-primary">
                         <option value="15" disabled selected>Lựa chọn tình trạng</option>
-                        <option value="-Ý tưởng đã hoàn thiện">-Ý tưởng đã hoàn thiện</option>
                         <option value="-Đề xuất ý tưởng">-Đề xuất ý tưởng</option>
                         <option value="-Cần tư vấn">-Cần tư vấn</option>
                     </select>
@@ -1116,7 +1115,7 @@ include "../../public/php/connect.php";
         <div class="modal-content text-center">
             <!--Header-->
             <div class="modal-header d-flex justify-content-center">
-                <p class="heading">Thông báo</p>
+                <p class="heading">Thông báo </p>
             </div>
 
             <!--Body-->
@@ -1130,7 +1129,7 @@ include "../../public/php/connect.php";
 
             <!--Footer-->
             <div class="modal-footer flex-center">
-                <a href="post.html" class="btn btn-info">Có</a>
+                <a href="post.php" class="btn btn-info">Có</a>
                 <a type="button" class="btn btn-outline-info waves-effect" data-dismiss="modal">Không</a>
             </div>
         </div>

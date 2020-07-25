@@ -20,7 +20,10 @@
   },
   "homepage": "https://github.com/tranlongan/BWD-Tlan-SICT-2020#readme",
   "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^20.0.0",
+    "@ckeditor/ckeditor5-upload": "^20.0.0",
     "bootstrap": "^4.5.0",
+    "ckeditor4": "^4.14.1",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1"
   }
