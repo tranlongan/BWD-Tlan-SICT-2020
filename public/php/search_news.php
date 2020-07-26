@@ -34,7 +34,7 @@ if (!empty($result)) {
                             <ul class="nav">
                                 <li class="nav-item">
                                     <a href="">
-                                        Norman
+                                        '.$data["username"].'
                                     </a>
                                 </li>
                             </ul>
@@ -43,7 +43,7 @@ if (!empty($result)) {
                     <div>
                         <div>
                             <div>
-                                ' . $data["content"] . '
+                                ' . $data["title"] . '
                             </div>
                             <div>
                                     ' . $data["category"] . '

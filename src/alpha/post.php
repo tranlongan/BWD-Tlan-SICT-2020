@@ -1,5 +1,5 @@
 <?php
-    include "../../public/php/connect.php"
+include "../../public/php/connect.php"
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,6 +24,7 @@
 </head>
 <body>
 <div class="container">
+
     <div style="margin-bottom: 16px; font-size: 20px">
         <a href="index.php">
             Trang chủ
@@ -34,28 +35,60 @@
     </div>
 
     <div style="float: right">
-        <select class="browser-default custom-select" disabled>
-            <option value="-Ý tưởng đã hoàn thiện">-Ý tưởng đã hoàn thiện</option>
+        <select name="chooseStatus" class="browser-default custom-select" id="chooseStatus">
+            <option value="Ý tưởng đã hoàn thiện">Ý tưởng đã hoàn thiện</option>
         </select>
     </div>
-
-    <!-- Material input -->
     <div style="padding-top: 10px">
-        <input type="text" id="form1" class="form-control" placeholder="Thể loại">
+        <input type="text" id="title" name="title" class="form-control" placeholder="Tiêu đề">
     </div>
+    <div style="padding-top: 10px">
+        <input type="text" name="category" id="category" class="form-control" placeholder="Thể loại">
+    </div>
+    <div class="file-field medium">
+        <div>
+            <span>Chọn file<i class="fas fa-cloud-upload-alt ml-3" aria-hidden="true"></i></span>
+            <input id="myfile" name="image" type="file">
+        </div>
+    </div>
+
     <div>
         <div id="ckeditor"></div>
         <div>
-            <button type="submit" onclick="submit()" class="btn btn-primary">
+            <button onclick="submit()" type="button" class="btn btn-primary">
                 Gửi
             </button>
         </div>
     </div>
 
+
 </div>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script>
+    const chooseStatus = document.getElementById("chooseStatus");
+    const title = document.getElementById("title");
+    const category = document.getElementById("category");
+    const inputFile = document.getElementById("myfile");
+
+    const express = require('express');
+    const mysql = require('mysql');
+    const app = express();
+
+    const connection = mysql.createConnection({
+        host: 'localhost',
+        user: 'root',
+        password: '',
+        database: 'db_diy'
+    });
+
+    let file;
+    inputFile.onchange = (evt) => {
+        file = evt.target.files[0];
+        console.log(file);
+    };
+
     let editor;
-    async function initEditor() {
+    const initEditor = async () => {
         editor = await ClassicEditor
             .create(document.getElementById("ckeditor"), {
                 cloudServices: {
@@ -64,12 +97,25 @@
                 }
             });
     }
-    initEditor()
+    initEditor();
 
-    async function submit() {
-        console.log(editor.getData())
+
+    const submit = async () => {
+        const data = editor.getData();
+        const formData = new FormData();
+        formData.set("content", data);
+        formData.set("title", title.value);
+        formData.set("chooseStatus", chooseStatus.options[chooseStatus.selectedIndex].text);
+        formData.set("category", category.value);
+        formData.set("image", file);
+        axios
+            .post("http://localhost/BWD/public/php/form_post.php", formData)
+            .then((res) => {
+                window.open("/BWD/src/alpha/my_post.php", "_self");
+            })
+            .catch(err => alert("something went wrong"));
     }
-    
+
 </script>
 </body>
 </html>

@@ -196,7 +196,7 @@ include "../../public/php/connect.php";
                         <img style="width: 25px; height: 25px"
                              src="../../public/images/picture%20home%20login/icons8-notification-50.png"/>
                         <span class="tf">
-                        Thông báo <span class="badge badge-danger ml-2">1</span>
+                        Thông báo <span class="badge badge-danger ml-2"></span>
                         </span>
                     </a>
 
@@ -293,7 +293,8 @@ include "../../public/php/connect.php";
                                 </li>
                             </nav>
                         </a>
-                        <a href="../../index.html" class="aaa_x">
+
+                        <a href="../../public/php/log_out.php" type="submit" class="aaa_x">
                             <nav class="nav">
                                 <li class="nav-item">
                                     <img style="width: 16px;height: 16px"
@@ -304,6 +305,7 @@ include "../../public/php/connect.php";
                                 </li>
                             </nav>
                         </a>
+                      
 
                     </div>
                 </div>
@@ -452,7 +454,7 @@ include "../../public/php/connect.php";
                                      src="../../public/images/picture%20home%20login/tenor.gif">
                             </a>
                             <a class="nav-link pt-4 aName" style="color: #1a1a1a" href="#">
-                                 ' . $data["title"] . '
+                                 ' . $data["username"] . '
                             </a>
                             <a class="nav-link pt-4" style="color: #818182" href="#">
                                 @Admin-Tháng 7
@@ -461,7 +463,7 @@ include "../../public/php/connect.php";
                         <a href="" style="color: #1a1a1a">
                         <div class="pl-5 pr-3">
                             <div>
-                                ' . $data["content"] . '
+                                ' . $data["title"] . '
                             </div>
                             <div>
                                 ' . $data["category"] . '
@@ -528,7 +530,7 @@ include "../../public/php/connect.php";
                                      src="../../public/images/picture%20home%20login/tenor.gif">
                             </a>
                             <a class="nav-link pt-4 aName" style="color: #1a1a1a" href="#">
-                                 ' . $data["title"] . '
+                                 ' . $data["username"] . '
                             </a>
                             <a class="nav-link pt-4" style="color: #818182" href="#">
                                 @Admin-Tháng 7
@@ -537,7 +539,7 @@ include "../../public/php/connect.php";
                         <a href="" style="color: #1a1a1a">
                         <div class="pl-5 pr-3">
                             <div>
-                                ' . $data["content"] . '
+                                ' . $data["title"] . '
                             </div>
                             <div>
                                 ' . $data["category"] . '
@@ -711,6 +713,15 @@ include "../../public/php/connect.php";
                         <div class="tab-content" id="nav-tabContent">
                             <div class="tab-pane fade show active" id="nav-all" role="tabpanel"
                                  aria-labelledby="nav-all-tab">
+                                <?php
+                                $sql = " SELECT * FROM `notification` WHERE `done`= 1";
+                                $result = mysqli_query($conn, $sql);
+                                while ($data = mysqli_fetch_array($result)) {
+                                    echo ' <div>' . $data["user_id"] . '</div>
+                                            <div>' . $data["title"] . '</div>
+                                    ';
+                                }
+                                ?>
                                 Bài viết của bạn đã được phê duyệt
                             </div>
                             <div class="tab-pane fade" id="nav-tag" role="tabpanel"
@@ -1055,18 +1066,18 @@ include "../../public/php/connect.php";
     <div id="id01" class="modal">
         <form id="loginbox" class="modal-content animate" action="../../public/php/upload_news.php" method="POST"
               enctype="multipart/form-data">
-            <div style="padding: 35px">
+            <div style="padding: 30px">
 
                 <div style="margin-top: 16px ; margin-bottom: 16px">
                     <select name="chooseStatus" class="mdb-select md-form colorful-select dropdown-primary">
                         <option value="15" disabled selected>Lựa chọn tình trạng</option>
-                        <option value="-Đề xuất ý tưởng">-Đề xuất ý tưởng</option>
-                        <option value="-Cần tư vấn">-Cần tư vấn</option>
+                        <option value="Đề xuất ý tưởng">-Đề xuất ý tưởng</option>
+                        <option value="Cần tư vấn">-Cần tư vấn</option>
                     </select>
                     <label class="mdb-main-label">Tình trạng</label>
 
                     <div class="md-form">
-                            <textarea name="content" id="textarea-char-counter" class="form-control md-textarea"
+                            <textarea name="title" id="textarea-char-counter" class="form-control md-textarea"
                                       length="324" rows="1"></textarea>
                         <label for="textarea-char-counter">Nhập nội dung</label>
                     </div>
@@ -1079,7 +1090,7 @@ include "../../public/php/connect.php";
 
                 </div>
 
-                <form class="md-form" action="#">
+                <div class="md-form" action="#">
                     <div class="file-field medium">
                         <div class="btn btn-outline-primary waves-effect float-left">
                             <span>Chọn file<i class="fas fa-cloud-upload-alt ml-3" aria-hidden="true"></i></span>
@@ -1090,7 +1101,7 @@ include "../../public/php/connect.php";
                                    style="border: 0" disabled placeholder="File vừa chọn có tên">
                         </div>
                     </div>
-                </form>
+                </div>
                 <br/>
 
                 <button class="btn btn-primary" type="submit">
@@ -1207,6 +1218,8 @@ include "../../public/php/connect.php";
         alert("I am an alert box!");
     }
 </script>
+<script>
 
+</script>
 </body>
 </html>

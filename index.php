@@ -1,3 +1,7 @@
+<?php
+session_start();
+require_once "public/php/check_login.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -170,7 +174,8 @@
 
                         <input type="password" name="password" id="pass" placeholder="Mật khẩu" required="required">
                         <a class="textsg" style="float: left; text-decoration: none;" href="">Quên mật khẩu</a>
-                        <a class="textsg" style="float: right; text-decoration: none;" href="src/Admin/login.html">Đăng nhập với tư cách admin</a>
+                        <a class="textsg" style="float: right; text-decoration: none;" href="src/Admin/login.html">Đăng
+                            nhập với tư cách admin</a>
                         <br>
                         <input type="submit" name="signup_submit" value="Đăng nhập">
                     </form>
@@ -181,7 +186,8 @@
                         <input type="text" name="dk_username" placeholder="Tên đăng nhập" required="required">
                         <input type="text" name="nameAccount" placeholder="Tên tài khoản" required="required">
                         <input type="password" name="dk_password" placeholder="Nhập mật khẩu" required="required">
-                        <input type="password" name="dk_password2" placeholder="Nhạp lại mật khẩu" required="required">
+                        <input type="password" name="dk_password2" placeholder="Nhạp lại mật khẩu"
+                               required="required">
                         <input type="submit" name="signup_submit" value="Đăng Ký">
                     </form>
 

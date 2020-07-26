@@ -9,14 +9,14 @@ $title = "User";
 $sql = "SELECT * FROM `account_login` WHERE `username` = '" . $username . "' AND `password`= '" . $password . "' ";
 $result = mysqli_query($conn, $sql);
 
-
 if (mysqli_num_rows($result) == 0) {
     $message = ' Tài khoản hoặc mật khẩu không chính xác ';
     echo "<script type='text/javascript'>alert('$message');history.go(-1);</script>";
-
-
 } else {
     header("Location: ../../src/alpha/index.php");
+    $_SESSION["value"] = '1';
+    while ($data = mysqli_fetch_array($result)) {
+        $_SESSION["id"]= $data["id"];
+    }
 }
-
 ?>

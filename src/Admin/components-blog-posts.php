@@ -186,7 +186,7 @@ include "../../public/php/connect.php";
                                  style="background-image: url(\'../../public/'.$data["link_image"].'")>
                                 <a href="#" class="card-post__category badge badge-pill badge-dark">
                                 <div>
-                                       Write by '.$data["title"].'
+                                       Write by '.$data["username"].'
                                 </div>
                                 </a>
                                 <div class="card-post__author d-flex">
@@ -196,7 +196,7 @@ include "../../public/php/connect.php";
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">
-                                    <a class="text-fiord-blue" href="#">'.$data["content"].'</a>
+                                    <a class="text-fiord-blue" href="#">'.$data["title"].'</a>
                                 </h5>
                                 <div>
                                     '.$data["status"].'
@@ -232,7 +232,7 @@ include "../../public/php/connect.php";
                                  style="background-image: url(\'../../public/'.$data["link_image"].'")>
                                 <a href="#" class="card-post__category badge badge-pill badge-dark">
                                 <div>
-                                       Write by '.$data["title"].'
+                                       Write by '.$data["username"].'
                                 </div>
                                 </a>
                                 <div class="card-post__author d-flex">
@@ -242,7 +242,7 @@ include "../../public/php/connect.php";
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">
-                                    <a class="text-fiord-blue" href="#">'.$data["content"].'</a>
+                                    <a class="text-fiord-blue" href="#">'.$data["title"].'</a>
                                 </h5>
                                 <div>
                                     '.$data["status"].'
