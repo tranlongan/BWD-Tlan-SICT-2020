@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+<p>Click the button to add a new element to the array.</p>
+
+<button onclick="func()">Try it</button>
+<div id="deemoo">
+    <div class="rowItem">
+        <input type="text" name="demo"/>
+        <input type="text" name="material" />
+    </div>
+</div>
+<button onclick="addInput()">Add material</button>
+
+<script>
+    const addInput = () => {
+        $("#deemoo").append('<div class="rowItem">\n' +
+            '        <input type="text" name="demo"/>\n' +
+            '        <input type="text" name="material" />\n' +
+            '    </div>');
+    }
+    const func = () => {
+        const demos = document.getElementsByClassName("rowItem");
+        const texts = Array.from(demos).map((demo) => {
+            return {
+                demo: demo.children[0].value,
+                material: demo.children[1].value
+            };
+        });
+        console.log(texts);
+    }
+
+</script>
+
+</body>
+</html>

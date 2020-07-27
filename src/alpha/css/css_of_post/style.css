@@ -1,0 +1,8 @@
+._nav li{
+    max-width: inherit;
+    width: 47%;
+}
+
+.divNav nav{
+    margin-bottom: 16px;
+}

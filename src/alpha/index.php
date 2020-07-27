@@ -460,13 +460,18 @@ include "../../public/php/connect.php";
                                 @Admin-Tháng 7
                             </a>
                         </nav>
-                        <a href="" style="color: #1a1a1a">
+                        <a href="'.$data["id"].'" style="color: #1a1a1a">
                         <div class="pl-5 pr-3">
                             <div>
                                 ' . $data["title"] . '
                             </div>
                             <div>
                                 ' . $data["category"] . '
+                            </div>
+                            <div>
+                                <a href="../../public/php/detail.php?id='.$data["id"].'">
+                                    - Chi tiết
+                                </a>
                             </div>
                             <div class="float-right" style="font-size: 12px">
                                 ' . $data["status"] . '
