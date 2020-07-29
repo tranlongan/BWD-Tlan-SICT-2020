@@ -15,7 +15,16 @@
     <link rel="stylesheet" href="css/mdb.min.css">
 </head>
 <body>
+<div>
+    <input name="text_search" id="text_search">
+    <button type="button" onclick="doIt()"> DO</button>
+</div>
+<div class="container" style="background-color: #818182" id="data">
+    <div>
 
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <!-- jQuery -->
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <!-- Bootstrap tooltips -->
@@ -24,5 +33,32 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="js/mdb.min.js"></script>
+<script>
+    const text_search = document.getElementById("text_search");
+    const doIt = async () => {
+        const formData = new FormData();
+        formData.set("text_search", text_search.value);
+
+        axios
+            .post("http://localhost/BWD/public/php/search.php", formData)
+            .then((res) => {
+                console.log(res)
+
+                // let data = JSON.parse(res.responseText);
+                alert(res);
+                // let html = "";
+                // for (let i = 0; i < data.length; i++) {
+                //     let title = data[i].title;
+                //     let category = data[i].category;
+                //     html += "<div>";
+                //     html += "<div>" + title + "</div>";
+                //     html += "<div>" + category + "</div>";
+                //     html += "</div>";
+                // }
+                // document.getElementById("data").innerHTML = html;
+            })
+    }
+
+</script>
 </body>
 </html>
