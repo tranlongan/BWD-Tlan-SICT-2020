@@ -7,9 +7,9 @@ $title = $_POST["title"];
 $category = $_POST["category"];
 $chooseStatus = $_POST["chooseStatus"];
 $content = $_POST["content"];
-$material_json = $_POST["material_json"];
+$material = $_POST["material"];
 $cost = $_POST["cost"];
-$time_json = $_POST["time_json"];
+$time_do = $_POST["time_do"];
 $chooseLevel = $_POST["chooseLevel"];
 
 // File upload configuration
@@ -23,8 +23,8 @@ if (isset($_FILES['image'])) {
         move_uploaded_file($_FILES['image']['tmp_name'], '../img_uploads/' . $time . '.jpg');
 
         if (!empty($title) && !empty($category) && !empty($chooseStatus) && !empty($cost) && !empty($chooseLevel)) {
-            $sql = "INSERT INTO `news`(`username`,`title`,`category`,`status`,`link_image`,`allowed`,`content_post`,`material_json`,`cost`,`time_json`,`chooseLevel`) VALUES ('" . $username . "','" . $title
-                . "','" . $category . "','" . $chooseStatus . "','img_uploads/$time.jpg','0','" . $content . "','" . $material_json . "','" . $cost . "','" . $time_json . "','" . $chooseLevel . "')";
+            $sql = "INSERT INTO `news`(`username`,`title`,`category`,`status`,`link_image`,`allowed`,`content_post`,`material`,`cost`,`time_do`,`chooseLevel`) VALUES ('" . $username . "','" . $title
+                . "','" . $category . "','" . $chooseStatus . "','img_uploads/$time.jpg','0','" . $content . "','" . $material . "','" . $cost . "','" . $time_do . "','" . $chooseLevel . "')";
             mysqli_query($conn, $sql);
         }
     }

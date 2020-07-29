@@ -376,69 +376,6 @@ include "../../public/php/connect.php";
                             </nav>
                         </nav>
                     </div>
-                    <div class="b">
-                        <nav class="nav nav-pills flex-sm-row">
-                            <a class="nav-link" href="#">
-                                <img class="rounded-circle" style="width: 54px;height: 54px; border: 1px solid #1a1a1a"
-                                     src="../../public/images/picture%20home%20login/icons8-google-home-64.png">
-                            </a>
-                            <a class="nav-link pt-4 aName" style="color: #1a1a1a" href="#">
-                                AdminA
-                                <img class="rounded-circle" style="width: 16px; height: 16px"
-                                     src="../../public/images/picture%20home%20login/icons8-instagram-check-mark-100%20(1).png">
-                            </a>
-                            <a class="nav-link pt-4" style="color: #818182" href="#">
-                                @Admin-Tháng 7
-                            </a>
-                        </nav>
-                        <a href="" style="color: #1a1a1a">
-                            <div class="pl-5 pr-3">
-                                <div>
-                                    Ý tưởng hàng rào cây cho không gian nhỏ
-                                </div>
-                                <div>
-                                    #Xây dựng
-                                </div>
-                                <img class="rounded-lg" style="max-width: inherit;width: 100%;height: 300px "
-                                     src="../../public/images/picture%20home%20login/the-most-ingenious-vertical-garden-ideas-for-small-spaces.jpg">
-                            </div>
-                            <div style="padding: 8px 0 8px 0">
-                                <nav class="nav nav3 float-right" style="font-size: 11px">
-                                    <li class="nav-item">750 bình luận</li>
-                                    <li style="padding: 0 16px 0 16px" class="nav-item">245 chia sẻ</li>
-                                </nav>
-                            </div>
-                            <nav class="nav nav-pills nav-fill">
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <img style="width: 24px;height: 24px"
-                                             src="../../public/images/picture%20home%20login/icons8-heart-100.png">
-                                        <span>
-                                    1.2k
-                                    </a>
-                                    </span>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <img style="width: 24px;height: 24px"
-                                             src="../../public/images/picture%20home%20login/icons8-speech-bubble-100.png">
-                                        <span>
-                                    Bình luận
-                                    </a>
-                                    </span>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <img style="width: 24px;height: 24px"
-                                             src="../../public/images/picture%20home%20login/icons8-share-160.png">
-                                        <span>
-                                    Chia sẻ
-                                    </a>
-                                    </span>
-                                </li>
-                            </nav>
-                        </a>
-                    </div>
                     <hr/>
 
                     <!--                    phần bài đăng của user-->
@@ -460,7 +397,7 @@ include "../../public/php/connect.php";
                                 @Admin-Tháng 7
                             </a>
                         </nav>
-                        <a href="'.$data["id"].'" style="color: #1a1a1a">
+                        <a href="#" style="color: #1a1a1a">
                         <div class="pl-5 pr-3">
                             <div>
                                 ' . $data["title"] . '
@@ -469,7 +406,7 @@ include "../../public/php/connect.php";
                                 ' . $data["category"] . '
                             </div>
                             <div>
-                                <a href="../../public/php/detail.php?id='.$data["id"].'">
+                                <a href="../../src/alpha/detail.php?id='.$data["id"].'">
                                     - Chi tiết
                                 </a>
                             </div>
@@ -541,13 +478,18 @@ include "../../public/php/connect.php";
                                 @Admin-Tháng 7
                             </a>
                         </nav>
-                        <a href="" style="color: #1a1a1a">
+                        <a href="#" style="color: #1a1a1a">
                         <div class="pl-5 pr-3">
                             <div>
                                 ' . $data["title"] . '
                             </div>
                             <div>
                                 ' . $data["category"] . '
+                            </div>
+                            <div>
+                                <a href="../../src/alpha/detail.php?id='.$data["id"].'">
+                                    - Chi tiết
+                                </a>
                             </div>
                             <div class="float-right" style="font-size: 12px">
                                 ' . $data["status"] . '
@@ -1217,14 +1159,6 @@ include "../../public/php/connect.php";
     $(document).ready(function () {
         $('.mdb-select').materialSelect();
     });
-</script>
-<script>
-    function myFunction3() {
-        alert("I am an alert box!");
-    }
-</script>
-<script>
-
 </script>
 </body>
 </html>

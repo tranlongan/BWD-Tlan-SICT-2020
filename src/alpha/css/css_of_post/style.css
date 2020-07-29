@@ -3,6 +3,10 @@
     width: 47%;
 }
 
+._nav1 li{
+    margin-right: 2rem;
+}
+
 .divNav nav{
     margin-bottom: 16px;
 }

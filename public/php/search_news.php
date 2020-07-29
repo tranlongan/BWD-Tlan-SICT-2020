@@ -16,7 +16,7 @@ $result = mysqli_query($conn, $sql);
 
 if (!empty($result)) {
     echo '<div style="margin: 32px; border: 1px #AAAAAA">
-                    <a href="../../src/alpha/index.php">Trang chủ</a>
+                    <a href="../../index.php">Trang chủ</a>
                 </div>';
     while ($data = mysqli_fetch_array($result)) {
         echo '
@@ -28,13 +28,13 @@ if (!empty($result)) {
                     </div>
                         <div style="padding: 10px">
                             <img style="width: 32px; height: 32px"
-                            src="../../public/images/picture%20home%20login/tenor.gif">
+                            src="../images/picture%20home%20login/tenor.gif">
                         </div>
                         <div>
                             <ul class="nav">
                                 <li class="nav-item">
                                     <a href="">
-                                        '.$data["username"].'
+                                        ' .$data["username"].'
                                     </a>
                                 </li>
                             </ul>
@@ -60,7 +60,7 @@ if (!empty($result)) {
                                 <div>
                                     <div>
                                         <img style="width: 16px; height: 16px"
-                                             src="../../public/images/picture%20home%20login/icons8-speech-bubble-100.png">
+                                             src="../images/picture%20home%20login/icons8-speech-bubble-100.png">
                                         1.2k
                                     </div>
                                 </div>
@@ -69,7 +69,7 @@ if (!empty($result)) {
                                 <div >
                                     <div>
                                         <img style="width: 16px; height: 16px"
-                                             src="../../public/images/picture%20home%20login/icons8-heart-100.png">
+                                             src="../images/picture%20home%20login/icons8-heart-100.png">
                                         1.2k
                                     </div>
                                 </div>

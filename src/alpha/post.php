@@ -46,12 +46,6 @@ include "../../public/php/connect.php"
     <div style="padding-top: 10px">
         <input type="text" name="category" id="category" class="form-control" placeholder="Thể loại">
     </div>
-    <!--    <div class="file-field medium">-->
-    <!--        <div>-->
-    <!--            <span>Chọn file<i class="fas fa-cloud-upload-alt ml-3" aria-hidden="true"></i></span>-->
-    <!--            <input id="myfile" name="image" type="file">-->
-    <!--        </div>-->
-    <!--    </div>-->
     <div class="file-field medium mb-4">
         <div class="btn btn-outline-primary waves-effect float-left">
             <span>Choose files<i class="fas fa-cloud-upload-alt ml-3" aria-hidden="true"></i></span>
@@ -67,25 +61,19 @@ include "../../public/php/connect.php"
     <div>
         <div id="ckeditor"></div>
         <div class="mt-4" style="font-size: 18px;font-weight: bolder">Những vật liệu bạn đã sử dụng cho dự án này?</div>
-        <div class="mt-1" id="deemoo">
-            <nav class="nav _nav mb-2 rowMaterial">
-                <li class="nav-item _navItem" style="margin-right: 4rem">
-                    <input type="text" name="addMaterial" id="addMaterial" class="form-control"
-                           placeholder="Vật liệu sử dụng">
-                </li>
-                <li class="nav-item _navItem">
-                    <input type="text" name="whereCategory" id="whereCategory" class="form-control"
-                           placeholder="Bạn lấy nó ở đâu?">
-                </li>
-            </nav>
-        </div>
-
-        <button class="btn btn-outline-primary" onclick="addInput()">
-            +
-        </button>
 
         <div class="divNav mt-5">
             <nav class="list-group">
+                <nav class="nav">
+                    <li class="nav-item" style="margin-right: 4.6rem">
+                        <div class="float-right">
+                            Tổng số vật liệu sử dụng
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <input type="text" name="material" id="material" class="form-control">
+                    </li>
+                </nav>
                 <nav class="nav">
                     <li class="nav-item" style="margin-right: 7.6rem">
                         <div class="float-right">
@@ -105,16 +93,6 @@ include "../../public/php/connect.php"
                     </li>
                     <li class="nav-item mr-2 _navItem1">
                         <input type="text" name="time" id="time" class="form-control">
-                    </li>
-                    <li class="nav-item _navItem1">
-                        <select name="selectTime" id="selectTime" class="browser-default custom-select">
-                            <option value="null" disabled selected>Lựa chọn</option>
-                            <option value="Phút">-Phút</option>
-                            <option value="Giờ">-Giờ</option>
-                            <option value="Ngày">-Ngày</option>
-                            <option value="Tuần">-Tuần</option>
-                            <option value="Tháng">-Tháng</option>
-                        </select>
                     </li>
                 </nav>
                 <nav class="nav">
@@ -152,20 +130,6 @@ include "../../public/php/connect.php"
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-    const addInput = () => {
-        $("#deemoo").append('<nav class="nav _nav mb-2">\n' +
-            '                    <li class="nav-item" style="margin-right: 4rem">\n' +
-            '                        <input type="text" name="addMaterial" id="addMaterial" class="form-control"\n' +
-            '                               placeholder="Vật liệu sử dụng">\n' +
-            '                    </li>\n' +
-            '                    <li>\n' +
-            '                        <input type="text" name="whereCategory" id="whereCategory" class="form-control"\n' +
-            '                               placeholder="Bạn lấy nó ở đâu?">\n' +
-            '                    </li>\n' +
-            '                </nav>');
-    }
-</script>
-<script>
 
     // note
     const chooseStatus = document.getElementById("chooseStatus");
@@ -173,14 +137,11 @@ include "../../public/php/connect.php"
     const category = document.getElementById("category");
     const inputFile = document.getElementById("myfile");
 
-    // nav
-    const rows = document.getElementsByClassName("rowMaterial");
-
+    const material = document.getElementById("material");
     const cost = document.getElementById("cost");
     const time = document.getElementById("time");
     const selectTime = document.getElementById("selectTime");
     const chooseLevel = document.getElementById("chooseLevel");
-
 
     let file;
     inputFile.onchange = (evt) => {
@@ -201,35 +162,23 @@ include "../../public/php/connect.php"
     initEditor();
 
     const submit = async () => {
+        let cost1 = "$" + cost.value;
         const data = editor.getData();
         const formData = new FormData();
-        const getTime = time.value;
-        const timeSelect = selectTime.options[selectTime.selectedIndex].text;
-        const texts = Array.from(rows).map((row) => {
-            return {
-                addMaterial: row.children[0].children[0].value,
-                whereCategory: row.children[1].children[0].value
-            };
-        });
-        const t = {
-            time: getTime,
-            timeOption: timeSelect,
-        };
         formData.set("content", data);
         formData.set("title", title.value);
-        formData.set("chooseStatus", chooseStatus.options[chooseStatus.selectedIndex].text);
+        formData.set("chooseStatus", chooseStatus.options[chooseStatus.selectedIndex].value);
         formData.set("category", category.value);
         formData.set("image", file);
-        formData.set("material_json", JSON.stringify(texts));
-        formData.set("cost", cost.value);
-        formData.set("time_json", JSON.stringify(t));
-        formData.set("chooseLevel", chooseLevel.options[chooseLevel.selectedIndex].text);
+        formData.set("material", material.value);
+        formData.set("cost", cost1);
+        formData.set("time_do",time.value);
+        formData.set("chooseLevel", chooseLevel.options[chooseLevel.selectedIndex].value);
 
         axios
             .post("http://localhost/BWD/public/php/form_post.php", formData)
             .then((res) => {
                 window.open("/BWD/src/alpha/index.php", "_self");
-                console.log(res)
             })
             .catch(err => alert("something went wrong"));
     }
