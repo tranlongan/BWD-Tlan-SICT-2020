@@ -163,9 +163,9 @@ include "../../public/php/connect.php";
                        aria-controls="v-pills-home" aria-selected="true">
                         <img style="width: 25px; height: 25px"
                              src="../../public/images/picture%20home%20login/icons8-home-80.png"/>
-                        <span class="tf">
+                        <span type="button" onclick="doIt1()" class="tf">
                         Home
-                    </span>
+                        </span>
                     </a>
 
                     <a class="nav-link aImg a2" id="v-pills-myPost-tab"
@@ -173,7 +173,7 @@ include "../../public/php/connect.php";
                        aria-controls="v-pills-myPost" aria-selected="false" data-toggle="tooltip"
                        title="Bài viết của bạn">
                         <img style="width: 25px; height: 25px" src="../../public/images/sticky-note.png"/>
-                        <span class="tf">
+                        <span type="button" onclick="doIt2()" class="tf">
                         Bài viết của bạn
                     </span>
                     </a>
@@ -305,7 +305,7 @@ include "../../public/php/connect.php";
                                 </li>
                             </nav>
                         </a>
-                      
+
 
                     </div>
                 </div>
@@ -379,163 +379,13 @@ include "../../public/php/connect.php";
                     <hr/>
 
                     <!--                    phần bài đăng của user-->
-                    <?php
-                    $sql = " SELECT * FROM `news` WHERE `allowed` = '1'";
-                    $result = mysqli_query($conn, $sql);
-                    while ($data = mysqli_fetch_array($result)) {
-                        echo '
-                        <div class="b">
-                        <nav class="nav nav-pills flex-sm-row">
-                            <a class="nav-link" href="#">
-                                <img class="rounded-circle" style="width: 54px;height: 54px; border: 1px solid #1a1a1a"
-                                     src="../../public/images/picture%20home%20login/tenor.gif">
-                            </a>
-                            <a class="nav-link pt-4 aName" style="color: #1a1a1a" href="#">
-                                 ' . $data["username"] . '
-                            </a>
-                            <a class="nav-link pt-4" style="color: #818182" href="#">
-                                @Admin-Tháng 7
-                            </a>
-                        </nav>
-                        <a href="#" style="color: #1a1a1a">
-                        <div class="pl-5 pr-3">
-                            <div>
-                                ' . $data["title"] . '
-                            </div>
-                            <div>
-                                ' . $data["category"] . '
-                            </div>
-                            <div>
-                                <a href="../../src/alpha/detail.php?id='.$data["id"].'">
-                                    - Chi tiết
-                                </a>
-                            </div>
-                            <div class="float-right" style="font-size: 12px">
-                                ' . $data["status"] . '
-                            </div>
-                            <img class="rounded-lg" style="max-width: inherit;width: 100%;height: 300px "
-                                 src="../../public/' . $data["link_image"] . '">
-                        </div>
-                         <div style="padding: 8px 0 8px 0">
-                            <nav class="nav nav3 float-right" style="font-size: 11px">
-                                <li class="nav-item">750 bình luận</li>
-                                <li style="padding:0 16px 0 16px" class="nav-item">245 chia sẻ</li>
-                            </nav>
-                        </div>
-                        <nav class="nav nav-pills nav-fill">
-                            <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <img style="width: 24px;height: 24px" src="../../public/images/picture%20home%20login/icons8-heart-100.png">
-                                <span>
-                                    1.2k
-                                </span>
-                            </a>
-                            </li>
-                            <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <img style="width: 24px;height: 24px" src="../../public/images/picture%20home%20login/icons8-speech-bubble-100.png">
-                                <span>
-                                    Bình luận
-                                </span>
-                            </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                <img style="width: 24px;height: 24px" src="../../public/images/picture%20home%20login/icons8-share-160.png">
-                                <span>
-                                    Chia sẻ
-                                </span>
-                                </a>
-                            </li>
-                        </nav>
-                        </div>
-                        </a>
-                        <hr/>
-                        ';
-                    }
-                    ?>
+                    <div id="data"></div>
                 </div>
 
                 <!--                phần my post-->
                 <div class="tab-pane fade pt-2" id="v-pills-myPost" role="tabpanel"
                      aria-labelledby="v-pills-myPost-tab">
-                    <div>
-                        <?php
-                        $sql = " SELECT * FROM `news` WHERE `allowed` = '1'";
-                        $result = mysqli_query($conn, $sql);
-                        while ($data = mysqli_fetch_array($result)) {
-                            echo '
-                        <div class="b">
-                        <nav class="nav nav-pills flex-sm-row">
-                            <a class="nav-link" href="#">
-                                <img class="rounded-circle" style="width: 54px;height: 54px; border: 1px solid #1a1a1a"
-                                     src="../../public/images/picture%20home%20login/tenor.gif">
-                            </a>
-                            <a class="nav-link pt-4 aName" style="color: #1a1a1a" href="#">
-                                 ' . $data["username"] . '
-                            </a>
-                            <a class="nav-link pt-4" style="color: #818182" href="#">
-                                @Admin-Tháng 7
-                            </a>
-                        </nav>
-                        <a href="#" style="color: #1a1a1a">
-                        <div class="pl-5 pr-3">
-                            <div>
-                                ' . $data["title"] . '
-                            </div>
-                            <div>
-                                ' . $data["category"] . '
-                            </div>
-                            <div>
-                                <a href="../../src/alpha/detail.php?id='.$data["id"].'">
-                                    - Chi tiết
-                                </a>
-                            </div>
-                            <div class="float-right" style="font-size: 12px">
-                                ' . $data["status"] . '
-                            </div>
-                            <img class="rounded-lg" style="max-width: inherit;width: 100%;height: 300px "
-                                 src="../../public/' . $data["link_image"] . '">
-                        </div>
-                         <div style="padding: 8px 0 8px 0">
-                            <nav class="nav nav3 float-right" style="font-size: 11px">
-                                <li class="nav-item">750 bình luận</li>
-                                <li style="padding:0 16px 0 16px" class="nav-item">245 chia sẻ</li>
-                            </nav>
-                        </div>
-                        <nav class="nav nav-pills nav-fill">
-                            <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <img style="width: 24px;height: 24px" src="../../public/images/picture%20home%20login/icons8-heart-100.png">
-                                <span>
-                                    1.2k
-                                </span>
-                            </a>
-                            </li>
-                            <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <img style="width: 24px;height: 24px" src="../../public/images/picture%20home%20login/icons8-speech-bubble-100.png">
-                                <span>
-                                    Bình luận
-                                </span>
-                            </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                <img style="width: 24px;height: 24px" src="../../public/images/picture%20home%20login/icons8-share-160.png">
-                                <span>
-                                    Chia sẻ
-                                </span>
-                                </a>
-                            </li>
-                        </nav>
-                        </div>
-                        </a>
-                        <hr style="margin: 0"/>
-                        ';
-                        }
-                        ?>
-                    </div>
+                    <div id="data1"></div>
                 </div>
 
                 <!--                khám phá các ý tưởng-->
@@ -816,19 +666,16 @@ include "../../public/php/connect.php";
         <div class="col-md-4 col4 fixed-top offset-8 h-100 scrollbar scrollbar-primary bordered-primary thin"
              style="background-color: #fafafa ;border-left: 1px solid #c2c2c2;overflow: auto">
             <div class="force-overflow">
-                <form action="../../public/php/search_news.php" method="post"
-                      enctype="multipart/form-data">
-                    <div class="input-group">
-                        <div class="input-group-prepend">
+                <div class="input-group mt-1 mb-2">
+                    <div class="input-group-prepend">
                                 <span class="input-group-text cyan lighten-2" id="basic-text1">
                                     <i class="fas fa-search text-white" aria-hidden="true"></i>
                                 </span>
-                        </div>
-                        <input class="form-control my-0 py-1" name="search" type="text"
-                               placeholder="Tìm kiếm trên D.I.Y" aria-label="Search">
                     </div>
-                    <button type="submit" style="border: 0; opacity: 0"></button>
-                </form>
+                    <input class="form-control my-0 py-1" name="text_search" id="text_search"
+                           onkeypress="return doIt(event)" type="text"
+                           placeholder="Tìm kiếm trên D.I.Y" aria-label="Search">
+                </div>
 
                 <div style="border: 1px solid #c2c2c2; border-radius: 16px;background-color: rgba(76, 175, 80, 0.1)">
                     <div class="p-2" style="font-size: 20px;font-weight: 900">
@@ -1063,7 +910,6 @@ include "../../public/php/connect.php";
             </button>
         </form>
     </div>
-
 </div>
 <!--Modal: modalPush-->
 <div class="modal fade" id="modalPush" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -1099,6 +945,8 @@ include "../../public/php/connect.php";
 </div>
 <!-- End your project here-->
 
+<!--axios-->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <!-- jQuery -->
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <!-- Bootstrap tooltips -->
@@ -1159,6 +1007,352 @@ include "../../public/php/connect.php";
     $(document).ready(function () {
         $('.mdb-select').materialSelect();
     });
+</script>
+
+<!--search-->
+<script>
+    const text_search = document.getElementById("text_search");
+    const doIt = async (e) => {
+        const formData = new FormData();
+
+        if (e.keyCode === 13) {
+            formData.set("text_search", text_search.value);
+            axios
+                .post("http://localhost/BWD/public/php/search.php", formData)
+                .then((res) => {
+                    console.log(res.data)
+                    let html = "";
+                    for (let a = 0; a < res.data.length; a++) {
+                        let id = res.data[a].id;
+                        let username = res.data[a].username;
+                        let title = res.data[a].title;
+                        let category = res.data[a].category;
+                        let status = res.data[a].status;
+                        let image = res.data[a].link_image;
+                        html += "<div class='b'>\n" +
+                            "    <nav class='nav nav-pills flex-sm-row'>\n" +
+                            "        <a class='nav-link' href='#'>\n" +
+                            "            <img class='rounded-circle' style='width: 54px;height: 54px; border: 1px solid #1a1a1a'\n" +
+                            "                 src='../../public/images/picture%20home%20login/tenor.gif'>\n" +
+                            "        </a>\n" +
+                            "        <a class='nav-link pt-4 aName' style='color: #1a1a1a' href='#'>\n"
+                                        + username +
+                            "        </a>\n" +
+                            "        <a class='nav-link pt-4' style='color: #818182' href='#'>\n" +
+                            "            @Admin-Tháng 7\n" +
+                            "        </a>\n" +
+                            "    </nav>\n" +
+                            "    <div class='pl-5 pr-3'>\n" +
+                            "        <div>\n"
+                                        + title +
+                            "        </div>\n" +
+                            "        <div>\n"
+                                        + category +
+                            "        </div>\n" +
+                            "        <div>\n" +
+                            "            <a href='../../src/alpha/detail.php?id=' . $data['id'] . ''>\n" +
+                            "            - Chi tiết\n" +
+                            "            </a>\n" +
+                            "        </div>\n" +
+                            "        <div class='float-right' style='font-size: 12px'>\n"
+                                        + status +
+                            "        </div>\n" +
+                            "        <img class='rounded-lg' style='max-width: inherit;width: 100%;height: 300px '\n" +
+                            "             src='../../public/" +image+ "'>" +
+                            "    </div>\n" +
+                            "    <div style='padding: 8px 0 8px 0'>\n" +
+                            "        <nav class='nav nav3 float-right' style='font-size: 11px'>\n" +
+                            "            <li class='nav-item'>750 bình luận</li>\n" +
+                            "            <li style='padding:0 16px 0 16px' class='nav-item'>245 chia sẻ</li>\n" +
+                            "        </nav>\n" +
+                            "    </div>\n" +
+                            "    <nav class='nav nav-pills nav-fill'>\n" +
+                            "        <li class='nav-item'>\n" +
+                            "            <a href='#' class='nav-link'>\n" +
+                            "                <img style='width: 24px;height: 24px' src='../../public/images/picture%20home%20login/icons8-heart-100.png'>\n" +
+                            "                <span>\n" +
+                            "                                    1.2k\n" +
+                            "                                </span>\n" +
+                            "            </a>\n" +
+                            "        </li>\n" +
+                            "        <li class='nav-item'>\n" +
+                            "            <a href='#' class='nav-link'>\n" +
+                            "                <img style='width: 24px;height: 24px' src='../../public/images/picture%20home%20login/icons8-speech-bubble-100.png'>\n" +
+                            "                <span>\n" +
+                            "                                    Bình luận\n" +
+                            "                                </span>\n" +
+                            "            </a>\n" +
+                            "        </li>\n" +
+                            "        <li class='nav-item'>\n" +
+                            "            <a class='nav-link' href='#'>\n" +
+                            "                <img style='width: 24px;height: 24px' src='../../public/images/picture%20home%20login/icons8-share-160.png'>\n" +
+                            "                <span>\n" +
+                            "                                    Chia sẻ\n" +
+                            "                                </span>\n" +
+                            "            </a>\n" +
+                            "        </li>\n" +
+                            "    </nav>\n" +
+                            "</div>\n" +
+                            "<hr/>";
+                    }
+                    document.getElementById("data").innerHTML = html;
+                })
+        }
+
+    }
+</script>
+<!--loadHome-->
+<script>
+    const doIt1 = async () => {
+            axios
+                .post("http://localhost/BWD/public/php/search_news.php")
+                .then((res) => {
+                    console.log(res.data)
+                    let html = "";
+                    for (let a = 0; a < res.data.length; a++) {
+                        let id = res.data[a].id;
+                        let username = res.data[a].username;
+                        let title = res.data[a].title;
+                        let category = res.data[a].category;
+                        let status = res.data[a].status;
+                        let image = res.data[a].link_image;
+                        html += "<div class='b'>\n" +
+                            "    <nav class='nav nav-pills flex-sm-row'>\n" +
+                            "        <a class='nav-link' href='#'>\n" +
+                            "            <img class='rounded-circle' style='width: 54px;height: 54px; border: 1px solid #1a1a1a'\n" +
+                            "                 src='../../public/images/picture%20home%20login/tenor.gif'>\n" +
+                            "        </a>\n" +
+                            "        <a class='nav-link pt-4 aName' style='color: #1a1a1a' href='#'>\n"
+                            + username +
+                            "        </a>\n" +
+                            "        <a class='nav-link pt-4' style='color: #818182' href='#'>\n" +
+                            "            @Admin-Tháng 7\n" +
+                            "        </a>\n" +
+                            "    </nav>\n" +
+                            "    <div class='pl-5 pr-3'>\n" +
+                            "        <div>\n"
+                            + title +
+                            "        </div>\n" +
+                            "        <div>\n"
+                            + category +
+                            "        </div>\n" +
+                            "        <div>\n" +
+                            "            <a href='../../src/alpha/detail.php?id=" +id+ "'>" +
+                            "            - Chi tiết\n" +
+                            "            </a>\n" +
+                            "        </div>\n" +
+                            "        <div class='float-right' style='font-size: 12px'>\n"
+                            + status +
+                            "        </div>\n" +
+                            "        <img class='rounded-lg' style='max-width: inherit;width: 100%;height: 300px '\n" +
+                            "             src='../../public/" +image+ "'>" +
+                            "    </div>\n" +
+                            "    <div style='padding: 8px 0 8px 0'>\n" +
+                            "        <nav class='nav nav3 float-right' style='font-size: 11px'>\n" +
+                            "            <li class='nav-item'>750 bình luận</li>\n" +
+                            "            <li style='padding:0 16px 0 16px' class='nav-item'>245 chia sẻ</li>\n" +
+                            "        </nav>\n" +
+                            "    </div>\n" +
+                            "    <nav class='nav nav-pills nav-fill'>\n" +
+                            "        <li class='nav-item'>\n" +
+                            "            <a href='#' class='nav-link'>\n" +
+                            "                <img style='width: 24px;height: 24px' src='../../public/images/picture%20home%20login/icons8-heart-100.png'>\n" +
+                            "                <span>\n" +
+                            "                                    1.2k\n" +
+                            "                                </span>\n" +
+                            "            </a>\n" +
+                            "        </li>\n" +
+                            "        <li class='nav-item'>\n" +
+                            "            <a href='#' class='nav-link'>\n" +
+                            "                <img style='width: 24px;height: 24px' src='../../public/images/picture%20home%20login/icons8-speech-bubble-100.png'>\n" +
+                            "                <span>\n" +
+                            "                                    Bình luận\n" +
+                            "                                </span>\n" +
+                            "            </a>\n" +
+                            "        </li>\n" +
+                            "        <li class='nav-item'>\n" +
+                            "            <a class='nav-link' href='#'>\n" +
+                            "                <img style='width: 24px;height: 24px' src='../../public/images/picture%20home%20login/icons8-share-160.png'>\n" +
+                            "                <span>\n" +
+                            "                                    Chia sẻ\n" +
+                            "                                </span>\n" +
+                            "            </a>\n" +
+                            "        </li>\n" +
+                            "    </nav>\n" +
+                            "</div>\n" +
+                            "<hr/>";
+                    }
+                    document.getElementById("data").innerHTML = html;
+                })
+    }
+</script>
+<!--loadMyPost-->
+<script>
+    const doIt2 = async () => {
+        axios
+            .post("http://localhost/BWD/public/php/search_news.php")
+            .then((res) => {
+                console.log(res.data)
+                let html = "";
+                for (let a = 0; a < res.data.length; a++) {
+                    let id = res.data[a].id;
+                    let username = res.data[a].username;
+                    let title = res.data[a].title;
+                    let category = res.data[a].category;
+                    let status = res.data[a].status;
+                    let image = res.data[a].link_image;
+                    html += "<div class='b'>\n" +
+                        "    <nav class='nav nav-pills flex-sm-row'>\n" +
+                        "        <a class='nav-link' href='#'>\n" +
+                        "            <img class='rounded-circle' style='width: 54px;height: 54px; border: 1px solid #1a1a1a'\n" +
+                        "                 src='../../public/images/picture%20home%20login/tenor.gif'>\n" +
+                        "        </a>\n" +
+                        "        <a class='nav-link pt-4 aName' style='color: #1a1a1a' href='#'>\n"
+                        + username +
+                        "        </a>\n" +
+                        "        <a class='nav-link pt-4' style='color: #818182' href='#'>\n" +
+                        "            @Admin-Tháng 7\n" +
+                        "        </a>\n" +
+                        "    </nav>\n" +
+                        "    <div class='pl-5 pr-3'>\n" +
+                        "        <div>\n"
+                        + title +
+                        "        </div>\n" +
+                        "        <div>\n"
+                        + category +
+                        "        </div>\n" +
+                        "        <div>\n" +
+                        "            <a href='../../src/alpha/detail.php?id=" +id+ "'>" +
+                        "            - Chi tiết\n" +
+                        "            </a>\n" +
+                        "        </div>\n" +
+                        "        <div class='float-right' style='font-size: 12px'>\n"
+                        + status +
+                        "        </div>\n" +
+                        "        <img class='rounded-lg' style='max-width: inherit;width: 100%;height: 300px '\n" +
+                        "             src='../../public/" +image+ "'>" +
+                        "    </div>\n" +
+                        "    <div style='padding: 8px 0 8px 0'>\n" +
+                        "        <nav class='nav nav3 float-right' style='font-size: 11px'>\n" +
+                        "            <li class='nav-item'>750 bình luận</li>\n" +
+                        "            <li style='padding:0 16px 0 16px' class='nav-item'>245 chia sẻ</li>\n" +
+                        "        </nav>\n" +
+                        "    </div>\n" +
+                        "    <nav class='nav nav-pills nav-fill'>\n" +
+                        "        <li class='nav-item'>\n" +
+                        "            <a href='#' class='nav-link'>\n" +
+                        "                <img style='width: 24px;height: 24px' src='../../public/images/picture%20home%20login/icons8-heart-100.png'>\n" +
+                        "                <span>\n" +
+                        "                                    1.2k\n" +
+                        "                                </span>\n" +
+                        "            </a>\n" +
+                        "        </li>\n" +
+                        "        <li class='nav-item'>\n" +
+                        "            <a href='#' class='nav-link'>\n" +
+                        "                <img style='width: 24px;height: 24px' src='../../public/images/picture%20home%20login/icons8-speech-bubble-100.png'>\n" +
+                        "                <span>\n" +
+                        "                                    Bình luận\n" +
+                        "                                </span>\n" +
+                        "            </a>\n" +
+                        "        </li>\n" +
+                        "        <li class='nav-item'>\n" +
+                        "            <a class='nav-link' href='#'>\n" +
+                        "                <img style='width: 24px;height: 24px' src='../../public/images/picture%20home%20login/icons8-share-160.png'>\n" +
+                        "                <span>\n" +
+                        "                                    Chia sẻ\n" +
+                        "                                </span>\n" +
+                        "            </a>\n" +
+                        "        </li>\n" +
+                        "    </nav>\n" +
+                        "</div>\n" +
+                        "<hr style='margin: 0'/>";
+                }
+                document.getElementById("data1").innerHTML = html;
+            })
+    }
+</script>
+<!--loadData-->
+<script>
+    axios
+        .post("http://localhost/BWD/public/php/search_news.php")
+        .then((res) => {
+            console.log(res.data)
+            let html = "";
+            for (let a = 0; a < res.data.length; a++) {
+                let id = res.data[a].id;
+                let username = res.data[a].username;
+                let title = res.data[a].title;
+                let category = res.data[a].category;
+                let status = res.data[a].status;
+                let image = res.data[a].link_image;
+                html += "<div class='b'>\n" +
+                    "    <nav class='nav nav-pills flex-sm-row'>\n" +
+                    "        <a class='nav-link' href='#'>\n" +
+                    "            <img class='rounded-circle' style='width: 54px;height: 54px; border: 1px solid #1a1a1a'\n" +
+                    "                 src='../../public/images/picture%20home%20login/tenor.gif'>\n" +
+                    "        </a>\n" +
+                    "        <a class='nav-link pt-4 aName' style='color: #1a1a1a' href='#'>\n"
+                    + username +
+                    "        </a>\n" +
+                    "        <a class='nav-link pt-4' style='color: #818182' href='#'>\n" +
+                    "            @Admin-Tháng 7\n" +
+                    "        </a>\n" +
+                    "    </nav>\n" +
+                    "    <div class='pl-5 pr-3'>\n" +
+                    "        <div>\n"
+                    + title +
+                    "        </div>\n" +
+                    "        <div>\n"
+                    + category +
+                    "        </div>\n" +
+                    "        <div>\n" +
+                    "            <a href='../../src/alpha/detail.php?id=" +id+"'>" +
+                    "            - Chi tiết\n" +
+                    "            </a>\n" +
+                    "        </div>\n" +
+                    "        <div class='float-right' style='font-size: 12px'>\n"
+                    + status +
+                    "        </div>\n" +
+                    "        <img class='rounded-lg' style='max-width: inherit;width: 100%;height: 300px '\n" +
+                    "             src='../../public/" +image+ "'>" +
+                    "    </div>\n" +
+                    "    <div style='padding: 8px 0 8px 0'>\n" +
+                    "        <nav class='nav nav3 float-right' style='font-size: 11px'>\n" +
+                    "            <li class='nav-item'>750 bình luận</li>\n" +
+                    "            <li style='padding:0 16px 0 16px' class='nav-item'>245 chia sẻ</li>\n" +
+                    "        </nav>\n" +
+                    "    </div>\n" +
+                    "    <nav class='nav nav-pills nav-fill'>\n" +
+                    "        <li class='nav-item'>\n" +
+                    "            <a href='#' class='nav-link'>\n" +
+                    "                <img style='width: 24px;height: 24px' src='../../public/images/picture%20home%20login/icons8-heart-100.png'>\n" +
+                    "                <span>\n" +
+                    "                                    1.2k\n" +
+                    "                                </span>\n" +
+                    "            </a>\n" +
+                    "        </li>\n" +
+                    "        <li class='nav-item'>\n" +
+                    "            <a href='#' class='nav-link'>\n" +
+                    "                <img style='width: 24px;height: 24px' src='../../public/images/picture%20home%20login/icons8-speech-bubble-100.png'>\n" +
+                    "                <span>\n" +
+                    "                                    Bình luận\n" +
+                    "                                </span>\n" +
+                    "            </a>\n" +
+                    "        </li>\n" +
+                    "        <li class='nav-item'>\n" +
+                    "            <a class='nav-link' href='#'>\n" +
+                    "                <img style='width: 24px;height: 24px' src='../../public/images/picture%20home%20login/icons8-share-160.png'>\n" +
+                    "                <span>\n" +
+                    "                                    Chia sẻ\n" +
+                    "                                </span>\n" +
+                    "            </a>\n" +
+                    "        </li>\n" +
+                    "    </nav>\n" +
+                    "</div>\n" +
+                    "<hr/>";
+            }
+            document.getElementById("data").innerHTML = html;
+        })
 </script>
 </body>
 </html>
