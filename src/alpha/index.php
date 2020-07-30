@@ -317,7 +317,7 @@ include "../../public/php/connect.php";
             <!--            navbar trang chủ-->
             <div class="offset-sm-3 fixed-top px-3 p-2"
                  style="background-color: #fafafa ;max-width: inherit;width:100%;border-bottom: 1px solid #c2c2c2">
-                <a class="aHome" style="color: #1a1a1a; font-weight: bolder" href="">
+                <a class="aHome" style="color: #1a1a1a; font-weight: bolder">
                     Trang chủ
                 </a>
                 <div class="bg">
@@ -330,7 +330,7 @@ include "../../public/php/connect.php";
             </div>
 
             <!--            phần bài đăng -->
-            <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-content" id="v-pills-tabContent data0">
                 <div class="tab-pane fade show active c" id="v-pills-home" role="tabpanel"
                      aria-labelledby="v-pills-home-tab">
 
@@ -655,8 +655,6 @@ include "../../public/php/connect.php";
                             <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...
                             </div>
                         </div>
-
-
                     </div>
                 </div>
             </div>
@@ -1036,7 +1034,7 @@ include "../../public/php/connect.php";
                             "                 src='../../public/images/picture%20home%20login/tenor.gif'>\n" +
                             "        </a>\n" +
                             "        <a class='nav-link pt-4 aName' style='color: #1a1a1a' href='#'>\n"
-                                        + username +
+                            + username +
                             "        </a>\n" +
                             "        <a class='nav-link pt-4' style='color: #818182' href='#'>\n" +
                             "            @Admin-Tháng 7\n" +
@@ -1044,21 +1042,21 @@ include "../../public/php/connect.php";
                             "    </nav>\n" +
                             "    <div class='pl-5 pr-3'>\n" +
                             "        <div>\n"
-                                        + title +
+                            + title +
                             "        </div>\n" +
                             "        <div>\n"
-                                        + category +
+                            + category +
                             "        </div>\n" +
                             "        <div>\n" +
-                            "            <a href='../../src/alpha/detail.php?id=' . $data['id'] . ''>\n" +
+                            "            <a href='../../src/alpha/detail.php?id=" + id + "'>" +
                             "            - Chi tiết\n" +
                             "            </a>\n" +
                             "        </div>\n" +
                             "        <div class='float-right' style='font-size: 12px'>\n"
-                                        + status +
+                            + status +
                             "        </div>\n" +
                             "        <img class='rounded-lg' style='max-width: inherit;width: 100%;height: 300px '\n" +
-                            "             src='../../public/" +image+ "'>" +
+                            "             src='../../public/" + image + "'>" +
                             "    </div>\n" +
                             "    <div style='padding: 8px 0 8px 0'>\n" +
                             "        <nav class='nav nav3 float-right' style='font-size: 11px'>\n" +
@@ -1104,97 +1102,12 @@ include "../../public/php/connect.php";
 <!--loadHome-->
 <script>
     const doIt1 = async () => {
-            axios
-                .post("http://localhost/BWD/public/php/search_news.php")
-                .then((res) => {
-                    console.log(res.data)
-                    let html = "";
-                    for (let a = 0; a < res.data.length; a++) {
-                        let id = res.data[a].id;
-                        let username = res.data[a].username;
-                        let title = res.data[a].title;
-                        let category = res.data[a].category;
-                        let status = res.data[a].status;
-                        let image = res.data[a].link_image;
-                        html += "<div class='b'>\n" +
-                            "    <nav class='nav nav-pills flex-sm-row'>\n" +
-                            "        <a class='nav-link' href='#'>\n" +
-                            "            <img class='rounded-circle' style='width: 54px;height: 54px; border: 1px solid #1a1a1a'\n" +
-                            "                 src='../../public/images/picture%20home%20login/tenor.gif'>\n" +
-                            "        </a>\n" +
-                            "        <a class='nav-link pt-4 aName' style='color: #1a1a1a' href='#'>\n"
-                            + username +
-                            "        </a>\n" +
-                            "        <a class='nav-link pt-4' style='color: #818182' href='#'>\n" +
-                            "            @Admin-Tháng 7\n" +
-                            "        </a>\n" +
-                            "    </nav>\n" +
-                            "    <div class='pl-5 pr-3'>\n" +
-                            "        <div>\n"
-                            + title +
-                            "        </div>\n" +
-                            "        <div>\n"
-                            + category +
-                            "        </div>\n" +
-                            "        <div>\n" +
-                            "            <a href='../../src/alpha/detail.php?id=" +id+ "'>" +
-                            "            - Chi tiết\n" +
-                            "            </a>\n" +
-                            "        </div>\n" +
-                            "        <div class='float-right' style='font-size: 12px'>\n"
-                            + status +
-                            "        </div>\n" +
-                            "        <img class='rounded-lg' style='max-width: inherit;width: 100%;height: 300px '\n" +
-                            "             src='../../public/" +image+ "'>" +
-                            "    </div>\n" +
-                            "    <div style='padding: 8px 0 8px 0'>\n" +
-                            "        <nav class='nav nav3 float-right' style='font-size: 11px'>\n" +
-                            "            <li class='nav-item'>750 bình luận</li>\n" +
-                            "            <li style='padding:0 16px 0 16px' class='nav-item'>245 chia sẻ</li>\n" +
-                            "        </nav>\n" +
-                            "    </div>\n" +
-                            "    <nav class='nav nav-pills nav-fill'>\n" +
-                            "        <li class='nav-item'>\n" +
-                            "            <a href='#' class='nav-link'>\n" +
-                            "                <img style='width: 24px;height: 24px' src='../../public/images/picture%20home%20login/icons8-heart-100.png'>\n" +
-                            "                <span>\n" +
-                            "                                    1.2k\n" +
-                            "                                </span>\n" +
-                            "            </a>\n" +
-                            "        </li>\n" +
-                            "        <li class='nav-item'>\n" +
-                            "            <a href='#' class='nav-link'>\n" +
-                            "                <img style='width: 24px;height: 24px' src='../../public/images/picture%20home%20login/icons8-speech-bubble-100.png'>\n" +
-                            "                <span>\n" +
-                            "                                    Bình luận\n" +
-                            "                                </span>\n" +
-                            "            </a>\n" +
-                            "        </li>\n" +
-                            "        <li class='nav-item'>\n" +
-                            "            <a class='nav-link' href='#'>\n" +
-                            "                <img style='width: 24px;height: 24px' src='../../public/images/picture%20home%20login/icons8-share-160.png'>\n" +
-                            "                <span>\n" +
-                            "                                    Chia sẻ\n" +
-                            "                                </span>\n" +
-                            "            </a>\n" +
-                            "        </li>\n" +
-                            "    </nav>\n" +
-                            "</div>\n" +
-                            "<hr/>";
-                    }
-                    document.getElementById("data").innerHTML = html;
-                })
-    }
-</script>
-<!--loadMyPost-->
-<script>
-    const doIt2 = async () => {
         axios
             .post("http://localhost/BWD/public/php/search_news.php")
             .then((res) => {
                 console.log(res.data)
                 let html = "";
-                for (let a = 0; a < res.data.length; a++) {
+                for (let a = res.data.length; a >=0; a--) {
                     let id = res.data[a].id;
                     let username = res.data[a].username;
                     let title = res.data[a].title;
@@ -1222,7 +1135,7 @@ include "../../public/php/connect.php";
                         + category +
                         "        </div>\n" +
                         "        <div>\n" +
-                        "            <a href='../../src/alpha/detail.php?id=" +id+ "'>" +
+                        "            <a href='../../src/alpha/detail.php?id=" + id + "'>" +
                         "            - Chi tiết\n" +
                         "            </a>\n" +
                         "        </div>\n" +
@@ -1230,7 +1143,92 @@ include "../../public/php/connect.php";
                         + status +
                         "        </div>\n" +
                         "        <img class='rounded-lg' style='max-width: inherit;width: 100%;height: 300px '\n" +
-                        "             src='../../public/" +image+ "'>" +
+                        "             src='../../public/" + image + "'>" +
+                        "    </div>\n" +
+                        "    <div style='padding: 8px 0 8px 0'>\n" +
+                        "        <nav class='nav nav3 float-right' style='font-size: 11px'>\n" +
+                        "            <li class='nav-item'>750 bình luận</li>\n" +
+                        "            <li style='padding:0 16px 0 16px' class='nav-item'>245 chia sẻ</li>\n" +
+                        "        </nav>\n" +
+                        "    </div>\n" +
+                        "    <nav class='nav nav-pills nav-fill'>\n" +
+                        "        <li class='nav-item'>\n" +
+                        "            <a href='#' class='nav-link'>\n" +
+                        "                <img style='width: 24px;height: 24px' src='../../public/images/picture%20home%20login/icons8-heart-100.png'>\n" +
+                        "                <span>\n" +
+                        "                                    1.2k\n" +
+                        "                                </span>\n" +
+                        "            </a>\n" +
+                        "        </li>\n" +
+                        "        <li class='nav-item'>\n" +
+                        "            <a href='#' class='nav-link'>\n" +
+                        "                <img style='width: 24px;height: 24px' src='../../public/images/picture%20home%20login/icons8-speech-bubble-100.png'>\n" +
+                        "                <span>\n" +
+                        "                                    Bình luận\n" +
+                        "                                </span>\n" +
+                        "            </a>\n" +
+                        "        </li>\n" +
+                        "        <li class='nav-item'>\n" +
+                        "            <a class='nav-link' href='#'>\n" +
+                        "                <img style='width: 24px;height: 24px' src='../../public/images/picture%20home%20login/icons8-share-160.png'>\n" +
+                        "                <span>\n" +
+                        "                                    Chia sẻ\n" +
+                        "                                </span>\n" +
+                        "            </a>\n" +
+                        "        </li>\n" +
+                        "    </nav>\n" +
+                        "</div>\n" +
+                        "<hr/>";
+                }
+                document.getElementById("data").innerHTML = html;
+            })
+    }
+</script>
+<!--loadMyPost-->
+<script>
+    const doIt2 = async () => {
+        axios
+            .post("http://localhost/BWD/public/php/search_news.php")
+            .then((res) => {
+                console.log(res.data);
+                let html = "";
+                for (let a = res.data.length-1; a >=0; a--) {
+                    let id = res.data[a].id;
+                    let username = res.data[a].username;
+                    let title = res.data[a].title;
+                    let category = res.data[a].category;
+                    let status = res.data[a].status;
+                    let image = res.data[a].link_image;
+                    html += "<div class='b'>\n" +
+                        "    <nav class='nav nav-pills flex-sm-row'>\n" +
+                        "        <a class='nav-link' href='#'>\n" +
+                        "            <img class='rounded-circle' style='width: 54px;height: 54px; border: 1px solid #1a1a1a'\n" +
+                        "                 src='../../public/images/picture%20home%20login/tenor.gif'>\n" +
+                        "        </a>\n" +
+                        "        <a class='nav-link pt-4 aName' style='color: #1a1a1a' href='#'>\n"
+                        + username +
+                        "        </a>\n" +
+                        "        <a class='nav-link pt-4' style='color: #818182' href='#'>\n" +
+                        "            @Admin-Tháng 7\n" +
+                        "        </a>\n" +
+                        "    </nav>\n" +
+                        "    <div class='pl-5 pr-3'>\n" +
+                        "        <div>\n"
+                        + title +
+                        "        </div>\n" +
+                        "        <div>\n"
+                        + category +
+                        "        </div>\n" +
+                        "        <div>\n" +
+                        "            <a href='../../src/alpha/detail.php?id=" + id + "'>" +
+                        "            - Chi tiết\n" +
+                        "            </a>\n" +
+                        "        </div>\n" +
+                        "        <div class='float-right' style='font-size: 12px'>\n"
+                        + status +
+                        "        </div>\n" +
+                        "        <img class='rounded-lg' style='max-width: inherit;width: 100%;height: 300px '\n" +
+                        "             src='../../public/" + image + "'>" +
                         "    </div>\n" +
                         "    <div style='padding: 8px 0 8px 0'>\n" +
                         "        <nav class='nav nav3 float-right' style='font-size: 11px'>\n" +
@@ -1276,9 +1274,9 @@ include "../../public/php/connect.php";
     axios
         .post("http://localhost/BWD/public/php/search_news.php")
         .then((res) => {
-            console.log(res.data)
+            console.log(res.data);
             let html = "";
-            for (let a = 0; a < res.data.length; a++) {
+            for (let a = res.data.length-1; a >= 0; a--) {
                 let id = res.data[a].id;
                 let username = res.data[a].username;
                 let title = res.data[a].title;
@@ -1306,7 +1304,7 @@ include "../../public/php/connect.php";
                     + category +
                     "        </div>\n" +
                     "        <div>\n" +
-                    "            <a href='../../src/alpha/detail.php?id=" +id+"'>" +
+                    "            <a href='../../src/alpha/detail.php?id=" + id + "'>" +
                     "            - Chi tiết\n" +
                     "            </a>\n" +
                     "        </div>\n" +
@@ -1314,7 +1312,7 @@ include "../../public/php/connect.php";
                     + status +
                     "        </div>\n" +
                     "        <img class='rounded-lg' style='max-width: inherit;width: 100%;height: 300px '\n" +
-                    "             src='../../public/" +image+ "'>" +
+                    "             src='../../public/" + image + "'>" +
                     "    </div>\n" +
                     "    <div style='padding: 8px 0 8px 0'>\n" +
                     "        <nav class='nav nav3 float-right' style='font-size: 11px'>\n" +
