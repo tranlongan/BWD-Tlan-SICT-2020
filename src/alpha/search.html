@@ -16,8 +16,8 @@
 </head>
 <body>
 <div>
-    <input name="text_search" id="text_search">
-    <button type="button" onclick="doIt()"> DO</button>
+    <input  name="text_search" id="text_search" onkeypress="return doIt(event)">
+<!--    <button type="button" onclick="doIt()"> DO</button>-->
 </div>
 <div class="container" style="background-color: #818182" id="data">
     <div>
@@ -35,28 +35,32 @@
 <script type="text/javascript" src="js/mdb.min.js"></script>
 <script>
     const text_search = document.getElementById("text_search");
-    const doIt = async () => {
+    const doIt = async (e) => {
         const formData = new FormData();
-        formData.set("text_search", text_search.value);
 
-        axios
-            .post("http://localhost/BWD/public/php/search.php", formData)
-            .then((res) => {
-                console.log(res)
+        if(e.keyCode === 13){
+            formData.set("text_search", text_search.value);
+            axios
+                .post("http://localhost/BWD/public/php/search.php", formData)
+                .then((res) => {
+                    console.log(res.data)
+                    let html = "";
+                    for (let a = 0; a < res.data.length; a++) {
+                        let title = res.data[a].title;
+                        let category = res.data[a].category;
+                        let image = res.data[a].link_image;
+                        html += "<div>";
+                        html += "<div>" + title + "</div>";
+                        html += "<div>" + category + "</div>";
+                        html+="<div>"+image+ "</div>";
+                        html+="<img style='max-width: inherit;width: 100%;height: 300px ' src='../../public/"+image+"'>";
+                        html +="<hr/>";
+                        html += "</div>";
+                    }
+                    document.getElementById("data").innerHTML = html;
+                })
+        }
 
-                // let data = JSON.parse(res.responseText);
-                alert(res);
-                // let html = "";
-                // for (let i = 0; i < data.length; i++) {
-                //     let title = data[i].title;
-                //     let category = data[i].category;
-                //     html += "<div>";
-                //     html += "<div>" + title + "</div>";
-                //     html += "<div>" + category + "</div>";
-                //     html += "</div>";
-                // }
-                // document.getElementById("data").innerHTML = html;
-            })
     }
 
 </script>
