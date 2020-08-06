@@ -24,6 +24,7 @@ include "../../public/php/connect.php";
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/scroll.css">
     <link rel="stylesheet" href="css/sideNav.css">
+    <link rel="stylesheet" href="css/css_of_post/style.css"
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50" class="preloading" onload="initialize()">
 <div class="load">
@@ -173,8 +174,8 @@ include "../../public/php/connect.php";
                        aria-controls="v-pills-myPost" aria-selected="false" data-toggle="tooltip"
                        title="Bài viết của bạn">
                         <img style="width: 25px; height: 25px" src="../../public/images/sticky-note.png"/>
-                        <span type="button" onclick="doIt2()" class="tf">
-                        Bài viết của bạn
+                        <span class="tf">
+                        Đã lưu
                     </span>
                     </a>
 
@@ -385,7 +386,7 @@ include "../../public/php/connect.php";
                 <!--                phần my post-->
                 <div class="tab-pane fade pt-2" id="v-pills-myPost" role="tabpanel"
                      aria-labelledby="v-pills-myPost-tab">
-                    <div id="data1"></div>
+                    <div style="text-align: center;">Không có mục nào</div>
                 </div>
 
                 <!--                khám phá các ý tưởng-->
@@ -578,9 +579,10 @@ include "../../public/php/connect.php";
                                    aria-selected="false">Lượt thích</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" type="button" onclick="doIt2()"
+                                   href="#contact" role="tab"
                                    aria-controls="contact"
-                                   aria-selected="false">Contact</a>
+                                   aria-selected="false">Bài viết của bạn</a>
                             </li>
                         </ul>
                         <div class="tab-content" id="myTabContent">
@@ -644,6 +646,7 @@ include "../../public/php/connect.php";
                                 </div>
                             </div>
 
+                            <!--                            Lượt thích-->
                             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                 <div style="text-align: center">
                                     <font style="font-weight: bolder">Bạn không có bất kỳ lượt thích nào</font><br/>
@@ -652,7 +655,9 @@ include "../../public/php/connect.php";
                                 </div>
                             </div>
 
-                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...
+                            <!--                            Bài bạn đã viết-->
+                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                <div id="data1"></div>
                             </div>
                         </div>
                     </div>
@@ -1037,7 +1042,7 @@ include "../../public/php/connect.php";
                             + username +
                             "        </a>\n" +
                             "        <a class='nav-link pt-4' style='color: #818182' href='#'>\n" +
-                            "            @Admin-Tháng 7\n" +
+                            "            @User-Tháng 7\n" +
                             "        </a>\n" +
                             "    </nav>\n" +
                             "    <div class='pl-5 pr-3'>\n" +
@@ -1048,7 +1053,7 @@ include "../../public/php/connect.php";
                             + category +
                             "        </div>\n" +
                             "        <div>\n" +
-                            "            <a href='../../src/alpha/detail.php?id=" + id + "'>" +
+                            "            <button class='btn btn-outline-primary' type='button' onclick='doIt3(" + id + ")'>" +
                             "            - Chi tiết\n" +
                             "            </a>\n" +
                             "        </div>\n" +
@@ -1107,7 +1112,7 @@ include "../../public/php/connect.php";
             .then((res) => {
                 console.log(res.data)
                 let html = "";
-                for (let a = res.data.length; a >=0; a--) {
+                for (let a = res.data.length - 1; a >= 0; a--) {
                     let id = res.data[a].id;
                     let username = res.data[a].username;
                     let title = res.data[a].title;
@@ -1124,7 +1129,7 @@ include "../../public/php/connect.php";
                         + username +
                         "        </a>\n" +
                         "        <a class='nav-link pt-4' style='color: #818182' href='#'>\n" +
-                        "            @Admin-Tháng 7\n" +
+                        "            @User-Tháng 7\n" +
                         "        </a>\n" +
                         "    </nav>\n" +
                         "    <div class='pl-5 pr-3'>\n" +
@@ -1135,7 +1140,7 @@ include "../../public/php/connect.php";
                         + category +
                         "        </div>\n" +
                         "        <div>\n" +
-                        "            <a href='../../src/alpha/detail.php?id=" + id + "'>" +
+                        "            <button class='btn btn-outline-primary' type='button' onclick='doIt3(" + id + ")'>" +
                         "            - Chi tiết\n" +
                         "            </a>\n" +
                         "        </div>\n" +
@@ -1192,7 +1197,7 @@ include "../../public/php/connect.php";
             .then((res) => {
                 console.log(res.data);
                 let html = "";
-                for (let a = res.data.length-1; a >=0; a--) {
+                for (let a = res.data.length - 1; a >= 0; a--) {
                     let id = res.data[a].id;
                     let username = res.data[a].username;
                     let title = res.data[a].title;
@@ -1209,7 +1214,7 @@ include "../../public/php/connect.php";
                         + username +
                         "        </a>\n" +
                         "        <a class='nav-link pt-4' style='color: #818182' href='#'>\n" +
-                        "            @Admin-Tháng 7\n" +
+                        "            @User-Tháng 7\n" +
                         "        </a>\n" +
                         "    </nav>\n" +
                         "    <div class='pl-5 pr-3'>\n" +
@@ -1220,7 +1225,7 @@ include "../../public/php/connect.php";
                         + category +
                         "        </div>\n" +
                         "        <div>\n" +
-                        "            <a href='../../src/alpha/detail.php?id=" + id + "'>" +
+                        "            <button class='btn btn-outline-primary' type='button' onclick='doIt4(" + id + ")'>" +
                         "            - Chi tiết\n" +
                         "            </a>\n" +
                         "        </div>\n" +
@@ -1276,7 +1281,7 @@ include "../../public/php/connect.php";
         .then((res) => {
             console.log(res.data);
             let html = "";
-            for (let a = res.data.length-1; a >= 0; a--) {
+            for (let a = res.data.length - 1; a >= 0; a--) {
                 let id = res.data[a].id;
                 let username = res.data[a].username;
                 let title = res.data[a].title;
@@ -1293,7 +1298,7 @@ include "../../public/php/connect.php";
                     + username +
                     "        </a>\n" +
                     "        <a class='nav-link pt-4' style='color: #818182' href='#'>\n" +
-                    "            @Admin-Tháng 7\n" +
+                    "            @User-Tháng 7\n" +
                     "        </a>\n" +
                     "    </nav>\n" +
                     "    <div class='pl-5 pr-3'>\n" +
@@ -1304,9 +1309,9 @@ include "../../public/php/connect.php";
                     + category +
                     "        </div>\n" +
                     "        <div>\n" +
-                    "            <a href='../../src/alpha/detail.php?id=" + id + "'>" +
+                    "            <button class='btn btn-outline-primary' type='button' onclick='doIt3(" + id + ")'>" +
                     "            - Chi tiết\n" +
-                    "            </a>\n" +
+                    "            </button>\n" +
                     "        </div>\n" +
                     "        <div class='float-right' style='font-size: 12px'>\n"
                     + status +
@@ -1351,6 +1356,173 @@ include "../../public/php/connect.php";
             }
             document.getElementById("data").innerHTML = html;
         })
+
+</script>
+<!--detail-->
+<script>
+    const doIt3 = async (id) => {
+        axios
+            .get("http://localhost/BWD/src/alpha/detail_new.php", {
+                params: {
+                    "id": id
+                }
+            })
+            .then((res) => {
+                console.log(res.data)
+                let html = "";
+                for (let i = 0; i < res.data.length; i++) {
+                    let username1 = res.data[0].username;
+                    let title1 = res.data[0].title;
+                    let category1 = res.data[0].category;
+                    let material1 = res.data[0].material;
+                    let cost1 = res.data[0].cost;
+                    let time_do1 = res.data[0].time_do;
+                    let chooseLevel1 = res.data[0].chooseLevel;
+                    let dataContent = res.data[0].content_post;
+                    html += "<div class='mt-4'>\n" +
+                        "    <nav class='nav'>\n" +
+                        "        <li class='nav-item'>\n" +
+                        "            <img style='width: 64px; height: 64px; border: 1px solid #818182' class='rounded-circle'\n" +
+                        "                 src='../../public/images/picture%20home%20login/tenor.gif'>\n" +
+                        "        </li>\n" +
+                        "        <li class='nav-item ml-4'>\n" +
+                        "            <nav class='list-group'>\n" +
+                        "        <li class='nav-item' style='text-align: center'>\n" +
+                        username1 +
+                        "        </li>\n" +
+                        "        <li class='nav-item'>\n" +
+                        "            <button class='btn btn-primary rounded-pill'>+ Theo dõi</button>\n" +
+                        "        </li>\n" +
+                        "    </nav>\n" +
+                        "    </li>\n" +
+                        "    </nav>\n" +
+                        "    <div class='mt-1'>\n" +
+                        "        <div style='font-size: 28px; font-weight: bolder'>\n" +
+                       title1 +
+                        "        </div>\n" +
+                        "        <div>\n" +
+                       category1 +
+                        "        </div>\n" +
+                        "        <div>\n" +
+                        "            <blockquote class='blockquote' style='font-size: 17px'>\n" +
+                        "                <footer class='blockquote-footer'>\n" +
+                        "                    Bảng thống kê\n" +
+                        "                    <nav class='nav _nav1 nav-pills'>\n" +
+                        "                        <li class='nav-item'>\n" +
+                        "                            <i class='fas fa-pencil-ruler'></i>\n" +
+                        "                            <span>"+material1+"</span>\n" +
+                        "                        </li>\n" +
+                        "                        <li class='nav-item'>\n" +
+                        "                            <i class='fas fa-wallet'></i>\n" +
+                        "                            <span>"+cost1+"</span>\n" +
+                        "                        </li>\n" +
+                        "                        <li class='nav-item'>\n" +
+                        "                            <i class='far fa-clock'></i>\n" +
+                        "                            <span>"+time_do1+"</span>\n" +
+                        "                        </li>\n" +
+                        "                        <li class='nav-item'>\n" +
+                        "                            <i class='fas fa-poll'></i>\n" +
+                        "                            <span>"+chooseLevel1+"</span>\n" +
+                        "                        </li>\n" +
+                        "                    </nav>\n" +
+                        "                </footer>\n" +
+                        "            </blockquote>\n" +
+                        "        </div>\n" +
+                        "        <div>\n" +
+                        dataContent +
+                        "        </div>\n" +
+                        "    </div>\n" +
+                        "</div>\n" +
+                        "\n" +
+                        "\n";
+                }
+                document.getElementById("data").innerHTML = html;
+            })
+    }
+
+</script>
+<!--detail1-->
+<script>
+    const doIt4 = async (id) => {
+        axios
+            .get("http://localhost/BWD/src/alpha/detail_new.php", {
+                params: {
+                    "id": id
+                }
+            })
+            .then((res) => {
+                console.log(res.data)
+                let html = "";
+                for (let i = 0; i < res.data.length; i++) {
+                    let username1 = res.data[0].username;
+                    let title1 = res.data[0].title;
+                    let category1 = res.data[0].category;
+                    let material1 = res.data[0].material;
+                    let cost1 = res.data[0].cost;
+                    let time_do1 = res.data[0].time_do;
+                    let chooseLevel1 = res.data[0].chooseLevel;
+                    let dataContent = res.data[0].content_post;
+                    html += "<div class='mt-4'>\n" +
+                        "    <nav class='nav'>\n" +
+                        "        <li class='nav-item'>\n" +
+                        "            <img style='width: 64px; height: 64px; border: 1px solid #818182' class='rounded-circle'\n" +
+                        "                 src='../../public/images/picture%20home%20login/tenor.gif'>\n" +
+                        "        </li>\n" +
+                        "        <li class='nav-item ml-4'>\n" +
+                        "            <nav class='list-group'>\n" +
+                        "        <li class='nav-item' style='text-align: center'>\n" +
+                        username1 +
+                        "        </li>\n" +
+                        "        <li class='nav-item'>\n" +
+                        "            <button class='btn btn-primary rounded-pill'>+ Theo dõi</button>\n" +
+                        "        </li>\n" +
+                        "    </nav>\n" +
+                        "    </li>\n" +
+                        "    </nav>\n" +
+                        "    <div class='mt-1'>\n" +
+                        "        <div style='font-size: 28px; font-weight: bolder'>\n" +
+                        title1 +
+                        "        </div>\n" +
+                        "        <div>\n" +
+                        category1 +
+                        "        </div>\n" +
+                        "        <div>\n" +
+                        "            <blockquote class='blockquote' style='font-size: 17px'>\n" +
+                        "                <footer class='blockquote-footer'>\n" +
+                        "                    Bảng thống kê\n" +
+                        "                    <nav class='nav _nav1 nav-pills'>\n" +
+                        "                        <li class='nav-item'>\n" +
+                        "                            <i class='fas fa-pencil-ruler'></i>\n" +
+                        "                            <span>"+material1+"</span>\n" +
+                        "                        </li>\n" +
+                        "                        <li class='nav-item'>\n" +
+                        "                            <i class='fas fa-wallet'></i>\n" +
+                        "                            <span>"+cost1+"</span>\n" +
+                        "                        </li>\n" +
+                        "                        <li class='nav-item'>\n" +
+                        "                            <i class='far fa-clock'></i>\n" +
+                        "                            <span>"+time_do1+"</span>\n" +
+                        "                        </li>\n" +
+                        "                        <li class='nav-item'>\n" +
+                        "                            <i class='fas fa-poll'></i>\n" +
+                        "                            <span>"+chooseLevel1+"</span>\n" +
+                        "                        </li>\n" +
+                        "                    </nav>\n" +
+                        "                </footer>\n" +
+                        "            </blockquote>\n" +
+                        "        </div>\n" +
+                        "        <div>\n" +
+                        dataContent +
+                        "        </div>\n" +
+                        "    </div>\n" +
+                        "</div>\n" +
+                        "\n" +
+                        "\n";
+                }
+                document.getElementById("data1").innerHTML = html;
+            })
+    }
+
 </script>
 </body>
 </html>

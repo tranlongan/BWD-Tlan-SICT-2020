@@ -23,53 +23,7 @@ include "../../public/php/connect.php";
 <body>
 
 <div class="container-fluid">
-    <!--Navbar -->
-    <nav class="mb-1 navbar navbar-expand-md navbar-dark blue lighten-2">
-        <a class="navbar-brand active" href="../../src/alpha/index.php">D.I.Y</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555"
-                aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <form class="form-inline mr-auto">
-                        <div class="md-form my-0">
-                            <input class="form-control" type="text" placeholder="Tìm kiếm trên D.I.Y">
-                            <i class="fas fa-search text-white" aria-hidden="true"></i>
-                        </div>
-                    </form>
-                </li>
-            </ul>
 
-            <ul class="navbar-nav ml-auto nav-flex-icons">
-<!--                <li class="nav-item dropdown">-->
-<!--                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-555" data-toggle="dropdown"-->
-<!--                       aria-haspopup="true" aria-expanded="false">Dropdown-->
-<!--                    </a>-->
-<!--                    <div class="dropdown-menu dropdown-secondary" aria-labelledby="navbarDropdownMenuLink-555">-->
-<!--                        <a class="dropdown-item" href="#">Action</a>-->
-<!--                        <a class="dropdown-item" href="#">Another action</a>-->
-<!--                        <a class="dropdown-item" href="#">Something else here</a>-->
-<!--                    </div>-->
-<!--                </li>-->
-                <li class="nav-item avatar dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-55" data-toggle="dropdown"
-                       aria-haspopup="true" aria-expanded="false">
-                        <img src="../../public/images/picture%20home%20login/tenor.gif"
-                             class="rounded-circle z-depth-0"
-                             alt="avatar image">
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-lg-right dropdown-secondary"
-                         aria-labelledby="navbarDropdownMenuLink-55">
-                        <a class="dropdown-item" href="#">Quản lý tài khoản</a>
-                        <a class="dropdown-item" href="#">Đăng xuất</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!--/.Navbar -->
     <div class="container mt-5">
         <nav class="nav">
             <li class="nav-item">

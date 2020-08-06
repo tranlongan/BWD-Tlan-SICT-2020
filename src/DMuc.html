@@ -1,65 +1,56 @@
-<div class='b'>
-    <nav class='nav nav-pills flex-sm-row'>
-        <a class='nav-link' href='#'>
-            <img class='rounded-circle' style='width: 54px;height: 54px; border: 1px solid #1a1a1a'
+<div>
+    <nav class='nav'>
+        <li class='nav-item'>
+            <img style='width: 64px; height: 64px; border: 1px solid #818182' class='rounded-circle'
                  src='../../public/images/picture%20home%20login/tenor.gif'>
-        </a>
-        <a class='nav-link pt-4 aName' style='color: #1a1a1a' href='#'>
-            + username +
-        </a>
-        <a class='nav-link pt-4' style='color: #818182' href='#'>
-            @Admin-Tháng 7
-        </a>
-    </nav>
-    <div class='pl-5 pr-3'>
-        <div>
-            + title +
-        </div>
-        <div>
-            + category +
-        </div>
-        <div>
-            <a href='../../src/alpha/detail.php?id=' . $data['id'] . ''>
-            - Chi tiết
-            </a>
-        </div>
-        <div class='float-right' style='font-size: 12px'>
-            + status +
-        </div>
-        <img class='rounded-lg' style='max-width: inherit;width: 100%;height: 300px '
-             src='../../public/' +image+ >
-    </div>
-    <div style='padding: 8px 0 8px 0'>
-        <nav class='nav nav3 float-right' style='font-size: 11px'>
-            <li class='nav-item'>750 bình luận</li>
-            <li style='padding:0 16px 0 16px' class='nav-item'>245 chia sẻ</li>
-        </nav>
-    </div>
-    <nav class='nav nav-pills nav-fill'>
-        <li class='nav-item'>
-            <a href='#' class='nav-link'>
-                <img style='width: 24px;height: 24px' src='../../public/images/picture%20home%20login/icons8-heart-100.png'>
-                <span>
-                                    1.2k
-                                </span>
-            </a>
+        </li>
+        <li class='nav-item ml-4'>
+            <nav class='list-group'>
+        <li class='nav-item' style='text-align: center'>
+            Norman
         </li>
         <li class='nav-item'>
-            <a href='#' class='nav-link'>
-                <img style='width: 24px;height: 24px' src='../../public/images/picture%20home%20login/icons8-speech-bubble-100.png'>
-                <span>
-                                    Bình luận
-                                </span>
-            </a>
-        </li>
-        <li class='nav-item'>
-            <a class='nav-link' href='#'>
-                <img style='width: 24px;height: 24px' src='../../public/images/picture%20home%20login/icons8-share-160.png'>
-                <span>
-                                    Chia sẻ
-                                </span>
-            </a>
+            <button class='btn btn-primary rounded-pill'>+ Theo dõi</button>
         </li>
     </nav>
+    </li>
+    </nav>
+    <div class='mt-1'>
+        <div style='font-size: 32px; font-weight: bolder'>
+            ' . $data['title'] . '
+        </div>
+        <div>
+            ' . $data['category'] . '
+        </div>
+        <div>
+            <blockquote class='blockquote' style='font-size: 17px'>
+                <footer class='blockquote-footer'>
+                    Bảng thống kê
+                    <nav class='nav _nav1 nav-pills'>
+                        <li class='nav-item'>
+                            <i class='fas fa-pencil-ruler'></i>
+                            <span>' . $data['material'] . '</span>
+                        </li>
+                        <li class='nav-item'>
+                            <i class='fas fa-wallet'></i>
+                            <span>' . $data['cost'] . '</span>
+                        </li>
+                        <li class='nav-item'>
+                            <i class='far fa-clock'></i>
+                            <span>' . $data['time_do'] . '</span>
+                        </li>
+                        <li class='nav-item'>
+                            <i class='fas fa-poll'></i>
+                            <span>' . $data['chooseLevel'] . '</span>
+                        </li>
+                    </nav>
+                </footer>
+            </blockquote>
+        </div>
+        <div>
+            ' . $data['content_post'] . '
+        </div>
+    </div>
 </div>
-<hr/>
+
+
