@@ -19,8 +19,7 @@ include "../../public/php/connect.php"
     <link rel="stylesheet" href="css/mdb.min.css">
     <!-- Css -->
     <link rel="stylesheet" href="css/css_of_post/style.css">
-    <!--    ckEditor-->
-    <script src="https://cdn.ckeditor.com/ckeditor5/20.0.0/classic/ckeditor.js"></script>
+
 
 </head>
 <body>
@@ -128,6 +127,8 @@ include "../../public/php/connect.php"
 <script type="text/javascript" src="js/mdb.min.js"></script>
 <!--axios-->
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<!--    ckEditor-->
+<script src="https://cdn.ckeditor.com/ckeditor5/20.0.0/classic/ckeditor.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
 
@@ -154,8 +155,8 @@ include "../../public/php/connect.php"
         editor = await ClassicEditor
             .create(document.getElementById("ckeditor"), {
                 cloudServices: {
-                    uploadUrl: "https://73493.cke-cs.com/easyimage/upload/",
-                    tokenUrl: "https://73493.cke-cs.com/token/dev/cb43e1e9134053095ab0da2213c7b2428f073c0e9bb4aa57406cbab4d7cd"
+                    uploadUrl: "https://75171.cke-cs.com/easyimage/upload/",
+                    tokenUrl: "https://75171.cke-cs.com/token/dev/a8c66df7e644b064314258f9274a73a02d361d2236ee2da40da2f66bf333"
                 }
             });
     }

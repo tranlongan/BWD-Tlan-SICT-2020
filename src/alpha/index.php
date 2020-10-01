@@ -1044,6 +1044,29 @@ include "../../public/php/connect.php";
                             "        <a class='nav-link pt-4' style='color: #818182' href='#'>\n" +
                             "            @User-Tháng 7\n" +
                             "        </a>\n" +
+                            "<button style='border: 0;background-color: #fafafa' type='button' data-toggle='modal' data-target='#fullHeightModalRight'>\n" +
+                            "    ...\n" +
+                            "</button>\n" +
+                            "</a>\n"+
+                            "<form action='' method='post'>\n" +
+                            "    <div class='modal fade right' id='fullHeightModalRight' tabindex='-1' role='dialog' aria-labelledby='myModalLabel'\n" +
+                            "         aria-hidden='true'>\n" +
+                            "        <div class='modal-dialog modal-full-height modal-right' role='document'>\n" +
+                            "            <div class='modal-content'>\n" +
+                            "                <div class='modal-header'>\n" +
+                            "                    <h4 class='modal-title w-100' id='myModalLabel'>Bài viết</h4>\n" +
+                            "                    <button type='button' class='close' data-dismiss='modal' aria-label='Close'>\n" +
+                            "                        <span aria-hidden='true'>&times;</span>\n" +
+                            "                    </button>\n" +
+                            "                </div>\n" +
+                            "                <div class='modal-body'>\n" +
+                            "                    <button type='button' class='btn btn-secondary'>Xóa bài viết</button></br>\n" +
+                            "                    <button type='button' class='btn btn-primary'>Sửa bài viết</button>\n" +
+                            "                </div>\n" +
+                            "            </div>\n" +
+                            "        </div>\n" +
+                            "    </div>\n" +
+                            "</form>\n"+
                             "    </nav>\n" +
                             "    <div class='pl-5 pr-3'>\n" +
                             "        <div>\n"
@@ -1131,6 +1154,28 @@ include "../../public/php/connect.php";
                         "        <a class='nav-link pt-4' style='color: #818182' href='#'>\n" +
                         "            @User-Tháng 7\n" +
                         "        </a>\n" +
+                        "        <a class='nav-link pt-3'>\n" +
+                        "<button style='border: 0;background-color: #fafafa' type='button' data-toggle='modal' data-target='#fullHeightModalRight'>\n" +
+                        "    ...\n" +
+                        "</button>\n" +
+                        "</a>\n"+
+                        "    <div class='modal fade right' id='fullHeightModalRight' tabindex='-1' role='dialog' aria-labelledby='myModalLabel'\n" +
+                        "         aria-hidden='true'>\n" +
+                        "        <div class='modal-dialog modal-full-height modal-right' role='document'>\n" +
+                        "            <div class='modal-content'>\n" +
+                        "                <div class='modal-header'>\n" +
+                        "                    <h4 class='modal-title w-100' id='myModalLabel'>Bài viết</h4>\n" +
+                        "                    <button type='button' class='close' data-dismiss='modal' aria-label='Close'>\n" +
+                        "                        <span aria-hidden='true'>&times;</span>\n" +
+                        "                    </button>\n" +
+                        "                </div>\n" +
+                        "                <div class='modal-body'>\n" +
+                        "         <button type='button' class='btn btn-secondary'>Xóa bài viết</button></br>\n" +
+                        "         <button type='button' class='btn btn-primary'>Sửa bài viết</button>\n" +
+                        "                </div>\n" +
+                        "            </div>\n" +
+                        "        </div>\n" +
+                        "    </div>\n" +
                         "    </nav>\n" +
                         "    <div class='pl-5 pr-3'>\n" +
                         "        <div>\n"
@@ -1216,6 +1261,34 @@ include "../../public/php/connect.php";
                         "        <a class='nav-link pt-4' style='color: #818182' href='#'>\n" +
                         "            @User-Tháng 7\n" +
                         "        </a>\n" +
+                        "        <a class='nav-link pt-3'>\n" +
+                        "<button style='border: 0;background-color: Transparent;cursor:pointer' type='button' data-toggle='modal' data-target='#fullHeightModalRight'>\n" +
+                        "    ...\n" +
+                        "</button>\n" +
+                        "</a>\n"+
+                        "<form action='' method='post'>\n" +
+                        "    <div class='modal fade right' id='fullHeightModalRight' tabindex='-1' role='dialog' aria-labelledby='myModalLabel'\n" +
+                        "         aria-hidden='true'>\n" +
+                        "        <div class='modal-dialog modal-full-height modal-right' role='document'>\n" +
+                        "            <div class='modal-content'>\n" +
+                        "                <div class='modal-header'>\n" +
+                        "                    <h4 class='modal-title w-100' id='myModalLabel'>Bài viết</h4>\n" +
+                        "                    <button type='button' class='close' data-dismiss='modal' aria-label='Close'>\n" +
+                        "                        <span aria-hidden='true'>&times;</span>\n" +
+                        "                    </button>\n" +
+                        "                </div>\n" +
+                        "                <div class='modal-body'>\n" +
+                        "<form action='' method='post'>\n"+
+                        "         <button type='button' class='btn btn-secondary'>Xóa bài viết</button></br>\n" +
+                        "</form>\n"+
+                        "<form action='' method='post'>\n"+
+                        "         <button type='button' class='btn btn-primary'>Sửa bài viết</button>\n" +
+                        "</form>\n"+
+                        "                </div>\n" +
+                        "            </div>\n" +
+                        "        </div>\n" +
+                        "    </div>\n" +
+                        "</form>\n"+
                         "    </nav>\n" +
                         "    <div class='pl-5 pr-3'>\n" +
                         "        <div>\n"
@@ -1300,6 +1373,34 @@ include "../../public/php/connect.php";
                     "        <a class='nav-link pt-4' style='color: #818182' href='#'>\n" +
                     "            @User-Tháng 7\n" +
                     "        </a>\n" +
+                    "        <a class='nav-link pt-3'>\n" +
+                    "<button style='border: 0;background-color: Transparent;cursor:pointer' type='button' data-toggle='modal' data-target='#fullHeightModalRight'>\n" +
+                    "    ...\n" +
+                    "</button>\n" +
+                        "</a>\n"+
+                    "<form action='' method='post'>\n" +
+                    "    <div class='modal fade right' id='fullHeightModalRight' tabindex='-1' role='dialog' aria-labelledby='myModalLabel'\n" +
+                    "         aria-hidden='true'>\n" +
+                    "        <div class='modal-dialog modal-full-height modal-right' role='document'>\n" +
+                    "            <div class='modal-content'>\n" +
+                    "                <div class='modal-header'>\n" +
+                    "                    <h4 class='modal-title w-100' id='myModalLabel'>Bài viết</h4>\n" +
+                    "                    <button type='button' class='close' data-dismiss='modal' aria-label='Close'>\n" +
+                    "                        <span aria-hidden='true'>&times;</span>\n" +
+                    "                    </button>\n" +
+                    "                </div>\n" +
+                    "                <div class='modal-body'>\n" +
+                    "<form action='' method='post'>\n"+
+                    "         <button type='button' class='btn btn-secondary'>Xóa bài viết</button></br>\n" +
+                    "</form>\n"+
+                    "<form action='' method='post'>\n"+
+                    "         <button type='button' class='btn btn-primary'>Sửa bài viết</button>\n" +
+                    "</form>\n"+
+                    "                </div>\n" +
+                    "            </div>\n" +
+                    "        </div>\n" +
+                    "    </div>\n" +
+                    "</form>\n"+
                     "    </nav>\n" +
                     "    <div class='pl-5 pr-3'>\n" +
                     "        <div>\n"
@@ -1398,10 +1499,10 @@ include "../../public/php/connect.php";
                         "    </nav>\n" +
                         "    <div class='mt-1'>\n" +
                         "        <div style='font-size: 28px; font-weight: bolder'>\n" +
-                       title1 +
+                        title1 +
                         "        </div>\n" +
                         "        <div>\n" +
-                       category1 +
+                        category1 +
                         "        </div>\n" +
                         "        <div>\n" +
                         "            <blockquote class='blockquote' style='font-size: 17px'>\n" +
@@ -1410,19 +1511,19 @@ include "../../public/php/connect.php";
                         "                    <nav class='nav _nav1 nav-pills'>\n" +
                         "                        <li class='nav-item'>\n" +
                         "                            <i class='fas fa-pencil-ruler'></i>\n" +
-                        "                            <span>"+material1+"</span>\n" +
+                        "                            <span>" + material1 + "</span>\n" +
                         "                        </li>\n" +
                         "                        <li class='nav-item'>\n" +
                         "                            <i class='fas fa-wallet'></i>\n" +
-                        "                            <span>"+cost1+"</span>\n" +
+                        "                            <span>" + cost1 + "</span>\n" +
                         "                        </li>\n" +
                         "                        <li class='nav-item'>\n" +
                         "                            <i class='far fa-clock'></i>\n" +
-                        "                            <span>"+time_do1+"</span>\n" +
+                        "                            <span>" + time_do1 + "</span>\n" +
                         "                        </li>\n" +
                         "                        <li class='nav-item'>\n" +
                         "                            <i class='fas fa-poll'></i>\n" +
-                        "                            <span>"+chooseLevel1+"</span>\n" +
+                        "                            <span>" + chooseLevel1 + "</span>\n" +
                         "                        </li>\n" +
                         "                    </nav>\n" +
                         "                </footer>\n" +
@@ -1493,19 +1594,19 @@ include "../../public/php/connect.php";
                         "                    <nav class='nav _nav1 nav-pills'>\n" +
                         "                        <li class='nav-item'>\n" +
                         "                            <i class='fas fa-pencil-ruler'></i>\n" +
-                        "                            <span>"+material1+"</span>\n" +
+                        "                            <span>" + material1 + "</span>\n" +
                         "                        </li>\n" +
                         "                        <li class='nav-item'>\n" +
                         "                            <i class='fas fa-wallet'></i>\n" +
-                        "                            <span>"+cost1+"</span>\n" +
+                        "                            <span>" + cost1 + "</span>\n" +
                         "                        </li>\n" +
                         "                        <li class='nav-item'>\n" +
                         "                            <i class='far fa-clock'></i>\n" +
-                        "                            <span>"+time_do1+"</span>\n" +
+                        "                            <span>" + time_do1 + "</span>\n" +
                         "                        </li>\n" +
                         "                        <li class='nav-item'>\n" +
                         "                            <i class='fas fa-poll'></i>\n" +
-                        "                            <span>"+chooseLevel1+"</span>\n" +
+                        "                            <span>" + chooseLevel1 + "</span>\n" +
                         "                        </li>\n" +
                         "                    </nav>\n" +
                         "                </footer>\n" +

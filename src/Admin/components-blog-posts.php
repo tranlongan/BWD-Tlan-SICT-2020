@@ -196,7 +196,7 @@ include "../../public/php/connect.php";
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">
-                                    <a class="text-fiord-blue" href="#">'.$data["title"].'</a>
+                                    <a class="text-fiord-blue" href="../alpha/my_post.php?id='.$data["id"].'">'.$data["title"].'</a>
                                 </h5>
                                 <div>
                                     '.$data["status"].'
@@ -242,7 +242,7 @@ include "../../public/php/connect.php";
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">
-                                    <a class="text-fiord-blue" href="#">'.$data["title"].'</a>
+                                    <a class="text-fiord-blue" href="../alpha/my_post.php?id='.$data["id"].'">'.$data["title"].'</a>
                                 </h5>
                                 <div>
                                     '.$data["status"].'

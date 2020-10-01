@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th8 31, 2020 lúc 06:19 AM
+-- Thời gian đã tạo: Th10 01, 2020 lúc 10:06 AM
 -- Phiên bản máy phục vụ: 10.4.13-MariaDB
 -- Phiên bản PHP: 7.2.31
 
@@ -64,7 +64,8 @@ INSERT INTO `account_login` (`id`, `username`, `nameAccount`, `password`, `title
 (2, 'user2 ', 'name_user2 ', '123', 'User'),
 (3, 'user3 ', 'name_user3 ', '123', 'User'),
 (4, 'user4 ', 'name_user4 ', '123', 'User'),
-(8, 'user5 ', 'Norman ', '123', 'User');
+(8, 'user5 ', 'Norman ', '123', 'User'),
+(9, 'user6 ', 'name_user4 ', '123', 'User');
 
 -- --------------------------------------------------------
 
@@ -137,13 +138,13 @@ ALTER TABLE `account_admin`
 -- AUTO_INCREMENT cho bảng `account_login`
 --
 ALTER TABLE `account_login`
-  MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT cho bảng `news`
 --
 ALTER TABLE `news`
-  MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=89;
+  MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=90;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
