@@ -23,8 +23,8 @@ if (isset($_FILES['image'])) {
         move_uploaded_file($_FILES['image']['tmp_name'], '../img_uploads/' . $time . '.jpg');
 
         if (!empty($title) && !empty($category) && !empty($chooseStatus) && !empty($cost) && !empty($chooseLevel)) {
-            $sql = "INSERT INTO `news`(`username`,`title`,`category`,`status`,`link_image`,`allowed`,`content_post`,`material`,`cost`,`time_do`,`chooseLevel`) VALUES ('" . $username . "','" . $title
-                . "','" . $category . "','" . $chooseStatus . "','img_uploads/$time.jpg','0','" . $content . "','" . $material . "','" . $cost . "','" . $time_do . "','" . $chooseLevel . "')";
+            $sql = "INSERT INTO `news`(`username`,`title`,`category`,`status`,`link_image`,`allowed`,`content_post`,`material`,`cost`,`time_do`,`chooseLevel`,`saved post`) VALUES ('" . $username . "','" . $title
+                . "','" . $category . "','" . $chooseStatus . "','img_uploads/$time.jpg','0','" . $content . "','" . $material . "','" . $cost . "','" . $time_do . "','" . $chooseLevel . "','0')";
             mysqli_query($conn, $sql);
         }
     }

@@ -174,9 +174,9 @@ include "../../public/php/connect.php";
                        aria-controls="v-pills-myPost" aria-selected="false" data-toggle="tooltip"
                        title="Bài viết của bạn">
                         <img style="width: 25px; height: 25px" src="../../public/images/sticky-note.png"/>
-                        <span class="tf">
+                        <span type="button" onclick="doIt5()" class="tf">
                         Đã lưu
-                    </span>
+                        </span>
                     </a>
 
                     <a class="nav-link aImg a3" id="v-pills-forIdea-tab"
@@ -386,7 +386,34 @@ include "../../public/php/connect.php";
                 <!--                phần my post-->
                 <div class="tab-pane fade pt-2" id="v-pills-myPost" role="tabpanel"
                      aria-labelledby="v-pills-myPost-tab">
-                    <div style="text-align: center;">Không có mục nào</div>
+                    <div id="data5" class="row">
+                        <!--                        --><?php
+                        //                            $sql="SELECT * FROM `news` WHERE `allowed` = '1'";
+                        //                            $result = mysqli_query($conn,$sql);
+                        //                        while ($data = mysqli_fetch_array($result)){
+                        //                            echo '
+                        //                        <div style="height: 70%; max-width: inherit; width: 100%" class="card mb-5">
+                        //
+                        //                            <!-- Card image -->
+                        //                            <img style="height: 272px; max-width: inherit; width: 100%" class="card-img-top" src="../../public/'.$data["link_image"].'"
+                        //                                 alt="Card image cap">
+                        //
+                        //                            <!-- Card content -->
+                        //                            <div class="card-body">
+                        //
+                        //                                <!-- Title -->
+                        //                                <h4 class="card-title"><a>Title</a></h4>
+                        //                                <!-- Text -->
+                        //                                <p class="card-text">status</p>
+                        //                                <!-- Button -->
+                        //                                <a href="#" class="btn btn-primary">Chi tiết</a>
+                        //
+                        //                            </div>
+                        //
+                        //                        </div>';
+                        //                        }
+                        //                        ?>
+                    </div>
                 </div>
 
                 <!--                khám phá các ý tưởng-->
@@ -1044,11 +1071,10 @@ include "../../public/php/connect.php";
                             "        <a class='nav-link pt-4' style='color: #818182' href='#'>\n" +
                             "            @User-Tháng 7\n" +
                             "        </a>\n" +
-                            "<button style='border: 0;background-color: #fafafa' type='button' data-toggle='modal' data-target='#fullHeightModalRight'>\n" +
+                            "<button style='border: 0;background-color: Transparent;cursor:pointer' type='button' data-toggle='modal' data-target='#fullHeightModalRight'>\n" +
                             "    ...\n" +
                             "</button>\n" +
-                            "</a>\n"+
-                            "<form action='' method='post'>\n" +
+                            "</a>\n" +
                             "    <div class='modal fade right' id='fullHeightModalRight' tabindex='-1' role='dialog' aria-labelledby='myModalLabel'\n" +
                             "         aria-hidden='true'>\n" +
                             "        <div class='modal-dialog modal-full-height modal-right' role='document'>\n" +
@@ -1060,13 +1086,13 @@ include "../../public/php/connect.php";
                             "                    </button>\n" +
                             "                </div>\n" +
                             "                <div class='modal-body'>\n" +
-                            "                    <button type='button' class='btn btn-secondary'>Xóa bài viết</button></br>\n" +
-                            "                    <button type='button' class='btn btn-primary'>Sửa bài viết</button>\n" +
+                            "         <button type='submit' class='btn btn-secondary'>Xóa bài viết</button></br>\n" +
+                            "         <button type='button' class='btn btn-primary'>Sửa bài viết</button>\n" +
+                            "         <button type='button' class='btn btn-primary'>Lưu bài viết</button>\n" +
                             "                </div>\n" +
                             "            </div>\n" +
                             "        </div>\n" +
                             "    </div>\n" +
-                            "</form>\n"+
                             "    </nav>\n" +
                             "    <div class='pl-5 pr-3'>\n" +
                             "        <div>\n"
@@ -1078,7 +1104,7 @@ include "../../public/php/connect.php";
                             "        <div>\n" +
                             "            <button class='btn btn-outline-primary' type='button' onclick='doIt3(" + id + ")'>" +
                             "            - Chi tiết\n" +
-                            "            </a>\n" +
+                            "            </button>\n" +
                             "        </div>\n" +
                             "        <div class='float-right' style='font-size: 12px'>\n"
                             + status +
@@ -1127,6 +1153,114 @@ include "../../public/php/connect.php";
 
     }
 </script>
+<!--loadData-->
+<script>
+    axios
+        .post("http://localhost/BWD/public/php/search_news.php")
+        .then((res) => {
+            console.log(res.data);
+            let html = "";
+            for (let a = res.data.length - 1; a >= 0; a--) {
+                let id = res.data[a].id;
+                let id1 = res.data[a].id;
+                let username = res.data[a].username;
+                let title = res.data[a].title;
+                let category = res.data[a].category;
+                let status = res.data[a].status;
+                let image = res.data[a].link_image;
+                html += "<div class='b'>\n" +
+                    "    <nav class='nav nav-pills flex-sm-row'>\n" +
+                    "        <a class='nav-link' href='#'>\n" +
+                    "            <img class='rounded-circle' style='width: 54px;height: 54px; border: 1px solid #1a1a1a'\n" +
+                    "                 src='../../public/images/picture%20home%20login/tenor.gif'>\n" +
+                    "        </a>\n" +
+                    "        <a class='nav-link pt-4 aName' style='color: #1a1a1a' href='#'>\n"
+                    + username +
+                    "        </a>\n" +
+                    "        <a class='nav-link pt-4' style='color: #818182' href='#'>\n" +
+                    "            @User-Tháng 7\n" +
+                    "        </a>\n" +
+                    "        <a class='nav-link pt-3'>\n" +
+                    "<button style='border: 0;background-color: Transparent;cursor:pointer' type='button' data-toggle='modal' data-target='#fullHeightModalRight1'>\n" +
+                    "    ..1.\n" +
+                    "</button>\n" +
+                    "</a>\n" +
+                    "    <div class='modal fade right' id='fullHeightModalRight1' tabindex='-1' role='dialog' aria-labelledby='myModalLabel'\n" +
+                    "         aria-hidden='true'>\n" +
+                    "        <div class='modal-dialog modal-full-height modal-right' role='document'>\n" +
+                    "            <div class='modal-content'>\n" +
+                    "                <div class='modal-header'>\n" +
+                    "                    <h4 class='modal-title w-100' id='myModalLabel'>Bài viết</h4>\n" +
+                    "                    <button type='button' class='close' data-dismiss='modal' aria-label='Close'>\n" +
+                    "                        <span aria-hidden='true'>&times;</span>\n" +
+                    "                    </button>\n" +
+                    "                </div>\n" +
+                    "                <div class='modal-body'>\n" +
+                    "         <button type='button' class='btn btn-secondary'>Xóa bài viết</button></br>\n" +
+                    "         <button type='button' class='btn btn-primary'>Sửa bài viết</button></br>\n" +
+                    "         <button type='button' class='btn btn-secondary' onclick='doIt6(" + id1 + ")'>Lưu bài viết</button></br>\n" +
+                    "                </div>\n" +
+                    "            </div>\n" +
+                    "        </div>\n" +
+                    "    </div>\n" +
+                    "    </nav>\n" +
+                    "    <div class='pl-5 pr-3'>\n" +
+                    "        <div>\n"
+                    + title +
+                    "        </div>\n" +
+                    "        <div>\n"
+                    + category +
+                    "        </div>\n" +
+                    "        <div>\n" +
+                    "            <button class='btn btn-outline-primary' type='button' onclick='doIt3(" + id + ")'>" +
+                    "            - Chi tiết\n" +
+                    "            </button>\n" +
+                    "        </div>\n" +
+                    "        <div class='float-right' style='font-size: 12px'>\n"
+                    + status +
+                    "        </div>\n" +
+                    "        <img class='rounded-lg' style='max-width: inherit;width: 100%;height: 300px '\n" +
+                    "             src='../../public/" + image + "'>" +
+                    "    </div>\n" +
+                    "    <div style='padding: 8px 0 8px 0'>\n" +
+                    "        <nav class='nav nav3 float-right' style='font-size: 11px'>\n" +
+                    "            <li class='nav-item'>750 bình luận</li>\n" +
+                    "            <li style='padding:0 16px 0 16px' class='nav-item'>245 chia sẻ</li>\n" +
+                    "        </nav>\n" +
+                    "    </div>\n" +
+                    "    <nav class='nav nav-pills nav-fill'>\n" +
+                    "        <li class='nav-item'>\n" +
+                    "            <a href='#' class='nav-link'>\n" +
+                    "                <img style='width: 24px;height: 24px' src='../../public/images/picture%20home%20login/icons8-heart-100.png'>\n" +
+                    "                <span>\n" +
+                    "                                    1.2k\n" +
+                    "                                </span>\n" +
+                    "            </a>\n" +
+                    "        </li>\n" +
+                    "        <li class='nav-item'>\n" +
+                    "            <a href='#' class='nav-link'>\n" +
+                    "                <img style='width: 24px;height: 24px' src='../../public/images/picture%20home%20login/icons8-speech-bubble-100.png'>\n" +
+                    "                <span>\n" +
+                    "                                    Bình luận\n" +
+                    "                                </span>\n" +
+                    "            </a>\n" +
+                    "        </li>\n" +
+                    "        <li class='nav-item'>\n" +
+                    "            <a class='nav-link' href='#'>\n" +
+                    "                <img style='width: 24px;height: 24px' src='../../public/images/picture%20home%20login/icons8-share-160.png'>\n" +
+                    "                <span>\n" +
+                    "                                    Chia sẻ\n" +
+                    "                                </span>\n" +
+                    "            </a>\n" +
+                    "        </li>\n" +
+                    "    </nav>\n" +
+                    "</div>\n" +
+                    "<hr/>";
+            }
+            document.getElementById("data").innerHTML = html;
+        })
+
+</script>
 <!--loadHome-->
 <script>
     const doIt1 = async () => {
@@ -1155,10 +1289,10 @@ include "../../public/php/connect.php";
                         "            @User-Tháng 7\n" +
                         "        </a>\n" +
                         "        <a class='nav-link pt-3'>\n" +
-                        "<button style='border: 0;background-color: #fafafa' type='button' data-toggle='modal' data-target='#fullHeightModalRight'>\n" +
+                        "<button style='border: 0;background-color: Transparent;cursor:pointer' type='button' data-toggle='modal' data-target='#fullHeightModalRight'>\n" +
                         "    ...\n" +
                         "</button>\n" +
-                        "</a>\n"+
+                        "</a>\n" +
                         "    <div class='modal fade right' id='fullHeightModalRight' tabindex='-1' role='dialog' aria-labelledby='myModalLabel'\n" +
                         "         aria-hidden='true'>\n" +
                         "        <div class='modal-dialog modal-full-height modal-right' role='document'>\n" +
@@ -1170,8 +1304,9 @@ include "../../public/php/connect.php";
                         "                    </button>\n" +
                         "                </div>\n" +
                         "                <div class='modal-body'>\n" +
-                        "         <button type='button' class='btn btn-secondary'>Xóa bài viết</button></br>\n" +
-                        "         <button type='button' class='btn btn-primary'>Sửa bài viết</button>\n" +
+                        "         <button type='submit' class='btn btn-secondary'>Xóa bài viết</button></br>\n" +
+                        "         <button type='button' class='btn btn-primary'>Sửa bài viết</button></br>\n" +
+                        "         <button type='submit' class='btn btn-primary'>Lưu bài viết</button>\n" +
                         "                </div>\n" +
                         "            </div>\n" +
                         "        </div>\n" +
@@ -1187,7 +1322,7 @@ include "../../public/php/connect.php";
                         "        <div>\n" +
                         "            <button class='btn btn-outline-primary' type='button' onclick='doIt3(" + id + ")'>" +
                         "            - Chi tiết\n" +
-                        "            </a>\n" +
+                        "            </button>\n" +
                         "        </div>\n" +
                         "        <div class='float-right' style='font-size: 12px'>\n"
                         + status +
@@ -1262,12 +1397,11 @@ include "../../public/php/connect.php";
                         "            @User-Tháng 7\n" +
                         "        </a>\n" +
                         "        <a class='nav-link pt-3'>\n" +
-                        "<button style='border: 0;background-color: Transparent;cursor:pointer' type='button' data-toggle='modal' data-target='#fullHeightModalRight'>\n" +
+                        "<button style='border: 0;background-color: Transparent;cursor:pointer' type='button' data-toggle='modal' data-target='#fullHeightModalRight1'>\n" +
                         "    ...\n" +
                         "</button>\n" +
-                        "</a>\n"+
-                        "<form action='' method='post'>\n" +
-                        "    <div class='modal fade right' id='fullHeightModalRight' tabindex='-1' role='dialog' aria-labelledby='myModalLabel'\n" +
+                        "</a>\n" +
+                        "    <div class='modal fade right' id='fullHeightModalRight1' tabindex='-1' role='dialog' aria-labelledby='myModalLabel'\n" +
                         "         aria-hidden='true'>\n" +
                         "        <div class='modal-dialog modal-full-height modal-right' role='document'>\n" +
                         "            <div class='modal-content'>\n" +
@@ -1278,17 +1412,13 @@ include "../../public/php/connect.php";
                         "                    </button>\n" +
                         "                </div>\n" +
                         "                <div class='modal-body'>\n" +
-                        "<form action='' method='post'>\n"+
-                        "         <button type='button' class='btn btn-secondary'>Xóa bài viết</button></br>\n" +
-                        "</form>\n"+
-                        "<form action='' method='post'>\n"+
+                        "         <button type='submit' class='btn btn-secondary'>Xóa bài viết</button></br>\n" +
                         "         <button type='button' class='btn btn-primary'>Sửa bài viết</button>\n" +
-                        "</form>\n"+
+                        "         <button type='button' class='btn btn-primary'>Lưu bài viết</button>\n" +
                         "                </div>\n" +
                         "            </div>\n" +
                         "        </div>\n" +
                         "    </div>\n" +
-                        "</form>\n"+
                         "    </nav>\n" +
                         "    <div class='pl-5 pr-3'>\n" +
                         "        <div>\n"
@@ -1346,118 +1476,6 @@ include "../../public/php/connect.php";
                 document.getElementById("data1").innerHTML = html;
             })
     }
-</script>
-<!--loadData-->
-<script>
-    axios
-        .post("http://localhost/BWD/public/php/search_news.php")
-        .then((res) => {
-            console.log(res.data);
-            let html = "";
-            for (let a = res.data.length - 1; a >= 0; a--) {
-                let id = res.data[a].id;
-                let username = res.data[a].username;
-                let title = res.data[a].title;
-                let category = res.data[a].category;
-                let status = res.data[a].status;
-                let image = res.data[a].link_image;
-                html += "<div class='b'>\n" +
-                    "    <nav class='nav nav-pills flex-sm-row'>\n" +
-                    "        <a class='nav-link' href='#'>\n" +
-                    "            <img class='rounded-circle' style='width: 54px;height: 54px; border: 1px solid #1a1a1a'\n" +
-                    "                 src='../../public/images/picture%20home%20login/tenor.gif'>\n" +
-                    "        </a>\n" +
-                    "        <a class='nav-link pt-4 aName' style='color: #1a1a1a' href='#'>\n"
-                    + username +
-                    "        </a>\n" +
-                    "        <a class='nav-link pt-4' style='color: #818182' href='#'>\n" +
-                    "            @User-Tháng 7\n" +
-                    "        </a>\n" +
-                    "        <a class='nav-link pt-3'>\n" +
-                    "<button style='border: 0;background-color: Transparent;cursor:pointer' type='button' data-toggle='modal' data-target='#fullHeightModalRight'>\n" +
-                    "    ...\n" +
-                    "</button>\n" +
-                        "</a>\n"+
-                    "<form action='' method='post'>\n" +
-                    "    <div class='modal fade right' id='fullHeightModalRight' tabindex='-1' role='dialog' aria-labelledby='myModalLabel'\n" +
-                    "         aria-hidden='true'>\n" +
-                    "        <div class='modal-dialog modal-full-height modal-right' role='document'>\n" +
-                    "            <div class='modal-content'>\n" +
-                    "                <div class='modal-header'>\n" +
-                    "                    <h4 class='modal-title w-100' id='myModalLabel'>Bài viết</h4>\n" +
-                    "                    <button type='button' class='close' data-dismiss='modal' aria-label='Close'>\n" +
-                    "                        <span aria-hidden='true'>&times;</span>\n" +
-                    "                    </button>\n" +
-                    "                </div>\n" +
-                    "                <div class='modal-body'>\n" +
-                    "<form action='' method='post'>\n"+
-                    "         <button type='button' class='btn btn-secondary'>Xóa bài viết</button></br>\n" +
-                    "</form>\n"+
-                    "<form action='' method='post'>\n"+
-                    "         <button type='button' class='btn btn-primary'>Sửa bài viết</button>\n" +
-                    "</form>\n"+
-                    "                </div>\n" +
-                    "            </div>\n" +
-                    "        </div>\n" +
-                    "    </div>\n" +
-                    "</form>\n"+
-                    "    </nav>\n" +
-                    "    <div class='pl-5 pr-3'>\n" +
-                    "        <div>\n"
-                    + title +
-                    "        </div>\n" +
-                    "        <div>\n"
-                    + category +
-                    "        </div>\n" +
-                    "        <div>\n" +
-                    "            <button class='btn btn-outline-primary' type='button' onclick='doIt3(" + id + ")'>" +
-                    "            - Chi tiết\n" +
-                    "            </button>\n" +
-                    "        </div>\n" +
-                    "        <div class='float-right' style='font-size: 12px'>\n"
-                    + status +
-                    "        </div>\n" +
-                    "        <img class='rounded-lg' style='max-width: inherit;width: 100%;height: 300px '\n" +
-                    "             src='../../public/" + image + "'>" +
-                    "    </div>\n" +
-                    "    <div style='padding: 8px 0 8px 0'>\n" +
-                    "        <nav class='nav nav3 float-right' style='font-size: 11px'>\n" +
-                    "            <li class='nav-item'>750 bình luận</li>\n" +
-                    "            <li style='padding:0 16px 0 16px' class='nav-item'>245 chia sẻ</li>\n" +
-                    "        </nav>\n" +
-                    "    </div>\n" +
-                    "    <nav class='nav nav-pills nav-fill'>\n" +
-                    "        <li class='nav-item'>\n" +
-                    "            <a href='#' class='nav-link'>\n" +
-                    "                <img style='width: 24px;height: 24px' src='../../public/images/picture%20home%20login/icons8-heart-100.png'>\n" +
-                    "                <span>\n" +
-                    "                                    1.2k\n" +
-                    "                                </span>\n" +
-                    "            </a>\n" +
-                    "        </li>\n" +
-                    "        <li class='nav-item'>\n" +
-                    "            <a href='#' class='nav-link'>\n" +
-                    "                <img style='width: 24px;height: 24px' src='../../public/images/picture%20home%20login/icons8-speech-bubble-100.png'>\n" +
-                    "                <span>\n" +
-                    "                                    Bình luận\n" +
-                    "                                </span>\n" +
-                    "            </a>\n" +
-                    "        </li>\n" +
-                    "        <li class='nav-item'>\n" +
-                    "            <a class='nav-link' href='#'>\n" +
-                    "                <img style='width: 24px;height: 24px' src='../../public/images/picture%20home%20login/icons8-share-160.png'>\n" +
-                    "                <span>\n" +
-                    "                                    Chia sẻ\n" +
-                    "                                </span>\n" +
-                    "            </a>\n" +
-                    "        </li>\n" +
-                    "    </nav>\n" +
-                    "</div>\n" +
-                    "<hr/>";
-            }
-            document.getElementById("data").innerHTML = html;
-        })
-
 </script>
 <!--detail-->
 <script>
@@ -1625,5 +1643,56 @@ include "../../public/php/connect.php";
     }
 
 </script>
+<!--saved post-->
+<script>
+    const doIt5 = async () => {
+        axios
+            .post("http://localhost/BWD/public/php/saved post.php")
+            .then((res) => {
+                    console.log(res);
+                    let html = "";
+                    for (let i = res.data.length - 1; i >= 0; i--) {
+                        let id = res.data[i].id;
+                        let title = res.data[i].title;
+                        let status = res.data[i].status;
+                        let image = res.data[i].link_image;
+                        html += "<div style='height: 70%; max-width: inherit; width: 100%' class='card mb-5'>\n" +
+                            "    <!-- Card image -->\n" +
+                            "    <img style='height: 272px; max-width: inherit; width: 100%'\n" +
+                            "         class='card-img-top' " +
+                            "             src='../../public/" + image + "' alt='Card image cap'>" +
+                            "    <!-- Card content -->\n" +
+                            "    <div class='card-body'>\n" +
+                            "\n" +
+                            "        <!-- Title -->\n" +
+                            "        <h4 class='card-title'><a>" + title + "</a></h4>\n" +
+                            "        <!-- Text -->\n" +
+                            "        <p class='card-text'>" + status + "</p>\n" +
+                            "        <!-- Button -->\n" +
+                            "        <a href='#' class='btn btn-primary'>Chi tiết</a>\n" +
+                            "        <a href='#' class='btn btn-outline-danger'>Bỏ lưu</a>\n" +
+                            "    </div>\n" +
+                            "</div>";
+                    }
+                    document.getElementById("data5").innerHTML = html;
+                }
+            )
+    }
+</script>
+
+<script>
+    const doIt6 = async (id) => {
+        axios
+            .get("http://localhost/BWD/public/php/save_post.php", {
+                params: {
+                    "id": id
+                }
+            })
+        .then((res)=>{
+            console.log(id);
+        })
+    }
+</script>
+
 </body>
 </html>
