@@ -386,7 +386,7 @@ include "../../public/php/connect.php";
                 <!--                phần my post-->
                 <div class="tab-pane fade pt-2" id="v-pills-myPost" role="tabpanel"
                      aria-labelledby="v-pills-myPost-tab">
-                    <div id="data5" class="row">
+                    <div id="data5">
                         <!--                        --><?php
                         //                            $sql="SELECT * FROM `news` WHERE `allowed` = '1'";
                         //                            $result = mysqli_query($conn,$sql);
@@ -1071,28 +1071,6 @@ include "../../public/php/connect.php";
                             "        <a class='nav-link pt-4' style='color: #818182' href='#'>\n" +
                             "            @User-Tháng 7\n" +
                             "        </a>\n" +
-                            "<button style='border: 0;background-color: Transparent;cursor:pointer' type='button' data-toggle='modal' data-target='#fullHeightModalRight'>\n" +
-                            "    ...\n" +
-                            "</button>\n" +
-                            "</a>\n" +
-                            "    <div class='modal fade right' id='fullHeightModalRight' tabindex='-1' role='dialog' aria-labelledby='myModalLabel'\n" +
-                            "         aria-hidden='true'>\n" +
-                            "        <div class='modal-dialog modal-full-height modal-right' role='document'>\n" +
-                            "            <div class='modal-content'>\n" +
-                            "                <div class='modal-header'>\n" +
-                            "                    <h4 class='modal-title w-100' id='myModalLabel'>Bài viết</h4>\n" +
-                            "                    <button type='button' class='close' data-dismiss='modal' aria-label='Close'>\n" +
-                            "                        <span aria-hidden='true'>&times;</span>\n" +
-                            "                    </button>\n" +
-                            "                </div>\n" +
-                            "                <div class='modal-body'>\n" +
-                            "         <button type='submit' class='btn btn-secondary'>Xóa bài viết</button></br>\n" +
-                            "         <button type='button' class='btn btn-primary'>Sửa bài viết</button>\n" +
-                            "         <button type='button' class='btn btn-primary'>Lưu bài viết</button>\n" +
-                            "                </div>\n" +
-                            "            </div>\n" +
-                            "        </div>\n" +
-                            "    </div>\n" +
                             "    </nav>\n" +
                             "    <div class='pl-5 pr-3'>\n" +
                             "        <div>\n"
@@ -1105,6 +1083,7 @@ include "../../public/php/connect.php";
                             "            <button class='btn btn-outline-primary' type='button' onclick='doIt3(" + id + ")'>" +
                             "            - Chi tiết\n" +
                             "            </button>\n" +
+                            "         <button type='button' class='btn btn-primary' onclick='doIt6("+id+")'>Lưu bài viết</button>\n" +
                             "        </div>\n" +
                             "        <div class='float-right' style='font-size: 12px'>\n"
                             + status +
@@ -1160,15 +1139,14 @@ include "../../public/php/connect.php";
         .then((res) => {
             console.log(res.data);
             let html = "";
-            for (let a = res.data.length - 1; a >= 0; a--) {
-                let id = res.data[a].id;
-                let id1 = res.data[a].id;
-                let username = res.data[a].username;
-                let title = res.data[a].title;
-                let category = res.data[a].category;
-                let status = res.data[a].status;
-                let image = res.data[a].link_image;
-                html += "<div class='b'>\n" +
+            res.data.reverse().forEach((data) => {
+                const id = data.id;
+                let username = data.username;
+                let title = data.title;
+                let category = data.category;
+                let status = data.status;
+                let image = data.link_image;
+                $('#data').append("<div class='b'>\n" +
                     "    <nav class='nav nav-pills flex-sm-row'>\n" +
                     "        <a class='nav-link' href='#'>\n" +
                     "            <img class='rounded-circle' style='width: 54px;height: 54px; border: 1px solid #1a1a1a'\n" +
@@ -1180,29 +1158,6 @@ include "../../public/php/connect.php";
                     "        <a class='nav-link pt-4' style='color: #818182' href='#'>\n" +
                     "            @User-Tháng 7\n" +
                     "        </a>\n" +
-                    "        <a class='nav-link pt-3'>\n" +
-                    "<button style='border: 0;background-color: Transparent;cursor:pointer' type='button' data-toggle='modal' data-target='#fullHeightModalRight1'>\n" +
-                    "    ..1.\n" +
-                    "</button>\n" +
-                    "</a>\n" +
-                    "    <div class='modal fade right' id='fullHeightModalRight1' tabindex='-1' role='dialog' aria-labelledby='myModalLabel'\n" +
-                    "         aria-hidden='true'>\n" +
-                    "        <div class='modal-dialog modal-full-height modal-right' role='document'>\n" +
-                    "            <div class='modal-content'>\n" +
-                    "                <div class='modal-header'>\n" +
-                    "                    <h4 class='modal-title w-100' id='myModalLabel'>Bài viết</h4>\n" +
-                    "                    <button type='button' class='close' data-dismiss='modal' aria-label='Close'>\n" +
-                    "                        <span aria-hidden='true'>&times;</span>\n" +
-                    "                    </button>\n" +
-                    "                </div>\n" +
-                    "                <div class='modal-body'>\n" +
-                    "         <button type='button' class='btn btn-secondary'>Xóa bài viết</button></br>\n" +
-                    "         <button type='button' class='btn btn-primary'>Sửa bài viết</button></br>\n" +
-                    "         <button type='button' class='btn btn-secondary' onclick='doIt6(" + id1 + ")'>Lưu bài viết</button></br>\n" +
-                    "                </div>\n" +
-                    "            </div>\n" +
-                    "        </div>\n" +
-                    "    </div>\n" +
                     "    </nav>\n" +
                     "    <div class='pl-5 pr-3'>\n" +
                     "        <div>\n"
@@ -1215,6 +1170,8 @@ include "../../public/php/connect.php";
                     "            <button class='btn btn-outline-primary' type='button' onclick='doIt3(" + id + ")'>" +
                     "            - Chi tiết\n" +
                     "            </button>\n" +
+                    "           <button type='button' class='btn btn-primary' onclick='doIt6(" + id + ")'>" +
+                    "Lưu bài viết</button>\n" +
                     "        </div>\n" +
                     "        <div class='float-right' style='font-size: 12px'>\n"
                     + status +
@@ -1255,9 +1212,9 @@ include "../../public/php/connect.php";
                     "        </li>\n" +
                     "    </nav>\n" +
                     "</div>\n" +
-                    "<hr/>";
-            }
-            document.getElementById("data").innerHTML = html;
+                    "<hr/>");
+
+            })
         })
 
 </script>
@@ -1269,13 +1226,13 @@ include "../../public/php/connect.php";
             .then((res) => {
                 console.log(res.data)
                 let html = "";
-                for (let a = res.data.length - 1; a >= 0; a--) {
-                    let id = res.data[a].id;
-                    let username = res.data[a].username;
-                    let title = res.data[a].title;
-                    let category = res.data[a].category;
-                    let status = res.data[a].status;
-                    let image = res.data[a].link_image;
+                res.data.reverse().forEach((data) => {
+                    let id = data.id;
+                    let username = data.username;
+                    let title = data.title;
+                    let category = data.category;
+                    let status = data.status;
+                    let image = data.link_image;
                     html += "<div class='b'>\n" +
                         "    <nav class='nav nav-pills flex-sm-row'>\n" +
                         "        <a class='nav-link' href='#'>\n" +
@@ -1288,29 +1245,6 @@ include "../../public/php/connect.php";
                         "        <a class='nav-link pt-4' style='color: #818182' href='#'>\n" +
                         "            @User-Tháng 7\n" +
                         "        </a>\n" +
-                        "        <a class='nav-link pt-3'>\n" +
-                        "<button style='border: 0;background-color: Transparent;cursor:pointer' type='button' data-toggle='modal' data-target='#fullHeightModalRight'>\n" +
-                        "    ...\n" +
-                        "</button>\n" +
-                        "</a>\n" +
-                        "    <div class='modal fade right' id='fullHeightModalRight' tabindex='-1' role='dialog' aria-labelledby='myModalLabel'\n" +
-                        "         aria-hidden='true'>\n" +
-                        "        <div class='modal-dialog modal-full-height modal-right' role='document'>\n" +
-                        "            <div class='modal-content'>\n" +
-                        "                <div class='modal-header'>\n" +
-                        "                    <h4 class='modal-title w-100' id='myModalLabel'>Bài viết</h4>\n" +
-                        "                    <button type='button' class='close' data-dismiss='modal' aria-label='Close'>\n" +
-                        "                        <span aria-hidden='true'>&times;</span>\n" +
-                        "                    </button>\n" +
-                        "                </div>\n" +
-                        "                <div class='modal-body'>\n" +
-                        "         <button type='submit' class='btn btn-secondary'>Xóa bài viết</button></br>\n" +
-                        "         <button type='button' class='btn btn-primary'>Sửa bài viết</button></br>\n" +
-                        "         <button type='submit' class='btn btn-primary'>Lưu bài viết</button>\n" +
-                        "                </div>\n" +
-                        "            </div>\n" +
-                        "        </div>\n" +
-                        "    </div>\n" +
                         "    </nav>\n" +
                         "    <div class='pl-5 pr-3'>\n" +
                         "        <div>\n"
@@ -1323,6 +1257,7 @@ include "../../public/php/connect.php";
                         "            <button class='btn btn-outline-primary' type='button' onclick='doIt3(" + id + ")'>" +
                         "            - Chi tiết\n" +
                         "            </button>\n" +
+                        "         <button type='button' class='btn btn-primary' onclick='doIt6("+id+")'>Lưu bài viết</button>\n" +
                         "        </div>\n" +
                         "        <div class='float-right' style='font-size: 12px'>\n"
                         + status +
@@ -1364,7 +1299,7 @@ include "../../public/php/connect.php";
                         "    </nav>\n" +
                         "</div>\n" +
                         "<hr/>";
-                }
+                })
                 document.getElementById("data").innerHTML = html;
             })
     }
@@ -1397,28 +1332,6 @@ include "../../public/php/connect.php";
                         "            @User-Tháng 7\n" +
                         "        </a>\n" +
                         "        <a class='nav-link pt-3'>\n" +
-                        "<button style='border: 0;background-color: Transparent;cursor:pointer' type='button' data-toggle='modal' data-target='#fullHeightModalRight1'>\n" +
-                        "    ...\n" +
-                        "</button>\n" +
-                        "</a>\n" +
-                        "    <div class='modal fade right' id='fullHeightModalRight1' tabindex='-1' role='dialog' aria-labelledby='myModalLabel'\n" +
-                        "         aria-hidden='true'>\n" +
-                        "        <div class='modal-dialog modal-full-height modal-right' role='document'>\n" +
-                        "            <div class='modal-content'>\n" +
-                        "                <div class='modal-header'>\n" +
-                        "                    <h4 class='modal-title w-100' id='myModalLabel'>Bài viết</h4>\n" +
-                        "                    <button type='button' class='close' data-dismiss='modal' aria-label='Close'>\n" +
-                        "                        <span aria-hidden='true'>&times;</span>\n" +
-                        "                    </button>\n" +
-                        "                </div>\n" +
-                        "                <div class='modal-body'>\n" +
-                        "         <button type='submit' class='btn btn-secondary'>Xóa bài viết</button></br>\n" +
-                        "         <button type='button' class='btn btn-primary'>Sửa bài viết</button>\n" +
-                        "         <button type='button' class='btn btn-primary'>Lưu bài viết</button>\n" +
-                        "                </div>\n" +
-                        "            </div>\n" +
-                        "        </div>\n" +
-                        "    </div>\n" +
                         "    </nav>\n" +
                         "    <div class='pl-5 pr-3'>\n" +
                         "        <div>\n"
@@ -1430,7 +1343,8 @@ include "../../public/php/connect.php";
                         "        <div>\n" +
                         "            <button class='btn btn-outline-primary' type='button' onclick='doIt4(" + id + ")'>" +
                         "            - Chi tiết\n" +
-                        "            </a>\n" +
+                        "            </button>\n" +
+                        "         <button type='button' class='btn btn-primary' onclick='doIt6("+id+")'>Lưu bài viết</button>\n" +
                         "        </div>\n" +
                         "        <div class='float-right' style='font-size: 12px'>\n"
                         + status +
@@ -1475,6 +1389,42 @@ include "../../public/php/connect.php";
                 }
                 document.getElementById("data1").innerHTML = html;
             })
+    }
+</script>
+<!--saved post-->
+<script>
+    const doIt5 = async () => {
+        axios
+            .post("http://localhost/BWD/public/php/saved post.php")
+            .then((res) => {
+                    console.log(res);
+                    let html = "";
+                    for (let i = res.data.length - 1; i >= 0; i--) {
+                        let id = res.data[i].id;
+                        let title = res.data[i].title;
+                        let status = res.data[i].status;
+                        let image = res.data[i].link_image;
+                        html += "<div style='height: 70%; max-width: inherit; width: 100%' class='card mb-5'>\n" +
+                            "    <!-- Card image -->\n" +
+                            "    <img style='height: 272px; max-width: inherit; width: 100%'\n" +
+                            "         class='card-img-top' " +
+                            "             src='../../public/" + image + "' alt='Card image cap'>" +
+                            "    <!-- Card content -->\n" +
+                            "    <div class='card-body'>\n" +
+                            "\n" +
+                            "        <!-- Title -->\n" +
+                            "        <h4 class='card-title'><a>" + title + "</a></h4>\n" +
+                            "        <!-- Text -->\n" +
+                            "        <p class='card-text'>" + status + "</p>\n" +
+                            "        <!-- Button -->\n" +
+                            "        <button type='button' class='btn btn-primary' onclick='doIt7("+id+")'>Chi tiết</button>\n" +
+                            "        <button type='button' class='btn btn-outline-danger' onclick='doIt8("+id+")'>Bỏ lưu</button>\n" +
+                            "    </div>\n" +
+                            "</div>";
+                    }
+                    document.getElementById("data5").innerHTML = html;
+                }
+            )
     }
 </script>
 <!--detail-->
@@ -1643,43 +1593,90 @@ include "../../public/php/connect.php";
     }
 
 </script>
-<!--saved post-->
+<!--detail2-->
 <script>
-    const doIt5 = async () => {
+    const doIt7 = async (id) => {
         axios
-            .post("http://localhost/BWD/public/php/saved post.php")
-            .then((res) => {
-                    console.log(res);
-                    let html = "";
-                    for (let i = res.data.length - 1; i >= 0; i--) {
-                        let id = res.data[i].id;
-                        let title = res.data[i].title;
-                        let status = res.data[i].status;
-                        let image = res.data[i].link_image;
-                        html += "<div style='height: 70%; max-width: inherit; width: 100%' class='card mb-5'>\n" +
-                            "    <!-- Card image -->\n" +
-                            "    <img style='height: 272px; max-width: inherit; width: 100%'\n" +
-                            "         class='card-img-top' " +
-                            "             src='../../public/" + image + "' alt='Card image cap'>" +
-                            "    <!-- Card content -->\n" +
-                            "    <div class='card-body'>\n" +
-                            "\n" +
-                            "        <!-- Title -->\n" +
-                            "        <h4 class='card-title'><a>" + title + "</a></h4>\n" +
-                            "        <!-- Text -->\n" +
-                            "        <p class='card-text'>" + status + "</p>\n" +
-                            "        <!-- Button -->\n" +
-                            "        <a href='#' class='btn btn-primary'>Chi tiết</a>\n" +
-                            "        <a href='#' class='btn btn-outline-danger'>Bỏ lưu</a>\n" +
-                            "    </div>\n" +
-                            "</div>";
-                    }
-                    document.getElementById("data5").innerHTML = html;
+            .get("http://localhost/BWD/src/alpha/detail_new.php", {
+                params: {
+                    "id": id
                 }
-            )
+            })
+            .then((res) => {
+                console.log(res.data)
+                let html = "";
+                for (let i = 0; i < res.data.length; i++) {
+                    let username1 = res.data[0].username;
+                    let title1 = res.data[0].title;
+                    let category1 = res.data[0].category;
+                    let material1 = res.data[0].material;
+                    let cost1 = res.data[0].cost;
+                    let time_do1 = res.data[0].time_do;
+                    let chooseLevel1 = res.data[0].chooseLevel;
+                    let dataContent = res.data[0].content_post;
+                    html += "<div class='mt-4'>\n" +
+                        "    <nav class='nav'>\n" +
+                        "        <li class='nav-item'>\n" +
+                        "            <img style='width: 64px; height: 64px; border: 1px solid #818182' class='rounded-circle'\n" +
+                        "                 src='../../public/images/picture%20home%20login/tenor.gif'>\n" +
+                        "        </li>\n" +
+                        "        <li class='nav-item ml-4'>\n" +
+                        "            <nav class='list-group'>\n" +
+                        "        <li class='nav-item' style='text-align: center'>\n" +
+                        username1 +
+                        "        </li>\n" +
+                        "        <li class='nav-item'>\n" +
+                        "            <button class='btn btn-primary rounded-pill'>+ Theo dõi</button>\n" +
+                        "        </li>\n" +
+                        "    </nav>\n" +
+                        "    </li>\n" +
+                        "    </nav>\n" +
+                        "    <div class='mt-1'>\n" +
+                        "        <div style='font-size: 28px; font-weight: bolder'>\n" +
+                        title1 +
+                        "        </div>\n" +
+                        "        <div>\n" +
+                        category1 +
+                        "        </div>\n" +
+                        "        <div>\n" +
+                        "            <blockquote class='blockquote' style='font-size: 17px'>\n" +
+                        "                <footer class='blockquote-footer'>\n" +
+                        "                    Bảng thống kê\n" +
+                        "                    <nav class='nav _nav1 nav-pills'>\n" +
+                        "                        <li class='nav-item'>\n" +
+                        "                            <i class='fas fa-pencil-ruler'></i>\n" +
+                        "                            <span>" + material1 + "</span>\n" +
+                        "                        </li>\n" +
+                        "                        <li class='nav-item'>\n" +
+                        "                            <i class='fas fa-wallet'></i>\n" +
+                        "                            <span>" + cost1 + "</span>\n" +
+                        "                        </li>\n" +
+                        "                        <li class='nav-item'>\n" +
+                        "                            <i class='far fa-clock'></i>\n" +
+                        "                            <span>" + time_do1 + "</span>\n" +
+                        "                        </li>\n" +
+                        "                        <li class='nav-item'>\n" +
+                        "                            <i class='fas fa-poll'></i>\n" +
+                        "                            <span>" + chooseLevel1 + "</span>\n" +
+                        "                        </li>\n" +
+                        "                    </nav>\n" +
+                        "                </footer>\n" +
+                        "            </blockquote>\n" +
+                        "        </div>\n" +
+                        "        <div>\n" +
+                        dataContent +
+                        "        </div>\n" +
+                        "    </div>\n" +
+                        "</div>\n" +
+                        "\n" +
+                        "\n";
+                }
+                document.getElementById("data5").innerHTML = html;
+            })
     }
-</script>
 
+</script>
+<!--gửi id để đổi giá 0 thành 1 của save_post-->
 <script>
     const doIt6 = async (id) => {
         axios
@@ -1690,7 +1687,24 @@ include "../../public/php/connect.php";
             })
         .then((res)=>{
             console.log(id);
+            alert('Lưu thành công');
         })
+    }
+</script>
+<!--gửi id để đổi giá 1 thành 0 của save_post-->
+<script>
+    const doIt8 = async (id) => {
+        axios
+            .get("http://localhost/BWD/public/php/cancel_saved_post.php", {
+                params: {
+                    "id": id
+                }
+            })
+            .then((res)=>{
+                console.log(id);
+                alert('Bỏ lưu thành công');
+                history.go(-1);
+            })
     }
 </script>
 
