@@ -3,7 +3,6 @@
 /*phần chứa toàn bộ slide*/
 #slider {
     position: relative;
-
     height: 400px;
     font-family: 'Helvetica Neue', sans-serif;
     perspective: 1400px;
@@ -40,7 +39,7 @@
 input[type=radio] {
     position: relative;
     top: 85%;
-    left:42%;
+    left:50%;
     width: 18px;
     height: 12px;
     margin: 0 5px 0 0;
@@ -170,28 +169,4 @@ padding: 20px 10px 10px 10px;
 }
 #navigation{
     margin: 0;
-}
-.divSearch1{
-  
-    width: 600px;
-}
-
-/*.setTfSearch1{*/
-/*    height: 40px;*/
-/*    width: 500px;*/
-/*    padding: 3px;*/
-/*    border: 1px solid #818182;*/
-/*    border-top-left-radius: 5px;*/
-/*    border-bottom-left-radius: 5px;*/
-/*    outline: none;*/
-/*}*/
-
-.setButton1{
-    height: 40px;
-    border: 1px solid #fefefe;
-    margin-left: -5px;
-    outline: none;
-    padding: 3px;
-    width: 15%;
-    
 }

@@ -1,6 +1,6 @@
 
 <?php include './mvc/classes/product.php';  ?>
-<?php require_once './mvc/helpers/format.php'; ?>
+
 
 
 <!doctype html>
@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-    <!-- CSS here -->
+        <!-- CSS here -->
     <link rel="stylesheet" href="public/stylesheets/reponsive.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
@@ -34,6 +34,31 @@
    
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
+.divSearch1{
+  
+  width: 600px;
+}
+
+.setTfSearch1{
+  height: 41px;
+  width: 500px;
+  padding: 3px;
+  border: 1px solid #818182;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  outline: none;
+}
+
+.setButton1{
+  height: 40px;
+  border: 1px solid #fefefe;
+  margin-left: 1px;
+  outline: none;
+  padding: 3px;
+  width: 15%;
+  
+}
+
 
      /* small mobile :320px. */
     @media screen and (max-width: 420px) {
@@ -44,19 +69,38 @@
             width: 70px;
         }
     .divSearch1{
-        
-        width: 300px;
+        padding: 5px 15px 15px 15px;
+      width: 100%;  
+     max-width: inherit;
     }
     
     .setTfSearch1{
-        height: 40px;
-        width: 200px;
+        font-size: 8px;
+        height: 30px;
+        width: 75%;
         padding: 3px;
         border: 1px solid #818182;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
         outline: none;
     }
+    .setButton1{
+  font-size: 8px;
+  height: 30px;
+  padding: 3px;
+  width: 20%;
+
+  }
+  .video-icon video{
+      margin: 50px 10px 20px 10px;
+    width: 100%;  
+     max-width: inherit;
+  }
+    /*slide*/
+   #slider label { 
+    left: 0px;
+
+}
     
 }
  
@@ -78,6 +122,8 @@
         </div>
     </div>
     <!-- Preloader Start -->
+ <div class="container-fluid">
+
     <header>
         <!-- Header Start -->
         <div class="header-area header-transparent">
@@ -141,7 +187,7 @@
                                     Khám phá và chia sẽ những ý tưởng sáng tạo tốt nhất của bạn với cộng đồng D.I.Y.<br/>
                                     <br/>
                                     <br/>
-                                    <li class="button-header margin-left "><a href="#" class="btn">Tham gia </a></li>
+                                    <li class="button-header margin-left "><a href="login.php" class="btn">Tham gia </a></li>
                                 </div>
                             </div>
                         </div>
@@ -493,7 +539,7 @@
 
                 <div class="courses-actives">
                 <?php 
-            $fm = new Format();
+
             $product = new product();
 	      	$product_new = $product->show_product();
 	      	if($product_new){
@@ -509,9 +555,13 @@
                             <div class="properties__caption">
                                 <p></p>
                                 <h3><a href="#"><?php echo $result_new['username'] ?></a></h3>
+                              
                                 <p>
+                                <?php echo $result_new['category'] ?>
+                                <br>
                                 <?php echo $result_new['title'] ?>
                                 </p>
+
                                 <div class="properties__footer d-flex justify-content-between align-items-center">
                                     <div class="restaurant-name">
                                         <div class="rating">
@@ -541,10 +591,10 @@
             </div>
         </div>
         <!-- Courses area End -->
-        <!--? About Area-1 Start -->
-        <section class="about-area1 fix pt-10">
-            <div class="support-wrapper align-items-center">
-                <div class="left-content1">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
 
                     <!-- section tittle -->
                     <div class="section-tittle section-tittle2 mb-55">
@@ -577,23 +627,26 @@
                         <div class="features-caption">
                             <p>Nội dung mà bạn đưa lên phải có nội dung phù hợp, có tính sáng tạo, không sao chép lại ý tưởng của người khác.  </p>
                         </div>
-                    </div>
+                  
                 </div>
-                <div class="right-content1">
+                </div>
+                    <div class="col-md-6">
+          
                     <!-- img -->
                     <div class="right-img">
-                     
-
+                    
                         <div class="video-icon" sty >
-                           <video width="550px" controls>
+                           <video width="500px" controls>
                            <source src="./img/DIY IDEAS FOR ROOM 2020 I Ideas tumblr.mp4" type="video/mp4">
                             <i class="fas fa-play"></i></video>
                         </div>
                     </div>
+                
                 </div>
-            </div>
-        </section>
-        <!-- About Area End -->
+                </div>
+                </div>
+  
+ 
         <!--? top subjects Area Start -->
         <div class="topic-area section-padding40">
             <div class="container">
@@ -813,11 +866,10 @@
                             <div class="footer-tittle">
                                 <h4>Hỗ trợ</h4>
                                 <ul>
-                                    <li><a href="#"></a></li>
-                                    <li><a href="#">Telecommunication</a></li>
-                                    <li><a href="#">Restaurant</a></li>
-                                    <li><a href="#">Programing</a></li>
-                                    <li><a href="#">Architecture</a></li>
+                                    <li><a href="#">Hỗ trợ tư vấn ý tưởng</a></li>
+                                    <li><a href="#">Tư vấn vật liệu và dụng cụ cần cho ý tưởng</a></li>
+                                    <li><a href="#">Hãy đặt câu hỏi với chúng tôi </a></li>
+                                    <li><a href="#">Trung tâm hỗ trợ, tư vấn</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -843,6 +895,8 @@
           <!-- Footer End-->
       </div>
   </footer> 
+       
+ </div>
   <!-- Scroll Up -->
   <div id="back-top" >
     <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
@@ -860,31 +914,7 @@
 <!-- Jquery Slick , Owl-Carousel Plugins -->
 <script src="./assets/js/owl.carousel.min.js"></script>
 <script src="./assets/js/slick.min.js"></script>
-<!-- One Page, Animated-HeadLin -->
-<script src="./assets/js/wow.min.js"></script>
-<script src="./assets/js/animated.headline.js"></script>
-<script src="./assets/js/jquery.magnific-popup.js"></script>
 
-<!-- Date Picker -->
-<script src="./assets/js/gijgo.min.js"></script>
-<!-- Nice-select, sticky -->
-<script src="./assets/js/jquery.nice-select.min.js"></script>
-<script src="./assets/js/jquery.sticky.js"></script>
-<!-- Progress -->
-<script src="./assets/js/jquery.barfiller.js"></script>
-
-<!-- counter , waypoint,Hover Direction -->
-<script src="./assets/js/jquery.counterup.min.js"></script>
-<script src="./assets/js/waypoints.min.js"></script>
-<script src="./assets/js/jquery.countdown.min.js"></script>
-<script src="./assets/js/hover-direction-snake.min.js"></script>
-
-<!-- contact js -->
-<script src="./assets/js/contact.js"></script>
-<script src="./assets/js/jquery.form.js"></script>
-<script src="./assets/js/jquery.validate.min.js"></script>
-<script src="./assets/js/mail-script.js"></script>
-<script src="./assets/js/jquery.ajaxchimp.min.js"></script>
 
 <!-- Jquery Plugins, main Jquery -->	
 <script src="./assets/js/plugins.js"></script>

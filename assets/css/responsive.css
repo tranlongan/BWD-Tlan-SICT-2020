@@ -1,0 +1,46 @@
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+
+
+}
+
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+
+}
+
+ 
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+}
+
+ 
+/* small mobile :320px. */
+@media screen and (max-width: 320px) {
+    .divSearch1{
+        padding: 7px 0 0 40px;
+        width: 250px;
+    }
+    
+    .setTfSearch1{
+        height: 40px;
+        width: 200px;
+        padding: 3px;
+        border: 1px solid #818182;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        outline: none;
+    }
+    
+}
+ 
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {width:450px}
+
+ 
+}

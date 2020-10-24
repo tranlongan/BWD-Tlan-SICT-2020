@@ -16,27 +16,6 @@ body{
     padding: 0;
 }
 
-.divSearch{
-    padding: 7px 0 0 40px;
-    width: 700px;
-}
-
-.setTfSearch{
-    width: 500px;
-    padding: 3px;
-    border: 1px solid #818182;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    outline: none;
-}
-
-.setButton{
-    border: 1px solid #fefefe;
-    margin-left: -5px;
-    outline: none;
-    padding: 3px;
-    width: 15%;
-}
 
 .btnDk, .btnDn{
     border: 0;

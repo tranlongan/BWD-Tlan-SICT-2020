@@ -24,14 +24,19 @@ include "../../public/php/connect.php";
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/scroll.css">
     <link rel="stylesheet" href="css/sideNav.css">
-    <link rel="stylesheet" href="css/css_of_post/style.css"
+    <link rel="stylesheet" href="css/css_of_post/style.css">
+
+
+   
+
 </head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50" class="preloading" onload="initialize()">
+    
 <body data-spy="scroll" data-target=".navbar" data-offset="50" class="preloading" onload="initialize()">
 <div class="load">
     <img src="../../public/images/picture%20home%20login/106633326_264158891546129_8621630981574718303_n.gif?"
          alt="">
 </div>
-
 <div class="container-fluid">
     <div class="row">
         <!--        col 3-->
@@ -988,6 +993,12 @@ include "../../public/php/connect.php";
 <!-- Your custom scripts (optional) -->
 <script type="text/javascript" src="../../public/js/loadMore.js"></script>
 <script>
+    $(window).on('load', function (event) {
+        $('body').removeClass('preloading');
+        $('.load').delay(2000).fadeOut('fast');
+    });
+</script>s
+<script>
     function myFunction1() {
         document.getElementById("myDropdown1").classList.toggle("show1");
     }
@@ -1018,12 +1029,10 @@ include "../../public/php/connect.php";
         }
     }
 </script>
-<script>
-    $(window).on('load', function (event) {
-        $('body').removeClass('preloading');
-        $('.load').delay(2000).fadeOut('fast');
-    });
-</script>
+<!-- Jquery Plugins, main Jquery -->	
+<script src="../assets/js/plugins.js"></script>
+<script src="../assets/js/main.js"></script>
+
 <script>
     $(document).ready(() => {
         // SideNav Button Initialization
